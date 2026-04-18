@@ -7,5 +7,3 @@ pages_build_output_dir = "dist"
 binding = "WAHLERGEBNISSE"
 id = "11ca007dc4684f24ad3408fb587324c0"           # nach `wrangler kv namespace create WAHLERGEBNISSE` eintragen
 preview_id = "eaf899e5a4704c758c924e3bcc93cc8a"   # nach `wrangler kv namespace create WAHLERGEBNISSE --preview` eintragen
-[assets]
-directory = "./dist"
