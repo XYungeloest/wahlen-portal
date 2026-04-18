@@ -1,0 +1,9 @@
+name = "wahlen-portal"
+compatibility_date = "2026-04-01"
+pages_build_output_dir = "dist"
+
+# KV-Binding für Wahlergebnisse (wird über Dashboard erstellt)
+[[kv_namespaces]]
+binding = "WAHLERGEBNISSE"
+id = ""           # nach `wrangler kv namespace create WAHLERGEBNISSE` eintragen
+preview_id = ""   # nach `wrangler kv namespace create WAHLERGEBNISSE --preview` eintragen
