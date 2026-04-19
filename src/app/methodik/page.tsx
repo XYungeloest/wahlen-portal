@@ -70,7 +70,8 @@ export default async function MethodikPage() {
           </li>
           <li>
             Für die Kartenansicht wird Berlin im Bundestagskartenmodul als ein zusammengefasstes Darstellungsobjekt geführt; interne
-            Berliner Wahlkreisgrenzen werden dort nicht gezeichnet.
+            Berliner Wahlkreisgrenzen werden dort nicht gezeichnet. Zusätzlich werden aus der SVG-Ableitung stammende
+            Inset-Restflächen entfernt, damit Berlin ausschließlich an der Hauptkartenposition erscheint.
           </li>
           <li>
             Bezirkszuordnungen von Bundestagswahlkreisen werden aus der amtlichen Gemeindezuordnung plausibilisiert; bei

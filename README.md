@@ -110,6 +110,7 @@ public/
 - Die SVG-Pfade werden topologisch als Outer-/Hole-Ringe verarbeitet; dadurch werden Inset-/Loch-Artefakte reduziert.
 - Für drei Wahlkreise mit gemischtem Bezirkszuschnitt wird ein primärer Bezirk gesetzt und die Mehrfachzuordnung im Mapping ausgewiesen.
 - In der Bundestagskarte wird Berlin in der Darstellung zu einem Kartenobjekt aggregiert; interne Berliner Wahlkreisgrenzen werden dort bewusst nicht gezeichnet.
+- Zusätzlich werden aus den SVG-Quellen stammende Inset-Restflächen für Berliner Wahlkreise und angrenzende Brandenburg-Zuschnitte aus der Kartenansicht entfernt, damit nur die Hauptgeometrie sichtbar bleibt.
 - Für Hoyerswerda wird keine künstliche Sondergeometrie erzeugt (kein Punkt/kein ausgeschnittenes Kunstpolygon).
 - Einzelne in der Simulation fehlende Zuschnitte werden transparent und nur auf Landkreisebene (nicht auf kreisfreie Städte) zugeschlagen; die betroffenen Codes sind als `modellierteZuordnungCodes` in `landkreise.geojson` dokumentiert.
 - Rendering-Strategie: Flächen ohne weiße Einzelstrokes, gemeinsamer Boundary-Layer darüber, dedizierter Highlight-Layer ganz oben.
