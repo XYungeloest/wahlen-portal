@@ -25,6 +25,16 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
 
   const projection = useMemo(() => geoIdentity().fitSize([width, height], geo as never), [geo]);
   const pathBuilder = useMemo(() => geoPath(projection), [projection]);
+  const activePath = useMemo(() => {
+    if (!activeId) {
+      return null;
+    }
+    const feature = geo.features.find((item) => String(item.properties.id ?? "") === activeId);
+    if (!feature) {
+      return null;
+    }
+    return pathBuilder(feature as never);
+  }, [activeId, geo, pathBuilder]);
 
   const activeResult = activeId ? resultsById[activeId] : null;
 
@@ -45,8 +55,11 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
               key={id}
               d={d}
               fill={fill}
-              stroke={activeId === id ? "#0f172a" : "#ffffff"}
-              strokeWidth={activeId === id ? 1.8 : 0.9}
+              stroke="#eef2f7"
+              strokeWidth={0.9}
+              vectorEffect="non-scaling-stroke"
+              strokeLinejoin="round"
+              strokeLinecap="round"
               tabIndex={0}
               role="button"
               aria-label={
@@ -67,6 +80,19 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
             />
           );
         })}
+        {activePath ? (
+          <path
+            d={activePath}
+            fill="none"
+            stroke="#0f172a"
+            strokeWidth={2.3}
+            vectorEffect="non-scaling-stroke"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            pointerEvents="none"
+            aria-hidden="true"
+          />
+        ) : null}
       </svg>
 
       <div className="mt-4 rounded border border-slate-200 bg-white p-3 text-sm">

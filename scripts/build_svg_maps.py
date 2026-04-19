@@ -10,7 +10,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, Iterable, List, Tuple
+from typing import Dict, List, Tuple
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DATA = ROOT / "public" / "data"
@@ -43,14 +43,6 @@ BEZIRK_NAMES = {
 NIEDERLAUSITZ_CODES = {"12052", "12061", "12066", "12071"}
 OBERLAUSITZ_CODES = {"14625", "14626"}
 
-# Needed because the simulation uses 73 regional units, while the source SVG has 76 in East Germany.
-LANDTAG_MERGE_CODES = {
-    "lk-035-zwickau": ["14521"],
-    "lk-036-chemnitz": ["14522"],
-    "lk-037-dresden": ["14627"],
-    "lk-068-weimarer-land": ["16068"],
-}
-
 # Disambiguation for names that exist as both district and district-free city.
 LANDKREIS_CODE_OVERRIDES = {
     "lk-019-rostock": ["13072"],
@@ -59,6 +51,9 @@ LANDKREIS_CODE_OVERRIDES = {
     "lk-038-leipzig": ["14713"],
     "lk-052-magdeburg": ["15003"],
 }
+
+COORD_PRECISION = 4
+CUBIC_FLATTEN_STEPS = 20
 
 Number = float
 Point = Tuple[Number, Number]
@@ -244,8 +239,8 @@ def parse_path_data(d: str) -> List[Ring]:
                 p3 = (x + x3, y + y3) if relative else (x3, y3)
 
                 # Flatten cubic curves into line segments for GeoJSON export.
-                for step in range(1, 9):
-                    t = step / 8.0
+                for step in range(1, CUBIC_FLATTEN_STEPS + 1):
+                    t = step / CUBIC_FLATTEN_STEPS
                     mt = 1.0 - t
                     px = (
                         (mt ** 3) * p0[0]
@@ -308,19 +303,68 @@ def cumulative_matrix(element: ET.Element, parent_map: Dict[ET.Element, ET.Eleme
 
 
 
-def round_point(point: Point, digits: int = 2) -> List[float]:
+def round_point(point: Point, digits: int = COORD_PRECISION) -> List[float]:
     return [round(point[0], digits), round(point[1], digits)]
 
 
 
-def ring_bbox(ring: Ring) -> Tuple[float, float, float, float]:
-    xs = [p[0] for p in ring]
-    ys = [p[1] for p in ring]
-    return min(xs), min(ys), max(xs), max(ys)
+def signed_area(ring: Ring) -> float:
+    area = 0.0
+    for index in range(len(ring) - 1):
+        x1, y1 = ring[index]
+        x2, y2 = ring[index + 1]
+        area += x1 * y2 - x2 * y1
+    return area / 2.0
 
 
 
-def polygon_centroid(multi_polygon: MultiPolygon) -> Point:
+def ring_centroid(ring: Ring) -> Point:
+    area = signed_area(ring)
+    if abs(area) < 1e-12:
+        return (
+            sum(point[0] for point in ring) / len(ring),
+            sum(point[1] for point in ring) / len(ring),
+        )
+
+    factor = 1.0 / (6.0 * area)
+    cx = 0.0
+    cy = 0.0
+    for index in range(len(ring) - 1):
+        x1, y1 = ring[index]
+        x2, y2 = ring[index + 1]
+        cross = x1 * y2 - x2 * y1
+        cx += (x1 + x2) * cross
+        cy += (y1 + y2) * cross
+    return (cx * factor, cy * factor)
+
+
+
+def polygon_area(polygon: Polygon) -> float:
+    if not polygon:
+        return 0.0
+    outer = abs(signed_area(polygon[0]))
+    holes = sum(abs(signed_area(ring)) for ring in polygon[1:])
+    return max(outer - holes, 0.0)
+
+
+
+def multipolygon_centroid(multi_polygon: MultiPolygon) -> Point:
+    weighted_x = 0.0
+    weighted_y = 0.0
+    total_area = 0.0
+
+    for polygon in multi_polygon:
+        area = polygon_area(polygon)
+        if area <= 0:
+            continue
+        cx, cy = ring_centroid(polygon[0])
+        weighted_x += cx * area
+        weighted_y += cy * area
+        total_area += area
+
+    if total_area > 0:
+        return (weighted_x / total_area, weighted_y / total_area)
+
     points = [point for polygon in multi_polygon for ring in polygon for point in ring]
     if not points:
         return (0.0, 0.0)
@@ -344,12 +388,85 @@ def point_in_ring(point: Point, ring: Ring) -> bool:
 
 
 
-def point_in_rings(point: Point, rings: List[Ring]) -> bool:
-    inside = False
-    for ring in rings:
-        if point_in_ring(point, ring):
-            inside = not inside
-    return inside
+def point_in_polygon(point: Point, polygon: Polygon) -> bool:
+    if not polygon:
+        return False
+    if not point_in_ring(point, polygon[0]):
+        return False
+    for hole in polygon[1:]:
+        if point_in_ring(point, hole):
+            return False
+    return True
+
+
+
+def point_in_multipolygon(point: Point, multi_polygon: MultiPolygon) -> bool:
+    return any(point_in_polygon(point, polygon) for polygon in multi_polygon)
+
+
+
+def ring_bbox(ring: Ring) -> Tuple[float, float, float, float]:
+    xs = [p[0] for p in ring]
+    ys = [p[1] for p in ring]
+    return min(xs), min(ys), max(xs), max(ys)
+
+
+
+def normalize_ring_direction(ring: Ring, clockwise: bool) -> Ring:
+    area = signed_area(ring)
+    if clockwise and area > 0:
+        return list(reversed(ring))
+    if (not clockwise) and area < 0:
+        return list(reversed(ring))
+    return ring
+
+
+
+def rings_to_multipolygon(rings: List[Ring]) -> MultiPolygon:
+    if not rings:
+        return []
+
+    valid = [ring for ring in rings if len(ring) >= 4]
+    if not valid:
+        return []
+
+    areas = [signed_area(ring) for ring in valid]
+    largest_index = max(range(len(valid)), key=lambda idx: abs(areas[idx]))
+    outer_positive = areas[largest_index] >= 0
+
+    outers: List[Ring] = []
+    holes: List[Ring] = []
+
+    for ring, area in zip(valid, areas):
+        is_outer = (area >= 0) == outer_positive
+        if is_outer:
+            outers.append(normalize_ring_direction(ring, clockwise=False))
+        else:
+            holes.append(normalize_ring_direction(ring, clockwise=True))
+
+    polygons: MultiPolygon = [[outer] for outer in outers]
+    if not polygons:
+        polygons = [[normalize_ring_direction(valid[largest_index], clockwise=False)]]
+        holes = [normalize_ring_direction(ring, clockwise=True) for idx, ring in enumerate(valid) if idx != largest_index]
+
+    for hole in holes:
+        sample = hole[0]
+        best_index = None
+        best_area = None
+        for index, polygon in enumerate(polygons):
+            outer = polygon[0]
+            if point_in_ring(sample, outer):
+                area = abs(signed_area(outer))
+                if best_area is None or area < best_area:
+                    best_area = area
+                    best_index = index
+
+        if best_index is None:
+            polygons.append([normalize_ring_direction(hole, clockwise=False)])
+        else:
+            polygons[best_index].append(hole)
+
+    return polygons
 
 
 
@@ -436,8 +553,7 @@ def parse_landkreise_svg() -> Dict[str, MultiPolygon]:
             rings = [parse_polygon_points(element.get("points", ""))]
 
         transformed = [[apply_matrix(matrix, point) for point in ring] for ring in rings if len(ring) >= 4]
-        for ring in transformed:
-            by_code[code].append([ring])
+        by_code[code].extend(rings_to_multipolygon(transformed))
 
     return by_code
 
@@ -458,11 +574,12 @@ def parse_wahlkreise_svg() -> Tuple[List[Dict[str, object]], Dict[int, str], Dic
         matrix = cumulative_matrix(element, parent_map)
         rings = parse_path_data(element.get("d", ""))
         transformed = [[apply_matrix(matrix, point) for point in ring] for ring in rings if len(ring) >= 4]
+        geometry = rings_to_multipolygon(transformed)
         path_entries.append(
             {
                 "shapeKey": element.get("id"),
-                "rings": transformed,
-                "centroid": polygon_centroid([[ring] for ring in transformed]),
+                "geometry": geometry,
+                "centroid": multipolygon_centroid(geometry),
             }
         )
 
@@ -499,7 +616,7 @@ def parse_wahlkreise_svg() -> Tuple[List[Dict[str, object]], Dict[int, str], Dic
     for number, points in number_points.items():
         for point in points:
             for index, entry in enumerate(path_entries):
-                if point_in_rings(point, entry["rings"]):
+                if point_in_multipolygon(point, entry["geometry"]):
                     candidates[number].add(index)
 
     changed = True
@@ -552,33 +669,132 @@ def parse_wahlkreise_svg() -> Tuple[List[Dict[str, object]], Dict[int, str], Dic
 
 
 
-def create_hoyerswerda_shape(code_shapes: Dict[str, MultiPolygon]) -> MultiPolygon:
-    bautzen = polygon_centroid(code_shapes["14625"])
-    spree_neisse = polygon_centroid(code_shapes["12071"])
+def build_hoyerswerda_polygon_from_bautzen(code_shapes: Dict[str, MultiPolygon]) -> MultiPolygon:
+    bautzen = code_shapes["14625"]
+    bautzen_center = multipolygon_centroid(bautzen)
+    spree_neisse_center = multipolygon_centroid(code_shapes["12071"])
 
-    center = (
-        bautzen[0] * 0.72 + spree_neisse[0] * 0.28,
-        bautzen[1] * 0.72 + spree_neisse[1] * 0.28,
+    target = (
+        bautzen_center[0] * 0.7 + spree_neisse_center[0] * 0.3,
+        bautzen_center[1] * 0.7 + spree_neisse_center[1] * 0.3,
     )
 
-    all_points = [
-        point
-        for code in code_shapes
-        if code[:2] in {"11", "12", "13", "14", "15", "16"}
-        for polygon in code_shapes[code]
-        for ring in polygon
-        for point in ring
-    ]
-    width = max(point[0] for point in all_points) - min(point[0] for point in all_points)
-    radius = width * 0.006
+    polygon_index = None
+    for index, polygon in enumerate(bautzen):
+        if point_in_polygon(target, polygon):
+            polygon_index = index
+            break
 
-    ring: Ring = []
-    segments = 20
-    for index in range(segments):
-        angle = (index / segments) * math.pi * 2
-        ring.append((center[0] + math.cos(angle) * radius, center[1] + math.sin(angle) * radius))
-    ring.append(ring[0])
-    return [[ring]]
+    if polygon_index is None:
+        # Fallback to the largest Bautzen polygon if the weighted point lands outside.
+        polygon_index = max(range(len(bautzen)), key=lambda idx: polygon_area(bautzen[idx]))
+        target = ring_centroid(bautzen[polygon_index][0])
+
+    base_polygon = bautzen[polygon_index]
+    outer = base_polygon[0]
+    min_x, min_y, max_x, max_y = ring_bbox(outer)
+    max_radius = min(max_x - min_x, max_y - min_y) * 0.11
+    min_radius = min(max_x - min_x, max_y - min_y) * 0.025
+    radius = max_radius
+
+    def make_ring(r: float) -> Ring:
+        points: Ring = []
+        segments = 24
+        for step in range(segments):
+            angle = (step / segments) * math.pi * 2.0
+            points.append((target[0] + math.cos(angle) * r, target[1] + math.sin(angle) * r))
+        points.append(points[0])
+        return points
+
+    hole_ring = make_ring(radius)
+    while radius > min_radius and not all(point_in_polygon(point, base_polygon) for point in hole_ring[:-1]):
+        radius *= 0.82
+        hole_ring = make_ring(radius)
+
+    # Cut the enclave from Bautzen so Hoyerswerda and Bautzen remain visually separated.
+    outer_clockwise = signed_area(outer) < 0
+    hole_ring = normalize_ring_direction(hole_ring, clockwise=not outer_clockwise)
+    bautzen[polygon_index] = [outer, *base_polygon[1:], hole_ring]
+    code_shapes["14625"] = bautzen
+
+    hoy_ring = normalize_ring_direction(list(hole_ring), clockwise=outer_clockwise)
+    return [[hoy_ring]]
+
+
+
+def assign_remaining_codes(
+    simulation_to_codes: Dict[str, List[str]],
+    code_shapes: Dict[str, MultiPolygon],
+    landkreise: List[Dict[str, object]],
+) -> Dict[str, str]:
+    used_codes = {code for codes in simulation_to_codes.values() for code in codes}
+    east_codes = sorted(code for code in code_shapes if code[:2] in {"11", "12", "13", "14", "15", "16"})
+    missing_codes = [code for code in east_codes if code not in used_codes]
+
+    entry_lookup = {entry["id"]: entry for entry in landkreise}
+    code_centroids = {code: multipolygon_centroid(code_shapes[code]) for code in east_codes}
+
+    def centroid_for_entry(entry_id: str) -> Point:
+        combined: MultiPolygon = []
+        for source_code in simulation_to_codes[entry_id]:
+            combined.extend(code_shapes[source_code])
+        return multipolygon_centroid(combined)
+
+    assignment_notes: Dict[str, str] = {}
+    for code in missing_codes:
+        bezirk_id = bezirk_for_ags(code)
+        candidates = []
+        for entry_id, entry in entry_lookup.items():
+            if entry_id == "lk-030-hoyerswerda":
+                continue
+            if entry["bezirkId"] != bezirk_id:
+                continue
+            if entry["type"] != "landkreis":
+                continue
+            if not simulation_to_codes.get(entry_id):
+                continue
+            candidates.append(entry_id)
+
+        if not candidates:
+            continue
+
+        missing_centroid = code_centroids[code]
+        candidate_centroids = {entry_id: centroid_for_entry(entry_id) for entry_id in candidates}
+        best_entry = min(
+            candidates,
+            key=lambda entry_id: (
+                (candidate_centroids[entry_id][0] - missing_centroid[0]) ** 2
+                + (candidate_centroids[entry_id][1] - missing_centroid[1]) ** 2
+            ),
+        )
+        simulation_to_codes[best_entry].append(code)
+        assignment_notes[code] = best_entry
+
+    return assignment_notes
+
+
+
+def filter_berlin_inset_polygons(geometry: MultiPolygon, reference: Point) -> MultiPolygon:
+    if len(geometry) <= 1:
+        return geometry
+
+    centroids = [multipolygon_centroid([polygon]) for polygon in geometry]
+    distances = [
+        (index, (centroid[0] - reference[0]) ** 2 + (centroid[1] - reference[1]) ** 2)
+        for index, centroid in enumerate(centroids)
+    ]
+    primary_index, primary_distance = min(distances, key=lambda item: item[1])
+    primary_distance = math.sqrt(primary_distance)
+
+    # Keep polygons close to the main Berlin cluster and drop far-away inset duplicates.
+    keep_threshold = max(420.0, primary_distance * 1.8)
+    filtered: MultiPolygon = []
+    for index, centroid in enumerate(centroids):
+        distance = math.dist(centroid, centroids[primary_index])
+        if distance <= keep_threshold:
+            filtered.append(geometry[index])
+
+    return filtered or [geometry[primary_index]]
 
 
 
@@ -611,25 +827,25 @@ def build_landkreis_geojson(code_shapes: Dict[str, MultiPolygon], kreis_name_map
     if unresolved:
         raise ValueError("Unresolved county mappings:\n" + "\n".join(unresolved))
 
-    for simulation_id, merged_codes in LANDTAG_MERGE_CODES.items():
-        simulation_to_codes[simulation_id].extend(merged_codes)
+    fallback_assignments = assign_remaining_codes(simulation_to_codes, code_shapes, landkreise)
+    hoyerswerda_geometry = build_hoyerswerda_polygon_from_bautzen(code_shapes)
 
     features = []
-
-    synthetic_hoyerswerda = create_hoyerswerda_shape(code_shapes)
 
     for entry in landkreise:
         entry_id = entry["id"]
         if entry_id == "lk-030-hoyerswerda":
-            geometry = synthetic_hoyerswerda
-            source_codes: List[str] = []
-            source = "synthetisch"
+            geometry = hoyerswerda_geometry
+            source_codes: List[str] = ["14625"]
+            source = "modelliert-aus-bautzen"
         else:
             source_codes = simulation_to_codes[entry_id]
             geometry = []
             for code in source_codes:
                 geometry.extend(code_shapes[code])
             source = "landkreise.svg"
+
+        assumed_from = [code for code in source_codes if code in fallback_assignments and fallback_assignments[code] == entry_id]
 
         feature = {
             "type": "Feature",
@@ -641,6 +857,7 @@ def build_landkreis_geojson(code_shapes: Dict[str, MultiPolygon], kreis_name_map
                 "bezirk": entry["bezirk"],
                 "source": source,
                 "sourceCodes": source_codes,
+                "modellierteZuordnungCodes": assumed_from,
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -751,7 +968,7 @@ def build_bundestag_outputs(
     path_entries: List[Dict[str, object]],
     number_to_shape_key: Dict[int, str],
 ) -> Tuple[Dict[str, object], List[Dict[str, object]], Dict[str, object]]:
-    records, records_by_number = build_wahlkreis_records()
+    records, _records_by_number = build_wahlkreis_records()
     bezirk_assignment = assign_wahlkreis_bezirke()
 
     number_to_entry_index: Dict[int, int] = {}
@@ -759,6 +976,22 @@ def build_bundestag_outputs(
     shape_key_to_index = {str(entry["shapeKey"]): idx for idx, entry in enumerate(path_entries)}
     for number, shape_key in number_to_shape_key.items():
         number_to_entry_index[number] = shape_key_to_index[shape_key]
+
+    brandenburg_centroids = []
+    for record in records:
+        if int(record["landNr"]) != 12:
+            continue
+        shape_index = number_to_entry_index[int(record["nummer"])]
+        geometry = path_entries[shape_index]["geometry"]  # type: ignore[assignment]
+        brandenburg_centroids.append(multipolygon_centroid(geometry))
+
+    if brandenburg_centroids:
+        berlin_reference = (
+            sum(point[0] for point in brandenburg_centroids) / len(brandenburg_centroids),
+            sum(point[1] for point in brandenburg_centroids) / len(brandenburg_centroids),
+        )
+    else:
+        berlin_reference = (0.0, 0.0)
 
     features = []
     bundestagswahlkreise_json: List[Dict[str, object]] = []
@@ -769,9 +1002,9 @@ def build_bundestag_outputs(
         assignment = bezirk_assignment[number]
         shape_index = number_to_entry_index[number]
         shape_key = number_to_shape_key[number]
-        rings: List[Ring] = path_entries[shape_index]["rings"]  # type: ignore[assignment]
-
-        geometry: MultiPolygon = [[ring] for ring in rings]
+        geometry: MultiPolygon = path_entries[shape_index]["geometry"]  # type: ignore[assignment]
+        if int(record["landNr"]) == 11:
+            geometry = filter_berlin_inset_polygons(geometry, berlin_reference)
 
         wahlkreis_id = f"bwk-{number:03d}"
         wahlkreis_name = str(record["name"])
