@@ -5,7 +5,7 @@ import { parteiFarbenMap } from "@/lib/parteien";
 import type { GeoFeatureCollection } from "@/lib/types";
 import { getBezirke, getLandkreiseGeo, getLandtagswahl2024, getMetadaten, getParteien } from "@/lib/wahldaten";
 
-function sanitizeLandkreiseGeo(geo: GeoFeatureCollection): GeoFeatureCollection {
+function filterModeledCodesFromLandkreiseGeo(geo: GeoFeatureCollection): GeoFeatureCollection {
   return {
     ...geo,
     features: geo.features.map((feature) => {
@@ -18,11 +18,14 @@ function sanitizeLandkreiseGeo(geo: GeoFeatureCollection): GeoFeatureCollection 
         return feature;
       }
 
+      const modeledCodeSet = new Set(modeledCodes.filter((code): code is string => typeof code === "string"));
       const keepIndexes = sourceCodes
-        .map((code, index) => (typeof code === "string" && !modeledCodes.includes(code) ? index : -1))
+        .map((code, index) => (typeof code === "string" && !modeledCodeSet.has(code) ? index : -1))
         .filter((index) => index >= 0);
 
       if (!keepIndexes.length || keepIndexes.length >= feature.geometry.coordinates.length) {
+        // Keep geometry untouched when no reliable subset can be derived;
+        // only clear modeled markers to avoid treating this feature as split in the map layer.
         return {
           ...feature,
           properties: {
@@ -59,7 +62,7 @@ export default async function KarteLandtagPage() {
   ]);
 
   const partyColors = parteiFarbenMap(parteien);
-  const mapGeo = sanitizeLandkreiseGeo(geo);
+  const mapGeo = filterModeledCodesFromLandkreiseGeo(geo);
   const geoIds = new Set(mapGeo.features.map((feature) => String(feature.properties.id ?? "")));
   const mapData = wahl.ergebnisseLandkreise
     .filter((entry) => geoIds.has(entry.landkreisId))

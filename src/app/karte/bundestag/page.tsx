@@ -13,11 +13,16 @@ import {
 } from "@/lib/wahldaten";
 
 const BERLIN_DISPLAY_ID = "bwk-berlin";
+const BERLIN_LANDKREIS_ID = "lk-001-berlin";
 
 type Point = [number, number];
 type Polygon = Point[][];
 
 function getFeatureBox(features: GeoFeatureCollection["features"]) {
+  if (!features.length) {
+    return null;
+  }
+
   let minX = Number.POSITIVE_INFINITY;
   let minY = Number.POSITIVE_INFINITY;
   let maxX = Number.NEGATIVE_INFINITY;
@@ -79,18 +84,26 @@ function transformGeometry(
   };
 }
 
-function polygonArea(polygon: Polygon) {
+function computePolygonArea(polygon: Polygon) {
   const outer = polygon[0] ?? [];
   let area = 0;
   for (let index = 0; index < outer.length - 1; index += 1) {
-    const [x1, y1] = outer[index];
-    const [x2, y2] = outer[index + 1];
+    const start = outer[index];
+    const end = outer[index + 1];
+    if (!start || !end) {
+      continue;
+    }
+    const [x1, y1] = start;
+    const [x2, y2] = end;
+    if (![x1, y1, x2, y2].every((value) => Number.isFinite(value))) {
+      continue;
+    }
     area += x1 * y2 - x2 * y1;
   }
   return Math.abs(area) / 2;
 }
 
-function keepPrimaryPolygon(geometry: GeoFeatureCollection["features"][number]["geometry"]) {
+function extractLargestPolygon(geometry: GeoFeatureCollection["features"][number]["geometry"]) {
   if (geometry.type === "Polygon") {
     return geometry;
   }
@@ -100,9 +113,13 @@ function keepPrimaryPolygon(geometry: GeoFeatureCollection["features"][number]["
     return geometry;
   }
 
-  const largestIndex = polygons.reduce((bestIndex, polygon, index, list) => {
-    return polygonArea(polygon as Polygon) > polygonArea(list[bestIndex] as Polygon) ? index : bestIndex;
-  }, 0);
+  const areas = polygons.map((polygon) => computePolygonArea(polygon as Polygon));
+  let largestIndex = 0;
+  for (let index = 1; index < areas.length; index += 1) {
+    if (areas[index] > areas[largestIndex]) {
+      largestIndex = index;
+    }
+  }
 
   return {
     type: "Polygon" as const,
@@ -114,7 +131,9 @@ function buildBerlinDisplayGeometry(
   bundestagGeo: GeoFeatureCollection,
   landkreiseGeo: GeoFeatureCollection,
 ): GeoFeatureCollection["features"][number]["geometry"] | null {
-  const berlinLandkreis = landkreiseGeo.features.find((feature) => String(feature.properties.id ?? "") === "lk-001-berlin");
+  const berlinLandkreis = landkreiseGeo.features.find(
+    (feature) => String(feature.properties.id ?? "") === BERLIN_LANDKREIS_ID,
+  );
   if (!berlinLandkreis) {
     return null;
   }
@@ -126,6 +145,10 @@ function buildBerlinDisplayGeometry(
 
   const bundestagBerlinBox = getFeatureBox(berlinBundestagFeatures);
   const landkreisBerlinBox = getFeatureBox([berlinLandkreis]);
+  if (!bundestagBerlinBox || !landkreisBerlinBox) {
+    return berlinLandkreis.geometry;
+  }
+
   if (!bundestagBerlinBox.width || !bundestagBerlinBox.height || !landkreisBerlinBox.width || !landkreisBerlinBox.height) {
     return berlinLandkreis.geometry;
   }
@@ -136,7 +159,7 @@ function buildBerlinDisplayGeometry(
   const offsetY = bundestagBerlinBox.minY - landkreisBerlinBox.minY * scaleY;
 
   const transformed = transformGeometry(berlinLandkreis.geometry, scaleX, scaleY, offsetX, offsetY);
-  return keepPrimaryPolygon(transformed);
+  return extractLargestPolygon(transformed);
 }
 
 function aggregateBundestagMap(
