@@ -150,6 +150,20 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
     return out;
   }, [featureItems, pathBuilder]);
 
+  const groupedActivePaths = useMemo(() => {
+    const groups = new Map<string, string[]>();
+    for (const item of featureItems) {
+      if (!item.groupId) {
+        continue;
+      }
+      const list = groups.get(item.groupId) ?? [];
+      list.push(item.d as string);
+      groups.set(item.groupId, list);
+    }
+
+    return Object.fromEntries([...groups.entries()].map(([groupId, paths]) => [groupId, paths.join(" ")]));
+  }, [featureItems]);
+
   const boundaryPaths = useMemo(
     () => featureItems.filter((item) => !item.groupId).map((item) => ({ key: item.id, d: item.d as string })),
     [featureItems],
@@ -159,12 +173,12 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
     if (!activeId) {
       return null;
     }
-    if (groupedBoundaryPaths[activeId]) {
-      return groupedBoundaryPaths[activeId];
+    if (groupedBoundaryPaths[activeId] || groupedActivePaths[activeId]) {
+      return groupedBoundaryPaths[activeId] ?? groupedActivePaths[activeId];
     }
     const item = featureItems.find((entry) => entry.displayId === activeId);
     return item?.d ?? null;
-  }, [activeId, featureItems, groupedBoundaryPaths]);
+  }, [activeId, featureItems, groupedActivePaths, groupedBoundaryPaths]);
 
   const activeResult = activeId ? resultsById[activeId] : null;
 
@@ -193,11 +207,7 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
               key={`${item.id}-${item.displayId}`}
               d={item.d as string}
               fill={fill}
-              stroke={fill}
-              strokeWidth={0.9}
-              vectorEffect="non-scaling-stroke"
-              strokeLinejoin="round"
-              strokeLinecap="round"
+              stroke="none"
               tabIndex={item.isPrimaryInteractionPath ? 0 : -1}
               role={item.isPrimaryInteractionPath ? "button" : "presentation"}
               aria-hidden={item.isPrimaryInteractionPath ? undefined : true}
