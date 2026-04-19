@@ -1,183 +1,481 @@
 [
   {
-    "id": "bwk-01",
-    "name": "Bundestagswahlkreis 01: Berlin Zentrum",
-    "kurzname": "Berlin Zentrum",
-    "bezirkId": "berlin",
-    "bezirk": "Berlin"
-  },
-  {
-    "id": "bwk-02",
-    "name": "Bundestagswahlkreis 02: Berlin Nord",
-    "kurzname": "Berlin Nord",
-    "bezirkId": "berlin",
-    "bezirk": "Berlin"
-  },
-  {
-    "id": "bwk-03",
-    "name": "Bundestagswahlkreis 03: Berlin Süd",
-    "kurzname": "Berlin Süd",
-    "bezirkId": "berlin",
-    "bezirk": "Berlin"
-  },
-  {
-    "id": "bwk-04",
-    "name": "Bundestagswahlkreis 04: Brandenburg Nord",
-    "kurzname": "Brandenburg Nord",
-    "bezirkId": "brandenburg",
-    "bezirk": "Brandenburg"
-  },
-  {
-    "id": "bwk-05",
-    "name": "Bundestagswahlkreis 05: Brandenburg West",
-    "kurzname": "Brandenburg West",
-    "bezirkId": "brandenburg",
-    "bezirk": "Brandenburg"
-  },
-  {
-    "id": "bwk-06",
-    "name": "Bundestagswahlkreis 06: Brandenburg Süd",
-    "kurzname": "Brandenburg Süd",
-    "bezirkId": "brandenburg",
-    "bezirk": "Brandenburg"
-  },
-  {
-    "id": "bwk-07",
-    "name": "Bundestagswahlkreis 07: Brandenburg Ost",
-    "kurzname": "Brandenburg Ost",
-    "bezirkId": "brandenburg",
-    "bezirk": "Brandenburg"
-  },
-  {
-    "id": "bwk-08",
-    "name": "Bundestagswahlkreis 08: Mecklenburgische Küste",
-    "kurzname": "Mecklenburgische Küste",
+    "id": "bwk-012",
+    "nummer": 12,
+    "name": "Bundestagswahlkreis 12: Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",
+    "kurzname": "Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",
     "bezirkId": "mecklenburg-vorpommern",
     "bezirk": "Mecklenburg-Vorpommern"
   },
   {
-    "id": "bwk-09",
-    "name": "Bundestagswahlkreis 09: Seenplatte",
-    "kurzname": "Seenplatte",
+    "id": "bwk-013",
+    "nummer": 13,
+    "name": "Bundestagswahlkreis 13: Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",
+    "kurzname": "Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",
     "bezirkId": "mecklenburg-vorpommern",
     "bezirk": "Mecklenburg-Vorpommern"
   },
   {
-    "id": "bwk-10",
-    "name": "Bundestagswahlkreis 10: Vorpommern",
-    "kurzname": "Vorpommern",
+    "id": "bwk-014",
+    "nummer": 14,
+    "name": "Bundestagswahlkreis 14: Rostock – Landkreis Rostock II",
+    "kurzname": "Rostock – Landkreis Rostock II",
     "bezirkId": "mecklenburg-vorpommern",
     "bezirk": "Mecklenburg-Vorpommern"
   },
   {
-    "id": "bwk-11",
-    "name": "Bundestagswahlkreis 11: Niederlausitz Nord",
-    "kurzname": "Niederlausitz Nord",
+    "id": "bwk-015",
+    "nummer": 15,
+    "name": "Bundestagswahlkreis 15: Vorpommern-Rügen – Vorpommern-Greifswald I",
+    "kurzname": "Vorpommern-Rügen – Vorpommern-Greifswald I",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "bwk-016",
+    "nummer": 16,
+    "name": "Bundestagswahlkreis 16: Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",
+    "kurzname": "Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "bwk-017",
+    "nummer": 17,
+    "name": "Bundestagswahlkreis 17: Mecklenburgische Seenplatte II – Landkreis Rostock III",
+    "kurzname": "Mecklenburgische Seenplatte II – Landkreis Rostock III",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "bwk-056",
+    "nummer": 56,
+    "name": "Bundestagswahlkreis 56: Prignitz – Ostprignitz-Ruppin – Havelland I",
+    "kurzname": "Prignitz – Ostprignitz-Ruppin – Havelland I",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-057",
+    "nummer": 57,
+    "name": "Bundestagswahlkreis 57: Uckermark – Barnim I",
+    "kurzname": "Uckermark – Barnim I",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-058",
+    "nummer": 58,
+    "name": "Bundestagswahlkreis 58: Oberhavel – Havelland II",
+    "kurzname": "Oberhavel – Havelland II",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-059",
+    "nummer": 59,
+    "name": "Bundestagswahlkreis 59: Märkisch-Oderland – Barnim II",
+    "kurzname": "Märkisch-Oderland – Barnim II",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-060",
+    "nummer": 60,
+    "name": "Bundestagswahlkreis 60: Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",
+    "kurzname": "Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-061",
+    "nummer": 61,
+    "name": "Bundestagswahlkreis 61: Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",
+    "kurzname": "Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-062",
+    "nummer": 62,
+    "name": "Bundestagswahlkreis 62: Dahme-Spreewald – Teltow-Fläming III",
+    "kurzname": "Dahme-Spreewald – Teltow-Fläming III",
     "bezirkId": "niederlausitz",
     "bezirk": "Niederlausitz"
   },
   {
-    "id": "bwk-12",
-    "name": "Bundestagswahlkreis 12: Niederlausitz Süd",
-    "kurzname": "Niederlausitz Süd",
+    "id": "bwk-063",
+    "nummer": 63,
+    "name": "Bundestagswahlkreis 63: Frankfurt (Oder) – Oder-Spree",
+    "kurzname": "Frankfurt (Oder) – Oder-Spree",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-064",
+    "nummer": 64,
+    "name": "Bundestagswahlkreis 64: Cottbus – Spree-Neiße",
+    "kurzname": "Cottbus – Spree-Neiße",
     "bezirkId": "niederlausitz",
     "bezirk": "Niederlausitz"
   },
   {
-    "id": "bwk-13",
-    "name": "Bundestagswahlkreis 13: Oberlausitz West",
-    "kurzname": "Oberlausitz West",
+    "id": "bwk-065",
+    "nummer": 65,
+    "name": "Bundestagswahlkreis 65: Elbe-Elster – Oberspreewald-Lausitz",
+    "kurzname": "Elbe-Elster – Oberspreewald-Lausitz",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-066",
+    "nummer": 66,
+    "name": "Bundestagswahlkreis 66: Altmark – Jerichower Land",
+    "kurzname": "Altmark – Jerichower Land",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-067",
+    "nummer": 67,
+    "name": "Bundestagswahlkreis 67: Börde – Salzlandkreis",
+    "kurzname": "Börde – Salzlandkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-068",
+    "nummer": 68,
+    "name": "Bundestagswahlkreis 68: Harz",
+    "kurzname": "Harz",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-069",
+    "nummer": 69,
+    "name": "Bundestagswahlkreis 69: Magdeburg",
+    "kurzname": "Magdeburg",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-070",
+    "nummer": 70,
+    "name": "Bundestagswahlkreis 70: Anhalt – Dessau – Wittenberg",
+    "kurzname": "Anhalt – Dessau – Wittenberg",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-071",
+    "nummer": 71,
+    "name": "Bundestagswahlkreis 71: Halle",
+    "kurzname": "Halle",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-072",
+    "nummer": 72,
+    "name": "Bundestagswahlkreis 72: Burgenland – Saalekreis",
+    "kurzname": "Burgenland – Saalekreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-073",
+    "nummer": 73,
+    "name": "Bundestagswahlkreis 73: Mansfeld",
+    "kurzname": "Mansfeld",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-074",
+    "nummer": 74,
+    "name": "Bundestagswahlkreis 74: Berlin-Mitte",
+    "kurzname": "Berlin-Mitte",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-075",
+    "nummer": 75,
+    "name": "Bundestagswahlkreis 75: Berlin-Pankow",
+    "kurzname": "Berlin-Pankow",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-076",
+    "nummer": 76,
+    "name": "Bundestagswahlkreis 76: Berlin-Reinickendorf",
+    "kurzname": "Berlin-Reinickendorf",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-077",
+    "nummer": 77,
+    "name": "Bundestagswahlkreis 77: Berlin-Spandau – Charlottenburg Nord",
+    "kurzname": "Berlin-Spandau – Charlottenburg Nord",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-078",
+    "nummer": 78,
+    "name": "Bundestagswahlkreis 78: Berlin-Steglitz-Zehlendorf",
+    "kurzname": "Berlin-Steglitz-Zehlendorf",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-079",
+    "nummer": 79,
+    "name": "Bundestagswahlkreis 79: Berlin-Charlottenburg-Wilmersdorf",
+    "kurzname": "Berlin-Charlottenburg-Wilmersdorf",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-080",
+    "nummer": 80,
+    "name": "Bundestagswahlkreis 80: Berlin-Tempelhof-Schöneberg",
+    "kurzname": "Berlin-Tempelhof-Schöneberg",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-081",
+    "nummer": 81,
+    "name": "Bundestagswahlkreis 81: Berlin-Neukölln",
+    "kurzname": "Berlin-Neukölln",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-082",
+    "nummer": 82,
+    "name": "Bundestagswahlkreis 82: Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost",
+    "kurzname": "Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-083",
+    "nummer": 83,
+    "name": "Bundestagswahlkreis 83: Berlin-Treptow-Köpenick",
+    "kurzname": "Berlin-Treptow-Köpenick",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-084",
+    "nummer": 84,
+    "name": "Bundestagswahlkreis 84: Berlin-Marzahn-Hellersdorf",
+    "kurzname": "Berlin-Marzahn-Hellersdorf",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-085",
+    "nummer": 85,
+    "name": "Bundestagswahlkreis 85: Berlin-Lichtenberg",
+    "kurzname": "Berlin-Lichtenberg",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-150",
+    "nummer": 150,
+    "name": "Bundestagswahlkreis 150: Nordsachsen",
+    "kurzname": "Nordsachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-151",
+    "nummer": 151,
+    "name": "Bundestagswahlkreis 151: Leipzig I",
+    "kurzname": "Leipzig I",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-152",
+    "nummer": 152,
+    "name": "Bundestagswahlkreis 152: Leipzig II",
+    "kurzname": "Leipzig II",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-153",
+    "nummer": 153,
+    "name": "Bundestagswahlkreis 153: Leipzig-Land",
+    "kurzname": "Leipzig-Land",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-154",
+    "nummer": 154,
+    "name": "Bundestagswahlkreis 154: Meißen",
+    "kurzname": "Meißen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-155",
+    "nummer": 155,
+    "name": "Bundestagswahlkreis 155: Bautzen I",
+    "kurzname": "Bautzen I",
     "bezirkId": "oberlausitz",
     "bezirk": "Oberlausitz"
   },
   {
-    "id": "bwk-14",
-    "name": "Bundestagswahlkreis 14: Oberlausitz Ost",
-    "kurzname": "Oberlausitz Ost",
+    "id": "bwk-156",
+    "nummer": 156,
+    "name": "Bundestagswahlkreis 156: Görlitz",
+    "kurzname": "Görlitz",
     "bezirkId": "oberlausitz",
     "bezirk": "Oberlausitz"
   },
   {
-    "id": "bwk-15",
-    "name": "Bundestagswahlkreis 15: Sachsen Nord",
-    "kurzname": "Sachsen Nord",
+    "id": "bwk-157",
+    "nummer": 157,
+    "name": "Bundestagswahlkreis 157: Sächsische Schweiz-Osterzgebirge",
+    "kurzname": "Sächsische Schweiz-Osterzgebirge",
     "bezirkId": "sachsen",
     "bezirk": "Sachsen"
   },
   {
-    "id": "bwk-16",
-    "name": "Bundestagswahlkreis 16: Sachsen Mitte",
-    "kurzname": "Sachsen Mitte",
+    "id": "bwk-158",
+    "nummer": 158,
+    "name": "Bundestagswahlkreis 158: Dresden I",
+    "kurzname": "Dresden I",
     "bezirkId": "sachsen",
     "bezirk": "Sachsen"
   },
   {
-    "id": "bwk-17",
-    "name": "Bundestagswahlkreis 17: Sachsen Ost",
-    "kurzname": "Sachsen Ost",
+    "id": "bwk-159",
+    "nummer": 159,
+    "name": "Bundestagswahlkreis 159: Dresden II – Bautzen II",
+    "kurzname": "Dresden II – Bautzen II",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "bwk-160",
+    "nummer": 160,
+    "name": "Bundestagswahlkreis 160: Mittelsachsen",
+    "kurzname": "Mittelsachsen",
     "bezirkId": "sachsen",
     "bezirk": "Sachsen"
   },
   {
-    "id": "bwk-18",
-    "name": "Bundestagswahlkreis 18: Sachsen Süd",
-    "kurzname": "Sachsen Süd",
+    "id": "bwk-161",
+    "nummer": 161,
+    "name": "Bundestagswahlkreis 161: Chemnitz",
+    "kurzname": "Chemnitz",
     "bezirkId": "sachsen",
     "bezirk": "Sachsen"
   },
   {
-    "id": "bwk-19",
-    "name": "Bundestagswahlkreis 19: Altmark-Börde",
-    "kurzname": "Altmark-Börde",
-    "bezirkId": "sachsen-anhalt",
-    "bezirk": "Sachsen-Anhalt"
+    "id": "bwk-162",
+    "nummer": 162,
+    "name": "Bundestagswahlkreis 162: Chemnitzer Umland – Erzgebirgskreis II",
+    "kurzname": "Chemnitzer Umland – Erzgebirgskreis II",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
   },
   {
-    "id": "bwk-20",
-    "name": "Bundestagswahlkreis 20: Magdeburg-Jerichow",
-    "kurzname": "Magdeburg-Jerichow",
-    "bezirkId": "sachsen-anhalt",
-    "bezirk": "Sachsen-Anhalt"
+    "id": "bwk-163",
+    "nummer": 163,
+    "name": "Bundestagswahlkreis 163: Erzgebirgskreis I",
+    "kurzname": "Erzgebirgskreis I",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
   },
   {
-    "id": "bwk-21",
-    "name": "Bundestagswahlkreis 21: Halle-Saalekreis",
-    "kurzname": "Halle-Saalekreis",
-    "bezirkId": "sachsen-anhalt",
-    "bezirk": "Sachsen-Anhalt"
+    "id": "bwk-164",
+    "nummer": 164,
+    "name": "Bundestagswahlkreis 164: Zwickau",
+    "kurzname": "Zwickau",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
   },
   {
-    "id": "bwk-22",
-    "name": "Bundestagswahlkreis 22: Harz-Burgenland",
-    "kurzname": "Harz-Burgenland",
-    "bezirkId": "sachsen-anhalt",
-    "bezirk": "Sachsen-Anhalt"
+    "id": "bwk-165",
+    "nummer": 165,
+    "name": "Bundestagswahlkreis 165: Vogtlandkreis",
+    "kurzname": "Vogtlandkreis",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
   },
   {
-    "id": "bwk-23",
-    "name": "Bundestagswahlkreis 23: Thüringen Nord",
-    "kurzname": "Thüringen Nord",
+    "id": "bwk-188",
+    "nummer": 188,
+    "name": "Bundestagswahlkreis 188: Eichsfeld – Nordhausen – Kyffhäuserkreis",
+    "kurzname": "Eichsfeld – Nordhausen – Kyffhäuserkreis",
     "bezirkId": "thueringen",
     "bezirk": "Thüringen"
   },
   {
-    "id": "bwk-24",
-    "name": "Bundestagswahlkreis 24: Thüringen Mitte",
-    "kurzname": "Thüringen Mitte",
+    "id": "bwk-189",
+    "nummer": 189,
+    "name": "Bundestagswahlkreis 189: Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",
+    "kurzname": "Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",
     "bezirkId": "thueringen",
     "bezirk": "Thüringen"
   },
   {
-    "id": "bwk-25",
-    "name": "Bundestagswahlkreis 25: Thüringen Ost",
-    "kurzname": "Thüringen Ost",
+    "id": "bwk-190",
+    "nummer": 190,
+    "name": "Bundestagswahlkreis 190: Jena – Sömmerda – Weimarer Land I",
+    "kurzname": "Jena – Sömmerda – Weimarer Land I",
     "bezirkId": "thueringen",
     "bezirk": "Thüringen"
   },
   {
-    "id": "bwk-26",
-    "name": "Bundestagswahlkreis 26: Thüringen Süd",
-    "kurzname": "Thüringen Süd",
+    "id": "bwk-191",
+    "nummer": 191,
+    "name": "Bundestagswahlkreis 191: Gotha – Ilm-Kreis",
+    "kurzname": "Gotha – Ilm-Kreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "bwk-192",
+    "nummer": 192,
+    "name": "Bundestagswahlkreis 192: Erfurt – Weimar – Weimarer Land II",
+    "kurzname": "Erfurt – Weimar – Weimarer Land II",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "bwk-193",
+    "nummer": 193,
+    "name": "Bundestagswahlkreis 193: Gera – Greiz – Altenburger Land",
+    "kurzname": "Gera – Greiz – Altenburger Land",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "bwk-194",
+    "nummer": 194,
+    "name": "Bundestagswahlkreis 194: Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",
+    "kurzname": "Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "bwk-195",
+    "nummer": 195,
+    "name": "Bundestagswahlkreis 195: Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",
+    "kurzname": "Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",
     "bezirkId": "thueringen",
     "bezirk": "Thüringen"
   }

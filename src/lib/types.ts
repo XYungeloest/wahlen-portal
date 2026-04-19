@@ -25,6 +25,7 @@ export type Landkreis = {
 
 export type Bundestagswahlkreis = {
   id: string;
+  nummer: number;
   name: string;
   kurzname: string;
   bezirkId: string;
@@ -117,10 +118,10 @@ export type GeoFeatureCollection = {
   type: "FeatureCollection";
   features: Array<{
     type: "Feature";
-    properties: Record<string, string | number | boolean>;
+    properties: Record<string, unknown>;
     geometry: {
-      type: "Polygon";
-      coordinates: number[][][];
+      type: "Polygon" | "MultiPolygon";
+      coordinates: number[][][] | number[][][][];
     };
   }>;
 };

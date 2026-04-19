@@ -1,0 +1,1035 @@
+{
+  "quelle": {
+    "wahlkreisnamenCsv": "https://www.bundeswahlleiterin.de/dam/jcr/17e066f6-a0af-42df-a5d2-365dc87769ab/btw25_wahlkreisnamen_utf8.csv",
+    "wahlkreisGemeindenCsv": "https://www.bundeswahlleiterin.de/dam/jcr/aa868597-0e60-476c-bd2b-279c1e9a142a/btw25_wkr_gemeinden_20241130_utf8.csv",
+    "hinweis": "Wahlkreisnummerierung und Namen aus amtlicher Liste; Bezirkszuordnung anhand Gemeindezuordnung plausibilisiert."
+  },
+  "eintraege": [
+    {
+      "id": "bwk-012",
+      "nummer": 12,
+      "name": "Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",
+      "land": "Mecklenburg-Vorpommern",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "shapeKey": "path18526",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "mecklenburg-vorpommern"
+      ],
+      "gemeindeCounts": {
+        "mecklenburg-vorpommern": 127
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-013",
+      "nummer": 13,
+      "name": "Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",
+      "land": "Mecklenburg-Vorpommern",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "shapeKey": "path18826",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "mecklenburg-vorpommern"
+      ],
+      "gemeindeCounts": {
+        "mecklenburg-vorpommern": 119
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-014",
+      "nummer": 14,
+      "name": "Rostock – Landkreis Rostock II",
+      "land": "Mecklenburg-Vorpommern",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "shapeKey": "path18524",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "mecklenburg-vorpommern"
+      ],
+      "gemeindeCounts": {
+        "mecklenburg-vorpommern": 36
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-015",
+      "nummer": 15,
+      "name": "Vorpommern-Rügen – Vorpommern-Greifswald I",
+      "land": "Mecklenburg-Vorpommern",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "shapeKey": "path19054",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "mecklenburg-vorpommern"
+      ],
+      "gemeindeCounts": {
+        "mecklenburg-vorpommern": 111
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-016",
+      "nummer": 16,
+      "name": "Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",
+      "land": "Mecklenburg-Vorpommern",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "shapeKey": "path18532",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "mecklenburg-vorpommern"
+      ],
+      "gemeindeCounts": {
+        "mecklenburg-vorpommern": 158
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-017",
+      "nummer": 17,
+      "name": "Mecklenburgische Seenplatte II – Landkreis Rostock III",
+      "land": "Mecklenburg-Vorpommern",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "shapeKey": "path18528",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "mecklenburg-vorpommern"
+      ],
+      "gemeindeCounts": {
+        "mecklenburg-vorpommern": 173
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-056",
+      "nummer": 56,
+      "name": "Prignitz – Ostprignitz-Ruppin – Havelland I",
+      "land": "Brandenburg",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "shapeKey": "path17888",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "brandenburg"
+      ],
+      "gemeindeCounts": {
+        "brandenburg": 66
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-057",
+      "nummer": 57,
+      "name": "Uckermark – Barnim I",
+      "land": "Brandenburg",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "shapeKey": "path244863",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "brandenburg"
+      ],
+      "gemeindeCounts": {
+        "brandenburg": 51
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-058",
+      "nummer": 58,
+      "name": "Oberhavel – Havelland II",
+      "land": "Brandenburg",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "shapeKey": "path244867",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "brandenburg"
+      ],
+      "gemeindeCounts": {
+        "brandenburg": 25
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-059",
+      "nummer": 59,
+      "name": "Märkisch-Oderland – Barnim II",
+      "land": "Brandenburg",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "shapeKey": "path244861",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "brandenburg"
+      ],
+      "gemeindeCounts": {
+        "brandenburg": 49
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-060",
+      "nummer": 60,
+      "name": "Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",
+      "land": "Brandenburg",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "shapeKey": "path18268",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "brandenburg"
+      ],
+      "gemeindeCounts": {
+        "brandenburg": 38
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-061",
+      "nummer": 61,
+      "name": "Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",
+      "land": "Brandenburg",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "shapeKey": "path244932",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "brandenburg"
+      ],
+      "gemeindeCounts": {
+        "brandenburg": 8
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-062",
+      "nummer": 62,
+      "name": "Dahme-Spreewald – Teltow-Fläming III",
+      "land": "Brandenburg",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "shapeKey": "path16",
+      "zuordnung": "gemischt",
+      "bezirkeBeteiligt": [
+        "niederlausitz",
+        "brandenburg"
+      ],
+      "gemeindeCounts": {
+        "niederlausitz": 37,
+        "brandenburg": 13
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-063",
+      "nummer": 63,
+      "name": "Frankfurt (Oder) – Oder-Spree",
+      "land": "Brandenburg",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "shapeKey": "path244922",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "brandenburg"
+      ],
+      "gemeindeCounts": {
+        "brandenburg": 38
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-064",
+      "nummer": 64,
+      "name": "Cottbus – Spree-Neiße",
+      "land": "Brandenburg",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "shapeKey": "path17682",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "niederlausitz"
+      ],
+      "gemeindeCounts": {
+        "niederlausitz": 30
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-065",
+      "nummer": 65,
+      "name": "Elbe-Elster – Oberspreewald-Lausitz",
+      "land": "Brandenburg",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "shapeKey": "path17812",
+      "zuordnung": "gemischt",
+      "bezirkeBeteiligt": [
+        "brandenburg",
+        "niederlausitz"
+      ],
+      "gemeindeCounts": {
+        "brandenburg": 33,
+        "niederlausitz": 25
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-066",
+      "nummer": 66,
+      "name": "Altmark – Jerichower Land",
+      "land": "Sachsen-Anhalt",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "shapeKey": "path20860",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen-anhalt"
+      ],
+      "gemeindeCounts": {
+        "sachsen-anhalt": 46
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-067",
+      "nummer": 67,
+      "name": "Börde – Salzlandkreis",
+      "land": "Sachsen-Anhalt",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "shapeKey": "path20886",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen-anhalt"
+      ],
+      "gemeindeCounts": {
+        "sachsen-anhalt": 49
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-068",
+      "nummer": 68,
+      "name": "Harz",
+      "land": "Sachsen-Anhalt",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "shapeKey": "path21046",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen-anhalt"
+      ],
+      "gemeindeCounts": {
+        "sachsen-anhalt": 22
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-069",
+      "nummer": 69,
+      "name": "Magdeburg",
+      "land": "Sachsen-Anhalt",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "shapeKey": "path20858",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen-anhalt"
+      ],
+      "gemeindeCounts": {
+        "sachsen-anhalt": 5
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-070",
+      "nummer": 70,
+      "name": "Anhalt – Dessau – Wittenberg",
+      "land": "Sachsen-Anhalt",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "shapeKey": "path20854",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen-anhalt"
+      ],
+      "gemeindeCounts": {
+        "sachsen-anhalt": 14
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-071",
+      "nummer": 71,
+      "name": "Halle",
+      "land": "Sachsen-Anhalt",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "shapeKey": "path20856",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen-anhalt"
+      ],
+      "gemeindeCounts": {
+        "sachsen-anhalt": 6
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-072",
+      "nummer": 72,
+      "name": "Burgenland – Saalekreis",
+      "land": "Sachsen-Anhalt",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "shapeKey": "path20978",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen-anhalt"
+      ],
+      "gemeindeCounts": {
+        "sachsen-anhalt": 38
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-073",
+      "nummer": 73,
+      "name": "Mansfeld",
+      "land": "Sachsen-Anhalt",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "shapeKey": "path23",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen-anhalt"
+      ],
+      "gemeindeCounts": {
+        "sachsen-anhalt": 38
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-074",
+      "nummer": 74,
+      "name": "Berlin-Mitte",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244835",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-075",
+      "nummer": 75,
+      "name": "Berlin-Pankow",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244853",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-076",
+      "nummer": 76,
+      "name": "Berlin-Reinickendorf",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244837",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-077",
+      "nummer": 77,
+      "name": "Berlin-Spandau – Charlottenburg Nord",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244839",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-078",
+      "nummer": 78,
+      "name": "Berlin-Steglitz-Zehlendorf",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244841",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-079",
+      "nummer": 79,
+      "name": "Berlin-Charlottenburg-Wilmersdorf",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244831",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-080",
+      "nummer": 80,
+      "name": "Berlin-Tempelhof-Schöneberg",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244843",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-081",
+      "nummer": 81,
+      "name": "Berlin-Neukölln",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244845",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-082",
+      "nummer": 82,
+      "name": "Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244833",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-083",
+      "nummer": 83,
+      "name": "Berlin-Treptow-Köpenick",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244847",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-084",
+      "nummer": 84,
+      "name": "Berlin-Marzahn-Hellersdorf",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244849",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-085",
+      "nummer": 85,
+      "name": "Berlin-Lichtenberg",
+      "land": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "shapeKey": "path244851",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "berlin"
+      ],
+      "gemeindeCounts": {
+        "berlin": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-150",
+      "nummer": 150,
+      "name": "Nordsachsen",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20794",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 30
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-151",
+      "nummer": 151,
+      "name": "Leipzig I",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path2034502",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-152",
+      "nummer": 152,
+      "name": "Leipzig II",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20732",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-153",
+      "nummer": 153,
+      "name": "Leipzig-Land",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20734",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 30
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-154",
+      "nummer": 154,
+      "name": "Meißen",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20604",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 28
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-155",
+      "nummer": 155,
+      "name": "Bautzen I",
+      "land": "Sachsen",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "shapeKey": "path20386",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "oberlausitz"
+      ],
+      "gemeindeCounts": {
+        "oberlausitz": 52
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-156",
+      "nummer": 156,
+      "name": "Görlitz",
+      "land": "Sachsen",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "shapeKey": "path20498",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "oberlausitz"
+      ],
+      "gemeindeCounts": {
+        "oberlausitz": 53
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-157",
+      "nummer": 157,
+      "name": "Sächsische Schweiz-Osterzgebirge",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20660",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 36
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-158",
+      "nummer": 158,
+      "name": "Dresden I",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20382",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-159",
+      "nummer": 159,
+      "name": "Dresden II – Bautzen II",
+      "land": "Sachsen",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "shapeKey": "path2156908",
+      "zuordnung": "gemischt",
+      "bezirkeBeteiligt": [
+        "oberlausitz",
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "oberlausitz": 5,
+        "sachsen": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-160",
+      "nummer": 160,
+      "name": "Mittelsachsen",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20136",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 36
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-161",
+      "nummer": 161,
+      "name": "Chemnitz",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20016",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 1
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-162",
+      "nummer": 162,
+      "name": "Chemnitzer Umland – Erzgebirgskreis II",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20042",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 38
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-163",
+      "nummer": 163,
+      "name": "Erzgebirgskreis I",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20018",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 46
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-164",
+      "nummer": 164,
+      "name": "Zwickau",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20318",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 24
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-165",
+      "nummer": 165,
+      "name": "Vogtlandkreis",
+      "land": "Sachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "shapeKey": "path20242",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "sachsen"
+      ],
+      "gemeindeCounts": {
+        "sachsen": 37
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-188",
+      "nummer": 188,
+      "name": "Eichsfeld – Nordhausen – Kyffhäuserkreis",
+      "land": "Thüringen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "shapeKey": "path21310",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "thueringen"
+      ],
+      "gemeindeCounts": {
+        "thueringen": 99
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-189",
+      "nummer": 189,
+      "name": "Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",
+      "land": "Thüringen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "shapeKey": "path51",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "thueringen"
+      ],
+      "gemeindeCounts": {
+        "thueringen": 55
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-190",
+      "nummer": 190,
+      "name": "Jena – Sömmerda – Weimarer Land I",
+      "land": "Thüringen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "shapeKey": "path21304",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "thueringen"
+      ],
+      "gemeindeCounts": {
+        "thueringen": 75
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-191",
+      "nummer": 191,
+      "name": "Gotha – Ilm-Kreis",
+      "land": "Thüringen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "shapeKey": "path21758",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "thueringen"
+      ],
+      "gemeindeCounts": {
+        "thueringen": 45
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-192",
+      "nummer": 192,
+      "name": "Erfurt – Weimar – Weimarer Land II",
+      "land": "Thüringen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "shapeKey": "path21300",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "thueringen"
+      ],
+      "gemeindeCounts": {
+        "thueringen": 3
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-193",
+      "nummer": 193,
+      "name": "Gera – Greiz – Altenburger Land",
+      "land": "Thüringen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "shapeKey": "path21302",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "thueringen"
+      ],
+      "gemeindeCounts": {
+        "thueringen": 73
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-194",
+      "nummer": 194,
+      "name": "Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",
+      "land": "Thüringen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "shapeKey": "path22088",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "thueringen"
+      ],
+      "gemeindeCounts": {
+        "thueringen": 176
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    },
+    {
+      "id": "bwk-195",
+      "nummer": 195,
+      "name": "Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",
+      "land": "Thüringen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "shapeKey": "path21306",
+      "zuordnung": "eindeutig",
+      "bezirkeBeteiligt": [
+        "thueringen"
+      ],
+      "gemeindeCounts": {
+        "thueringen": 79
+      },
+      "quelle": "Bundeswahlleiterin 2025 Wahlkreisnummern/-namen und Wahlkreis-Gemeinde-Zuordnung"
+    }
+  ]
+}

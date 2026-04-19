@@ -58,6 +58,32 @@ export default async function MethodikPage() {
       </section>
 
       <section className="card p-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-[var(--color-primary)]">Kartenquellen und Zuordnungslogik</h2>
+        <p className="mt-3">
+          Die Kartengeometrien stammen aus den bereitgestellten SVG-Quellen (`Landkreise.svg`, `Wahlkreise.svg`). Dargestellt werden
+          ausschließlich ostdeutsche Gebiete.
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>
+            Bundestag: Wahlkreisnummern und -namen folgen der amtlichen Wahlkreiseinteilung 2025 der Bundeswahlleiterin; die
+            Shape-Zuordnung erfolgt über die nummerierten SVG-Labels.
+          </li>
+          <li>
+            Bezirkszuordnungen von Bundestagswahlkreisen werden aus der amtlichen Gemeindezuordnung plausibilisiert; bei
+            grenzüberschreitenden Fällen wird ein primärer Bezirk ausgewiesen.
+          </li>
+          <li>
+            Landtag: Kreisfreie Städte bleiben als eigene Einheiten erhalten. Für Hoyerswerda wird eine explizit gekennzeichnete
+            synthetische Kartenmarke verwendet.
+          </li>
+          <li>
+            Einzelne Flächenzuschnitte in Sachsen und Thüringen werden transparent über dokumentierte Zusammenführungen im
+            Datenmodell abgebildet.
+          </li>
+        </ul>
+      </section>
+
+      <section className="card p-5 text-slate-700">
         <h2 className="text-xl font-semibold text-[var(--color-primary)]">Bedeutung des Direktmandats Ostdeutschland</h2>
         <p className="mt-3">
           Das Direktmandat ergänzt die Listenstimmen-Auswertung von {bundestag.name} um ein einziges ostweites Einzelmandat. Es ist eine

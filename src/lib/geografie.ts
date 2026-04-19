@@ -6,6 +6,6 @@ export function filterGeoByBezirk(geo: GeoFeatureCollection, bezirkId: string) {
   }
   return {
     ...geo,
-    features: geo.features.filter((feature) => feature.properties.bezirkId === bezirkId),
+    features: geo.features.filter((feature) => String(feature.properties.bezirkId ?? "") === bezirkId),
   };
 }

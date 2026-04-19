@@ -1,6 +1,6 @@
 "use client";
 
-import { geoMercator, geoPath } from "d3-geo";
+import { geoIdentity, geoPath } from "d3-geo";
 import { useMemo, useState } from "react";
 import type { GeoFeatureCollection } from "@/lib/types";
 
@@ -23,7 +23,7 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
   const height = 640;
   const [activeId, setActiveId] = useState<string | null>(null);
 
-  const projection = useMemo(() => geoMercator().fitSize([width, height], geo as never), [geo]);
+  const projection = useMemo(() => geoIdentity().fitSize([width, height], geo as never), [geo]);
   const pathBuilder = useMemo(() => geoPath(projection), [projection]);
 
   const activeResult = activeId ? resultsById[activeId] : null;
@@ -45,8 +45,8 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
               key={id}
               d={d}
               fill={fill}
-              stroke="#ffffff"
-              strokeWidth={1}
+              stroke={activeId === id ? "#0f172a" : "#ffffff"}
+              strokeWidth={activeId === id ? 1.8 : 0.9}
               tabIndex={0}
               role="button"
               aria-label={

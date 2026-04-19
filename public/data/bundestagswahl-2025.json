@@ -23,420 +23,964 @@
   },
   "ergebnisseWahlkreise": [
     {
-      "wahlkreisId": "bwk-01",
-      "wahlkreis": "Bundestagswahlkreis 01: Berlin Zentrum",
-      "bezirkId": "berlin",
-      "bezirk": "Berlin",
+      "wahlkreisId": "bwk-012",
+      "wahlkreis": "Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
       "parteien": {
-        "Patrioten": 11.8,
-        "Sonstige": 4.8,
-        "FRP": 11.4,
-        "CPD Ost": 16.2,
-        "Volksfront": 30.8,
-        "DEMOS Ost": 25
+        "Volksfront": 30.7,
+        "DEMOS Ost": 17.5,
+        "CPD Ost": 18.1,
+        "FRP": 11.7,
+        "Patrioten": 17.3,
+        "Sonstige": 4.7
       },
       "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 30.8
+      "staerksteParteiProzent": 30.7
     },
     {
-      "wahlkreisId": "bwk-02",
-      "wahlkreis": "Bundestagswahlkreis 02: Berlin Nord",
-      "bezirkId": "berlin",
-      "bezirk": "Berlin",
+      "wahlkreisId": "bwk-013",
+      "wahlkreis": "Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
       "parteien": {
-        "Volksfront": 31.5,
-        "Sonstige": 4.6,
-        "FRP": 10,
-        "Patrioten": 11.9,
-        "CPD Ost": 18.7,
-        "DEMOS Ost": 23.3
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31.5
-    },
-    {
-      "wahlkreisId": "bwk-03",
-      "wahlkreis": "Bundestagswahlkreis 03: Berlin Süd",
-      "bezirkId": "berlin",
-      "bezirk": "Berlin",
-      "parteien": {
-        "CPD Ost": 16.7,
-        "DEMOS Ost": 23.7,
-        "Sonstige": 5,
-        "FRP": 12.9,
-        "Patrioten": 11.1,
-        "Volksfront": 30.6
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 30.6
-    },
-    {
-      "wahlkreisId": "bwk-04",
-      "wahlkreis": "Bundestagswahlkreis 04: Brandenburg Nord",
-      "bezirkId": "brandenburg",
-      "bezirk": "Brandenburg",
-      "parteien": {
-        "Volksfront": 31.9,
-        "Sonstige": 4.9,
-        "FRP": 10,
-        "DEMOS Ost": 18.7,
-        "CPD Ost": 17,
-        "Patrioten": 17.5
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31.9
-    },
-    {
-      "wahlkreisId": "bwk-05",
-      "wahlkreis": "Bundestagswahlkreis 05: Brandenburg West",
-      "bezirkId": "brandenburg",
-      "bezirk": "Brandenburg",
-      "parteien": {
-        "CPD Ost": 16,
-        "Patrioten": 16.8,
-        "Sonstige": 4.5,
-        "FRP": 9.8,
-        "DEMOS Ost": 19.6,
-        "Volksfront": 33.3
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 33.3
-    },
-    {
-      "wahlkreisId": "bwk-06",
-      "wahlkreis": "Bundestagswahlkreis 06: Brandenburg Süd",
-      "bezirkId": "brandenburg",
-      "bezirk": "Brandenburg",
-      "parteien": {
-        "Sonstige": 4.3,
-        "CPD Ost": 16.9,
-        "FRP": 11.4,
-        "Volksfront": 31.1,
-        "DEMOS Ost": 20,
-        "Patrioten": 16.3
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31.1
-    },
-    {
-      "wahlkreisId": "bwk-07",
-      "wahlkreis": "Bundestagswahlkreis 07: Brandenburg Ost",
-      "bezirkId": "brandenburg",
-      "bezirk": "Brandenburg",
-      "parteien": {
-        "DEMOS Ost": 17.9,
-        "Patrioten": 15.9,
-        "Sonstige": 7.2,
-        "CPD Ost": 16.6,
         "Volksfront": 30.4,
-        "FRP": 12
+        "DEMOS Ost": 16.5,
+        "CPD Ost": 17.8,
+        "FRP": 12.0,
+        "Patrioten": 16.7,
+        "Sonstige": 6.6
       },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 30.4
     },
     {
-      "wahlkreisId": "bwk-08",
-      "wahlkreis": "Bundestagswahlkreis 08: Mecklenburgische Küste",
+      "wahlkreisId": "bwk-014",
+      "wahlkreis": "Rostock – Landkreis Rostock II",
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
-      "parteien": {
-        "DEMOS Ost": 19.1,
-        "Patrioten": 16.7,
-        "FRP": 11.2,
-        "CPD Ost": 16.8,
-        "Sonstige": 5.2,
-        "Volksfront": 31
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31
-    },
-    {
-      "wahlkreisId": "bwk-09",
-      "wahlkreis": "Bundestagswahlkreis 09: Seenplatte",
-      "bezirkId": "mecklenburg-vorpommern",
-      "bezirk": "Mecklenburg-Vorpommern",
-      "parteien": {
-        "Volksfront": 30.1,
-        "FRP": 11,
-        "DEMOS Ost": 18.4,
-        "Patrioten": 17.9,
-        "Sonstige": 6.5,
-        "CPD Ost": 16.1
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 30.1
-    },
-    {
-      "wahlkreisId": "bwk-10",
-      "wahlkreis": "Bundestagswahlkreis 10: Vorpommern",
-      "bezirkId": "mecklenburg-vorpommern",
-      "bezirk": "Mecklenburg-Vorpommern",
-      "parteien": {
-        "DEMOS Ost": 18.9,
-        "Sonstige": 4.8,
-        "Patrioten": 15.9,
-        "FRP": 10.7,
-        "CPD Ost": 18.1,
-        "Volksfront": 31.6
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31.6
-    },
-    {
-      "wahlkreisId": "bwk-11",
-      "wahlkreis": "Bundestagswahlkreis 11: Niederlausitz Nord",
-      "bezirkId": "niederlausitz",
-      "bezirk": "Niederlausitz",
-      "parteien": {
-        "DEMOS Ost": 18,
-        "Sonstige": 4.5,
-        "CPD Ost": 18.4,
-        "Patrioten": 16.7,
-        "Volksfront": 32.6,
-        "FRP": 9.8
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 32.6
-    },
-    {
-      "wahlkreisId": "bwk-12",
-      "wahlkreis": "Bundestagswahlkreis 12: Niederlausitz Süd",
-      "bezirkId": "niederlausitz",
-      "bezirk": "Niederlausitz",
-      "parteien": {
-        "CPD Ost": 17.2,
-        "Volksfront": 34.3,
-        "Patrioten": 15.2,
-        "Sonstige": 4.5,
-        "FRP": 10,
-        "DEMOS Ost": 18.8
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 34.3
-    },
-    {
-      "wahlkreisId": "bwk-13",
-      "wahlkreis": "Bundestagswahlkreis 13: Oberlausitz West",
-      "bezirkId": "oberlausitz",
-      "bezirk": "Oberlausitz",
-      "parteien": {
-        "Sonstige": 5.4,
-        "Patrioten": 15.3,
-        "DEMOS Ost": 17.9,
-        "FRP": 12.1,
-        "Volksfront": 30.9,
-        "CPD Ost": 18.4
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 30.9
-    },
-    {
-      "wahlkreisId": "bwk-14",
-      "wahlkreis": "Bundestagswahlkreis 14: Oberlausitz Ost",
-      "bezirkId": "oberlausitz",
-      "bezirk": "Oberlausitz",
-      "parteien": {
-        "Patrioten": 17.8,
-        "DEMOS Ost": 16.7,
-        "Volksfront": 32.7,
-        "Sonstige": 4.7,
-        "CPD Ost": 17.7,
-        "FRP": 10.4
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 32.7
-    },
-    {
-      "wahlkreisId": "bwk-15",
-      "wahlkreis": "Bundestagswahlkreis 15: Sachsen Nord",
-      "bezirkId": "sachsen",
-      "bezirk": "Sachsen",
-      "parteien": {
-        "Volksfront": 31.5,
-        "Patrioten": 15.3,
-        "Sonstige": 4.4,
-        "CPD Ost": 18.1,
-        "FRP": 13.1,
-        "DEMOS Ost": 17.6
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31.5
-    },
-    {
-      "wahlkreisId": "bwk-16",
-      "wahlkreis": "Bundestagswahlkreis 16: Sachsen Mitte",
-      "bezirkId": "sachsen",
-      "bezirk": "Sachsen",
-      "parteien": {
-        "Patrioten": 12.8,
-        "DEMOS Ost": 17.9,
-        "Sonstige": 7.2,
-        "Volksfront": 32.1,
-        "FRP": 10.8,
-        "CPD Ost": 19.2
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 32.1
-    },
-    {
-      "wahlkreisId": "bwk-17",
-      "wahlkreis": "Bundestagswahlkreis 17: Sachsen Ost",
-      "bezirkId": "sachsen",
-      "bezirk": "Sachsen",
-      "parteien": {
-        "Patrioten": 12.8,
-        "CPD Ost": 19.1,
-        "FRP": 11.9,
-        "Sonstige": 4.4,
-        "Volksfront": 31.5,
-        "DEMOS Ost": 20.3
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31.5
-    },
-    {
-      "wahlkreisId": "bwk-18",
-      "wahlkreis": "Bundestagswahlkreis 18: Sachsen Süd",
-      "bezirkId": "sachsen",
-      "bezirk": "Sachsen",
-      "parteien": {
-        "Patrioten": 15.9,
-        "DEMOS Ost": 19.5,
-        "Sonstige": 4.5,
-        "CPD Ost": 19.5,
-        "FRP": 9.8,
-        "Volksfront": 30.8
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 30.8
-    },
-    {
-      "wahlkreisId": "bwk-19",
-      "wahlkreis": "Bundestagswahlkreis 19: Altmark-Börde",
-      "bezirkId": "sachsen-anhalt",
-      "bezirk": "Sachsen-Anhalt",
-      "parteien": {
-        "Sonstige": 7,
-        "FRP": 8.9,
-        "Volksfront": 31.1,
-        "CPD Ost": 17.8,
-        "DEMOS Ost": 19.8,
-        "Patrioten": 15.4
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31.1
-    },
-    {
-      "wahlkreisId": "bwk-20",
-      "wahlkreis": "Bundestagswahlkreis 20: Magdeburg-Jerichow",
-      "bezirkId": "sachsen-anhalt",
-      "bezirk": "Sachsen-Anhalt",
-      "parteien": {
-        "FRP": 12.4,
-        "Sonstige": 4.4,
-        "Patrioten": 16.5,
-        "Volksfront": 31.9,
-        "CPD Ost": 17.2,
-        "DEMOS Ost": 17.6
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 31.9
-    },
-    {
-      "wahlkreisId": "bwk-21",
-      "wahlkreis": "Bundestagswahlkreis 21: Halle-Saalekreis",
-      "bezirkId": "sachsen-anhalt",
-      "bezirk": "Sachsen-Anhalt",
-      "parteien": {
-        "FRP": 12.3,
-        "Patrioten": 16,
-        "DEMOS Ost": 19.4,
-        "CPD Ost": 15.3,
-        "Sonstige": 6.8,
-        "Volksfront": 30.2
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 30.2
-    },
-    {
-      "wahlkreisId": "bwk-22",
-      "wahlkreis": "Bundestagswahlkreis 22: Harz-Burgenland",
-      "bezirkId": "sachsen-anhalt",
-      "bezirk": "Sachsen-Anhalt",
-      "parteien": {
-        "FRP": 12.1,
-        "Patrioten": 16.7,
-        "CPD Ost": 16.3,
-        "Sonstige": 3.7,
-        "DEMOS Ost": 20.6,
-        "Volksfront": 30.6
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 30.6
-    },
-    {
-      "wahlkreisId": "bwk-23",
-      "wahlkreis": "Bundestagswahlkreis 23: Thüringen Nord",
-      "bezirkId": "thueringen",
-      "bezirk": "Thüringen",
-      "parteien": {
-        "FRP": 11.1,
-        "Patrioten": 16.8,
-        "Volksfront": 29.8,
-        "Sonstige": 4.3,
-        "CPD Ost": 18.4,
-        "DEMOS Ost": 19.6
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 29.8
-    },
-    {
-      "wahlkreisId": "bwk-24",
-      "wahlkreis": "Bundestagswahlkreis 24: Thüringen Mitte",
-      "bezirkId": "thueringen",
-      "bezirk": "Thüringen",
-      "parteien": {
-        "FRP": 10.9,
-        "CPD Ost": 18.4,
-        "DEMOS Ost": 18.6,
-        "Volksfront": 32,
-        "Patrioten": 16.1,
-        "Sonstige": 4
-      },
-      "staerkstePartei": "Volksfront",
-      "staerksteParteiProzent": 32
-    },
-    {
-      "wahlkreisId": "bwk-25",
-      "wahlkreis": "Bundestagswahlkreis 25: Thüringen Ost",
-      "bezirkId": "thueringen",
-      "bezirk": "Thüringen",
       "parteien": {
         "Volksfront": 31.4,
-        "Sonstige": 5.5,
-        "Patrioten": 14.6,
-        "FRP": 11.6,
-        "DEMOS Ost": 18.3,
-        "CPD Ost": 18.6
+        "DEMOS Ost": 19.8,
+        "CPD Ost": 15.9,
+        "FRP": 9.8,
+        "Patrioten": 16.3,
+        "Sonstige": 6.8
       },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 31.4
     },
     {
-      "wahlkreisId": "bwk-26",
-      "wahlkreis": "Bundestagswahlkreis 26: Thüringen Süd",
-      "bezirkId": "thueringen",
-      "bezirk": "Thüringen",
+      "wahlkreisId": "bwk-015",
+      "wahlkreis": "Vorpommern-Rügen – Vorpommern-Greifswald I",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "Volksfront": 31.6,
+        "DEMOS Ost": 17.5,
+        "CPD Ost": 17.0,
+        "FRP": 9.9,
+        "Patrioten": 18.7,
+        "Sonstige": 5.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.6
+    },
+    {
+      "wahlkreisId": "bwk-016",
+      "wahlkreis": "Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "Volksfront": 31.6,
+        "DEMOS Ost": 16.7,
+        "CPD Ost": 15.9,
+        "FRP": 11.7,
+        "Patrioten": 17.0,
+        "Sonstige": 7.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.6
+    },
+    {
+      "wahlkreisId": "bwk-017",
+      "wahlkreis": "Mecklenburgische Seenplatte II – Landkreis Rostock III",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "Volksfront": 32.2,
+        "DEMOS Ost": 18.2,
+        "CPD Ost": 17.1,
+        "FRP": 9.3,
+        "Patrioten": 16.7,
+        "Sonstige": 6.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.2
+    },
+    {
+      "wahlkreisId": "bwk-056",
+      "wahlkreis": "Prignitz – Ostprignitz-Ruppin – Havelland I",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 33.6,
+        "DEMOS Ost": 17.7,
+        "CPD Ost": 15.7,
+        "FRP": 10.4,
+        "Patrioten": 16.6,
+        "Sonstige": 6.0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.6
+    },
+    {
+      "wahlkreisId": "bwk-057",
+      "wahlkreis": "Uckermark – Barnim I",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 33.0,
+        "DEMOS Ost": 18.3,
+        "CPD Ost": 17.9,
+        "FRP": 9.6,
+        "Patrioten": 15.8,
+        "Sonstige": 5.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.0
+    },
+    {
+      "wahlkreisId": "bwk-058",
+      "wahlkreis": "Oberhavel – Havelland II",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 31.6,
+        "DEMOS Ost": 18.9,
+        "CPD Ost": 16.4,
+        "FRP": 12.7,
+        "Patrioten": 15.0,
+        "Sonstige": 5.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.6
+    },
+    {
+      "wahlkreisId": "bwk-059",
+      "wahlkreis": "Märkisch-Oderland – Barnim II",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 31.2,
+        "DEMOS Ost": 18.9,
+        "CPD Ost": 17.5,
+        "FRP": 11.4,
+        "Patrioten": 14.1,
+        "Sonstige": 6.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.2
+    },
+    {
+      "wahlkreisId": "bwk-060",
+      "wahlkreis": "Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 33.9,
+        "DEMOS Ost": 19.5,
+        "CPD Ost": 16.7,
+        "FRP": 9.5,
+        "Patrioten": 15.2,
+        "Sonstige": 5.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.9
+    },
+    {
+      "wahlkreisId": "bwk-061",
+      "wahlkreis": "Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 33.3,
+        "DEMOS Ost": 18.1,
+        "CPD Ost": 16.6,
+        "FRP": 10.6,
+        "Patrioten": 15.2,
+        "Sonstige": 6.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.3
+    },
+    {
+      "wahlkreisId": "bwk-062",
+      "wahlkreis": "Dahme-Spreewald – Teltow-Fläming III",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "parteien": {
+        "Volksfront": 34.0,
+        "DEMOS Ost": 18.1,
+        "CPD Ost": 16.6,
+        "FRP": 9.6,
+        "Patrioten": 15.2,
+        "Sonstige": 6.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.0
+    },
+    {
+      "wahlkreisId": "bwk-063",
+      "wahlkreis": "Frankfurt (Oder) – Oder-Spree",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 30.8,
+        "DEMOS Ost": 17.8,
+        "CPD Ost": 18.1,
+        "FRP": 11.1,
+        "Patrioten": 16.6,
+        "Sonstige": 5.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.8
+    },
+    {
+      "wahlkreisId": "bwk-064",
+      "wahlkreis": "Cottbus – Spree-Neiße",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "parteien": {
+        "Volksfront": 31.3,
+        "DEMOS Ost": 18.2,
+        "CPD Ost": 18.0,
+        "FRP": 11.9,
+        "Patrioten": 14.9,
+        "Sonstige": 5.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.3
+    },
+    {
+      "wahlkreisId": "bwk-065",
+      "wahlkreis": "Elbe-Elster – Oberspreewald-Lausitz",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 30.1,
+        "DEMOS Ost": 19.6,
+        "CPD Ost": 16.7,
+        "FRP": 10.9,
+        "Patrioten": 15.8,
+        "Sonstige": 6.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.1
+    },
+    {
+      "wahlkreisId": "bwk-066",
+      "wahlkreis": "Altmark – Jerichower Land",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 31.7,
+        "DEMOS Ost": 20.5,
+        "CPD Ost": 16.2,
+        "FRP": 9.4,
+        "Patrioten": 15.9,
+        "Sonstige": 6.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.7
+    },
+    {
+      "wahlkreisId": "bwk-067",
+      "wahlkreis": "Börde – Salzlandkreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 31.6,
+        "DEMOS Ost": 19.9,
+        "CPD Ost": 16.7,
+        "FRP": 12.4,
+        "Patrioten": 13.5,
+        "Sonstige": 5.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.6
+    },
+    {
+      "wahlkreisId": "bwk-068",
+      "wahlkreis": "Harz",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 32.4,
+        "DEMOS Ost": 19.6,
+        "CPD Ost": 16.9,
+        "FRP": 9.7,
+        "Patrioten": 16.9,
+        "Sonstige": 4.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.4
+    },
+    {
+      "wahlkreisId": "bwk-069",
+      "wahlkreis": "Magdeburg",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 30.4,
+        "DEMOS Ost": 20.2,
+        "CPD Ost": 17.4,
+        "FRP": 12.0,
+        "Patrioten": 13.0,
+        "Sonstige": 7.0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.4
+    },
+    {
+      "wahlkreisId": "bwk-070",
+      "wahlkreis": "Anhalt – Dessau – Wittenberg",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 31.7,
+        "DEMOS Ost": 19.6,
+        "CPD Ost": 16.0,
+        "FRP": 12.0,
+        "Patrioten": 14.9,
+        "Sonstige": 5.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.7
+    },
+    {
+      "wahlkreisId": "bwk-071",
+      "wahlkreis": "Halle",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 30.8,
+        "DEMOS Ost": 20.0,
+        "CPD Ost": 17.8,
+        "FRP": 11.1,
+        "Patrioten": 14.0,
+        "Sonstige": 6.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.8
+    },
+    {
+      "wahlkreisId": "bwk-072",
+      "wahlkreis": "Burgenland – Saalekreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 33.2,
+        "DEMOS Ost": 19.1,
+        "CPD Ost": 16.2,
+        "FRP": 10.5,
+        "Patrioten": 15.8,
+        "Sonstige": 5.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.2
+    },
+    {
+      "wahlkreisId": "bwk-073",
+      "wahlkreis": "Mansfeld",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 32.3,
+        "DEMOS Ost": 18.2,
+        "CPD Ost": 18.0,
+        "FRP": 10.0,
+        "Patrioten": 15.3,
+        "Sonstige": 6.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.3
+    },
+    {
+      "wahlkreisId": "bwk-074",
+      "wahlkreis": "Berlin-Mitte",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 27.9,
+        "DEMOS Ost": 23.8,
+        "CPD Ost": 18.6,
+        "FRP": 10.0,
+        "Patrioten": 14.0,
+        "Sonstige": 5.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 27.9
+    },
+    {
+      "wahlkreisId": "bwk-075",
+      "wahlkreis": "Berlin-Pankow",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 28.3,
+        "DEMOS Ost": 22.4,
+        "CPD Ost": 19.1,
+        "FRP": 11.1,
+        "Patrioten": 14.1,
+        "Sonstige": 5.0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 28.3
+    },
+    {
+      "wahlkreisId": "bwk-076",
+      "wahlkreis": "Berlin-Reinickendorf",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 28.5,
+        "DEMOS Ost": 22.7,
+        "CPD Ost": 18.9,
+        "FRP": 12.6,
+        "Patrioten": 11.0,
+        "Sonstige": 6.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 28.5
+    },
+    {
+      "wahlkreisId": "bwk-077",
+      "wahlkreis": "Berlin-Spandau – Charlottenburg Nord",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 30.2,
+        "DEMOS Ost": 23.4,
+        "CPD Ost": 17.7,
+        "FRP": 12.2,
+        "Patrioten": 10.6,
+        "Sonstige": 5.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.2
+    },
+    {
+      "wahlkreisId": "bwk-078",
+      "wahlkreis": "Berlin-Steglitz-Zehlendorf",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 28.6,
+        "DEMOS Ost": 22.4,
+        "CPD Ost": 18.1,
+        "FRP": 11.6,
+        "Patrioten": 14.6,
+        "Sonstige": 4.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 28.6
+    },
+    {
+      "wahlkreisId": "bwk-079",
+      "wahlkreis": "Berlin-Charlottenburg-Wilmersdorf",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
       "parteien": {
         "Volksfront": 28.9,
-        "CPD Ost": 18.9,
-        "DEMOS Ost": 18.6,
-        "Patrioten": 17.6,
-        "Sonstige": 3.9,
-        "FRP": 12.1
+        "DEMOS Ost": 23.3,
+        "CPD Ost": 17.6,
+        "FRP": 11.7,
+        "Patrioten": 14.2,
+        "Sonstige": 4.3
       },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 28.9
+    },
+    {
+      "wahlkreisId": "bwk-080",
+      "wahlkreis": "Berlin-Tempelhof-Schöneberg",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 31.1,
+        "DEMOS Ost": 22.2,
+        "CPD Ost": 16.6,
+        "FRP": 11.1,
+        "Patrioten": 12.2,
+        "Sonstige": 6.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.1
+    },
+    {
+      "wahlkreisId": "bwk-081",
+      "wahlkreis": "Berlin-Neukölln",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 28.8,
+        "DEMOS Ost": 21.7,
+        "CPD Ost": 18.9,
+        "FRP": 9.9,
+        "Patrioten": 13.6,
+        "Sonstige": 7.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 28.8
+    },
+    {
+      "wahlkreisId": "bwk-082",
+      "wahlkreis": "Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 30.5,
+        "DEMOS Ost": 21.3,
+        "CPD Ost": 17.5,
+        "FRP": 11.5,
+        "Patrioten": 13.6,
+        "Sonstige": 5.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.5
+    },
+    {
+      "wahlkreisId": "bwk-083",
+      "wahlkreis": "Berlin-Treptow-Köpenick",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 30.3,
+        "DEMOS Ost": 21.9,
+        "CPD Ost": 18.3,
+        "FRP": 12.5,
+        "Patrioten": 13.2,
+        "Sonstige": 3.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.3
+    },
+    {
+      "wahlkreisId": "bwk-084",
+      "wahlkreis": "Berlin-Marzahn-Hellersdorf",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 27.9,
+        "DEMOS Ost": 22.2,
+        "CPD Ost": 18.4,
+        "FRP": 11.9,
+        "Patrioten": 12.1,
+        "Sonstige": 7.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 27.9
+    },
+    {
+      "wahlkreisId": "bwk-085",
+      "wahlkreis": "Berlin-Lichtenberg",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Volksfront": 29.5,
+        "DEMOS Ost": 22.3,
+        "CPD Ost": 17.8,
+        "FRP": 10.6,
+        "Patrioten": 12.5,
+        "Sonstige": 7.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 29.5
+    },
+    {
+      "wahlkreisId": "bwk-150",
+      "wahlkreis": "Nordsachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 33.6,
+        "DEMOS Ost": 18.0,
+        "CPD Ost": 18.5,
+        "FRP": 10.9,
+        "Patrioten": 13.3,
+        "Sonstige": 5.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.6
+    },
+    {
+      "wahlkreisId": "bwk-151",
+      "wahlkreis": "Leipzig I",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 31.5,
+        "DEMOS Ost": 19.1,
+        "CPD Ost": 18.0,
+        "FRP": 9.8,
+        "Patrioten": 16.1,
+        "Sonstige": 5.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.5
+    },
+    {
+      "wahlkreisId": "bwk-152",
+      "wahlkreis": "Leipzig II",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 31.4,
+        "DEMOS Ost": 18.1,
+        "CPD Ost": 17.5,
+        "FRP": 11.2,
+        "Patrioten": 14.6,
+        "Sonstige": 7.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.4
+    },
+    {
+      "wahlkreisId": "bwk-153",
+      "wahlkreis": "Leipzig-Land",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 32.1,
+        "DEMOS Ost": 19.1,
+        "CPD Ost": 17.8,
+        "FRP": 11.0,
+        "Patrioten": 13.8,
+        "Sonstige": 6.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.1
+    },
+    {
+      "wahlkreisId": "bwk-154",
+      "wahlkreis": "Meißen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 31.2,
+        "DEMOS Ost": 20.4,
+        "CPD Ost": 17.3,
+        "FRP": 12.6,
+        "Patrioten": 13.0,
+        "Sonstige": 5.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.2
+    },
+    {
+      "wahlkreisId": "bwk-155",
+      "wahlkreis": "Bautzen I",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "parteien": {
+        "Volksfront": 32.9,
+        "DEMOS Ost": 17.8,
+        "CPD Ost": 17.9,
+        "FRP": 11.2,
+        "Patrioten": 15.6,
+        "Sonstige": 4.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.9
+    },
+    {
+      "wahlkreisId": "bwk-156",
+      "wahlkreis": "Görlitz",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "parteien": {
+        "Volksfront": 32.3,
+        "DEMOS Ost": 19.0,
+        "CPD Ost": 17.2,
+        "FRP": 11.8,
+        "Patrioten": 14.8,
+        "Sonstige": 4.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.3
+    },
+    {
+      "wahlkreisId": "bwk-157",
+      "wahlkreis": "Sächsische Schweiz-Osterzgebirge",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 30.7,
+        "DEMOS Ost": 19.4,
+        "CPD Ost": 18.7,
+        "FRP": 12.4,
+        "Patrioten": 13.9,
+        "Sonstige": 4.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.7
+    },
+    {
+      "wahlkreisId": "bwk-158",
+      "wahlkreis": "Dresden I",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 29.5,
+        "DEMOS Ost": 20.0,
+        "CPD Ost": 18.3,
+        "FRP": 10.8,
+        "Patrioten": 14.8,
+        "Sonstige": 6.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 29.5
+    },
+    {
+      "wahlkreisId": "bwk-159",
+      "wahlkreis": "Dresden II – Bautzen II",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "parteien": {
+        "Volksfront": 34.1,
+        "DEMOS Ost": 17.9,
+        "CPD Ost": 17.8,
+        "FRP": 10.5,
+        "Patrioten": 15.1,
+        "Sonstige": 4.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.1
+    },
+    {
+      "wahlkreisId": "bwk-160",
+      "wahlkreis": "Mittelsachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 30.7,
+        "DEMOS Ost": 20.4,
+        "CPD Ost": 19.0,
+        "FRP": 10.1,
+        "Patrioten": 12.6,
+        "Sonstige": 7.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.7
+    },
+    {
+      "wahlkreisId": "bwk-161",
+      "wahlkreis": "Chemnitz",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 31.0,
+        "DEMOS Ost": 20.0,
+        "CPD Ost": 19.0,
+        "FRP": 10.5,
+        "Patrioten": 12.9,
+        "Sonstige": 6.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.0
+    },
+    {
+      "wahlkreisId": "bwk-162",
+      "wahlkreis": "Chemnitzer Umland – Erzgebirgskreis II",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 29.8,
+        "DEMOS Ost": 20.6,
+        "CPD Ost": 18.1,
+        "FRP": 11.4,
+        "Patrioten": 16.0,
+        "Sonstige": 4.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 29.8
+    },
+    {
+      "wahlkreisId": "bwk-163",
+      "wahlkreis": "Erzgebirgskreis I",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 31.0,
+        "DEMOS Ost": 19.6,
+        "CPD Ost": 18.1,
+        "FRP": 12.3,
+        "Patrioten": 15.0,
+        "Sonstige": 4.0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.0
+    },
+    {
+      "wahlkreisId": "bwk-164",
+      "wahlkreis": "Zwickau",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 29.5,
+        "DEMOS Ost": 19.4,
+        "CPD Ost": 17.9,
+        "FRP": 12.8,
+        "Patrioten": 16.1,
+        "Sonstige": 4.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 29.5
+    },
+    {
+      "wahlkreisId": "bwk-165",
+      "wahlkreis": "Vogtlandkreis",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 29.6,
+        "DEMOS Ost": 18.7,
+        "CPD Ost": 17.1,
+        "FRP": 11.9,
+        "Patrioten": 16.6,
+        "Sonstige": 6.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 29.6
+    },
+    {
+      "wahlkreisId": "bwk-188",
+      "wahlkreis": "Eichsfeld – Nordhausen – Kyffhäuserkreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 30.8,
+        "DEMOS Ost": 19.2,
+        "CPD Ost": 17.8,
+        "FRP": 10.2,
+        "Patrioten": 15.6,
+        "Sonstige": 6.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.8
+    },
+    {
+      "wahlkreisId": "bwk-189",
+      "wahlkreis": "Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 31.5,
+        "DEMOS Ost": 17.4,
+        "CPD Ost": 16.9,
+        "FRP": 12.3,
+        "Patrioten": 15.4,
+        "Sonstige": 6.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.5
+    },
+    {
+      "wahlkreisId": "bwk-190",
+      "wahlkreis": "Jena – Sömmerda – Weimarer Land I",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 31.0,
+        "DEMOS Ost": 17.2,
+        "CPD Ost": 19.8,
+        "FRP": 10.1,
+        "Patrioten": 17.7,
+        "Sonstige": 4.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.0
+    },
+    {
+      "wahlkreisId": "bwk-191",
+      "wahlkreis": "Gotha – Ilm-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 30.2,
+        "DEMOS Ost": 19.3,
+        "CPD Ost": 16.6,
+        "FRP": 10.4,
+        "Patrioten": 17.0,
+        "Sonstige": 6.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.2
+    },
+    {
+      "wahlkreisId": "bwk-192",
+      "wahlkreis": "Erfurt – Weimar – Weimarer Land II",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 28.6,
+        "DEMOS Ost": 18.6,
+        "CPD Ost": 19.9,
+        "FRP": 10.1,
+        "Patrioten": 15.9,
+        "Sonstige": 6.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 28.6
+    },
+    {
+      "wahlkreisId": "bwk-193",
+      "wahlkreis": "Gera – Greiz – Altenburger Land",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 31.6,
+        "DEMOS Ost": 18.5,
+        "CPD Ost": 18.5,
+        "FRP": 9.6,
+        "Patrioten": 15.5,
+        "Sonstige": 6.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.6
+    },
+    {
+      "wahlkreisId": "bwk-194",
+      "wahlkreis": "Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 30.0,
+        "DEMOS Ost": 19.5,
+        "CPD Ost": 19.8,
+        "FRP": 8.8,
+        "Patrioten": 15.9,
+        "Sonstige": 6.0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 30.0
+    },
+    {
+      "wahlkreisId": "bwk-195",
+      "wahlkreis": "Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 31.3,
+        "DEMOS Ost": 18.2,
+        "CPD Ost": 19.1,
+        "FRP": 9.2,
+        "Patrioten": 16.7,
+        "Sonstige": 5.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 31.3
     }
   ]
 }
