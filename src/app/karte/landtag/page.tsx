@@ -2,7 +2,52 @@ import { KartenModul } from "@/components/maps/kartenmodul";
 import { PageHeader } from "@/components/layout/page-header";
 import { SimulationHinweis } from "@/components/ui/simulation-hinweis";
 import { parteiFarbenMap } from "@/lib/parteien";
+import type { GeoFeatureCollection } from "@/lib/types";
 import { getBezirke, getLandkreiseGeo, getLandtagswahl2024, getMetadaten, getParteien } from "@/lib/wahldaten";
+
+function sanitizeLandkreiseGeo(geo: GeoFeatureCollection): GeoFeatureCollection {
+  return {
+    ...geo,
+    features: geo.features.map((feature) => {
+      const sourceCodes = Array.isArray(feature.properties.sourceCodes) ? feature.properties.sourceCodes : null;
+      const modeledCodes = Array.isArray(feature.properties.modellierteZuordnungCodes)
+        ? feature.properties.modellierteZuordnungCodes
+        : null;
+
+      if (!sourceCodes?.length || !modeledCodes?.length || feature.geometry.type !== "MultiPolygon") {
+        return feature;
+      }
+
+      const keepIndexes = sourceCodes
+        .map((code, index) => (typeof code === "string" && !modeledCodes.includes(code) ? index : -1))
+        .filter((index) => index >= 0);
+
+      if (!keepIndexes.length || keepIndexes.length >= feature.geometry.coordinates.length) {
+        return {
+          ...feature,
+          properties: {
+            ...feature.properties,
+            modellierteZuordnungCodes: [],
+          },
+        };
+      }
+
+      const coordinates = feature.geometry.coordinates as number[][][][];
+      return {
+        ...feature,
+        properties: {
+          ...feature.properties,
+          sourceCodes: keepIndexes.map((index) => sourceCodes[index]),
+          modellierteZuordnungCodes: [],
+        },
+        geometry: {
+          ...feature.geometry,
+          coordinates: keepIndexes.map((index) => coordinates[index]),
+        },
+      };
+    }),
+  };
+}
 
 export default async function KarteLandtagPage() {
   const [bezirke, geo, wahl, parteien, metadaten] = await Promise.all([
@@ -14,7 +59,8 @@ export default async function KarteLandtagPage() {
   ]);
 
   const partyColors = parteiFarbenMap(parteien);
-  const geoIds = new Set(geo.features.map((feature) => String(feature.properties.id ?? "")));
+  const mapGeo = sanitizeLandkreiseGeo(geo);
+  const geoIds = new Set(mapGeo.features.map((feature) => String(feature.properties.id ?? "")));
   const mapData = wahl.ergebnisseLandkreise
     .filter((entry) => geoIds.has(entry.landkreisId))
     .map((entry) => ({
@@ -35,7 +81,7 @@ export default async function KarteLandtagPage() {
       <KartenModul
         title="Stärkste Partei nach Landkreis"
         bezirke={bezirke}
-        geo={geo}
+        geo={mapGeo}
         partyColors={partyColors}
         firstColumnLabel="Landkreis / kreisfreie Stadt"
         data={mapData}
