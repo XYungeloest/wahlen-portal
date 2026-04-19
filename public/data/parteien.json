@@ -1,0 +1,44 @@
+[
+  {
+    "id": "volksfront",
+    "name": "Volksfront",
+    "short": "VF",
+    "color": "#C41E3A",
+    "position": "sozial-patriotisch"
+  },
+  {
+    "id": "demos-ost",
+    "name": "DEMOS Ost",
+    "short": "DEM",
+    "color": "#E8851A",
+    "position": "liberal-sozial"
+  },
+  {
+    "id": "cpd-ost",
+    "name": "CPD Ost",
+    "short": "CPD",
+    "color": "#111111",
+    "position": "christdemokratisch"
+  },
+  {
+    "id": "frp",
+    "name": "FRP",
+    "short": "FRP",
+    "color": "#6B21A8",
+    "position": "freiheitlich"
+  },
+  {
+    "id": "patrioten",
+    "name": "Patrioten",
+    "short": "PAT",
+    "color": "#0B3A82",
+    "position": "konservativ"
+  },
+  {
+    "id": "sonstige",
+    "name": "Sonstige",
+    "short": "SON",
+    "color": "#6B7280",
+    "position": "verschieden"
+  }
+]

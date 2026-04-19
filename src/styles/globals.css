@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #003366;
+  --color-secondary: #1a6b3c;
+  --color-bg: #f8fafb;
+  --color-surface: #ffffff;
+  --color-text: #1a1a2e;
+  --color-danger: #b91c1c;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.font-mono-data {
+  font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, Menlo, monospace;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 3px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -100%;
+  z-index: 9999;
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 0.5rem 0.75rem;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid #d8e3ec;
+  border-radius: 0.75rem;
+}
+
+.table-basic {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-basic th,
+.table-basic td {
+  border-bottom: 1px solid #d4dce3;
+  padding: 0.625rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table-basic th {
+  font-weight: 700;
+  background: #eef3f8;
+}

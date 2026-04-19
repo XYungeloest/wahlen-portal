@@ -1,0 +1,184 @@
+[
+  {
+    "id": "bwk-01",
+    "name": "Bundestagswahlkreis 01: Berlin Zentrum",
+    "kurzname": "Berlin Zentrum",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-02",
+    "name": "Bundestagswahlkreis 02: Berlin Nord",
+    "kurzname": "Berlin Nord",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-03",
+    "name": "Bundestagswahlkreis 03: Berlin Süd",
+    "kurzname": "Berlin Süd",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "bwk-04",
+    "name": "Bundestagswahlkreis 04: Brandenburg Nord",
+    "kurzname": "Brandenburg Nord",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-05",
+    "name": "Bundestagswahlkreis 05: Brandenburg West",
+    "kurzname": "Brandenburg West",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-06",
+    "name": "Bundestagswahlkreis 06: Brandenburg Süd",
+    "kurzname": "Brandenburg Süd",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-07",
+    "name": "Bundestagswahlkreis 07: Brandenburg Ost",
+    "kurzname": "Brandenburg Ost",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "bwk-08",
+    "name": "Bundestagswahlkreis 08: Mecklenburgische Küste",
+    "kurzname": "Mecklenburgische Küste",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "bwk-09",
+    "name": "Bundestagswahlkreis 09: Seenplatte",
+    "kurzname": "Seenplatte",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "bwk-10",
+    "name": "Bundestagswahlkreis 10: Vorpommern",
+    "kurzname": "Vorpommern",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "bwk-11",
+    "name": "Bundestagswahlkreis 11: Niederlausitz Nord",
+    "kurzname": "Niederlausitz Nord",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "bwk-12",
+    "name": "Bundestagswahlkreis 12: Niederlausitz Süd",
+    "kurzname": "Niederlausitz Süd",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "bwk-13",
+    "name": "Bundestagswahlkreis 13: Oberlausitz West",
+    "kurzname": "Oberlausitz West",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "bwk-14",
+    "name": "Bundestagswahlkreis 14: Oberlausitz Ost",
+    "kurzname": "Oberlausitz Ost",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "bwk-15",
+    "name": "Bundestagswahlkreis 15: Sachsen Nord",
+    "kurzname": "Sachsen Nord",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-16",
+    "name": "Bundestagswahlkreis 16: Sachsen Mitte",
+    "kurzname": "Sachsen Mitte",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-17",
+    "name": "Bundestagswahlkreis 17: Sachsen Ost",
+    "kurzname": "Sachsen Ost",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-18",
+    "name": "Bundestagswahlkreis 18: Sachsen Süd",
+    "kurzname": "Sachsen Süd",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "bwk-19",
+    "name": "Bundestagswahlkreis 19: Altmark-Börde",
+    "kurzname": "Altmark-Börde",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-20",
+    "name": "Bundestagswahlkreis 20: Magdeburg-Jerichow",
+    "kurzname": "Magdeburg-Jerichow",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-21",
+    "name": "Bundestagswahlkreis 21: Halle-Saalekreis",
+    "kurzname": "Halle-Saalekreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-22",
+    "name": "Bundestagswahlkreis 22: Harz-Burgenland",
+    "kurzname": "Harz-Burgenland",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "bwk-23",
+    "name": "Bundestagswahlkreis 23: Thüringen Nord",
+    "kurzname": "Thüringen Nord",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "bwk-24",
+    "name": "Bundestagswahlkreis 24: Thüringen Mitte",
+    "kurzname": "Thüringen Mitte",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "bwk-25",
+    "name": "Bundestagswahlkreis 25: Thüringen Ost",
+    "kurzname": "Thüringen Ost",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "bwk-26",
+    "name": "Bundestagswahlkreis 26: Thüringen Süd",
+    "kurzname": "Thüringen Süd",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  }
+]

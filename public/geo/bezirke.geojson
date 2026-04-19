@@ -1,0 +1,293 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "berlin",
+        "name": "Berlin",
+        "hauptstadt": "Berlin",
+        "besonderesRegionalgewicht": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.05,
+              52.8
+            ],
+            [
+              13.5,
+              52.8
+            ],
+            [
+              13.5,
+              52.449999999999996
+            ],
+            [
+              13.05,
+              52.449999999999996
+            ],
+            [
+              13.05,
+              52.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "brandenburg",
+        "name": "Brandenburg",
+        "hauptstadt": "Potsdam",
+        "besonderesRegionalgewicht": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.35,
+              53.45
+            ],
+            [
+              14.85,
+              53.45
+            ],
+            [
+              14.85,
+              51.6
+            ],
+            [
+              11.35,
+              51.6
+            ],
+            [
+              11.35,
+              53.45
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mecklenburg-vorpommern",
+        "name": "Mecklenburg-Vorpommern",
+        "hauptstadt": "Rostock",
+        "besonderesRegionalgewicht": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11,
+              54.95
+            ],
+            [
+              14.85,
+              54.95
+            ],
+            [
+              14.85,
+              53.6
+            ],
+            [
+              11,
+              53.6
+            ],
+            [
+              11,
+              54.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "niederlausitz",
+        "name": "Niederlausitz",
+        "hauptstadt": "Cottbus/Chóśebuz",
+        "besonderesRegionalgewicht": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13,
+              52.05
+            ],
+            [
+              14.55,
+              52.05
+            ],
+            [
+              14.55,
+              51
+            ],
+            [
+              13,
+              51
+            ],
+            [
+              13,
+              52.05
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "oberlausitz",
+        "name": "Oberlausitz",
+        "hauptstadt": "Bautzen/Budyšin",
+        "besonderesRegionalgewicht": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.2,
+              51.95
+            ],
+            [
+              15.649999999999999,
+              51.95
+            ],
+            [
+              15.649999999999999,
+              50.85
+            ],
+            [
+              14.2,
+              50.85
+            ],
+            [
+              14.2,
+              51.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sachsen",
+        "name": "Sachsen",
+        "hauptstadt": "Dresden",
+        "besonderesRegionalgewicht": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.15,
+              51.2
+            ],
+            [
+              14.9,
+              51.2
+            ],
+            [
+              14.9,
+              50.2
+            ],
+            [
+              12.15,
+              50.2
+            ],
+            [
+              12.15,
+              51.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sachsen-anhalt",
+        "name": "Sachsen-Anhalt",
+        "hauptstadt": "Magdeburg",
+        "besonderesRegionalgewicht": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.05,
+              52.4
+            ],
+            [
+              13,
+              52.4
+            ],
+            [
+              13,
+              50.75
+            ],
+            [
+              10.05,
+              50.75
+            ],
+            [
+              10.05,
+              52.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "thueringen",
+        "name": "Thüringen",
+        "hauptstadt": "Erfurt",
+        "besonderesRegionalgewicht": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.35,
+              50.85
+            ],
+            [
+              12.85,
+              50.85
+            ],
+            [
+              12.85,
+              49.65
+            ],
+            [
+              10.35,
+              49.65
+            ],
+            [
+              10.35,
+              50.85
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

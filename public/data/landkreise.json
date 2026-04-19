@@ -1,0 +1,513 @@
+[
+  {
+    "id": "lk-001-berlin",
+    "name": "Berlin",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "lk-002-barnim",
+    "name": "Barnim",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-003-elbe-elster",
+    "name": "Elbe-Elster",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-004-havelland",
+    "name": "Havelland",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-005-maerkisch-oderland",
+    "name": "Märkisch-Oderland",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-006-oberhavel",
+    "name": "Oberhavel",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-007-oder-spree",
+    "name": "Oder-Spree",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-008-ostprignitz-ruppin",
+    "name": "Ostprignitz-Ruppin",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-009-potsdam-mittelmark",
+    "name": "Potsdam-Mittelmark",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-010-prignitz",
+    "name": "Prignitz",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-011-teltow-flaeming",
+    "name": "Teltow-Fläming",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-012-uckermark",
+    "name": "Uckermark",
+    "type": "landkreis",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-013-brandenburg-an-der-havel",
+    "name": "Brandenburg an der Havel",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-014-frankfurt",
+    "name": "Frankfurt (Oder)",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-015-potsdam",
+    "name": "Potsdam",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-016-ludwigslust-parchim",
+    "name": "Ludwigslust-Parchim",
+    "type": "landkreis",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-017-mecklenburgische-seenplatte",
+    "name": "Mecklenburgische Seenplatte",
+    "type": "landkreis",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-018-nordwestmecklenburg",
+    "name": "Nordwestmecklenburg",
+    "type": "landkreis",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-019-rostock",
+    "name": "Rostock",
+    "type": "landkreis",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-020-vorpommern-greifswald",
+    "name": "Vorpommern-Greifswald",
+    "type": "landkreis",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-021-vorpommern-ruegen",
+    "name": "Vorpommern-Rügen",
+    "type": "landkreis",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-022-rostock-stadt",
+    "name": "Rostock (Stadt)",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-023-schwerin",
+    "name": "Schwerin",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-024-spree-neisse",
+    "name": "Spree-Neiße",
+    "type": "landkreis",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "lk-025-dahme-spreewald",
+    "name": "Dahme-Spreewald",
+    "type": "landkreis",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "lk-026-oberspreewald-lausitz",
+    "name": "Oberspreewald-Lausitz",
+    "type": "landkreis",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "lk-027-cottbus",
+    "name": "Cottbus",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "lk-028-bautzen",
+    "name": "Bautzen",
+    "type": "landkreis",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "lk-029-goerlitz",
+    "name": "Görlitz",
+    "type": "landkreis",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "lk-030-hoyerswerda",
+    "name": "Hoyerswerda",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "lk-031-leipzig-landkreis",
+    "name": "Leipzig (Landkreis)",
+    "type": "landkreis",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-032-nordsachsen",
+    "name": "Nordsachsen",
+    "type": "landkreis",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-033-saechsische-schweiz-osterzgebirge",
+    "name": "Sächsische Schweiz-Osterzgebirge",
+    "type": "landkreis",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-034-vogtlandkreis",
+    "name": "Vogtlandkreis",
+    "type": "landkreis",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-035-zwickau",
+    "name": "Zwickau",
+    "type": "landkreis",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-036-chemnitz",
+    "name": "Chemnitz",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-037-dresden",
+    "name": "Dresden",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-038-leipzig",
+    "name": "Leipzig",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-039-altmarkkreis-salzwedel",
+    "name": "Altmarkkreis Salzwedel",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-040-anhalt-bitterfeld",
+    "name": "Anhalt-Bitterfeld",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-041-boerde",
+    "name": "Börde",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-042-burgenlandkreis",
+    "name": "Burgenlandkreis",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-043-harz",
+    "name": "Harz",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-044-jerichower-land",
+    "name": "Jerichower Land",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-045-mansfeld-suedharz",
+    "name": "Mansfeld-Südharz",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-046-saalekreis",
+    "name": "Saalekreis",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-047-salzlandkreis",
+    "name": "Salzlandkreis",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-048-stendal",
+    "name": "Stendal",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-049-wittenberg",
+    "name": "Wittenberg",
+    "type": "landkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-050-dessau-rosslau",
+    "name": "Dessau-Roßlau",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-051-halle",
+    "name": "Halle (Saale)",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-052-magdeburg",
+    "name": "Magdeburg",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-053-altenburger-land",
+    "name": "Altenburger Land",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-054-eichsfeld",
+    "name": "Eichsfeld",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-055-gotha",
+    "name": "Gotha",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-056-greiz",
+    "name": "Greiz",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-057-hildburghausen",
+    "name": "Hildburghausen",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-058-ilm-kreis",
+    "name": "Ilm-Kreis",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-059-kyffhaeuserkreis",
+    "name": "Kyffhäuserkreis",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-060-nordhausen",
+    "name": "Nordhausen",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-061-saale-holzland-kreis",
+    "name": "Saale-Holzland-Kreis",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-062-saale-orla-kreis",
+    "name": "Saale-Orla-Kreis",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-063-saalfeld-rudolstadt",
+    "name": "Saalfeld-Rudolstadt",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-064-schmalkalden-meiningen",
+    "name": "Schmalkalden-Meiningen",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-065-sonneberg",
+    "name": "Sonneberg",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-066-unstrut-hainich-kreis",
+    "name": "Unstrut-Hainich-Kreis",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-067-wartburgkreis",
+    "name": "Wartburgkreis",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-068-weimarer-land",
+    "name": "Weimarer Land",
+    "type": "landkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-069-erfurt",
+    "name": "Erfurt",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-070-gera",
+    "name": "Gera",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-071-jena",
+    "name": "Jena",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-072-suhl",
+    "name": "Suhl",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-073-weimar",
+    "name": "Weimar",
+    "type": "kreisfreie_stadt",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  }
+]

@@ -1,0 +1,1205 @@
+{
+  "id": "landtagswahl-2024",
+  "name": "Landtagswahl 2024",
+  "datum": "2024-09-22",
+  "wahlbeteiligung": 74.6,
+  "wahlberechtigte": 10180000,
+  "gueltigeStimmen": 7512400,
+  "sitzeGesamt": 120,
+  "mehrheitsgrenze": 61,
+  "modellhinweis": "Vereinfachtes Simulationsmodell mit einer Listenstimme. Landkreise dienen als regionale Ergebnisdarstellung der stärksten Partei.",
+  "landesergebnis": {
+    "Volksfront": 34.8,
+    "DEMOS Ost": 18.2,
+    "CPD Ost": 15.4,
+    "FRP": 10.8,
+    "Patrioten": 14.9,
+    "Sonstige": 5.9
+  },
+  "sitzverteilung": {
+    "Volksfront": 42,
+    "DEMOS Ost": 22,
+    "CPD Ost": 18,
+    "FRP": 13,
+    "Patrioten": 18,
+    "Sonstige": 7
+  },
+  "regierungsoption": {
+    "koalition": [
+      "Volksfront",
+      "DEMOS Ost"
+    ],
+    "sitze": 64,
+    "mehrheitsfaehig": true
+  },
+  "ergebnisseLandkreise": [
+    {
+      "landkreisId": "lk-001-berlin",
+      "landkreis": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "parteien": {
+        "Sonstige": 5.4,
+        "Volksfront": 32.8,
+        "CPD Ost": 16.1,
+        "Patrioten": 14.3,
+        "FRP": 11,
+        "DEMOS Ost": 20.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.8
+    },
+    {
+      "landkreisId": "lk-002-barnim",
+      "landkreis": "Barnim",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "FRP": 9.3,
+        "Volksfront": 36.6,
+        "Patrioten": 13.7,
+        "CPD Ost": 17,
+        "Sonstige": 4.6,
+        "DEMOS Ost": 18.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.6
+    },
+    {
+      "landkreisId": "lk-003-elbe-elster",
+      "landkreis": "Elbe-Elster",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "CPD Ost": 14.4,
+        "Patrioten": 13.9,
+        "DEMOS Ost": 17.9,
+        "Volksfront": 35.7,
+        "Sonstige": 5.9,
+        "FRP": 12.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.7
+    },
+    {
+      "landkreisId": "lk-004-havelland",
+      "landkreis": "Havelland",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "FRP": 10.4,
+        "Sonstige": 6.7,
+        "Volksfront": 35.6,
+        "DEMOS Ost": 16.5,
+        "CPD Ost": 15.2,
+        "Patrioten": 15.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.6
+    },
+    {
+      "landkreisId": "lk-005-maerkisch-oderland",
+      "landkreis": "Märkisch-Oderland",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Patrioten": 13.1,
+        "DEMOS Ost": 18.3,
+        "Volksfront": 36.5,
+        "FRP": 10.8,
+        "Sonstige": 5,
+        "CPD Ost": 16.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.5
+    },
+    {
+      "landkreisId": "lk-006-oberhavel",
+      "landkreis": "Oberhavel",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 35.7,
+        "Sonstige": 6.2,
+        "DEMOS Ost": 18.6,
+        "Patrioten": 13.2,
+        "CPD Ost": 14.9,
+        "FRP": 11.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.7
+    },
+    {
+      "landkreisId": "lk-007-oder-spree",
+      "landkreis": "Oder-Spree",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "FRP": 10.8,
+        "Patrioten": 15.7,
+        "Sonstige": 5.6,
+        "Volksfront": 34.9,
+        "DEMOS Ost": 18.1,
+        "CPD Ost": 14.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.9
+    },
+    {
+      "landkreisId": "lk-008-ostprignitz-ruppin",
+      "landkreis": "Ostprignitz-Ruppin",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 36.6,
+        "Patrioten": 15.6,
+        "Sonstige": 6.3,
+        "FRP": 9.6,
+        "CPD Ost": 13.5,
+        "DEMOS Ost": 18.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.6
+    },
+    {
+      "landkreisId": "lk-009-potsdam-mittelmark",
+      "landkreis": "Potsdam-Mittelmark",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Volksfront": 35.8,
+        "CPD Ost": 16.4,
+        "FRP": 10.7,
+        "DEMOS Ost": 18.6,
+        "Patrioten": 14.3,
+        "Sonstige": 4.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.8
+    },
+    {
+      "landkreisId": "lk-010-prignitz",
+      "landkreis": "Prignitz",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Patrioten": 14.8,
+        "CPD Ost": 15.5,
+        "FRP": 9.5,
+        "Sonstige": 4.9,
+        "DEMOS Ost": 16.4,
+        "Volksfront": 38.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 38.9
+    },
+    {
+      "landkreisId": "lk-011-teltow-flaeming",
+      "landkreis": "Teltow-Fläming",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Patrioten": 16.4,
+        "CPD Ost": 15.4,
+        "DEMOS Ost": 18.5,
+        "Volksfront": 34.7,
+        "Sonstige": 5.2,
+        "FRP": 9.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.7
+    },
+    {
+      "landkreisId": "lk-012-uckermark",
+      "landkreis": "Uckermark",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Patrioten": 15.9,
+        "DEMOS Ost": 16.6,
+        "CPD Ost": 14.7,
+        "FRP": 12.8,
+        "Volksfront": 35.4,
+        "Sonstige": 4.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.4
+    },
+    {
+      "landkreisId": "lk-013-brandenburg-an-der-havel",
+      "landkreis": "Brandenburg an der Havel",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Patrioten": 14.6,
+        "Sonstige": 6.1,
+        "FRP": 9.4,
+        "CPD Ost": 14.1,
+        "Volksfront": 37.4,
+        "DEMOS Ost": 18.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 37.4
+    },
+    {
+      "landkreisId": "lk-014-frankfurt",
+      "landkreis": "Frankfurt (Oder)",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Patrioten": 16.8,
+        "FRP": 12.5,
+        "Volksfront": 34.7,
+        "Sonstige": 4,
+        "CPD Ost": 15.5,
+        "DEMOS Ost": 16.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.7
+    },
+    {
+      "landkreisId": "lk-015-potsdam",
+      "landkreis": "Potsdam",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "parteien": {
+        "Sonstige": 7,
+        "Volksfront": 34.2,
+        "DEMOS Ost": 16.6,
+        "Patrioten": 15.5,
+        "FRP": 10,
+        "CPD Ost": 16.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.2
+    },
+    {
+      "landkreisId": "lk-016-ludwigslust-parchim",
+      "landkreis": "Ludwigslust-Parchim",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "Patrioten": 16.2,
+        "FRP": 8.8,
+        "Sonstige": 6.6,
+        "DEMOS Ost": 18,
+        "CPD Ost": 13.8,
+        "Volksfront": 36.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.6
+    },
+    {
+      "landkreisId": "lk-017-mecklenburgische-seenplatte",
+      "landkreis": "Mecklenburgische Seenplatte",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "Volksfront": 33.9,
+        "FRP": 12.2,
+        "CPD Ost": 15.5,
+        "Sonstige": 3.8,
+        "Patrioten": 17.8,
+        "DEMOS Ost": 16.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.9
+    },
+    {
+      "landkreisId": "lk-018-nordwestmecklenburg",
+      "landkreis": "Nordwestmecklenburg",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "Sonstige": 6.3,
+        "Patrioten": 14.8,
+        "Volksfront": 36.7,
+        "DEMOS Ost": 14.9,
+        "FRP": 12,
+        "CPD Ost": 15.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.7
+    },
+    {
+      "landkreisId": "lk-019-rostock",
+      "landkreis": "Rostock",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "CPD Ost": 14.6,
+        "FRP": 10,
+        "Patrioten": 18,
+        "Sonstige": 6.1,
+        "Volksfront": 35.4,
+        "DEMOS Ost": 15.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.4
+    },
+    {
+      "landkreisId": "lk-020-vorpommern-greifswald",
+      "landkreis": "Vorpommern-Greifswald",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "Volksfront": 34,
+        "Sonstige": 6.8,
+        "Patrioten": 16.7,
+        "DEMOS Ost": 15.7,
+        "CPD Ost": 15.1,
+        "FRP": 11.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34
+    },
+    {
+      "landkreisId": "lk-021-vorpommern-ruegen",
+      "landkreis": "Vorpommern-Rügen",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "DEMOS Ost": 17.9,
+        "CPD Ost": 14.1,
+        "Volksfront": 36.8,
+        "Patrioten": 16.8,
+        "Sonstige": 5.6,
+        "FRP": 8.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.8
+    },
+    {
+      "landkreisId": "lk-022-rostock-stadt",
+      "landkreis": "Rostock (Stadt)",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "FRP": 10.7,
+        "DEMOS Ost": 15.8,
+        "Volksfront": 36.5,
+        "Sonstige": 4.1,
+        "Patrioten": 16,
+        "CPD Ost": 16.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.5
+    },
+    {
+      "landkreisId": "lk-023-schwerin",
+      "landkreis": "Schwerin",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "parteien": {
+        "Volksfront": 35.5,
+        "DEMOS Ost": 18.5,
+        "Sonstige": 5.2,
+        "CPD Ost": 13.7,
+        "FRP": 11.3,
+        "Patrioten": 15.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.5
+    },
+    {
+      "landkreisId": "lk-024-spree-neisse",
+      "landkreis": "Spree-Neiße",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "parteien": {
+        "Patrioten": 13.4,
+        "CPD Ost": 15.5,
+        "DEMOS Ost": 17.9,
+        "FRP": 10.9,
+        "Sonstige": 5,
+        "Volksfront": 37.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 37.3
+    },
+    {
+      "landkreisId": "lk-025-dahme-spreewald",
+      "landkreis": "Dahme-Spreewald",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "parteien": {
+        "Patrioten": 16.2,
+        "CPD Ost": 14.7,
+        "FRP": 11.6,
+        "Sonstige": 6.5,
+        "DEMOS Ost": 15.8,
+        "Volksfront": 35.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.2
+    },
+    {
+      "landkreisId": "lk-026-oberspreewald-lausitz",
+      "landkreis": "Oberspreewald-Lausitz",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "parteien": {
+        "Volksfront": 35.8,
+        "DEMOS Ost": 17.5,
+        "FRP": 10.3,
+        "Sonstige": 7.2,
+        "CPD Ost": 15.4,
+        "Patrioten": 13.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.8
+    },
+    {
+      "landkreisId": "lk-027-cottbus",
+      "landkreis": "Cottbus",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "parteien": {
+        "FRP": 11,
+        "Patrioten": 16,
+        "CPD Ost": 14.2,
+        "DEMOS Ost": 17.9,
+        "Sonstige": 4.8,
+        "Volksfront": 36.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.1
+    },
+    {
+      "landkreisId": "lk-028-bautzen",
+      "landkreis": "Bautzen",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "parteien": {
+        "Sonstige": 5.4,
+        "DEMOS Ost": 16.5,
+        "CPD Ost": 16.7,
+        "Volksfront": 36.3,
+        "FRP": 9.4,
+        "Patrioten": 15.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.3
+    },
+    {
+      "landkreisId": "lk-029-goerlitz",
+      "landkreis": "Görlitz",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "parteien": {
+        "FRP": 12.8,
+        "Patrioten": 15.2,
+        "CPD Ost": 15.4,
+        "Sonstige": 3.9,
+        "Volksfront": 36.7,
+        "DEMOS Ost": 16
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.7
+    },
+    {
+      "landkreisId": "lk-030-hoyerswerda",
+      "landkreis": "Hoyerswerda",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "parteien": {
+        "CPD Ost": 14.2,
+        "Patrioten": 17.6,
+        "Volksfront": 35.8,
+        "DEMOS Ost": 15.3,
+        "FRP": 9.6,
+        "Sonstige": 7.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.8
+    },
+    {
+      "landkreisId": "lk-031-leipzig-landkreis",
+      "landkreis": "Leipzig (Landkreis)",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 35.8,
+        "CPD Ost": 14.8,
+        "FRP": 9.7,
+        "DEMOS Ost": 19.2,
+        "Sonstige": 6.5,
+        "Patrioten": 14
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.8
+    },
+    {
+      "landkreisId": "lk-032-nordsachsen",
+      "landkreis": "Nordsachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Patrioten": 15,
+        "Volksfront": 36.7,
+        "Sonstige": 6,
+        "DEMOS Ost": 16.4,
+        "CPD Ost": 14.8,
+        "FRP": 11.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.7
+    },
+    {
+      "landkreisId": "lk-033-saechsische-schweiz-osterzgebirge",
+      "landkreis": "Sächsische Schweiz-Osterzgebirge",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Patrioten": 15,
+        "FRP": 12.8,
+        "DEMOS Ost": 18.5,
+        "CPD Ost": 16.2,
+        "Volksfront": 33.8,
+        "Sonstige": 3.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.8
+    },
+    {
+      "landkreisId": "lk-034-vogtlandkreis",
+      "landkreis": "Vogtlandkreis",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Volksfront": 32.6,
+        "DEMOS Ost": 18.3,
+        "Sonstige": 6.8,
+        "Patrioten": 15.4,
+        "CPD Ost": 15.9,
+        "FRP": 11
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.6
+    },
+    {
+      "landkreisId": "lk-035-zwickau",
+      "landkreis": "Zwickau",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "Sonstige": 4.8,
+        "Volksfront": 33.6,
+        "CPD Ost": 15.6,
+        "Patrioten": 15.1,
+        "DEMOS Ost": 19.8,
+        "FRP": 11.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.6
+    },
+    {
+      "landkreisId": "lk-036-chemnitz",
+      "landkreis": "Chemnitz",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "FRP": 9.8,
+        "CPD Ost": 19,
+        "Volksfront": 36.5,
+        "DEMOS Ost": 17.6,
+        "Patrioten": 13.1,
+        "Sonstige": 4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.5
+    },
+    {
+      "landkreisId": "lk-037-dresden",
+      "landkreis": "Dresden",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "CPD Ost": 17.6,
+        "Patrioten": 15.8,
+        "Sonstige": 5,
+        "Volksfront": 33.7,
+        "FRP": 9.9,
+        "DEMOS Ost": 18
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.7
+    },
+    {
+      "landkreisId": "lk-038-leipzig",
+      "landkreis": "Leipzig",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "parteien": {
+        "DEMOS Ost": 17.7,
+        "FRP": 10.3,
+        "Patrioten": 12.9,
+        "Sonstige": 6.4,
+        "CPD Ost": 16.8,
+        "Volksfront": 35.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.9
+    },
+    {
+      "landkreisId": "lk-039-altmarkkreis-salzwedel",
+      "landkreis": "Altmarkkreis Salzwedel",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "FRP": 11.7,
+        "DEMOS Ost": 18,
+        "Patrioten": 13.2,
+        "Sonstige": 7.3,
+        "CPD Ost": 14,
+        "Volksfront": 35.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.8
+    },
+    {
+      "landkreisId": "lk-040-anhalt-bitterfeld",
+      "landkreis": "Anhalt-Bitterfeld",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "CPD Ost": 14,
+        "Sonstige": 4,
+        "DEMOS Ost": 16.7,
+        "FRP": 12.7,
+        "Volksfront": 36,
+        "Patrioten": 16.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36
+    },
+    {
+      "landkreisId": "lk-041-boerde",
+      "landkreis": "Börde",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 36.5,
+        "FRP": 9.6,
+        "Sonstige": 6.6,
+        "DEMOS Ost": 17.6,
+        "CPD Ost": 15.1,
+        "Patrioten": 14.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.5
+    },
+    {
+      "landkreisId": "lk-042-burgenlandkreis",
+      "landkreis": "Burgenlandkreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Patrioten": 14.7,
+        "FRP": 12.1,
+        "Sonstige": 4.7,
+        "CPD Ost": 16.4,
+        "Volksfront": 34.7,
+        "DEMOS Ost": 17.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.7
+    },
+    {
+      "landkreisId": "lk-043-harz",
+      "landkreis": "Harz",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Sonstige": 7.6,
+        "CPD Ost": 16.1,
+        "DEMOS Ost": 17.3,
+        "Patrioten": 16,
+        "FRP": 10.1,
+        "Volksfront": 32.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.9
+    },
+    {
+      "landkreisId": "lk-044-jerichower-land",
+      "landkreis": "Jerichower Land",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Volksfront": 34.8,
+        "CPD Ost": 14.6,
+        "Sonstige": 7.3,
+        "Patrioten": 15.8,
+        "DEMOS Ost": 18.3,
+        "FRP": 9.2
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.8
+    },
+    {
+      "landkreisId": "lk-045-mansfeld-suedharz",
+      "landkreis": "Mansfeld-Südharz",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "FRP": 12.4,
+        "Volksfront": 35.3,
+        "DEMOS Ost": 18,
+        "Patrioten": 13.7,
+        "CPD Ost": 15.2,
+        "Sonstige": 5.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.3
+    },
+    {
+      "landkreisId": "lk-046-saalekreis",
+      "landkreis": "Saalekreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Sonstige": 5.7,
+        "Volksfront": 35.6,
+        "CPD Ost": 15.8,
+        "FRP": 10.6,
+        "Patrioten": 14.6,
+        "DEMOS Ost": 17.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.6
+    },
+    {
+      "landkreisId": "lk-047-salzlandkreis",
+      "landkreis": "Salzlandkreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "CPD Ost": 16.4,
+        "Volksfront": 37.5,
+        "FRP": 10.3,
+        "Sonstige": 6.1,
+        "Patrioten": 13.7,
+        "DEMOS Ost": 16
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 37.5
+    },
+    {
+      "landkreisId": "lk-048-stendal",
+      "landkreis": "Stendal",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "FRP": 11.4,
+        "Sonstige": 6.4,
+        "DEMOS Ost": 16.2,
+        "Patrioten": 15.3,
+        "Volksfront": 34.6,
+        "CPD Ost": 16.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.6
+    },
+    {
+      "landkreisId": "lk-049-wittenberg",
+      "landkreis": "Wittenberg",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "CPD Ost": 13.2,
+        "DEMOS Ost": 15.2,
+        "Sonstige": 6.2,
+        "Patrioten": 16.8,
+        "Volksfront": 36.3,
+        "FRP": 12.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 36.3
+    },
+    {
+      "landkreisId": "lk-050-dessau-rosslau",
+      "landkreis": "Dessau-Roßlau",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "FRP": 10.7,
+        "Sonstige": 4,
+        "Volksfront": 37.2,
+        "Patrioten": 15.8,
+        "CPD Ost": 13.9,
+        "DEMOS Ost": 18.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 37.2
+    },
+    {
+      "landkreisId": "lk-051-halle",
+      "landkreis": "Halle (Saale)",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "Patrioten": 17.2,
+        "DEMOS Ost": 16.5,
+        "Sonstige": 5.3,
+        "CPD Ost": 15.9,
+        "Volksfront": 35.4,
+        "FRP": 9.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.4
+    },
+    {
+      "landkreisId": "lk-052-magdeburg",
+      "landkreis": "Magdeburg",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "parteien": {
+        "CPD Ost": 15.9,
+        "Volksfront": 34.3,
+        "FRP": 8.9,
+        "Patrioten": 16.6,
+        "DEMOS Ost": 17.5,
+        "Sonstige": 6.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.3
+    },
+    {
+      "landkreisId": "lk-053-altenburger-land",
+      "landkreis": "Altenburger Land",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 34,
+        "Patrioten": 15.8,
+        "FRP": 11.9,
+        "CPD Ost": 14.4,
+        "Sonstige": 6.3,
+        "DEMOS Ost": 17.6
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34
+    },
+    {
+      "landkreisId": "lk-054-eichsfeld",
+      "landkreis": "Eichsfeld",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "DEMOS Ost": 16.6,
+        "CPD Ost": 16.7,
+        "Patrioten": 17.3,
+        "Sonstige": 5.1,
+        "FRP": 11.9,
+        "Volksfront": 32.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.4
+    },
+    {
+      "landkreisId": "lk-055-gotha",
+      "landkreis": "Gotha",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Sonstige": 6.3,
+        "DEMOS Ost": 18.4,
+        "FRP": 10.1,
+        "Volksfront": 33.1,
+        "Patrioten": 17.1,
+        "CPD Ost": 15
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.1
+    },
+    {
+      "landkreisId": "lk-056-greiz",
+      "landkreis": "Greiz",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "DEMOS Ost": 17.2,
+        "FRP": 10,
+        "Patrioten": 16,
+        "Sonstige": 4.5,
+        "CPD Ost": 16.9,
+        "Volksfront": 35.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.4
+    },
+    {
+      "landkreisId": "lk-057-hildburghausen",
+      "landkreis": "Hildburghausen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "FRP": 11.2,
+        "Sonstige": 7,
+        "Volksfront": 33.9,
+        "Patrioten": 18.2,
+        "CPD Ost": 14.2,
+        "DEMOS Ost": 15.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.9
+    },
+    {
+      "landkreisId": "lk-058-ilm-kreis",
+      "landkreis": "Ilm-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "FRP": 8.7,
+        "Sonstige": 6.5,
+        "Patrioten": 17.9,
+        "CPD Ost": 16.6,
+        "DEMOS Ost": 16.5,
+        "Volksfront": 33.8
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.8
+    },
+    {
+      "landkreisId": "lk-059-kyffhaeuserkreis",
+      "landkreis": "Kyffhäuserkreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 33.6,
+        "Patrioten": 16.6,
+        "DEMOS Ost": 17.7,
+        "Sonstige": 5.2,
+        "FRP": 10.2,
+        "CPD Ost": 16.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.6
+    },
+    {
+      "landkreisId": "lk-060-nordhausen",
+      "landkreis": "Nordhausen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "CPD Ost": 15.7,
+        "DEMOS Ost": 16.8,
+        "Volksfront": 35.3,
+        "Sonstige": 6.8,
+        "FRP": 8.4,
+        "Patrioten": 17
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.3
+    },
+    {
+      "landkreisId": "lk-061-saale-holzland-kreis",
+      "landkreis": "Saale-Holzland-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "DEMOS Ost": 18.1,
+        "CPD Ost": 16.4,
+        "Sonstige": 4.4,
+        "Volksfront": 32.2,
+        "Patrioten": 16.8,
+        "FRP": 12.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.2
+    },
+    {
+      "landkreisId": "lk-062-saale-orla-kreis",
+      "landkreis": "Saale-Orla-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Sonstige": 4.3,
+        "Volksfront": 32.4,
+        "FRP": 10.3,
+        "DEMOS Ost": 17.9,
+        "Patrioten": 17.2,
+        "CPD Ost": 17.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.4
+    },
+    {
+      "landkreisId": "lk-063-saalfeld-rudolstadt",
+      "landkreis": "Saalfeld-Rudolstadt",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "DEMOS Ost": 18.3,
+        "CPD Ost": 14,
+        "Patrioten": 15.8,
+        "Sonstige": 6.7,
+        "Volksfront": 33.3,
+        "FRP": 11.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.3
+    },
+    {
+      "landkreisId": "lk-064-schmalkalden-meiningen",
+      "landkreis": "Schmalkalden-Meiningen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 34.8,
+        "Sonstige": 7.9,
+        "DEMOS Ost": 17,
+        "Patrioten": 16.2,
+        "CPD Ost": 15.4,
+        "FRP": 8.7
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.8
+    },
+    {
+      "landkreisId": "lk-065-sonneberg",
+      "landkreis": "Sonneberg",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "DEMOS Ost": 15.4,
+        "Sonstige": 7,
+        "Volksfront": 35,
+        "CPD Ost": 15.4,
+        "FRP": 8.8,
+        "Patrioten": 18.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35
+    },
+    {
+      "landkreisId": "lk-066-unstrut-hainich-kreis",
+      "landkreis": "Unstrut-Hainich-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "FRP": 9.4,
+        "Volksfront": 33.5,
+        "Sonstige": 7,
+        "CPD Ost": 15.4,
+        "DEMOS Ost": 18.6,
+        "Patrioten": 16.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.5
+    },
+    {
+      "landkreisId": "lk-067-wartburgkreis",
+      "landkreis": "Wartburgkreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Sonstige": 6.5,
+        "DEMOS Ost": 16.5,
+        "FRP": 11.2,
+        "CPD Ost": 15.6,
+        "Volksfront": 34.1,
+        "Patrioten": 16.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.1
+    },
+    {
+      "landkreisId": "lk-068-weimarer-land",
+      "landkreis": "Weimarer Land",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Patrioten": 15.5,
+        "CPD Ost": 17.3,
+        "Volksfront": 33.2,
+        "Sonstige": 5.4,
+        "DEMOS Ost": 17.3,
+        "FRP": 11.3
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.2
+    },
+    {
+      "landkreisId": "lk-069-erfurt",
+      "landkreis": "Erfurt",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Volksfront": 33.9,
+        "FRP": 10.2,
+        "DEMOS Ost": 18.5,
+        "Patrioten": 18.3,
+        "Sonstige": 4.1,
+        "CPD Ost": 15
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 33.9
+    },
+    {
+      "landkreisId": "lk-070-gera",
+      "landkreis": "Gera",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "FRP": 10.7,
+        "Sonstige": 5.8,
+        "DEMOS Ost": 17.7,
+        "Volksfront": 32.6,
+        "Patrioten": 16.7,
+        "CPD Ost": 16.5
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 32.6
+    },
+    {
+      "landkreisId": "lk-071-jena",
+      "landkreis": "Jena",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "CPD Ost": 15,
+        "Patrioten": 17.6,
+        "DEMOS Ost": 15.2,
+        "FRP": 9.6,
+        "Sonstige": 7.7,
+        "Volksfront": 34.9
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 34.9
+    },
+    {
+      "landkreisId": "lk-072-suhl",
+      "landkreis": "Suhl",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "FRP": 8.8,
+        "Patrioten": 17,
+        "Sonstige": 6.1,
+        "DEMOS Ost": 18.4,
+        "Volksfront": 35.3,
+        "CPD Ost": 14.4
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.3
+    },
+    {
+      "landkreisId": "lk-073-weimar",
+      "landkreis": "Weimar",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "parteien": {
+        "Sonstige": 3.9,
+        "FRP": 10.2,
+        "CPD Ost": 15.9,
+        "Volksfront": 35.7,
+        "DEMOS Ost": 17.2,
+        "Patrioten": 17.1
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 35.7
+    }
+  ]
+}

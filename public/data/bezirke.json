@@ -1,0 +1,66 @@
+[
+  {
+    "id": "berlin",
+    "name": "Berlin",
+    "hauptstadt": "Berlin",
+    "besonderesRegionalgewicht": false,
+    "hinweis": "Städtischer Kernraum mit hoher Mobilität.",
+    "anzahlLandkreise": 1
+  },
+  {
+    "id": "brandenburg",
+    "name": "Brandenburg",
+    "hauptstadt": "Potsdam",
+    "besonderesRegionalgewicht": false,
+    "hinweis": "Flächenbezirk mit urbanen Zentren entlang der Havel und Oder.",
+    "anzahlLandkreise": 14
+  },
+  {
+    "id": "mecklenburg-vorpommern",
+    "name": "Mecklenburg-Vorpommern",
+    "hauptstadt": "Rostock",
+    "besonderesRegionalgewicht": false,
+    "hinweis": "Küstenbezirk mit maritimer Wirtschaftsstruktur.",
+    "anzahlLandkreise": 8
+  },
+  {
+    "id": "niederlausitz",
+    "name": "Niederlausitz",
+    "hauptstadt": "Cottbus/Chóśebuz",
+    "besonderesRegionalgewicht": true,
+    "hinweis": "Sorbisch geprägter Strukturwandelraum mit besonderem regionalpolitischem Gewicht.",
+    "anzahlLandkreise": 4
+  },
+  {
+    "id": "oberlausitz",
+    "name": "Oberlausitz",
+    "hauptstadt": "Bautzen/Budyšin",
+    "besonderesRegionalgewicht": true,
+    "hinweis": "Sorbisch geprägter Kulturraum mit grenzregionaler Verflechtung.",
+    "anzahlLandkreise": 3
+  },
+  {
+    "id": "sachsen",
+    "name": "Sachsen",
+    "hauptstadt": "Dresden",
+    "besonderesRegionalgewicht": false,
+    "hinweis": "Industrieller Verdichtungsraum mit mehreren Oberzentren.",
+    "anzahlLandkreise": 8
+  },
+  {
+    "id": "sachsen-anhalt",
+    "name": "Sachsen-Anhalt",
+    "hauptstadt": "Magdeburg",
+    "besonderesRegionalgewicht": false,
+    "hinweis": "Mittelraum zwischen Altmark, Börde und Industrieregion Halle.",
+    "anzahlLandkreise": 14
+  },
+  {
+    "id": "thueringen",
+    "name": "Thüringen",
+    "hauptstadt": "Erfurt",
+    "besonderesRegionalgewicht": false,
+    "hinweis": "Mittelgebirgsgeprägter Bezirk mit zentraler Lage im Süden des Freistaates.",
+    "anzahlLandkreise": 21
+  }
+]

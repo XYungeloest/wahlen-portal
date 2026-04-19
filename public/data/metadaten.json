@@ -1,0 +1,22 @@
+{
+  "portal": {
+    "name": "Wahlen im Freistaat Ostdeutschland",
+    "institution": "Landeswahlleiter des Freistaates Ostdeutschland",
+    "domain": "wahlen.freistaat-ostdeutschland.de",
+    "stand": "2026-04-19",
+    "simulationshinweis": "Alle Inhalte und Wahldaten sind Bestandteil einer Politiksimulation und bilden kein amtliches deutsches Wahlrecht ab."
+  },
+  "quickfacts": {
+    "wahlberechtigte": 10240000,
+    "letzteWahl": "2025-09-21",
+    "naechsteWahl": "2029-09-23",
+    "aktuelleWahlbeteiligungReferenz": 78.1
+  },
+  "design": {
+    "landesfarben": [
+      "#003366",
+      "#FFFFFF",
+      "#1A6B3C"
+    ]
+  }
+}

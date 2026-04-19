@@ -1,35 +1,26 @@
 {
   "name": "wahlen-portal",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "npm run build && wrangler pages deploy dist",
-    "cf:dev": "wrangler pages dev dist"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "d3": "^7.9.0",
-    "topojson-client": "^3.1.0"
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260418.1",
-    "@tailwindcss/vite": "^4.2.2",
-    "autoprefixer": "^10.5.0",
-    "postcss": "^8.5.10",
-    "tailwindcss": "^4.2.2",
-    "typescript": "^6.0.3",
-    "vite": "^8.0.8",
-    "wrangler": "^4.83.0"
+    "@types/d3": "^7.4.3",
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@tailwindcss/postcss": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2"
   }
 }
