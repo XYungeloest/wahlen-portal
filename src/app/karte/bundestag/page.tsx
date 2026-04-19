@@ -3,7 +3,13 @@ import { PageHeader } from "@/components/layout/page-header";
 import { SimulationHinweis } from "@/components/ui/simulation-hinweis";
 import { parteiFarbenMap } from "@/lib/parteien";
 import type { GeoFeatureCollection } from "@/lib/types";
-import { getBezirke, getBundestagswahl2025, getBundestagswahlkreiseGeo, getMetadaten, getParteien } from "@/lib/wahldaten";
+import {
+  getBezirke,
+  getBundestagswahl2025,
+  getBundestagswahlkreiseGeo,
+  getMetadaten,
+  getParteien,
+} from "@/lib/wahldaten";
 
 const BERLIN_GROUP_ID = "bwk-berlin-gesamt";
 
@@ -12,18 +18,19 @@ function aggregateBundestagMap(geo: GeoFeatureCollection, wahl: Awaited<ReturnTy
 
   const mapGeo: GeoFeatureCollection = {
     ...geo,
-    features: geo.features.map((feature) =>
-      String(feature.properties.bezirkId ?? "") === "berlin" ?
-        {
+    features: geo.features.map((feature) => {
+      if (String(feature.properties.bezirkId ?? "") === "berlin") {
+        return {
           ...feature,
           properties: {
             ...feature.properties,
             mapGroupId: BERLIN_GROUP_ID,
             mapGroupName: "Berlin (aggregiert)",
           },
-        }
-      : feature,
-    ),
+        };
+      }
+      return feature;
+    }),
   };
 
   const nonBerlinData = wahl.ergebnisseWahlkreise

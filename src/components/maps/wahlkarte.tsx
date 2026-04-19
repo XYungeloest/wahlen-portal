@@ -150,20 +150,6 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
     return out;
   }, [featureItems, pathBuilder]);
 
-  const groupedActivePaths = useMemo(() => {
-    const groups = new Map<string, string[]>();
-    for (const item of featureItems) {
-      if (!item.groupId) {
-        continue;
-      }
-      const list = groups.get(item.groupId) ?? [];
-      list.push(item.d as string);
-      groups.set(item.groupId, list);
-    }
-
-    return Object.fromEntries([...groups.entries()].map(([groupId, paths]) => [groupId, paths.join(" ")]));
-  }, [featureItems]);
-
   const boundaryPaths = useMemo(
     () => featureItems.filter((item) => !item.groupId).map((item) => ({ key: item.id, d: item.d as string })),
     [featureItems],
@@ -173,12 +159,12 @@ export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
     if (!activeId) {
       return null;
     }
-    if (groupedBoundaryPaths[activeId] || groupedActivePaths[activeId]) {
-      return groupedBoundaryPaths[activeId] ?? groupedActivePaths[activeId];
+    if (groupedBoundaryPaths[activeId]) {
+      return groupedBoundaryPaths[activeId];
     }
     const item = featureItems.find((entry) => entry.displayId === activeId);
     return item?.d ?? null;
-  }, [activeId, featureItems, groupedActivePaths, groupedBoundaryPaths]);
+  }, [activeId, featureItems, groupedBoundaryPaths]);
 
   const activeResult = activeId ? resultsById[activeId] : null;
 
