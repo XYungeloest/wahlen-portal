@@ -68,14 +68,17 @@ export default async function MethodikPage() {
             Bundestag: Wahlkreisnummern und -namen folgen der amtlichen Wahlkreiseinteilung 2025 der Bundeswahlleiterin; die
             Shape-Zuordnung erfolgt über die nummerierten SVG-Labels.
           </li>
-          <li>Berlin-Inset-Dubletten aus der Bundestags-SVG werden in der Kartenaufbereitung entfernt.</li>
+          <li>
+            Für die Kartenansicht wird Berlin im Bundestagskartenmodul als ein zusammengefasstes Darstellungsobjekt geführt; interne
+            Berliner Wahlkreisgrenzen werden dort nicht gezeichnet.
+          </li>
           <li>
             Bezirkszuordnungen von Bundestagswahlkreisen werden aus der amtlichen Gemeindezuordnung plausibilisiert; bei
             grenzüberschreitenden Fällen wird ein primärer Bezirk ausgewiesen.
           </li>
           <li>
-            Landtag: Kreisfreie Städte bleiben als eigene Einheiten erhalten. Hoyerswerda wird als modellierte flächige Teilgeometrie
-            aus dem Bautzen-Zuschnitt abgeleitet und nicht als Punktmarke dargestellt.
+            Landtag: Kreisfreie Städte bleiben als eigene Einheiten erhalten. Für Hoyerswerda wird keine künstliche Sondergeometrie
+            erzeugt; in der Kartenansicht wird die Region über den umgebenden Landkreis-Zuschnitt abgedeckt.
           </li>
           <li>
             Einzelne fehlende Flächenzuschnitte in Sachsen/Thüringen werden transparent und ausschließlich auf Landkreisebene

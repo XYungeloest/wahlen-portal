@@ -109,9 +109,10 @@ public/
 - Es werden ausschließlich Ost-Gebiete dargestellt; westdeutsche Flächen werden bei der Extraktion verworfen.
 - Die SVG-Pfade werden topologisch als Outer-/Hole-Ringe verarbeitet; dadurch werden Inset-/Loch-Artefakte reduziert.
 - Für drei Wahlkreise mit gemischtem Bezirkszuschnitt wird ein primärer Bezirk gesetzt und die Mehrfachzuordnung im Mapping ausgewiesen.
-- Berliner Inset-Dubletten aus der Bundestags-SVG werden automatisch entfernt; es bleibt die geographisch korrekte Berlin-Lage im Ost-Ausschnitt.
-- Für Hoyerswerda wird eine modellierte flächige Teilgeometrie aus dem Bautzen-Polygon abgeleitet (keine Punktmarke); Bautzen erhält dafür eine korrespondierende Innenaussparung.
+- In der Bundestagskarte wird Berlin in der Darstellung zu einem Kartenobjekt aggregiert; interne Berliner Wahlkreisgrenzen werden dort bewusst nicht gezeichnet.
+- Für Hoyerswerda wird keine künstliche Sondergeometrie erzeugt (kein Punkt/kein ausgeschnittenes Kunstpolygon).
 - Einzelne in der Simulation fehlende Zuschnitte werden transparent und nur auf Landkreisebene (nicht auf kreisfreie Städte) zugeschlagen; die betroffenen Codes sind als `modellierteZuordnungCodes` in `landkreise.geojson` dokumentiert.
+- Rendering-Strategie: Flächen ohne weiße Einzelstrokes, gemeinsamer Boundary-Layer darüber, dedizierter Highlight-Layer ganz oben.
 
 Hinweis: Für die initiale V1 wurden konsistente Simulationsdaten über `scripts/generate-sim-data.mjs` erzeugt.
 

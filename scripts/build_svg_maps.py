@@ -669,59 +669,6 @@ def parse_wahlkreise_svg() -> Tuple[List[Dict[str, object]], Dict[int, str], Dic
 
 
 
-def build_hoyerswerda_polygon_from_bautzen(code_shapes: Dict[str, MultiPolygon]) -> MultiPolygon:
-    bautzen = code_shapes["14625"]
-    bautzen_center = multipolygon_centroid(bautzen)
-    spree_neisse_center = multipolygon_centroid(code_shapes["12071"])
-
-    target = (
-        bautzen_center[0] * 0.7 + spree_neisse_center[0] * 0.3,
-        bautzen_center[1] * 0.7 + spree_neisse_center[1] * 0.3,
-    )
-
-    polygon_index = None
-    for index, polygon in enumerate(bautzen):
-        if point_in_polygon(target, polygon):
-            polygon_index = index
-            break
-
-    if polygon_index is None:
-        # Fallback to the largest Bautzen polygon if the weighted point lands outside.
-        polygon_index = max(range(len(bautzen)), key=lambda idx: polygon_area(bautzen[idx]))
-        target = ring_centroid(bautzen[polygon_index][0])
-
-    base_polygon = bautzen[polygon_index]
-    outer = base_polygon[0]
-    min_x, min_y, max_x, max_y = ring_bbox(outer)
-    max_radius = min(max_x - min_x, max_y - min_y) * 0.11
-    min_radius = min(max_x - min_x, max_y - min_y) * 0.025
-    radius = max_radius
-
-    def make_ring(r: float) -> Ring:
-        points: Ring = []
-        segments = 24
-        for step in range(segments):
-            angle = (step / segments) * math.pi * 2.0
-            points.append((target[0] + math.cos(angle) * r, target[1] + math.sin(angle) * r))
-        points.append(points[0])
-        return points
-
-    hole_ring = make_ring(radius)
-    while radius > min_radius and not all(point_in_polygon(point, base_polygon) for point in hole_ring[:-1]):
-        radius *= 0.82
-        hole_ring = make_ring(radius)
-
-    # Cut the enclave from Bautzen so Hoyerswerda and Bautzen remain visually separated.
-    outer_clockwise = signed_area(outer) < 0
-    hole_ring = normalize_ring_direction(hole_ring, clockwise=not outer_clockwise)
-    bautzen[polygon_index] = [outer, *base_polygon[1:], hole_ring]
-    code_shapes["14625"] = bautzen
-
-    hoy_ring = normalize_ring_direction(list(hole_ring), clockwise=outer_clockwise)
-    return [[hoy_ring]]
-
-
-
 def assign_remaining_codes(
     simulation_to_codes: Dict[str, List[str]],
     code_shapes: Dict[str, MultiPolygon],
@@ -828,22 +775,20 @@ def build_landkreis_geojson(code_shapes: Dict[str, MultiPolygon], kreis_name_map
         raise ValueError("Unresolved county mappings:\n" + "\n".join(unresolved))
 
     fallback_assignments = assign_remaining_codes(simulation_to_codes, code_shapes, landkreise)
-    hoyerswerda_geometry = build_hoyerswerda_polygon_from_bautzen(code_shapes)
 
     features = []
 
     for entry in landkreise:
         entry_id = entry["id"]
         if entry_id == "lk-030-hoyerswerda":
-            geometry = hoyerswerda_geometry
-            source_codes: List[str] = ["14625"]
-            source = "modelliert-aus-bautzen"
-        else:
-            source_codes = simulation_to_codes[entry_id]
-            geometry = []
-            for code in source_codes:
-                geometry.extend(code_shapes[code])
-            source = "landkreise.svg"
+            # No standalone geometry in source map; represented in map view via surrounding Landkreis context.
+            continue
+
+        source_codes = simulation_to_codes[entry_id]
+        geometry = []
+        for code in source_codes:
+            geometry.extend(code_shapes[code])
+        source = "landkreise.svg"
 
         assumed_from = [code for code in source_codes if code in fallback_assignments and fallback_assignments[code] == entry_id]
 
