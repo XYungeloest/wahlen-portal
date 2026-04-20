@@ -45,7 +45,7 @@
     "hauptstadt": "Dresden",
     "besonderesRegionalgewicht": false,
     "hinweis": "Industrieller Verdichtungsraum mit mehreren Oberzentren.",
-    "anzahlLandkreise": 8
+    "anzahlLandkreise": 11
   },
   {
     "id": "sachsen-anhalt",
@@ -61,6 +61,6 @@
     "hauptstadt": "Erfurt",
     "besonderesRegionalgewicht": false,
     "hinweis": "Mittelgebirgsgeprägter Bezirk mit zentraler Lage im Süden des Freistaates.",
-    "anzahlLandkreise": 21
+    "anzahlLandkreise": 22
   }
 ]

@@ -1,14 +1,13 @@
 import { KartenModul } from "@/components/maps/kartenmodul";
 import { PageHeader } from "@/components/layout/page-header";
-import { SimulationHinweis } from "@/components/ui/simulation-hinweis";
 import { parteiFarbenMap } from "@/lib/parteien";
-import { getBezirke, getLandkreiseGeo, getLandtagswahl2024, getMetadaten, getParteien } from "@/lib/wahldaten";
+import { getBezirke, getLandkreiseGeo, getLandtagDatasets, getMetadaten, getParteien } from "@/lib/wahldaten";
 
 export default async function KarteLandtagPage() {
-  const [bezirke, geo, wahl, parteien, metadaten] = await Promise.all([
+  const [bezirke, geo, datasets, parteien, metadaten] = await Promise.all([
     getBezirke(),
     getLandkreiseGeo(),
-    getLandtagswahl2024(),
+    getLandtagDatasets(),
     getParteien(),
     getMetadaten(),
   ]);
@@ -19,24 +18,17 @@ export default async function KarteLandtagPage() {
     <div className="space-y-6">
       <PageHeader
         title="Karte Landtagswahl"
-        description="D3-Karte auf Landkreisebene. Je Landkreis wird die stärkste Partei im vereinfachten Simulationsmodell dargestellt."
+        description="Amtliche Kreis- und Stadtgeometrien fuer den Freistaat Ostdeutschland mit waehlbarer Datengrundlage, Bezirksfilter, Legende und tabellarischer Alternative."
       />
       <KartenModul
-        title="Stärkste Partei nach Landkreis"
+        title="Landtagskarte"
+        areaLabel="Landkreis / kreisfreie Stadt"
         bezirke={bezirke}
         geo={geo}
+        datasets={datasets}
         partyColors={partyColors}
-        firstColumnLabel="Landkreis / kreisfreie Stadt"
-        data={wahl.ergebnisseLandkreise.map((entry) => ({
-          id: entry.landkreisId,
-          name: entry.landkreis,
-          bezirkId: entry.bezirkId,
-          bezirk: entry.bezirk,
-          winner: entry.staerkstePartei,
-          winnerPercent: entry.staerksteParteiProzent,
-        }))}
+        globalSimulationHint={`${metadaten.portal.simulationshinweis} Die Landtagskarte nutzt Landkreise und kreisfreie Staedte als regionale Wahlkreisebene; Bezirke dienen nur der Orientierung und Filterung.`}
       />
-      <SimulationHinweis text={`${metadaten.portal.simulationshinweis} ${wahl.modellhinweis}`} />
     </div>
   );
 }

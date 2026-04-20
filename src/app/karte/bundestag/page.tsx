@@ -1,20 +1,19 @@
 import { KartenModul } from "@/components/maps/kartenmodul";
 import { PageHeader } from "@/components/layout/page-header";
-import { SimulationHinweis } from "@/components/ui/simulation-hinweis";
 import { parteiFarbenMap } from "@/lib/parteien";
 import {
   getBezirke,
-  getBundestagswahl2025,
+  getBundestagDatasets,
   getBundestagswahlkreiseGeo,
   getMetadaten,
   getParteien,
 } from "@/lib/wahldaten";
 
 export default async function KarteBundestagPage() {
-  const [bezirke, geo, wahl, parteien, metadaten] = await Promise.all([
+  const [bezirke, geo, datasets, parteien, metadaten] = await Promise.all([
     getBezirke(),
     getBundestagswahlkreiseGeo(),
-    getBundestagswahl2025(),
+    getBundestagDatasets(),
     getParteien(),
     getMetadaten(),
   ]);
@@ -25,24 +24,17 @@ export default async function KarteBundestagPage() {
     <div className="space-y-6">
       <PageHeader
         title="Karte Bundestagswahl"
-        description="D3-Karte der Bundestagswahlkreise mit Darstellung der stärksten Partei je Wahlkreis."
+        description="Offizielle Bundestagswahlkreise 2025 fuer Ostdeutschland mit waehlbaren Datensaetzen, Bezirksfilter, Legende und separater Direktmandats-Ausweisung."
       />
       <KartenModul
-        title="Stärkste Partei nach Bundestagswahlkreis"
+        title="Bundestagskarte"
+        areaLabel="Bundestagswahlkreis"
         bezirke={bezirke}
         geo={geo}
+        datasets={datasets}
         partyColors={partyColors}
-        firstColumnLabel="Bundestagswahlkreis"
-        data={wahl.ergebnisseWahlkreise.map((entry) => ({
-          id: entry.wahlkreisId,
-          name: entry.wahlkreis,
-          bezirkId: entry.bezirkId,
-          bezirk: entry.bezirk,
-          winner: entry.staerkstePartei,
-          winnerPercent: entry.staerksteParteiProzent,
-        }))}
+        globalSimulationHint={`${metadaten.portal.simulationshinweis} Die Karte nutzt reale Bundestagswahlkreise, weist das einzige Direktmandat Ostdeutschland aber bewusst separat aus und bildet kein vollstaendiges Bundeswahlrecht nach.`}
       />
-      <SimulationHinweis text={`${metadaten.portal.simulationshinweis} ${wahl.modellhinweis}`} />
     </div>
   );
 }

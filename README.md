@@ -54,24 +54,33 @@ public/
     bezirke.json
     landkreise.json
     bundestagswahlkreise.json
-    landtagswahl-2024.json
-    bundestagswahl-2025.json
+    mappings/
+      landkreise-bezirke.json
+      bundestagswahlkreise-bezirke.json
+    elections/
+      landtag/
+        2020.json
+        2024.json
+      bundestag/
+        2021.json
+        2025.json
     metadaten.json
   geo/
     bezirke.geojson
-    landkreise.geojson
-    bundestagswahlkreise.geojson
+    landkreise-ost.geojson
+    btw-wahlkreise-ost.geojson
 ```
 
 ## Neue Wahldaten ergänzen
 
-1. JSON-Dateien in `public/data/` ergänzen oder aktualisieren.
-2. Zugehörige Geometrien in `public/geo/` anpassen.
-3. Bei größeren Änderungen konsistente IDs zwischen Ergebnisdaten und GeoJSON sicherstellen.
-4. Seiten/Visualisierungen prüfen, falls neue Parteien oder Gebietseinheiten hinzugefügt wurden.
+1. JSON-Datei im passenden Ordner unter `public/data/elections/` ergänzen.
+2. Konsistente `gebietId`-Werte zu `public/geo/landkreise-ost.geojson` oder `public/geo/btw-wahlkreise-ost.geojson` verwenden.
+3. Falls sich die Geo-Basis ändert, `node scripts/prepare-map-data.mjs` ausführen.
+4. Karten- und Ergebnisseiten prüfen.
 5. Build prüfen mit `npm run build`.
 
-Hinweis: Für die initiale V1 wurden konsistente Simulationsdaten über `scripts/generate-sim-data.mjs` erzeugt.
+Hinweis: Die Kartenbasis wird jetzt ueber `scripts/prepare-map-data.mjs` aus amtlichen Geodaten und lokalen Simulationsdatensaetzen aufbereitet. Details stehen in [MAP_DATA_NOTES.md](/Users/petzke/wahlen-portal/MAP_DATA_NOTES.md).
+Das fruehere Script `scripts/generate-sim-data.mjs` ist fuer die neue Kartenbasis nicht mehr die fachliche Referenz.
 
 ## Modellhinweis
 

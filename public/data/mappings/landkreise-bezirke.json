@@ -1,0 +1,541 @@
+[
+  {
+    "id": "lk-16077",
+    "ags": "16077",
+    "name": "Altenburger Land",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-15081",
+    "ags": "15081",
+    "name": "Altmarkkreis Salzwedel",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-15082",
+    "ags": "15082",
+    "name": "Anhalt-Bitterfeld",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-12060",
+    "ags": "12060",
+    "name": "Barnim",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-14625",
+    "ags": "14625",
+    "name": "Bautzen",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "lk-11000",
+    "ags": "11000",
+    "name": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin"
+  },
+  {
+    "id": "lk-15083",
+    "ags": "15083",
+    "name": "Börde",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-12051",
+    "ags": "12051",
+    "name": "Brandenburg an der Havel",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-15084",
+    "ags": "15084",
+    "name": "Burgenlandkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-14511",
+    "ags": "14511",
+    "name": "Chemnitz",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-12052",
+    "ags": "12052",
+    "name": "Cottbus",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "lk-12061",
+    "ags": "12061",
+    "name": "Dahme-Spreewald",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "lk-15001",
+    "ags": "15001",
+    "name": "Dessau-Roßlau",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-14612",
+    "ags": "14612",
+    "name": "Dresden",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-16061",
+    "ags": "16061",
+    "name": "Eichsfeld",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-12062",
+    "ags": "12062",
+    "name": "Elbe-Elster",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-16051",
+    "ags": "16051",
+    "name": "Erfurt",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-14521",
+    "ags": "14521",
+    "name": "Erzgebirgskreis",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-12053",
+    "ags": "12053",
+    "name": "Frankfurt (Oder)",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-16052",
+    "ags": "16052",
+    "name": "Gera",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-14626",
+    "ags": "14626",
+    "name": "Görlitz",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "lk-16067",
+    "ags": "16067",
+    "name": "Gotha",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-16076",
+    "ags": "16076",
+    "name": "Greiz",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-15002",
+    "ags": "15002",
+    "name": "Halle (Saale)",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-15085",
+    "ags": "15085",
+    "name": "Harz",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-12063",
+    "ags": "12063",
+    "name": "Havelland",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-16069",
+    "ags": "16069",
+    "name": "Hildburghausen",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-14625240",
+    "ags": "14625240",
+    "name": "Hoyerswerda",
+    "bezirkId": "oberlausitz",
+    "bezirk": "Oberlausitz"
+  },
+  {
+    "id": "lk-16070",
+    "ags": "16070",
+    "name": "Ilm-Kreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-16053",
+    "ags": "16053",
+    "name": "Jena",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-15086",
+    "ags": "15086",
+    "name": "Jerichower Land",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-16065",
+    "ags": "16065",
+    "name": "Kyffhäuserkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-14713",
+    "ags": "14713",
+    "name": "Leipzig",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-14729",
+    "ags": "14729",
+    "name": "Leipzig (Landkreis)",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-13076",
+    "ags": "13076",
+    "name": "Ludwigslust-Parchim",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-15003",
+    "ags": "15003",
+    "name": "Magdeburg",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-15087",
+    "ags": "15087",
+    "name": "Mansfeld-Südharz",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-12064",
+    "ags": "12064",
+    "name": "Märkisch-Oderland",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-13071",
+    "ags": "13071",
+    "name": "Mecklenburgische Seenplatte",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-14627",
+    "ags": "14627",
+    "name": "Meißen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-14522",
+    "ags": "14522",
+    "name": "Mittelsachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-16062",
+    "ags": "16062",
+    "name": "Nordhausen",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-14730",
+    "ags": "14730",
+    "name": "Nordsachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-13074",
+    "ags": "13074",
+    "name": "Nordwestmecklenburg",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-12065",
+    "ags": "12065",
+    "name": "Oberhavel",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-12066",
+    "ags": "12066",
+    "name": "Oberspreewald-Lausitz",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "lk-12067",
+    "ags": "12067",
+    "name": "Oder-Spree",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-12068",
+    "ags": "12068",
+    "name": "Ostprignitz-Ruppin",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-12054",
+    "ags": "12054",
+    "name": "Potsdam",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-12069",
+    "ags": "12069",
+    "name": "Potsdam-Mittelmark",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-12070",
+    "ags": "12070",
+    "name": "Prignitz",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-13072",
+    "ags": "13072",
+    "name": "Rostock",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-13003",
+    "ags": "13003",
+    "name": "Rostock (Stadt)",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-16074",
+    "ags": "16074",
+    "name": "Saale-Holzland-Kreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-16075",
+    "ags": "16075",
+    "name": "Saale-Orla-Kreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-15088",
+    "ags": "15088",
+    "name": "Saalekreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-16073",
+    "ags": "16073",
+    "name": "Saalfeld-Rudolstadt",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-14628",
+    "ags": "14628",
+    "name": "Sächsische Schweiz-Osterzgebirge",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-15089",
+    "ags": "15089",
+    "name": "Salzlandkreis",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-16066",
+    "ags": "16066",
+    "name": "Schmalkalden-Meiningen",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-13004",
+    "ags": "13004",
+    "name": "Schwerin",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-16068",
+    "ags": "16068",
+    "name": "Sömmerda",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-16072",
+    "ags": "16072",
+    "name": "Sonneberg",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-12071",
+    "ags": "12071",
+    "name": "Spree-Neiße",
+    "bezirkId": "niederlausitz",
+    "bezirk": "Niederlausitz"
+  },
+  {
+    "id": "lk-15090",
+    "ags": "15090",
+    "name": "Stendal",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-16054",
+    "ags": "16054",
+    "name": "Suhl",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-12072",
+    "ags": "12072",
+    "name": "Teltow-Fläming",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-12073",
+    "ags": "12073",
+    "name": "Uckermark",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg"
+  },
+  {
+    "id": "lk-16064",
+    "ags": "16064",
+    "name": "Unstrut-Hainich-Kreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-14523",
+    "ags": "14523",
+    "name": "Vogtlandkreis",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  },
+  {
+    "id": "lk-13075",
+    "ags": "13075",
+    "name": "Vorpommern-Greifswald",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-13073",
+    "ags": "13073",
+    "name": "Vorpommern-Rügen",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern"
+  },
+  {
+    "id": "lk-16063",
+    "ags": "16063",
+    "name": "Wartburgkreis",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-16055",
+    "ags": "16055",
+    "name": "Weimar",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-16071",
+    "ags": "16071",
+    "name": "Weimarer Land",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen"
+  },
+  {
+    "id": "lk-15091",
+    "ags": "15091",
+    "name": "Wittenberg",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt"
+  },
+  {
+    "id": "lk-14524",
+    "ags": "14524",
+    "name": "Zwickau",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen"
+  }
+]

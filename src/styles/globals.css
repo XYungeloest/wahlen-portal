@@ -3,17 +3,19 @@
 :root {
   --color-primary: #003366;
   --color-secondary: #1a6b3c;
-  --color-bg: #f8fafb;
-  --color-surface: #ffffff;
-  --color-text: #1a1a2e;
+  --color-bg: #f4f7f3;
+  --color-surface: rgba(255, 255, 255, 0.96);
+  --color-text: #18242e;
   --color-danger: #b91c1c;
 }
 
 html,
 body {
-  background: var(--color-bg);
+  background:
+    radial-gradient(circle at top left, rgba(188, 222, 214, 0.42), transparent 28rem),
+    linear-gradient(180deg, #eef5f2 0%, var(--color-bg) 32%, #f8fbfa 100%);
   color: var(--color-text);
-  font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
 }
 
 .font-mono-data {
@@ -50,8 +52,9 @@ a:hover {
 
 .card {
   background: var(--color-surface);
-  border: 1px solid #d8e3ec;
-  border-radius: 0.75rem;
+  border: 1px solid #d8e4df;
+  border-radius: 1rem;
+  box-shadow: 0 14px 34px rgba(0, 43, 49, 0.05);
 }
 
 .table-basic {
@@ -69,5 +72,5 @@ a:hover {
 
 .table-basic th {
   font-weight: 700;
-  background: #eef3f8;
+  background: #eef4f1;
 }

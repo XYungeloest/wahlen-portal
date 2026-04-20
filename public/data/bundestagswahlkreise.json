@@ -1,184 +1,542 @@
 [
   {
-    "id": "bwk-01",
-    "name": "Bundestagswahlkreis 01: Berlin Zentrum",
-    "kurzname": "Berlin Zentrum",
-    "bezirkId": "berlin",
-    "bezirk": "Berlin"
-  },
-  {
-    "id": "bwk-02",
-    "name": "Bundestagswahlkreis 02: Berlin Nord",
-    "kurzname": "Berlin Nord",
-    "bezirkId": "berlin",
-    "bezirk": "Berlin"
-  },
-  {
-    "id": "bwk-03",
-    "name": "Bundestagswahlkreis 03: Berlin Süd",
-    "kurzname": "Berlin Süd",
-    "bezirkId": "berlin",
-    "bezirk": "Berlin"
-  },
-  {
-    "id": "bwk-04",
-    "name": "Bundestagswahlkreis 04: Brandenburg Nord",
-    "kurzname": "Brandenburg Nord",
-    "bezirkId": "brandenburg",
-    "bezirk": "Brandenburg"
-  },
-  {
-    "id": "bwk-05",
-    "name": "Bundestagswahlkreis 05: Brandenburg West",
-    "kurzname": "Brandenburg West",
-    "bezirkId": "brandenburg",
-    "bezirk": "Brandenburg"
-  },
-  {
-    "id": "bwk-06",
-    "name": "Bundestagswahlkreis 06: Brandenburg Süd",
-    "kurzname": "Brandenburg Süd",
-    "bezirkId": "brandenburg",
-    "bezirk": "Brandenburg"
-  },
-  {
-    "id": "bwk-07",
-    "name": "Bundestagswahlkreis 07: Brandenburg Ost",
-    "kurzname": "Brandenburg Ost",
-    "bezirkId": "brandenburg",
-    "bezirk": "Brandenburg"
-  },
-  {
-    "id": "bwk-08",
-    "name": "Bundestagswahlkreis 08: Mecklenburgische Küste",
-    "kurzname": "Mecklenburgische Küste",
+    "id": "wk-012",
+    "nummer": "012",
+    "name": "Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",
+    "land": "Mecklenburg-Vorpommern",
     "bezirkId": "mecklenburg-vorpommern",
-    "bezirk": "Mecklenburg-Vorpommern"
+    "bezirk": "Mecklenburg-Vorpommern",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-09",
-    "name": "Bundestagswahlkreis 09: Seenplatte",
-    "kurzname": "Seenplatte",
+    "id": "wk-013",
+    "nummer": "013",
+    "name": "Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",
+    "land": "Mecklenburg-Vorpommern",
     "bezirkId": "mecklenburg-vorpommern",
-    "bezirk": "Mecklenburg-Vorpommern"
+    "bezirk": "Mecklenburg-Vorpommern",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-10",
-    "name": "Bundestagswahlkreis 10: Vorpommern",
-    "kurzname": "Vorpommern",
+    "id": "wk-014",
+    "nummer": "014",
+    "name": "Rostock – Landkreis Rostock II",
+    "land": "Mecklenburg-Vorpommern",
     "bezirkId": "mecklenburg-vorpommern",
-    "bezirk": "Mecklenburg-Vorpommern"
+    "bezirk": "Mecklenburg-Vorpommern",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-11",
-    "name": "Bundestagswahlkreis 11: Niederlausitz Nord",
-    "kurzname": "Niederlausitz Nord",
+    "id": "wk-015",
+    "nummer": "015",
+    "name": "Vorpommern-Rügen – Vorpommern-Greifswald I",
+    "land": "Mecklenburg-Vorpommern",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-016",
+    "nummer": "016",
+    "name": "Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",
+    "land": "Mecklenburg-Vorpommern",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-017",
+    "nummer": "017",
+    "name": "Mecklenburgische Seenplatte II – Landkreis Rostock III",
+    "land": "Mecklenburg-Vorpommern",
+    "bezirkId": "mecklenburg-vorpommern",
+    "bezirk": "Mecklenburg-Vorpommern",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-056",
+    "nummer": "056",
+    "name": "Prignitz – Ostprignitz-Ruppin – Havelland I",
+    "land": "Brandenburg",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-057",
+    "nummer": "057",
+    "name": "Uckermark – Barnim I",
+    "land": "Brandenburg",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-058",
+    "nummer": "058",
+    "name": "Oberhavel – Havelland II",
+    "land": "Brandenburg",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-059",
+    "nummer": "059",
+    "name": "Märkisch-Oderland – Barnim II",
+    "land": "Brandenburg",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-060",
+    "nummer": "060",
+    "name": "Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",
+    "land": "Brandenburg",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-061",
+    "nummer": "061",
+    "name": "Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",
+    "land": "Brandenburg",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-062",
+    "nummer": "062",
+    "name": "Dahme-Spreewald – Teltow-Fläming III",
+    "land": "Brandenburg",
     "bezirkId": "niederlausitz",
-    "bezirk": "Niederlausitz"
+    "bezirk": "Niederlausitz",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-12",
-    "name": "Bundestagswahlkreis 12: Niederlausitz Süd",
-    "kurzname": "Niederlausitz Süd",
+    "id": "wk-063",
+    "nummer": "063",
+    "name": "Frankfurt (Oder) – Oder-Spree",
+    "land": "Brandenburg",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-064",
+    "nummer": "064",
+    "name": "Cottbus – Spree-Neiße",
+    "land": "Brandenburg",
     "bezirkId": "niederlausitz",
-    "bezirk": "Niederlausitz"
+    "bezirk": "Niederlausitz",
+    "zuordnung": "manual-override"
   },
   {
-    "id": "bwk-13",
-    "name": "Bundestagswahlkreis 13: Oberlausitz West",
-    "kurzname": "Oberlausitz West",
+    "id": "wk-065",
+    "nummer": "065",
+    "name": "Elbe-Elster – Oberspreewald-Lausitz",
+    "land": "Brandenburg",
+    "bezirkId": "brandenburg",
+    "bezirk": "Brandenburg",
+    "zuordnung": "manual-override"
+  },
+  {
+    "id": "wk-066",
+    "nummer": "066",
+    "name": "Altmark – Jerichower Land",
+    "land": "Sachsen-Anhalt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-067",
+    "nummer": "067",
+    "name": "Börde – Salzlandkreis",
+    "land": "Sachsen-Anhalt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-068",
+    "nummer": "068",
+    "name": "Harz",
+    "land": "Sachsen-Anhalt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-069",
+    "nummer": "069",
+    "name": "Magdeburg",
+    "land": "Sachsen-Anhalt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-070",
+    "nummer": "070",
+    "name": "Anhalt – Dessau – Wittenberg",
+    "land": "Sachsen-Anhalt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-071",
+    "nummer": "071",
+    "name": "Halle",
+    "land": "Sachsen-Anhalt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-072",
+    "nummer": "072",
+    "name": "Burgenland – Saalekreis",
+    "land": "Sachsen-Anhalt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-073",
+    "nummer": "073",
+    "name": "Mansfeld",
+    "land": "Sachsen-Anhalt",
+    "bezirkId": "sachsen-anhalt",
+    "bezirk": "Sachsen-Anhalt",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-074",
+    "nummer": "074",
+    "name": "Berlin-Mitte",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-075",
+    "nummer": "075",
+    "name": "Berlin-Pankow",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-076",
+    "nummer": "076",
+    "name": "Berlin-Reinickendorf",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-077",
+    "nummer": "077",
+    "name": "Berlin-Spandau – Charlottenburg Nord",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-078",
+    "nummer": "078",
+    "name": "Berlin-Steglitz-Zehlendorf",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-079",
+    "nummer": "079",
+    "name": "Berlin-Charlottenburg-Wilmersdorf",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-080",
+    "nummer": "080",
+    "name": "Berlin-Tempelhof-Schöneberg",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-081",
+    "nummer": "081",
+    "name": "Berlin-Neukölln",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-082",
+    "nummer": "082",
+    "name": "Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-083",
+    "nummer": "083",
+    "name": "Berlin-Treptow-Köpenick",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-084",
+    "nummer": "084",
+    "name": "Berlin-Marzahn-Hellersdorf",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-085",
+    "nummer": "085",
+    "name": "Berlin-Lichtenberg",
+    "land": "Berlin",
+    "bezirkId": "berlin",
+    "bezirk": "Berlin",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-150",
+    "nummer": "150",
+    "name": "Nordsachsen",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-151",
+    "nummer": "151",
+    "name": "Leipzig I",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-152",
+    "nummer": "152",
+    "name": "Leipzig II",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-153",
+    "nummer": "153",
+    "name": "Leipzig-Land",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-154",
+    "nummer": "154",
+    "name": "Meißen",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-155",
+    "nummer": "155",
+    "name": "Bautzen I",
+    "land": "Sachsen",
     "bezirkId": "oberlausitz",
-    "bezirk": "Oberlausitz"
+    "bezirk": "Oberlausitz",
+    "zuordnung": "manual-override"
   },
   {
-    "id": "bwk-14",
-    "name": "Bundestagswahlkreis 14: Oberlausitz Ost",
-    "kurzname": "Oberlausitz Ost",
+    "id": "wk-156",
+    "nummer": "156",
+    "name": "Görlitz",
+    "land": "Sachsen",
     "bezirkId": "oberlausitz",
-    "bezirk": "Oberlausitz"
+    "bezirk": "Oberlausitz",
+    "zuordnung": "manual-override"
   },
   {
-    "id": "bwk-15",
-    "name": "Bundestagswahlkreis 15: Sachsen Nord",
-    "kurzname": "Sachsen Nord",
+    "id": "wk-157",
+    "nummer": "157",
+    "name": "Sächsische Schweiz-Osterzgebirge",
+    "land": "Sachsen",
     "bezirkId": "sachsen",
-    "bezirk": "Sachsen"
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-16",
-    "name": "Bundestagswahlkreis 16: Sachsen Mitte",
-    "kurzname": "Sachsen Mitte",
+    "id": "wk-158",
+    "nummer": "158",
+    "name": "Dresden I",
+    "land": "Sachsen",
     "bezirkId": "sachsen",
-    "bezirk": "Sachsen"
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-17",
-    "name": "Bundestagswahlkreis 17: Sachsen Ost",
-    "kurzname": "Sachsen Ost",
+    "id": "wk-159",
+    "nummer": "159",
+    "name": "Dresden II – Bautzen II",
+    "land": "Sachsen",
     "bezirkId": "sachsen",
-    "bezirk": "Sachsen"
+    "bezirk": "Sachsen",
+    "zuordnung": "manual-override"
   },
   {
-    "id": "bwk-18",
-    "name": "Bundestagswahlkreis 18: Sachsen Süd",
-    "kurzname": "Sachsen Süd",
+    "id": "wk-160",
+    "nummer": "160",
+    "name": "Mittelsachsen",
+    "land": "Sachsen",
     "bezirkId": "sachsen",
-    "bezirk": "Sachsen"
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-19",
-    "name": "Bundestagswahlkreis 19: Altmark-Börde",
-    "kurzname": "Altmark-Börde",
-    "bezirkId": "sachsen-anhalt",
-    "bezirk": "Sachsen-Anhalt"
+    "id": "wk-161",
+    "nummer": "161",
+    "name": "Chemnitz",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-20",
-    "name": "Bundestagswahlkreis 20: Magdeburg-Jerichow",
-    "kurzname": "Magdeburg-Jerichow",
-    "bezirkId": "sachsen-anhalt",
-    "bezirk": "Sachsen-Anhalt"
+    "id": "wk-162",
+    "nummer": "162",
+    "name": "Chemnitzer Umland – Erzgebirgskreis II",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-21",
-    "name": "Bundestagswahlkreis 21: Halle-Saalekreis",
-    "kurzname": "Halle-Saalekreis",
-    "bezirkId": "sachsen-anhalt",
-    "bezirk": "Sachsen-Anhalt"
+    "id": "wk-163",
+    "nummer": "163",
+    "name": "Erzgebirgskreis I",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-22",
-    "name": "Bundestagswahlkreis 22: Harz-Burgenland",
-    "kurzname": "Harz-Burgenland",
-    "bezirkId": "sachsen-anhalt",
-    "bezirk": "Sachsen-Anhalt"
+    "id": "wk-164",
+    "nummer": "164",
+    "name": "Zwickau",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-23",
-    "name": "Bundestagswahlkreis 23: Thüringen Nord",
-    "kurzname": "Thüringen Nord",
+    "id": "wk-165",
+    "nummer": "165",
+    "name": "Vogtlandkreis",
+    "land": "Sachsen",
+    "bezirkId": "sachsen",
+    "bezirk": "Sachsen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-188",
+    "nummer": "188",
+    "name": "Eichsfeld – Nordhausen – Kyffhäuserkreis",
+    "land": "Thüringen",
     "bezirkId": "thueringen",
-    "bezirk": "Thüringen"
+    "bezirk": "Thüringen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-24",
-    "name": "Bundestagswahlkreis 24: Thüringen Mitte",
-    "kurzname": "Thüringen Mitte",
+    "id": "wk-189",
+    "nummer": "189",
+    "name": "Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",
+    "land": "Thüringen",
     "bezirkId": "thueringen",
-    "bezirk": "Thüringen"
+    "bezirk": "Thüringen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-25",
-    "name": "Bundestagswahlkreis 25: Thüringen Ost",
-    "kurzname": "Thüringen Ost",
+    "id": "wk-190",
+    "nummer": "190",
+    "name": "Jena – Sömmerda – Weimarer Land I",
+    "land": "Thüringen",
     "bezirkId": "thueringen",
-    "bezirk": "Thüringen"
+    "bezirk": "Thüringen",
+    "zuordnung": "dominant-municipality-count"
   },
   {
-    "id": "bwk-26",
-    "name": "Bundestagswahlkreis 26: Thüringen Süd",
-    "kurzname": "Thüringen Süd",
+    "id": "wk-191",
+    "nummer": "191",
+    "name": "Gotha – Ilm-Kreis",
+    "land": "Thüringen",
     "bezirkId": "thueringen",
-    "bezirk": "Thüringen"
+    "bezirk": "Thüringen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-192",
+    "nummer": "192",
+    "name": "Erfurt – Weimar – Weimarer Land II",
+    "land": "Thüringen",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-193",
+    "nummer": "193",
+    "name": "Gera – Greiz – Altenburger Land",
+    "land": "Thüringen",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-194",
+    "nummer": "194",
+    "name": "Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",
+    "land": "Thüringen",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen",
+    "zuordnung": "dominant-municipality-count"
+  },
+  {
+    "id": "wk-195",
+    "nummer": "195",
+    "name": "Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",
+    "land": "Thüringen",
+    "bezirkId": "thueringen",
+    "bezirk": "Thüringen",
+    "zuordnung": "dominant-municipality-count"
   }
 ]

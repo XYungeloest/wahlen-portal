@@ -1,86 +1,100 @@
 "use client";
 
-import { geoMercator, geoPath } from "d3-geo";
+import { geoIdentity, geoPath } from "d3-geo";
 import { useMemo, useState } from "react";
 import type { GeoFeatureCollection } from "@/lib/types";
 
-type Ergebnis = {
+type KartenFlaeche = {
+  id: string;
   name: string;
-  bezirk: string;
-  winner: string;
-  winnerPercent: number;
+  fill: string;
+  stroke?: string;
+  headline: string;
+  detail: string;
+  ariaLabel: string;
 };
 
 type Props = {
   title: string;
   geo: GeoFeatureCollection;
-  resultsById: Record<string, Ergebnis>;
-  partyColors: Record<string, string>;
+  areasById: Record<string, KartenFlaeche>;
 };
 
-export function Wahlkarte({ title, geo, resultsById, partyColors }: Props) {
-  const width = 920;
-  const height = 640;
+export function Wahlkarte({ title, geo, areasById }: Props) {
+  const width = 980;
+  const height = 720;
   const [activeId, setActiveId] = useState<string | null>(null);
 
-  const projection = useMemo(() => geoMercator().fitSize([width, height], geo as never), [geo]);
+  const projection = useMemo(
+    () => geoIdentity().reflectY(true).fitExtent([[20, 20], [width - 20, height - 20]], geo as never),
+    [geo],
+  );
   const pathBuilder = useMemo(() => geoPath(projection), [projection]);
 
-  const activeResult = activeId ? resultsById[activeId] : null;
+  const fallbackId = geo.features[0] ? String(geo.features[0].properties.id ?? "") : null;
+  const activeArea = (activeId ? areasById[activeId] : null) ?? (fallbackId ? areasById[fallbackId] : null) ?? null;
 
   return (
-    <section className="card p-4" aria-label={title}>
-      <h3 className="mb-3 text-lg font-semibold text-[var(--color-primary)]">{title}</h3>
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full rounded border border-slate-300 bg-slate-50" role="img" aria-label={title}>
-        {geo.features.map((feature) => {
-          const id = String(feature.properties.id ?? "");
-          const result = resultsById[id];
-          const fill = result ? partyColors[result.winner] ?? "#94a3b8" : "#cbd5e1";
-          const d = pathBuilder(feature as never);
-          if (!d) {
-            return null;
-          }
-          return (
-            <path
-              key={id}
-              d={d}
-              fill={fill}
-              stroke="#ffffff"
-              strokeWidth={1}
-              tabIndex={0}
-              role="button"
-              aria-label={
-                result
-                  ? `${result.name}, Bezirk ${result.bezirk}, stärkste Partei ${result.winner} mit ${result.winnerPercent.toFixed(1).replace(".", ",")} Prozent`
-                  : String(feature.properties.name ?? id)
+    <section className="overflow-hidden rounded-[1.5rem] border border-[#c8d8d5] bg-[linear-gradient(180deg,rgba(241,248,246,0.95),rgba(251,253,252,1))] p-4 shadow-[0_20px_45px_rgba(0,51,61,0.08)]" aria-label={title}>
+      <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_17rem]">
+        <div className="overflow-hidden rounded-[1.25rem] border border-white/70 bg-[#edf5f2]">
+          <svg viewBox={`0 0 ${width} ${height}`} className="w-full" role="img" aria-label={title}>
+            {geo.features.map((feature) => {
+              const id = String(feature.properties.id ?? "");
+              const area = areasById[id];
+              const d = pathBuilder(feature as never);
+              if (!d || !area) {
+                return null;
               }
-              onMouseEnter={() => setActiveId(id)}
-              onMouseLeave={() => setActiveId(null)}
-              onFocus={() => setActiveId(id)}
-              onBlur={() => setActiveId(null)}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.key === " ") {
-                  event.preventDefault();
-                  setActiveId(id);
-                }
-              }}
-            />
-          );
-        })}
-      </svg>
 
-      <div className="mt-4 rounded border border-slate-200 bg-white p-3 text-sm">
-        {activeResult ? (
-          <div>
-            <p className="font-semibold">{activeResult.name}</p>
-            <p>Bezirk: {activeResult.bezirk}</p>
-            <p>
-              Stärkste Partei: <strong>{activeResult.winner}</strong> ({activeResult.winnerPercent.toFixed(1).replace(".", ",")} %)
-            </p>
-          </div>
-        ) : (
-          <p>Für Details ein Gebiet fokussieren oder mit der Maus überfahren.</p>
-        )}
+              const isActive = activeId === id;
+              return (
+                <path
+                  key={id}
+                  d={d}
+                  fill={area.fill}
+                  stroke={area.stroke ?? (isActive ? "#0f172a" : "#f8fafc")}
+                  strokeWidth={isActive ? 2.5 : 1.2}
+                  vectorEffect="non-scaling-stroke"
+                  className="cursor-pointer transition-[opacity,stroke-width] duration-150 ease-out"
+                  opacity={activeId && !isActive ? 0.8 : 1}
+                  tabIndex={0}
+                  role="button"
+                  aria-label={area.ariaLabel}
+                  onMouseEnter={() => setActiveId(id)}
+                  onMouseLeave={() => setActiveId(null)}
+                  onFocus={() => setActiveId(id)}
+                  onBlur={() => setActiveId(null)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      setActiveId(id);
+                    }
+                  }}
+                />
+              );
+            })}
+          </svg>
+        </div>
+
+        <aside className="flex min-h-[10rem] flex-col justify-between rounded-[1.25rem] border border-[#d2dfdb] bg-white/95 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]">
+          {activeArea ? (
+            <div className="space-y-3">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Fokusgebiet</p>
+                <h3 className="mt-1 text-lg font-semibold text-[#16343d]">{activeArea.name}</h3>
+              </div>
+              <div className="rounded-2xl border border-[#dce9e6] bg-[#f6fbfa] p-3">
+                <p className="text-sm font-semibold text-[#14333d]">{activeArea.headline}</p>
+                <p className="mt-2 text-sm leading-6 text-slate-700">{activeArea.detail}</p>
+              </div>
+            </div>
+          ) : (
+            <p className="text-sm leading-6 text-slate-600">Gebiet per Maus, Touch-Fokus oder Tastatur auswaehlen, um Details anzuzeigen.</p>
+          )}
+
+          <p className="mt-4 text-xs leading-5 text-slate-500">Die SVG-Karte rendert lokal aus GeoJSON und benoetigt keine externen Karten- oder Tile-Dienste.</p>
+        </aside>
       </div>
     </section>
   );

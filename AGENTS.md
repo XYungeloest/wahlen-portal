@@ -34,6 +34,19 @@ Der folgende Stack ist bewusst so festgelegt und soll beibehalten werden:
 Begründung:
 Alle Wahldaten sind simuliert und werden vorab als JSON gepflegt. Das Projekt soll extrem schnell, günstig, portabel und robust deploybar sein.
 
+### Karten- und Geodatenstrategie
+
+Die Karten des Wahlportals sollen nicht auf frei gezeichneten Eigengeometrien oder früher diskutierten SVG-Dateien basieren, sondern auf **öffentlichen Geo-/Wahldaten**, die lokal im Repository abgelegt und vor dem Build aufbereitet werden.
+
+Wichtige Regeln:
+- Keine externen Daten zur Laufzeit laden
+- Keine externen Kartendienste
+- Rendering der Karten mit **D3.js** als interaktive SVG-Karten
+- Finale Karten arbeiten vollständig mit lokalen GeoJSON-/JSON-Dateien
+- Für die Bundestagswahlkreis-Geometrie sollen bevorzugt offizielle Open-Data-Downloads der Bundeswahlleiterin als Referenz genutzt werden
+- Für Landkreise und kreisfreie Städte sollen bevorzugt offizielle Verwaltungsgrenzen (z. B. Destatis) genutzt werden
+- OpenDataLab oder vergleichbare öffentliche Quellen dürfen als praktische Vorverarbeitungs-/Extraktionshilfe genutzt werden
+
 ---
 
 ## Inhaltlicher Kern des Portals
@@ -140,7 +153,7 @@ Erstelle plausible simulierte Wahldaten für mindestens diese Parteien:
 
 - Volksfront
 - DEMOS Ost
-- CPD Ost
+- CDP Ost
 - FRP
 - Patrioten
 - Sonstige
@@ -162,7 +175,8 @@ Ziel für die Landtagswahl:
 ## Datenmodell
 
 ### Öffentliche Datenstruktur
-Lege die Simulationsdaten sauber und klar strukturiert ab.
+
+Lege die Simulationsdaten sauber, modular und für mehrere Wahlen erweiterbar ab.
 
 Empfohlene Struktur:
 
@@ -173,20 +187,38 @@ public/
     bezirke.json
     landkreise.json
     bundestagswahlkreise.json
-    landtagswahl-2024.json
-    bundestagswahl-2025.json
+    elections/
+      landtag/
+        2024.json
+        2028.json
+      bundestag/
+        2025.json
+        2029.json
     metadaten.json
   geo/
-    bezirke.geojson
-    landkreise.geojson
-    bundestagswahlkreise.geojson
+    landkreise-ost.geojson
+    bundestagswahlkreise-ost.geojson
 ````
 
 ### Anforderungen an die Daten
 
-Die Daten müssen intern konsistent sein.
+Die Daten müssen intern konsistent und für mehrere auswählbare Datensätze nutzbar sein.
 
-#### Landtagswahl 2024
+Jede Wahldatei soll mindestens enthalten:
+
+* election id
+* election label
+* datum
+* typ (`landtag` oder `bundestag`)
+* gebietsebene (`landkreis` oder `bundestagswahlkreis`)
+* gebiets-ID
+* Ergebnisdaten je Partei
+* stärkste Partei
+* Prozentwerte / Ergebniswerte
+* Wahlbeteiligung
+* Metadaten für Anzeige und Methodik
+
+#### Landtagswahl
 
 Mindestens enthalten:
 
@@ -194,11 +226,11 @@ Mindestens enthalten:
 * Wahlbeteiligung
 * landesweites Ergebnis je Partei
 * Sitzverteilung im Landtag
-* Ergebnis je Landkreis
-* stärkste Partei je Landkreis
-* Zuordnung Landkreis → Bezirk
+* Ergebnis je Landkreis / kreisfreier Stadt
+* stärkste Partei je Gebiet
+* Zuordnung Gebiet → Bezirk
 
-#### Bundestagswahl 2025
+#### Bundestagswahl
 
 Mindestens enthalten:
 
@@ -207,44 +239,51 @@ Mindestens enthalten:
 * ostweites Gesamtergebnis je Partei
 * Ergebnis je Bundestagswahlkreis
 * stärkste Partei je Bundestagswahlkreis
-* ein separat ausgewiesenes „Direktmandat Ostdeutschland“
+* separat ausgewiesenes „Direktmandat Ostdeutschland“
 
-### GeoJSON
+### Geodaten
 
-Erstelle:
+Für das Portal sollen **öffentliche, fachlich plausible Geodaten** verwendet und lokal im Repository abgelegt werden.
 
-* eine vereinfachte Bezirkskarte
-* eine vereinfachte Landkreiskarte
-* eine vereinfachte Bundestagswahlkreis-Karte
+Wichtige Regeln:
+- Für die Landtagskarte werden **Landkreise und kreisfreie Städte** des Freistaats Ostdeutschland verwendet
+- Für die Bundestagskarte werden **Bundestagswahlkreise** des ostdeutschen Gebiets verwendet
+- Bezirke dienen als Aggregations-, Filter- und Orientierungsebene, aber nicht als primäre Wahlergebnis-Geometrie
+- Die Geometrien sollen möglichst aus öffentlichen Geo-/Wahldaten abgeleitet werden, nicht frei erfunden sein
+- Finale GeoJSON-Dateien sollen auf das Gebiet des Freistaats Ostdeutschland reduziert sein
+- Properties und IDs müssen stabil mit den Wahldaten verknüpfbar sein
 
-Die Geometrien müssen nicht exakt amtlich sein, aber:
+Die final verwendeten Geodaten sollen:
+- lokal im Repo liegen
+- performant genug für D3-SVG-Karten sein
+- optisch sauber reduziert sein
+- fachlich plausibel und konsistent benannt sein
 
-* visuell sauber
-* geografisch grob plausibel
-* zusammenhängend
-* für D3-SVG-Karten gut nutzbar
+Falls Geo-/Gebietszuordnungen nicht vollständig automatisiert ableitbar sind, sollen Mapping-Dateien im Repository angelegt und dokumentiert werden.
 
 ---
 
 ## Projektstruktur
 
-Empfohlene Struktur:
-
 ```text
 wahlen-portal/
 ├── public/
 │   ├── geo/
-│   │   ├── bezirke.geojson
-│   │   ├── landkreise.geojson
-│   │   └── bundestagswahlkreise.geojson
+│   │   ├── landkreise-ost.geojson
+│   │   └── bundestagswahlkreise-ost.geojson
 │   ├── data/
 │   │   ├── parteien.json
 │   │   ├── bezirke.json
 │   │   ├── landkreise.json
 │   │   ├── bundestagswahlkreise.json
-│   │   ├── landtagswahl-2024.json
-│   │   ├── bundestagswahl-2025.json
-│   │   └── metadaten.json
+│   │   ├── metadaten.json
+│   │   ├── elections/
+│   │       ├── landtag/
+│   │       │   ├── 2024.json
+│   │       │   └── 2025.json
+│   │       ├── bundestag/
+│   │           ├── 2024.json
+│   │           └── 2025.json
 │   ├── og-image.png
 │   └── favicon.ico
 ├── src/
@@ -352,6 +391,7 @@ Inhalte:
 * Bereich „Stärkste Partei nach Landkreis“
 * Filter oder Auswahl nach Bezirk
 * Liste/Übersicht aller Landkreise
+* **Auswahl der Datengrundlage** (z. B. Wahljahr / Datensatz), sofern mehrere Landtagswahldatensätze vorhanden sind
 
 ### Ergebnisse `/ergebnisse/bundestag`
 
@@ -367,30 +407,32 @@ Inhalte:
 
   * „Direktmandat Ostdeutschland“
 * Tabellenansicht als barrierefreie Alternative
+* **Auswahl der Datengrundlage** (z. B. Wahljahr / Datensatz), sofern mehrere Bundestagswahldatensätze vorhanden sind
 
 ### Karten
 
 #### `/karte/landtag`
-
-* D3-Karte auf Basis `landkreise.geojson`
-* farbliche Darstellung der stärksten Partei je Landkreis
-* Hover-Tooltip mit:
-
-  * Landkreis
-  * Bezirk
-  * stärkste Partei
-  * Prozentwert
-* Filter nach Bezirk
+- D3-Karte auf Basis `landkreise-ost.geojson`
+- farbliche Darstellung der stärksten Partei je Landkreis / kreisfreier Stadt
+- Hover-Tooltip mit:
+  - Gebiet
+  - Bezirk
+  - stärkste Partei
+  - Prozentwert
+- Filter nach Bezirk
+- Auswahl der Datengrundlage (z. B. Wahljahr / Wahlstand), sofern mehrere Landtagsdatensätze vorhanden sind
 
 #### `/karte/bundestag`
-
-* D3-Karte auf Basis `bundestagswahlkreise.geojson`
-* stärkste Partei je Bundestagswahlkreis
-* Tooltip mit Kurzinfos
+- D3-Karte auf Basis `bundestagswahlkreise-ost.geojson`
+- stärkste Partei je Bundestagswahlkreis
+- Tooltip mit Kurzinfos
+- Auswahl der Datengrundlage (z. B. Wahljahr / Wahlstand), sofern mehrere Bundestagsdatensätze vorhanden sind
+- das „Direktmandat Ostdeutschland“ wird separat im UI angezeigt, nicht als Flächenlogik missbraucht
 
 #### `/karte`
-
-* Übersichtsseite für beide Karten
+- Übersichtsseite für beide Karten
+- klarer Einstieg in Landtags- und Bundestagskarte
+- Hinweis auf die jeweilige Datengrundlage und Methodik
 
 ### `/wahlrecht`
 
@@ -608,3 +650,14 @@ Wichtig:
 * das vereinfachte Simulationsmodell konsequent und transparent umsetzen
 * die Website soll offiziell wirken, aber klar als Simulationsprojekt gekennzeichnet sein
 
+## Besondere Regel für Kartenumsetzung
+
+Die Karten des Portals sollen fachlich plausibel und datengetrieben sein. Verwende keine frei erfundenen Blockgeometrien oder rein illustrative Ersatzkarten, wenn öffentliche Geodaten verfügbar sind.
+
+Wichtig:
+- Landtagskarte = Landkreise und kreisfreie Städte
+- Bundestagskarte = Bundestagswahlkreise
+- Bezirke = Filter- und Orientierungsebene
+- Datensätze müssen austauschbar sein
+- keine externen Laufzeit-Requests
+- D3-SVG-Rendering beibehalten

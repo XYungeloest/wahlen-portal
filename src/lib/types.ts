@@ -26,13 +26,79 @@ export type Landkreis = {
 export type Bundestagswahlkreis = {
   id: string;
   name: string;
-  kurzname: string;
+  nummer?: string;
+  land?: string;
   bezirkId: string;
   bezirk: string;
+  zuordnung?: string;
 };
+
+export type GebietsEbene = "landkreis" | "bundestagswahlkreis";
+export type WahlTyp = "landtag" | "bundestag";
 
 export type ErgebnisDatensatz = {
   [partei: string]: number;
+};
+
+export type Vergleichswerte = {
+  datasetId: string;
+  wahlbeteiligung: number;
+  staerkstePartei: string;
+  staerksteParteiProzent: number;
+};
+
+export type KartenGebietErgebnis = {
+  gebietId: string;
+  gebietName: string;
+  officialName?: string;
+  bezirkId: string;
+  bezirk: string;
+  wahlbeteiligung: number;
+  ergebnisse: ErgebnisDatensatz;
+  staerkstePartei: string;
+  staerksteParteiProzent: number;
+  vergleichswerte?: Vergleichswerte;
+  typ?: Landkreis["type"];
+};
+
+export type WahlDataset = {
+  id: string;
+  electionId: string;
+  label: string;
+  datum: string;
+  typ: WahlTyp;
+  gebietsebene: GebietsEbene;
+  wahlbeteiligung: number;
+  wahlberechtigte: number;
+  gueltigeStimmen: number;
+  modellhinweis: string;
+  datenstand: string;
+  metadaten: {
+    quelle: string;
+    geobasis: string;
+    legendenTitel: string;
+    vergleichMit?: string;
+    simulationshinweis: string;
+  };
+  summary: {
+    gesamtergebnis: ErgebnisDatensatz;
+    sitzverteilung?: Record<string, number>;
+    sitzeGesamt?: number;
+    mehrheitsgrenze?: number;
+    regierungsoption?: {
+      koalition: string[];
+      sitze: number;
+      mehrheitsfaehig: boolean;
+    };
+    direktmandat?: {
+      mandatName: string;
+      kandidat: string;
+      partei: string;
+      stimmenanteil: number;
+      hinweis: string;
+    };
+  };
+  gebiete: KartenGebietErgebnis[];
 };
 
 export type LandkreisErgebnis = {
@@ -115,12 +181,17 @@ export type Metadaten = {
 
 export type GeoFeatureCollection = {
   type: "FeatureCollection";
-  features: Array<{
-    type: "Feature";
-    properties: Record<string, string | number | boolean>;
-    geometry: {
-      type: "Polygon";
-      coordinates: number[][][];
-    };
-  }>;
+  metadata?: Record<string, string>;
+  features: GeoFeature[];
+};
+
+export type GeoFeature = {
+  type: "Feature";
+  properties: Record<string, string | number | boolean>;
+  geometry: GeoGeometry;
+};
+
+export type GeoGeometry = {
+  type: "Polygon" | "MultiPolygon";
+  coordinates: number[][][] | number[][][][];
 };
