@@ -1,0 +1,142 @@
+{
+  "id": "bundestag-8-ost",
+  "electionId": "btw-8",
+  "label": "8. Deutscher Bundestag – Ostdeutschland",
+  "datum": "2026-04-19",
+  "typ": "bundestag",
+  "gebietsebene": "bundestagswahlkreis",
+  "wahlbeteiligung": 94.23,
+  "wahlberechtigte": 52,
+  "gueltigeStimmen": 49,
+  "modellhinweis": "Historischer PDF-Import auf Basis des Ost-Abschnitts des amtlichen Bundestags-Endergebnisses. Es wird nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung wird nicht erfunden.",
+  "datenstand": "2026-04-20",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus BTW8_Endergebnis.pdf, Abschnitt Wahlkreisergebnis Wahlkreis 02 – Ostdeutschland",
+    "geobasis": "Keine ostinterne Untergliederung im PDF-Endergebnis; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "simulationshinweis": "Historische Bundestags-PDFs werden nur mit dem ostdeutschen Abschnitt und ohne künstliche Wahlkreisunterteilung übernommen.",
+    "ordnungscode": "btw-8",
+    "pdfDatei": "BTW8_Endergebnis.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Volksfront": 32.65,
+      "Bündnis Demokratie Europa": 24.49,
+      "Freiheitliche Reformpartei": 20.41,
+      "DIE PATRIOTEN": 14.29,
+      "Christlich Demokratische Partei": 8.16,
+      "Liberal-Demokratische Partei": 0
+    },
+    "detailergebnisse": [
+      {
+        "id": "listenstimme",
+        "label": "Listenstimme",
+        "stimmart": "listenstimme",
+        "hinweis": "Übernommen aus dem Abschnitt „Wahlkreisergebnis Wahlkreis 02 – Ostdeutschland“ des amtlichen PDF-Endergebnisses.",
+        "parteien": [
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 4,
+            "prozent": 8.16,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Liberal-Demokratische Partei",
+            "kurz": "LDP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "LDP"
+          },
+          {
+            "name": "Freiheitliche Reformpartei",
+            "kurz": "FRP",
+            "stimmen": 10,
+            "prozent": 20.41,
+            "normiertAuf": "FRP"
+          },
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 16,
+            "prozent": 32.65
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 12,
+            "prozent": 24.49,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "DIE PATRIOTEN",
+            "kurz": "PATRIOTEN",
+            "stimmen": 7,
+            "prozent": 14.29,
+            "normiertAuf": "Patrioten"
+          }
+        ]
+      },
+      {
+        "id": "wahlkreisstimme",
+        "label": "Wahlkreisstimme",
+        "stimmart": "wahlkreisstimme",
+        "hinweis": "Kandidierendenstimmen des Ost-Wahlkreises aus demselben PDF-Abschnitt.",
+        "parteien": [
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Liberal-Demokratische Partei",
+            "kurz": "LDP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "LDP"
+          },
+          {
+            "name": "Freiheitliche Reformpartei",
+            "kurz": "FRP",
+            "stimmen": 16,
+            "prozent": 32.66,
+            "kandidat": "Philipp Ludwig",
+            "normiertAuf": "FRP"
+          },
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 26,
+            "prozent": 53.06,
+            "kandidat": "Tim Dieter"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "DIE PATRIOTEN",
+            "kurz": "PATRIOTEN",
+            "stimmen": 7,
+            "prozent": 14.29,
+            "kandidat": "Yannick Schmäle",
+            "normiertAuf": "Patrioten"
+          }
+        ]
+      }
+    ],
+    "direktmandat": {
+      "mandatName": "Direktmandat Ostdeutschland",
+      "kandidat": "Tim Dieter",
+      "partei": "Volksfront",
+      "stimmenanteil": 53.06,
+      "hinweis": "Der gewählte Direktmandatsträger für Ostdeutschland wurde aus der Zusammenfassung der gewählten Direktmandatsabgeordneten im PDF übernommen."
+    }
+  },
+  "gebiete": []
+}

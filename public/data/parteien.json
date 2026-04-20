@@ -40,5 +40,40 @@
     "short": "SON",
     "color": "#6B7280",
     "position": "verschieden"
+  },
+  {
+    "id": "ostdeutschland-in-bewegung",
+    "name": "Ostdeutschland in Bewegung",
+    "short": "OiB",
+    "color": "#1F8A70",
+    "position": "regional"
+  },
+  {
+    "id": "nfp",
+    "name": "NFP",
+    "short": "NFP",
+    "color": "#284B7A",
+    "position": "nationalkonservativ"
+  },
+  {
+    "id": "ldp",
+    "name": "LDP",
+    "short": "LDP",
+    "color": "#C89D1C",
+    "position": "liberal"
+  },
+  {
+    "id": "dhp",
+    "name": "DHP",
+    "short": "DHP",
+    "color": "#556270",
+    "position": "konservativ"
+  },
+  {
+    "id": "unabhaengig",
+    "name": "Unabhängig",
+    "short": "UNABH",
+    "color": "#7C8794",
+    "position": "unabhängig"
   }
 ]

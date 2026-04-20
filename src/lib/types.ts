@@ -40,6 +40,24 @@ export type ErgebnisDatensatz = {
   [partei: string]: number;
 };
 
+export type ParteiErgebnisDetail = {
+  name: string;
+  kurz?: string;
+  stimmen: number;
+  prozent: number;
+  sitze?: number;
+  kandidat?: string;
+  normiertAuf?: string;
+};
+
+export type ErgebnisBlock = {
+  id: string;
+  label: string;
+  stimmart: "gesamt" | "listenstimme" | "zweitstimme" | "erststimme" | "wahlkreisstimme";
+  parteien: ParteiErgebnisDetail[];
+  hinweis?: string;
+};
+
 export type Vergleichswerte = {
   datasetId: string;
   wahlbeteiligung: number;
@@ -79,9 +97,12 @@ export type WahlDataset = {
     legendenTitel: string;
     vergleichMit?: string;
     simulationshinweis: string;
+    ordnungscode?: string;
+    pdfDatei?: string;
   };
   summary: {
     gesamtergebnis: ErgebnisDatensatz;
+    detailergebnisse?: ErgebnisBlock[];
     sitzverteilung?: Record<string, number>;
     sitzeGesamt?: number;
     mehrheitsgrenze?: number;

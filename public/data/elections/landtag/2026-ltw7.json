@@ -1,0 +1,88 @@
+{
+  "id": "landtag-7",
+  "electionId": "ltw-od-7",
+  "label": "Wahl zum 7. Ostdeutschen Landtag",
+  "datum": "2026-04-19",
+  "typ": "landtag",
+  "gebietsebene": "landkreis",
+  "wahlbeteiligung": 94.23,
+  "wahlberechtigte": 52,
+  "gueltigeStimmen": 49,
+  "modellhinweis": "Historischer PDF-Import. Das amtliche Endergebnis enthält nur das landesweite Gesamtergebnis; eine regionale Landkreisverteilung wird im Portal bewusst nicht nachgetragen.",
+  "datenstand": "2026-04-20",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus LTWOst7_Endergebnis.pdf",
+    "geobasis": "Keine regionale Geo-Basis im PDF enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "simulationshinweis": "Historische PDF-Datensätze werden ohne nachträgliche Regionalschätzung in das Portal übernommen.",
+    "ordnungscode": "ltw-od-7",
+    "pdfDatei": "LTWOst7_Endergebnis.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Volksfront": 34.69,
+      "Bündnis Demokratie Europa an der Elbe": 24.49,
+      "Freiheitliche Reformpartei Ostdeutschland": 16.33,
+      "Die ostdeutschen Patrioten": 14.29,
+      "Christlich Demokratische Partei Landesverband Ost": 10.2
+    },
+    "detailergebnisse": [
+      {
+        "id": "gesamt",
+        "label": "Gesamtergebnis",
+        "stimmart": "gesamt",
+        "parteien": [
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 17,
+            "prozent": 34.69,
+            "sitze": 5
+          },
+          {
+            "name": "Die ostdeutschen Patrioten",
+            "kurz": "PATRIOTEN",
+            "stimmen": 7,
+            "prozent": 14.29,
+            "sitze": 2,
+            "normiertAuf": "Patrioten"
+          },
+          {
+            "name": "Christlich Demokratische Partei Landesverband Ost",
+            "kurz": "CDP Ost",
+            "stimmen": 5,
+            "prozent": 10.2,
+            "sitze": 2,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Bündnis Demokratie Europa an der Elbe",
+            "kurz": "DEMOS an der Elbe",
+            "stimmen": 12,
+            "prozent": 24.49,
+            "sitze": 4,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Freiheitliche Reformpartei Ostdeutschland",
+            "kurz": "FRP Ost",
+            "stimmen": 8,
+            "prozent": 16.33,
+            "sitze": 2,
+            "normiertAuf": "FRP"
+          }
+        ]
+      }
+    ],
+    "sitzverteilung": {
+      "Volksfront": 5,
+      "Bündnis Demokratie Europa an der Elbe": 4,
+      "Die ostdeutschen Patrioten": 2,
+      "Christlich Demokratische Partei Landesverband Ost": 2,
+      "Freiheitliche Reformpartei Ostdeutschland": 2
+    },
+    "sitzeGesamt": 15,
+    "mehrheitsgrenze": 8
+  },
+  "gebiete": []
+}

@@ -1,0 +1,128 @@
+{
+  "id": "bundestag-6-ost",
+  "electionId": "btw-6",
+  "label": "6. Deutscher Bundestag – Ostdeutschland",
+  "datum": "2025-09-28",
+  "typ": "bundestag",
+  "gebietsebene": "bundestagswahlkreis",
+  "wahlbeteiligung": 94.87,
+  "wahlberechtigte": 39,
+  "gueltigeStimmen": 37,
+  "modellhinweis": "Historischer PDF-Import auf Basis des Ost-Abschnitts des amtlichen Bundestags-Endergebnisses. Es wird nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung wird nicht erfunden.",
+  "datenstand": "2026-04-20",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus BTW6_Endergebnis.pdf, Abschnitt Landesergebnis Wahlkreis Ost",
+    "geobasis": "Keine ostinterne Untergliederung im PDF-Endergebnis; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "simulationshinweis": "Historische Bundestags-PDFs werden nur mit dem ostdeutschen Abschnitt und ohne künstliche Wahlkreisunterteilung übernommen.",
+    "ordnungscode": "btw-6",
+    "pdfDatei": "BTW6_Endergebnis.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Volksfront": 35.14,
+      "Nationale Freiheitspartei": 27.03,
+      "Liberal-Demokratische Partei": 13.51,
+      "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 13.51,
+      "Christlich Demokratische Partei": 10.81
+    },
+    "detailergebnisse": [
+      {
+        "id": "listenstimme",
+        "label": "Listenstimme / Zweitstimme",
+        "stimmart": "zweitstimme",
+        "hinweis": "Übernommen aus dem Abschnitt „Landesergebnis Wahlkreis Ost“ des amtlichen PDF-Endergebnisses.",
+        "parteien": [
+          {
+            "name": "Liberal-Demokratische Partei",
+            "kurz": "LDP",
+            "stimmen": 5,
+            "prozent": 13.51,
+            "normiertAuf": "LDP"
+          },
+          {
+            "name": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+            "kurz": "DEMOS",
+            "stimmen": 5,
+            "prozent": 13.51,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 13,
+            "prozent": 35.14
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 4,
+            "prozent": 10.81,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Nationale Freiheitspartei",
+            "kurz": "NFP",
+            "stimmen": 10,
+            "prozent": 27.03,
+            "normiertAuf": "NFP"
+          }
+        ]
+      },
+      {
+        "id": "erststimme",
+        "label": "Wahlkreisstimme / Erststimme",
+        "stimmart": "erststimme",
+        "hinweis": "Übernommen aus demselben Ost-Abschnitt; nur tatsächlich ausgewiesene Kandidaturen wurden übernommen.",
+        "parteien": [
+          {
+            "name": "Liberal-Demokratische Partei",
+            "kurz": "LDP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "LDP"
+          },
+          {
+            "name": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+            "kurz": "DEMOS",
+            "stimmen": 7,
+            "prozent": 18.92,
+            "kandidat": "Louis Hahne-Eichinger",
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 13,
+            "prozent": 35.14,
+            "kandidat": "Tim Dieter"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 5,
+            "prozent": 13.51,
+            "kandidat": "Christian Linnemann",
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Nationale Freiheitspartei",
+            "kurz": "NFP",
+            "stimmen": 12,
+            "prozent": 32.43,
+            "kandidat": "Philipp Ludwig",
+            "normiertAuf": "NFP"
+          }
+        ]
+      }
+    ],
+    "direktmandat": {
+      "mandatName": "Direktmandat Ostdeutschland",
+      "kandidat": "Tim Dieter",
+      "partei": "Volksfront",
+      "stimmenanteil": 35.14,
+      "hinweis": "Der gewählte Direktmandatsträger für den Ost-Abschnitt wurde aus der Zusammenfassung der gewählten Direktmandatsabgeordneten im PDF übernommen."
+    }
+  },
+  "gebiete": []
+}

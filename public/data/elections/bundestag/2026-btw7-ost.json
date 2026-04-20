@@ -1,0 +1,141 @@
+{
+  "id": "bundestag-7-ost",
+  "electionId": "btw-7",
+  "label": "7. Deutscher Bundestag – Ostdeutschland",
+  "datum": "2026-02-01",
+  "typ": "bundestag",
+  "gebietsebene": "bundestagswahlkreis",
+  "wahlbeteiligung": 92.11,
+  "wahlberechtigte": 38,
+  "gueltigeStimmen": 35,
+  "modellhinweis": "Historischer PDF-Import auf Basis des Ost-Abschnitts des amtlichen Bundestags-Endergebnisses. Es wird nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung wird nicht erfunden.",
+  "datenstand": "2026-04-20",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus BTW7_Endergebnis.pdf, Abschnitt Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland",
+    "geobasis": "Keine ostinterne Untergliederung im PDF-Endergebnis; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "simulationshinweis": "Historische Bundestags-PDFs werden nur mit dem ostdeutschen Abschnitt und ohne künstliche Wahlkreisunterteilung übernommen.",
+    "ordnungscode": "btw-7",
+    "pdfDatei": "BTW7_Endergebnis.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Volksfront": 37.14,
+      "Bündnis Demokratie Europa": 28.57,
+      "Freiheitliche Reformpartei": 25.71,
+      "Deutsche Heimatpartei": 5.71,
+      "Liberal-Demokratische Partei": 2.86,
+      "Christlich Demokratische Partei": 0
+    },
+    "detailergebnisse": [
+      {
+        "id": "listenstimme",
+        "label": "Listenstimme / Zweitstimme",
+        "stimmart": "zweitstimme",
+        "hinweis": "Übernommen aus dem Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“ des amtlichen PDF-Endergebnisses.",
+        "parteien": [
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Liberal-Demokratische Partei",
+            "kurz": "LDP",
+            "stimmen": 1,
+            "prozent": 2.86,
+            "normiertAuf": "LDP"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 10,
+            "prozent": 28.57,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Freiheitliche Reformpartei",
+            "kurz": "FRP",
+            "stimmen": 9,
+            "prozent": 25.71,
+            "normiertAuf": "FRP"
+          },
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 13,
+            "prozent": 37.14
+          },
+          {
+            "name": "Deutsche Heimatpartei",
+            "kurz": "DHP",
+            "stimmen": 2,
+            "prozent": 5.71,
+            "normiertAuf": "DHP"
+          }
+        ]
+      },
+      {
+        "id": "erststimme",
+        "label": "Wahlkreisstimme / Erststimme",
+        "stimmart": "erststimme",
+        "hinweis": "Im PDF sind im Ost-Wahlkreis nur FRP und Volksfront mit Kandidaturen ausgewiesen; übrige Parteien werden mit 0 dargestellt.",
+        "parteien": [
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Liberal-Demokratische Partei",
+            "kurz": "LDP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "LDP"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Freiheitliche Reformpartei",
+            "kurz": "FRP",
+            "stimmen": 12,
+            "prozent": 35.29,
+            "kandidat": "Philipp Ludwig",
+            "normiertAuf": "FRP"
+          },
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 22,
+            "prozent": 64.71,
+            "kandidat": "Tim Dieter"
+          },
+          {
+            "name": "Deutsche Heimatpartei",
+            "kurz": "DHP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "DHP"
+          }
+        ]
+      }
+    ],
+    "direktmandat": {
+      "mandatName": "Direktmandat Ostdeutschland",
+      "kandidat": "Tim Dieter",
+      "partei": "Volksfront",
+      "stimmenanteil": 64.71,
+      "hinweis": "Der gewählte Direktmandatsträger für Ostdeutschland wurde aus der Zusammenfassung der gewählten Direktmandatsabgeordneten im PDF übernommen."
+    }
+  },
+  "gebiete": []
+}

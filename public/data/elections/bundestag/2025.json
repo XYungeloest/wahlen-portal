@@ -32,7 +32,97 @@
       "partei": "Volksfront",
       "stimmenanteil": 52.4,
       "hinweis": "Im Simulationsmodell wird ein einziges ostweites Direktmandat ergänzend zur Listenstimme ausgewiesen."
-    }
+    },
+    "detailergebnisse": [
+      {
+        "id": "listenstimme",
+        "label": "Listenstimme",
+        "stimmart": "listenstimme",
+        "hinweis": "Simulierter Portal-Datensatz mit ostweitem Listenstimmenvergleich.",
+        "parteien": [
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 0,
+            "prozent": 31
+          },
+          {
+            "name": "DEMOS Ost",
+            "kurz": "DEM",
+            "stimmen": 0,
+            "prozent": 18.9
+          },
+          {
+            "name": "CPD Ost",
+            "kurz": "CPD",
+            "stimmen": 0,
+            "prozent": 17.9
+          },
+          {
+            "name": "FRP",
+            "kurz": "FRP",
+            "stimmen": 0,
+            "prozent": 11.5
+          },
+          {
+            "name": "Patrioten",
+            "kurz": "PAT",
+            "stimmen": 0,
+            "prozent": 15.3
+          },
+          {
+            "name": "Sonstige",
+            "kurz": "SON",
+            "stimmen": 0,
+            "prozent": 5.4
+          }
+        ]
+      },
+      {
+        "id": "wahlkreisstimme",
+        "label": "Wahlkreisstimme",
+        "stimmart": "wahlkreisstimme",
+        "hinweis": "Zusätzliche ostweite Kandidierendenübersicht im Portal. Das separat ausgewiesene Direktmandat bleibt davon unberührt.",
+        "parteien": [
+          {
+            "name": "Volksfront",
+            "kurz": "VF",
+            "stimmen": 0,
+            "prozent": 36.1
+          },
+          {
+            "name": "CPD Ost",
+            "kurz": "CPD",
+            "stimmen": 0,
+            "prozent": 19.4
+          },
+          {
+            "name": "DEMOS Ost",
+            "kurz": "DEM",
+            "stimmen": 0,
+            "prozent": 17.2
+          },
+          {
+            "name": "Patrioten",
+            "kurz": "PAT",
+            "stimmen": 0,
+            "prozent": 13.8
+          },
+          {
+            "name": "FRP",
+            "kurz": "FRP",
+            "stimmen": 0,
+            "prozent": 9.6
+          },
+          {
+            "name": "Sonstige",
+            "kurz": "SON",
+            "stimmen": 0,
+            "prozent": 3.9
+          }
+        ]
+      }
+    ]
   },
   "gebiete": [
     {

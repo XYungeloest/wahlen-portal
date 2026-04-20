@@ -61,9 +61,15 @@ public/
       landtag/
         2020.json
         2024.json
+        2025-ltw5.json
+        2025-ltw6.json
+        2026-ltw7.json
       bundestag/
         2021.json
         2025.json
+        2025-btw6-ost.json
+        2026-btw7-ost.json
+        2026-btw8-ost.json
     metadaten.json
   geo/
     bezirke.geojson
@@ -82,15 +88,26 @@ public/
 Hinweis: Die Kartenbasis wird jetzt über `scripts/prepare-map-data.mjs` aus amtlichen Geodaten und lokalen Simulationsdatensätzen aufbereitet. Details stehen in [MAP_DATA_NOTES.md](/Users/petzke/wahlen-portal/MAP_DATA_NOTES.md).
 Das frühere Script `scripts/generate-sim-data.mjs` ist für die neue Kartenbasis nicht mehr die fachliche Referenz.
 
+Für historische PDF-Importe gilt zusätzlich:
+
+1. Nur Werte übernehmen, die im PDF-Endergebnis eindeutig ausgewiesen sind.
+2. Kein `gebiete`-Raster erfinden, wenn die Quelle nur aggregierte Gesamtwerte enthält.
+3. Bei Bundestagswahlen den ostdeutschen Abschnitt als Primärquelle verwenden.
+4. Optionale Metadaten wie `ordnungscode`, `pdfDatei` und `summary.detailergebnisse` mitführen.
+
+Details zur Herkunft und Struktur stehen in [HISTORICAL_DATA_NOTES.md](/Users/petzke/wahlen-portal/HISTORICAL_DATA_NOTES.md).
+
 ## Seitenlogik
 
 - `/ergebnisse/landtag/` und `/ergebnisse/bundestag/` sind die fachlichen Hauptseiten je Wahlebene.
 - Dort sind Ergebnis, Visualisierung, Karte und Gebietstabelle zusammengeführt und nutzen dieselbe Datensatz-Auswahl.
+- Historische PDF-Datensätze ohne regionale Untergliederung bleiben auf denselben Seiten auswählbar; an der Kartenstelle wird dann transparent erklärt, warum keine Karte gezeigt wird.
 - Die Seiten unter `/karte/landtag/` und `/karte/bundestag/` bleiben nur als schlanke Deep-Links auf die integrierten Ergebnisseiten bestehen.
 - Karteninteraktion:
   - Hover und Tastaturfokus zeigen Gebietsinformationen.
   - Klick setzt einen kontrollierten Fokus auf ein Gebiet.
   - Ein Reset-Button hebt den Kartenfokus wieder auf.
+- Bundestagsseiten können pro Datensatz getrennte Ergebnisblöcke für Listenstimme und Wahlkreisstimme anzeigen, wenn diese in `summary.detailergebnisse` vorhanden sind.
 
 ## Modellhinweis
 

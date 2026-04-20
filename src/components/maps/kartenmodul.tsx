@@ -32,7 +32,8 @@ export function KartenModul({
   partyColors,
   globalSimulationHint,
 }: Props) {
-  const [uncontrolledDatasetId, setUncontrolledDatasetId] = useState<string>(datasets[0]?.id ?? "");
+  const defaultDatasetId = datasets.find((dataset) => dataset.gebiete.length > 0)?.id ?? datasets[0]?.id ?? "";
+  const [uncontrolledDatasetId, setUncontrolledDatasetId] = useState<string>(defaultDatasetId);
   const [bezirkId, setBezirkId] = useState<string>("alle");
   const [metric, setMetric] = useState<MetricType>("winner");
   const [party, setParty] = useState<string>("Volksfront");
@@ -50,6 +51,8 @@ export function KartenModul({
     [datasetId, datasets],
   );
 
+  const hasRegionalData = (currentDataset?.gebiete.length ?? 0) > 0;
+
   const filteredRows = useMemo(
     () =>
       currentDataset
@@ -60,7 +63,10 @@ export function KartenModul({
     [bezirkId, currentDataset],
   );
 
-  const filteredGeo = useMemo(() => filterGeoByBezirk(geo, bezirkId), [geo, bezirkId]);
+  const filteredGeo = useMemo(
+    () => (hasRegionalData ? filterGeoByBezirk(geo, bezirkId) : { ...geo, features: [] }),
+    [bezirkId, geo, hasRegionalData],
+  );
   const currentPartyColor = partyColors[party] ?? "#0f766e";
 
   const metricValues = useMemo(() => {
@@ -136,7 +142,7 @@ export function KartenModul({
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#25515c]">{title}</p>
-            <h2 className="mt-2 text-2xl font-semibold text-[#14333d]">{currentDataset.label}</h2>
+            <h2 className="mt-2 break-words text-2xl font-semibold text-[#14333d]">{currentDataset.label}</h2>
             <p className="mt-2 text-sm leading-6 text-slate-700">
               Datensatz vom {formatDatum(currentDataset.datum)}. Geo-Basis: {currentDataset.metadaten.geobasis}. Quelle: {currentDataset.metadaten.quelle}.
             </p>
@@ -144,7 +150,7 @@ export function KartenModul({
           <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[28rem]">
             <StatCard label="Wahlbeteiligung" value={formatProzent(currentDataset.wahlbeteiligung)} />
             <StatCard label="Gebietsebene" value={currentDataset.gebietsebene === "landkreis" ? "Landkreise / kreisfreie Städte" : "Bundestagswahlkreise"} />
-            <StatCard label="Gebiete" value={String(filteredRows.length)} />
+            <StatCard label="Gebiete" value={hasRegionalData ? String(filteredRows.length) : "keine Regionaldaten"} />
           </div>
         </div>
 
@@ -158,6 +164,7 @@ export function KartenModul({
           <SelectField
             label="Metrik"
             value={metric}
+            disabled={!hasRegionalData}
             onChange={(nextValue) => setMetric(nextValue as MetricType)}
             options={[
               { value: "winner", label: "Stärkste Partei" },
@@ -168,6 +175,7 @@ export function KartenModul({
           <SelectField
             label="Bezirk"
             value={bezirkId}
+            disabled={!hasRegionalData}
             onChange={setBezirkId}
             options={[
               { value: "alle", label: "Alle Bezirke" },
@@ -177,83 +185,119 @@ export function KartenModul({
           <SelectField
             label="Partei"
             value={party}
-            disabled={metric !== "party"}
+            disabled={!hasRegionalData || metric !== "party"}
             onChange={setParty}
             options={partiesInDataset.map((entry) => ({ value: entry, label: entry }))}
           />
         </div>
 
-        <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem]">
-          <Wahlkarte title={title} geo={filteredGeo} areasById={areasById} />
+        {hasRegionalData ? (
+          <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem]">
+            <Wahlkarte title={title} geo={filteredGeo} areasById={areasById} />
 
-          <div className="space-y-4">
-            <LegendCard
-              metric={metric}
-              legendItems={legendItems}
-              minValue={minMetricValue}
-              maxValue={maxMetricValue}
-              partyColor={currentPartyColor}
-              party={party}
-            />
+            <div className="space-y-4">
+              <LegendCard
+                metric={metric}
+                legendItems={legendItems}
+                minValue={minMetricValue}
+                maxValue={maxMetricValue}
+                partyColor={currentPartyColor}
+                party={party}
+              />
 
-            {currentDataset.summary.direktmandat ? (
-              <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
-                <h3 className="mt-2 text-lg font-semibold text-[#16343d]">{currentDataset.summary.direktmandat.kandidat}</h3>
-                <p className="mt-1 text-sm text-slate-700">
-                  {currentDataset.summary.direktmandat.partei} mit {formatProzent(currentDataset.summary.direktmandat.stimmenanteil)}
+              {currentDataset.summary.direktmandat ? (
+                <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
+                  <h3 className="mt-2 break-words text-lg font-semibold text-[#16343d]">{currentDataset.summary.direktmandat.kandidat}</h3>
+                  <p className="mt-1 text-sm text-slate-700">
+                    {currentDataset.summary.direktmandat.partei} mit {formatProzent(currentDataset.summary.direktmandat.stimmenanteil)}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">{currentDataset.summary.direktmandat.hinweis}</p>
+                </section>
+              ) : null}
+
+              <InfoCard currentDataset={currentDataset} globalSimulationHint={globalSimulationHint} />
+            </div>
+          </div>
+        ) : (
+          <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem]">
+            <section className="rounded-[1.5rem] border border-[#c8d8d5] bg-[linear-gradient(180deg,rgba(241,248,246,0.95),rgba(251,253,252,1))] p-5 shadow-[0_20px_45px_rgba(0,51,61,0.08)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Historischer PDF-Datensatz</p>
+              <h3 className="mt-2 text-xl font-semibold text-[#14333d]">Keine Kartenansicht für diesen Datensatz</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-700">
+                Der importierte Datensatz basiert unmittelbar auf dem amtlichen PDF-Endergebnis. In der Quelle sind nur aggregierte Gesamtwerte enthalten; eine künstliche Verteilung auf Landkreise oder Bundestagswahlkreise wird bewusst nicht ergänzt.
+              </p>
+              <div className="mt-4 rounded-[1.1rem] border border-[#d5e3df] bg-white p-4 text-sm leading-6 text-slate-700">
+                <p>
+                  Quelle: <strong>{currentDataset.metadaten.pdfDatei ?? currentDataset.metadaten.quelle}</strong>
                 </p>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{currentDataset.summary.direktmandat.hinweis}</p>
-              </section>
-            ) : null}
-
-            <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Simulationshinweis</p>
-              <p className="mt-2 text-sm leading-6 text-slate-700">{globalSimulationHint}</p>
-              <p className="mt-2 text-sm leading-6 text-slate-700">{currentDataset.metadaten.simulationshinweis}</p>
+                {currentDataset.metadaten.ordnungscode ? (
+                  <p className="mt-2">
+                    Ordnungscode: <strong>{currentDataset.metadaten.ordnungscode}</strong>
+                  </p>
+                ) : null}
+                <p className="mt-2">Für eine interaktive Karte bitte einen Datensatz mit regionaler Gebietsebene auswählen.</p>
+              </div>
             </section>
+
+            <div className="space-y-4">
+              {currentDataset.summary.direktmandat ? (
+                <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
+                  <h3 className="mt-2 break-words text-lg font-semibold text-[#16343d]">{currentDataset.summary.direktmandat.kandidat}</h3>
+                  <p className="mt-1 text-sm text-slate-700">
+                    {currentDataset.summary.direktmandat.partei} mit {formatProzent(currentDataset.summary.direktmandat.stimmenanteil)}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">{currentDataset.summary.direktmandat.hinweis}</p>
+                </section>
+              ) : null}
+
+              <InfoCard currentDataset={currentDataset} globalSimulationHint={globalSimulationHint} />
+            </div>
           </div>
-        </div>
+        )}
       </section>
 
-      <section className="rounded-[1.5rem] border border-[#cddcda] bg-white p-5 shadow-[0_18px_40px_rgba(0,38,46,0.06)]" aria-label="Tabellarische Kartenalternative">
-        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h3 className="text-xl font-semibold text-[#14333d]">Tabellenalternative</h3>
-            <p className="mt-1 text-sm leading-6 text-slate-600">Barrierefreie Alternative zur Kartenansicht mit denselben Filtereinstellungen.</p>
+      {hasRegionalData ? (
+        <section className="rounded-[1.5rem] border border-[#cddcda] bg-white p-5 shadow-[0_18px_40px_rgba(0,38,46,0.06)]" aria-label="Tabellarische Kartenalternative">
+          <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+            <div>
+              <h3 className="text-xl font-semibold text-[#14333d]">Tabellenalternative</h3>
+              <p className="mt-1 text-sm leading-6 text-slate-600">Barrierefreie Alternative zur Kartenansicht mit denselben Filtereinstellungen.</p>
+            </div>
+            <p className="text-sm text-slate-500">Aktive Metrik: {metric === "winner" ? "Stärkste Partei" : metric === "turnout" ? "Wahlbeteiligung" : `Parteiergebnis ${party}`}</p>
           </div>
-          <p className="text-sm text-slate-500">Aktive Metrik: {metric === "winner" ? "Stärkste Partei" : metric === "turnout" ? "Wahlbeteiligung" : `Parteiergebnis ${party}`}</p>
-        </div>
 
-        <div className="mt-4 overflow-x-auto">
-          <table className="table-basic">
-            <caption className="sr-only">Tabellarische Kartenalternative</caption>
-            <thead>
-              <tr>
-                <th scope="col">{areaLabel}</th>
-                <th scope="col">Bezirk</th>
-                <th scope="col">Stärkste Partei</th>
-                <th scope="col">Wahlbeteiligung</th>
-                <th scope="col">{metric === "party" ? party : metric === "turnout" ? "Wahlbeteiligung" : "Spitzenwert"}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredRows.map((row) => {
-                const metricValue = metric === "turnout" ? row.wahlbeteiligung : metric === "party" ? row.ergebnisse[party] ?? 0 : row.staerksteParteiProzent;
-                return (
-                  <tr key={row.gebietId}>
-                    <th scope="row">{row.gebietName}</th>
-                    <td>{row.bezirk}</td>
-                    <td>{row.staerkstePartei}</td>
-                    <td className="font-mono-data">{formatProzent(row.wahlbeteiligung)}</td>
-                    <td className="font-mono-data">{formatProzent(metricValue)}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </section>
+          <div className="mt-4 overflow-x-auto">
+            <table className="table-basic">
+              <caption className="sr-only">Tabellarische Kartenalternative</caption>
+              <thead>
+                <tr>
+                  <th scope="col">{areaLabel}</th>
+                  <th scope="col">Bezirk</th>
+                  <th scope="col">Stärkste Partei</th>
+                  <th scope="col">Wahlbeteiligung</th>
+                  <th scope="col">{metric === "party" ? party : metric === "turnout" ? "Wahlbeteiligung" : "Spitzenwert"}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredRows.map((row) => {
+                  const metricValue = metric === "turnout" ? row.wahlbeteiligung : metric === "party" ? row.ergebnisse[party] ?? 0 : row.staerksteParteiProzent;
+                  return (
+                    <tr key={row.gebietId}>
+                      <th scope="row">{row.gebietName}</th>
+                      <td>{row.bezirk}</td>
+                      <td>{row.staerkstePartei}</td>
+                      <td className="font-mono-data">{formatProzent(row.wahlbeteiligung)}</td>
+                      <td className="font-mono-data">{formatProzent(metricValue)}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ) : null}
     </div>
   );
 }
@@ -280,10 +324,10 @@ function SelectField({
   disabled?: boolean;
 }) {
   return (
-    <label className="block text-sm font-medium text-slate-700">
+    <label className="block min-w-0 text-sm font-medium text-slate-700">
       {label}
       <select
-        className="mt-1 w-full rounded-2xl border border-[#c5d7d3] bg-white px-3 py-2.5 text-sm text-slate-900 shadow-sm outline-none transition focus:border-[#0f766e]"
+        className="mt-1 w-full rounded-2xl border border-[#c5d7d3] bg-white px-3 py-2.5 text-sm text-slate-900 shadow-sm outline-none transition disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-500 focus:border-[#0f766e]"
         value={value}
         disabled={disabled}
         onChange={(event) => onChange(event.target.value)}
@@ -302,7 +346,7 @@ function StatCard({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-[1.15rem] border border-[#d6e3df] bg-white px-4 py-3">
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">{label}</p>
-      <p className="mt-2 text-lg font-semibold text-[#14333d]">{value}</p>
+      <p className="mt-2 break-words text-lg font-semibold text-[#14333d]">{value}</p>
     </div>
   );
 }
@@ -328,22 +372,32 @@ function LegendCard({
       {metric === "winner" ? (
         <div className="mt-3 space-y-2">
           {legendItems.map((item) => (
-            <div key={item.name} className="flex items-center gap-3 text-sm text-slate-700">
-              <span className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} aria-hidden="true" />
-              <span>{item.name}</span>
+            <div key={item.name} className="flex items-start gap-3 text-sm text-slate-700">
+              <span className="mt-0.5 h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} aria-hidden="true" />
+              <span className="break-words">{item.name}</span>
             </div>
           ))}
         </div>
       ) : (
         <div className="mt-3 space-y-3">
           <div className="h-3 rounded-full" style={{ background: `linear-gradient(90deg, ${metric === "turnout" ? "#d7f0ea" : "#f3ede6"}, ${partyColor})` }} />
-          <div className="flex items-center justify-between text-sm text-slate-700">
+          <div className="flex items-center justify-between gap-3 text-sm text-slate-700">
             <span>{formatProzent(minValue)}</span>
-            <span>{metric === "turnout" ? "Wahlbeteiligung" : party}</span>
+            <span className="min-w-0 break-words text-center">{metric === "turnout" ? "Wahlbeteiligung" : party}</span>
             <span>{formatProzent(maxValue)}</span>
           </div>
         </div>
       )}
+    </section>
+  );
+}
+
+function InfoCard({ currentDataset, globalSimulationHint }: { currentDataset: WahlDataset; globalSimulationHint: string }) {
+  return (
+    <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Simulationshinweis</p>
+      <p className="mt-2 text-sm leading-6 text-slate-700">{globalSimulationHint}</p>
+      <p className="mt-2 text-sm leading-6 text-slate-700">{currentDataset.metadaten.simulationshinweis}</p>
     </section>
   );
 }

@@ -29,9 +29,11 @@ export function Schnellzugriffe() {
       </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {shortcuts.map((item) => (
-          <Link key={item.href} href={item.href} className="card block p-4 no-underline transition hover:border-slate-400 hover:shadow-[0_18px_36px_rgba(0,43,49,0.08)]">
-            <p className="text-base font-semibold text-[var(--color-primary)]">{item.title}</p>
-            <p className="mt-2 text-sm text-slate-700">{item.desc}</p>
+          <Link key={item.href} href={item.href} className="card block p-4 no-underline transition hover:border-[#9eb7bd] hover:shadow-[0_18px_36px_rgba(0,43,49,0.08)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Bereich</p>
+            <p className="mt-2 text-base font-semibold text-[var(--color-primary)]">{item.title}</p>
+            <p className="mt-2 text-sm leading-6 text-slate-700">{item.desc}</p>
+            <p className="mt-4 text-sm font-medium text-[#184650]">Mehr Informationen</p>
           </Link>
         ))}
       </div>

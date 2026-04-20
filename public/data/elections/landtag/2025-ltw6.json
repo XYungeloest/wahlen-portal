@@ -1,0 +1,69 @@
+{
+  "id": "landtag-6",
+  "electionId": "ltw-od-6",
+  "label": "Wahl zum 6. Ostdeutschen Landtag",
+  "datum": "2025-11-30",
+  "typ": "landtag",
+  "gebietsebene": "landkreis",
+  "wahlbeteiligung": 77.08,
+  "wahlberechtigte": 48,
+  "gueltigeStimmen": 37,
+  "modellhinweis": "Historischer PDF-Import. Das amtliche Endergebnis enthält nur das landesweite Gesamtergebnis; eine regionale Landkreisverteilung wird im Portal bewusst nicht nachgetragen.",
+  "datenstand": "2026-04-20",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus LTWOst6_Endergebnis.pdf",
+    "geobasis": "Keine regionale Geo-Basis im PDF enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "simulationshinweis": "Historische PDF-Datensätze werden ohne nachträgliche Regionalschätzung in das Portal übernommen.",
+    "ordnungscode": "ltw-od-6",
+    "pdfDatei": "LTWOst6_Endergebnis.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Freiheitliche Reformpartei Ostdeutschlands": 37.84,
+      "Volksfront Ostdeutschland": 32.43,
+      "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 29.73
+    },
+    "detailergebnisse": [
+      {
+        "id": "gesamt",
+        "label": "Gesamtergebnis",
+        "stimmart": "gesamt",
+        "parteien": [
+          {
+            "name": "Volksfront Ostdeutschland",
+            "kurz": "VF",
+            "stimmen": 12,
+            "prozent": 32.43,
+            "sitze": 5,
+            "normiertAuf": "Volksfront"
+          },
+          {
+            "name": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+            "kurz": "DEMOS Ost",
+            "stimmen": 11,
+            "prozent": 29.73,
+            "sitze": 4,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Freiheitliche Reformpartei Ostdeutschlands",
+            "kurz": "FRP Ost",
+            "stimmen": 14,
+            "prozent": 37.84,
+            "sitze": 6,
+            "normiertAuf": "FRP"
+          }
+        ]
+      }
+    ],
+    "sitzverteilung": {
+      "Freiheitliche Reformpartei Ostdeutschlands": 6,
+      "Volksfront Ostdeutschland": 5,
+      "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 4
+    },
+    "sitzeGesamt": 15,
+    "mehrheitsgrenze": 8
+  },
+  "gebiete": []
+}

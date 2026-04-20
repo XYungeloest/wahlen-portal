@@ -1,0 +1,88 @@
+{
+  "id": "landtag-5",
+  "electionId": "ltw-od-5",
+  "label": "Wahl zum 5. Ostdeutschen Landtag",
+  "datum": "2025-08-17",
+  "typ": "landtag",
+  "gebietsebene": "landkreis",
+  "wahlbeteiligung": 71.67,
+  "wahlberechtigte": 60,
+  "gueltigeStimmen": 43,
+  "modellhinweis": "Historischer PDF-Import. Das amtliche Endergebnis enthält nur das landesweite Gesamtergebnis; eine regionale Landkreisverteilung wird im Portal bewusst nicht nachgetragen.",
+  "datenstand": "2026-04-20",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus LTWOst5_Endergebnis.pdf",
+    "geobasis": "Keine regionale Geo-Basis im PDF enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "simulationshinweis": "Historische PDF-Datensätze werden ohne nachträgliche Regionalschätzung in das Portal übernommen.",
+    "ordnungscode": "ltw-od-5",
+    "pdfDatei": "LTWOst5_Endergebnis.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Nationale Freiheitspartei Ost": 34.88,
+      "DEMOS Ostdeutschland": 23.26,
+      "Ostdeutschland in Bewegung": 18.6,
+      "Christlich Demokratische Partei im Ostdeutschen Freistaat": 18.6,
+      "Liberal-Demokratische Partei Ostdeutschland": 4.65
+    },
+    "detailergebnisse": [
+      {
+        "id": "gesamt",
+        "label": "Gesamtergebnis",
+        "stimmart": "gesamt",
+        "parteien": [
+          {
+            "name": "Ostdeutschland in Bewegung",
+            "kurz": "OiB",
+            "stimmen": 8,
+            "prozent": 18.6,
+            "sitze": 3
+          },
+          {
+            "name": "Christlich Demokratische Partei im Ostdeutschen Freistaat",
+            "kurz": "CDP Ost",
+            "stimmen": 8,
+            "prozent": 18.6,
+            "sitze": 3,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Nationale Freiheitspartei Ost",
+            "kurz": "NFP Ost",
+            "stimmen": 15,
+            "prozent": 34.88,
+            "sitze": 5,
+            "normiertAuf": "NFP"
+          },
+          {
+            "name": "DEMOS Ostdeutschland",
+            "kurz": "DEMOS Ost",
+            "stimmen": 10,
+            "prozent": 23.26,
+            "sitze": 4,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Liberal-Demokratische Partei Ostdeutschland",
+            "kurz": "LDP-Ost",
+            "stimmen": 2,
+            "prozent": 4.65,
+            "sitze": 0,
+            "normiertAuf": "LDP"
+          }
+        ]
+      }
+    ],
+    "sitzverteilung": {
+      "Nationale Freiheitspartei Ost": 5,
+      "DEMOS Ostdeutschland": 4,
+      "Ostdeutschland in Bewegung": 3,
+      "Christlich Demokratische Partei im Ostdeutschen Freistaat": 3,
+      "Liberal-Demokratische Partei Ostdeutschland": 0
+    },
+    "sitzeGesamt": 15,
+    "mehrheitsgrenze": 8
+  },
+  "gebiete": []
+}
