@@ -79,8 +79,18 @@ public/
 4. Karten- und Ergebnisseiten prüfen.
 5. Build prüfen mit `npm run build`.
 
-Hinweis: Die Kartenbasis wird jetzt ueber `scripts/prepare-map-data.mjs` aus amtlichen Geodaten und lokalen Simulationsdatensaetzen aufbereitet. Details stehen in [MAP_DATA_NOTES.md](/Users/petzke/wahlen-portal/MAP_DATA_NOTES.md).
-Das fruehere Script `scripts/generate-sim-data.mjs` ist fuer die neue Kartenbasis nicht mehr die fachliche Referenz.
+Hinweis: Die Kartenbasis wird jetzt über `scripts/prepare-map-data.mjs` aus amtlichen Geodaten und lokalen Simulationsdatensätzen aufbereitet. Details stehen in [MAP_DATA_NOTES.md](/Users/petzke/wahlen-portal/MAP_DATA_NOTES.md).
+Das frühere Script `scripts/generate-sim-data.mjs` ist für die neue Kartenbasis nicht mehr die fachliche Referenz.
+
+## Seitenlogik
+
+- `/ergebnisse/landtag/` und `/ergebnisse/bundestag/` sind die fachlichen Hauptseiten je Wahlebene.
+- Dort sind Ergebnis, Visualisierung, Karte und Gebietstabelle zusammengeführt und nutzen dieselbe Datensatz-Auswahl.
+- Die Seiten unter `/karte/landtag/` und `/karte/bundestag/` bleiben nur als schlanke Deep-Links auf die integrierten Ergebnisseiten bestehen.
+- Karteninteraktion:
+  - Hover und Tastaturfokus zeigen Gebietsinformationen.
+  - Klick setzt einen kontrollierten Fokus auf ein Gebiet.
+  - Ein Reset-Button hebt den Kartenfokus wieder auf.
 
 ## Modellhinweis
 

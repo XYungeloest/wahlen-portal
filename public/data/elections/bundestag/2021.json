@@ -8,14 +8,14 @@
   "wahlbeteiligung": 75.4,
   "wahlberechtigte": 10160000,
   "gueltigeStimmen": 7655400,
-  "modellhinweis": "Simulierter Vergleichsstand mit derselben offiziellen Wahlkreisgeometrie wie 2025. Das ostweite Direktmandat bleibt auch hier eine eigenstaendige Portal-Komponente.",
+  "modellhinweis": "Simulierter Vergleichsstand mit derselben offiziellen Wahlkreisgeometrie wie 2025. Das ostweite Direktmandat bleibt auch hier eine eigenständige Portal-Komponente.",
   "datenstand": "2026-04-20",
   "metadaten": {
     "quelle": "Simulierter Vergleichsdatensatz",
     "geobasis": "Die Bundeswahlleiterin - Wahlkreiseinteilung Bundestagswahl 2025",
-    "legendenTitel": "Staerkste Partei",
+    "legendenTitel": "Stärkste Partei",
     "vergleichMit": "bundestag-2025",
-    "simulationshinweis": "Der Vergleichsstand 2021 dient als zweiter waehlbarer Karten-Datensatz und ist kein Vollnachbau realer Bundeswahlergebnisse."
+    "simulationshinweis": "Der Vergleichsstand 2021 dient als zweiter wählbarer Karten-Datensatz und ist kein Vollnachbau realer Bundeswahlergebnisse."
   },
   "summary": {
     "gesamtergebnis": {
@@ -31,7 +31,7 @@
       "kandidat": "Matthias Berger",
       "partei": "CPD Ost",
       "stimmenanteil": 50.6,
-      "hinweis": "Auch der Vergleichsdatensatz weist aus Konsistenzgruenden nur ein einziges ostweites Direktmandat aus und bildet damit kein reales Bundeswahlrecht nach."
+      "hinweis": "Auch der Vergleichsdatensatz weist aus Konsistenzgründen nur ein einziges ostweites Direktmandat aus und bildet damit kein reales Bundeswahlrecht nach."
     }
   },
   "gebiete": [

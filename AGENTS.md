@@ -34,6 +34,14 @@ Der folgende Stack ist bewusst so festgelegt und soll beibehalten werden:
 Begründung:
 Alle Wahldaten sind simuliert und werden vorab als JSON gepflegt. Das Projekt soll extrem schnell, günstig, portabel und robust deploybar sein.
 
+## UI- und Seitenlogik für Ergebnisdarstellungen
+
+Für Landtag und Bundestag sollen Ergebnisdarstellung, Karte, Tabellenansicht und Datensatz-Auswahl möglichst auf derselben fachlichen Hauptseite zusammengeführt werden. Reine Kartenseiten sind nur als ergänzende Deep-Link- oder Wrapper-Seiten sinnvoll.
+
+Die Startseite soll keine dominante Link-/Button-Wand sein, sondern primär datengetriebene Wahlteaser mit kompakten Visualisierungen und klaren Weiterführungen zeigen.
+
+Im sichtbaren UI sind deutsche Umlaute und ß normal darzustellen; Umschriften wie ae/oe/ue/ss sollen vermieden werden.
+
 ### Karten- und Geodatenstrategie
 
 Die Karten des Wahlportals sollen nicht auf frei gezeichneten Eigengeometrien oder früher diskutierten SVG-Dateien basieren, sondern auf **öffentlichen Geo-/Wahldaten**, die lokal im Repository abgelegt und vor dem Build aufbereitet werden.

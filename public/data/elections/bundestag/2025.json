@@ -8,12 +8,12 @@
   "wahlbeteiligung": 78.1,
   "wahlberechtigte": 10240000,
   "gueltigeStimmen": 7878400,
-  "modellhinweis": "Vereinfachte Portal-Darstellung mit einer Listenstimme je Wahlkreis und einem einzigen separat ausgewiesenen Direktmandat fuer ganz Ostdeutschland.",
+  "modellhinweis": "Vereinfachte Portal-Darstellung mit einer Listenstimme je Wahlkreis und einem einzigen separat ausgewiesenen Direktmandat für ganz Ostdeutschland.",
   "datenstand": "2026-04-20",
   "metadaten": {
     "quelle": "Simulierte Bundestagswahldaten auf offizieller Wahlkreisgeometrie 2025",
     "geobasis": "Die Bundeswahlleiterin - Wahlkreiseinteilung Bundestagswahl 2025",
-    "legendenTitel": "Staerkste Partei",
+    "legendenTitel": "Stärkste Partei",
     "vergleichMit": "bundestag-2021",
     "simulationshinweis": "Die Karte nutzt reale Bundestagswahlkreise, bildet aber bewusst nur das vereinfachte Portalmodell mit einem ostweiten Direktmandat ab."
   },

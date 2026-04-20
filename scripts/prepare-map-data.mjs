@@ -192,7 +192,7 @@ async function main() {
       source: "BKG VG250 31.12.",
       sourceUrl: "https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_1231/aktuell/vg250_12-31.utm32s.shape.ebenen.zip",
       projection: "ETRS89 / UTM zone 32N (UTM32s)",
-      note: "Hoyerswerda wird als dokumentierte Portal-Ausnahme auf Basis der BKG-Gemeindegrenze zusaetzlich ueberlagert.",
+      note: "Hoyerswerda wird als dokumentierte Portal-Ausnahme auf Basis der BKG-Gemeindegrenze zusätzlich überlagert.",
     },
     features: officialLandkreise.features,
   });
@@ -235,7 +235,7 @@ function buildLandkreiseFeatures(features, landkreisLookup, districtsById) {
     const key = findLegacyLandkreisKey(props.GEN, type);
     const legacy = landkreisLookup[key] ?? supplementalLandkreisAssignments[props.AGS];
     if (!legacy) {
-      throw new Error(`Kein Landkreis-Mapping fuer ${props.GEN} (${type}) gefunden.`);
+      throw new Error(`Kein Landkreis-Mapping für ${props.GEN} (${type}) gefunden.`);
     }
 
     const district = districtsById[legacy.bezirkId];
@@ -284,7 +284,7 @@ function buildHoyerswerdaFeature(features, districtsById) {
   });
 
   if (!match) {
-    throw new Error("Gemeindegrenze fuer Hoyerswerda nicht gefunden.");
+    throw new Error("Gemeindegrenze für Hoyerswerda nicht gefunden.");
   }
 
   const district = districtsById.oberlausitz;
@@ -326,7 +326,7 @@ function buildBundestagBezirkMapping(municipalityAssignments, bundestagFeatures,
     const county = `${row.land}${row.regBez}${row.kreis}`;
     const district = countyDistrictMap[county];
     if (!district) {
-      throw new Error(`Kein Bezirks-Mapping fuer Kreis ${county} gefunden.`);
+      throw new Error(`Kein Bezirks-Mapping für Kreis ${county} gefunden.`);
     }
     countsByWk[row.wahlkreisId] ??= {};
     countsByWk[row.wahlkreisId][district.bezirkId] = (countsByWk[row.wahlkreisId][district.bezirkId] ?? 0) + 1;
@@ -457,12 +457,12 @@ function buildLandtag2024Dataset(legacyLandtag2024, landkreiseIndex, legacyLandt
     wahlberechtigte: legacyLandtag2024.wahlberechtigte,
     gueltigeStimmen: legacyLandtag2024.gueltigeStimmen,
     modellhinweis:
-      "Vereinfachtes Portalmodell mit einer Listenstimme. Landkreise und kreisfreie Staedte bilden die regionale Ergebnisdarstellung; Hoyerswerda wird als dokumentierte Portal-Ausnahme separat gefuehrt.",
+      "Vereinfachtes Portalmodell mit einer Listenstimme. Landkreise und kreisfreie Städte bilden die regionale Ergebnisdarstellung; Hoyerswerda wird als dokumentierte Portal-Ausnahme separat geführt.",
     datenstand: "2026-04-20",
     metadaten: {
       quelle: "Simulierte Wahldaten auf Basis der kanonischen Portalgebiete",
-      geobasis: "BKG VG250 31.12. fuer Kreise und kreisfreie Staedte, ergaenzt um Hoyerswerda aus der BKG-Gemeindeebene",
-      legendenTitel: "Staerkste Partei",
+      geobasis: "BKG VG250 31.12. für Kreise und kreisfreie Städte, ergänzt um Hoyerswerda aus der BKG-Gemeindeebene",
+      legendenTitel: "Stärkste Partei",
       vergleichMit: "landtag-2020",
       simulationshinweis:
         "Die Landtagskarte bildet das vereinfachte Portalmodell mit nur einer Listenstimme ab und rekonstruiert kein reales Landeswahlrecht.",
@@ -513,12 +513,12 @@ function buildDerivedLandtagDataset(reference, legacyMetadaten) {
     wahlberechtigte: 10090000,
     gueltigeStimmen: 7246100,
     modellhinweis:
-      "Vergleichsdatensatz im vereinfachten Portalmodell mit identischer Gebietslogik wie 2024. Die Sitze werden fuer die Simulation proportional aus dem Gesamtstimmenergebnis abgeleitet.",
+      "Vergleichsdatensatz im vereinfachten Portalmodell mit identischer Gebietslogik wie 2024. Die Sitze werden für die Simulation proportional aus dem Gesamtstimmenergebnis abgeleitet.",
     datenstand: legacyMetadaten.portal.stand,
     metadaten: {
       quelle: "Simulierter Vergleichsdatensatz",
-      geobasis: "BKG VG250 31.12. fuer Kreise und kreisfreie Staedte, ergaenzt um Hoyerswerda aus der BKG-Gemeindeebene",
-      legendenTitel: "Staerkste Partei",
+      geobasis: "BKG VG250 31.12. für Kreise und kreisfreie Städte, ergänzt um Hoyerswerda aus der BKG-Gemeindeebene",
+      legendenTitel: "Stärkste Partei",
       vergleichMit: "landtag-2024",
       simulationshinweis:
         "Der Vergleichsstand 2020 ist ein konsistenter Portal-Datensatz zur Bedienung der Kartenwahl und kein historischer Originaldatensatz.",
@@ -562,12 +562,12 @@ function buildBundestag2025Dataset(legacyBundestag2025, bundestagswahlkreisIndex
     wahlberechtigte: legacyBundestag2025.wahlberechtigte,
     gueltigeStimmen: legacyBundestag2025.gueltigeStimmen,
     modellhinweis:
-      "Vereinfachte Portal-Darstellung mit einer Listenstimme je Wahlkreis und einem einzigen separat ausgewiesenen Direktmandat fuer ganz Ostdeutschland.",
+      "Vereinfachte Portal-Darstellung mit einer Listenstimme je Wahlkreis und einem einzigen separat ausgewiesenen Direktmandat für ganz Ostdeutschland.",
     datenstand: legacyMetadaten.portal.stand,
     metadaten: {
       quelle: "Simulierte Bundestagswahldaten auf offizieller Wahlkreisgeometrie 2025",
       geobasis: "Die Bundeswahlleiterin - Wahlkreiseinteilung Bundestagswahl 2025",
-      legendenTitel: "Staerkste Partei",
+      legendenTitel: "Stärkste Partei",
       vergleichMit: "bundestag-2021",
       simulationshinweis:
         "Die Karte nutzt reale Bundestagswahlkreise, bildet aber bewusst nur das vereinfachte Portalmodell mit einem ostweiten Direktmandat ab.",
@@ -611,15 +611,15 @@ function buildBundestag2021Dataset(reference, legacyMetadaten) {
     wahlberechtigte: 10160000,
     gueltigeStimmen: 7655400,
     modellhinweis:
-      "Simulierter Vergleichsstand mit derselben offiziellen Wahlkreisgeometrie wie 2025. Das ostweite Direktmandat bleibt auch hier eine eigenstaendige Portal-Komponente.",
+      "Simulierter Vergleichsstand mit derselben offiziellen Wahlkreisgeometrie wie 2025. Das ostweite Direktmandat bleibt auch hier eine eigenständige Portal-Komponente.",
     datenstand: legacyMetadaten.portal.stand,
     metadaten: {
       quelle: "Simulierter Vergleichsdatensatz",
       geobasis: "Die Bundeswahlleiterin - Wahlkreiseinteilung Bundestagswahl 2025",
-      legendenTitel: "Staerkste Partei",
+      legendenTitel: "Stärkste Partei",
       vergleichMit: "bundestag-2025",
       simulationshinweis:
-        "Der Vergleichsstand 2021 dient als zweiter waehlbarer Karten-Datensatz und ist kein Vollnachbau realer Bundeswahlergebnisse.",
+        "Der Vergleichsstand 2021 dient als zweiter wählbarer Karten-Datensatz und ist kein Vollnachbau realer Bundeswahlergebnisse.",
     },
     summary: {
       gesamtergebnis: averageResults(gebiete),
@@ -629,7 +629,7 @@ function buildBundestag2021Dataset(reference, legacyMetadaten) {
         partei: "CPD Ost",
         stimmenanteil: 50.6,
         hinweis:
-          "Auch der Vergleichsdatensatz weist aus Konsistenzgruenden nur ein einziges ostweites Direktmandat aus und bildet damit kein reales Bundeswahlrecht nach.",
+          "Auch der Vergleichsdatensatz weist aus Konsistenzgründen nur ein einziges ostweites Direktmandat aus und bildet damit kein reales Bundeswahlrecht nach.",
       },
     },
     gebiete,

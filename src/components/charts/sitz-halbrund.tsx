@@ -16,17 +16,17 @@ type Props = {
 };
 
 export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
-  const size = 540;
+  const size = 560;
   const centerX = size / 2;
-  const centerY = size / 2 + 70;
-  const outerRadius = 230;
-  const innerRadius = 120;
+  const centerY = size - 72;
+  const outerRadius = 220;
+  const innerRadius = 112;
 
   let running = 0;
   const slices = data.map((item) => {
-    const startAngle = Math.PI + (running / totalSeats) * Math.PI;
+    const startAngle = -Math.PI / 2 + (running / totalSeats) * Math.PI;
     running += item.seats;
-    const endAngle = Math.PI + (running / totalSeats) * Math.PI;
+    const endAngle = -Math.PI / 2 + (running / totalSeats) * Math.PI;
     return { ...item, startAngle, endAngle };
   });
 
@@ -39,8 +39,8 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
           y1={centerY}
           x2={centerX + outerRadius}
           y2={centerY}
-          stroke="#475569"
-          strokeDasharray="5 5"
+          stroke="#8aa2a5"
+          strokeDasharray="4 6"
           strokeWidth={1}
         />
         {slices.map((slice) => {
@@ -55,13 +55,14 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
           }
           return <path key={slice.name} d={d} transform={`translate(${centerX}, ${centerY})`} fill={slice.color} stroke="#fff" strokeWidth={1} />;
         })}
-        <text x={centerX} y={centerY - 46} textAnchor="middle" className="fill-slate-800 text-2xl font-bold font-mono-data">
+        <circle cx={centerX} cy={centerY} r={innerRadius - 18} fill="#ffffff" stroke="#d7e2e0" />
+        <text x={centerX} y={centerY - 32} textAnchor="middle" className="fill-slate-800 text-2xl font-bold font-mono-data">
           {totalSeats}
         </text>
-        <text x={centerX} y={centerY - 20} textAnchor="middle" className="fill-slate-600 text-sm">
+        <text x={centerX} y={centerY - 8} textAnchor="middle" className="fill-slate-600 text-sm">
           Sitze gesamt
         </text>
-        <text x={centerX} y={centerY + 20} textAnchor="middle" className="fill-slate-700 text-sm">
+        <text x={centerX} y={centerY + 22} textAnchor="middle" className="fill-slate-700 text-sm">
           Mehrheitsgrenze: {majority}
         </text>
       </svg>

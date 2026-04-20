@@ -13,17 +13,37 @@ type Props = {
   bezirke: Bezirk[];
   geo: GeoFeatureCollection;
   datasets: WahlDataset[];
+  datasetId?: string;
+  onDatasetChange?: (nextValue: string) => void;
   partyColors: Record<string, string>;
   globalSimulationHint: string;
 };
 
 type MetricType = "winner" | "turnout" | "party";
 
-export function KartenModul({ title, areaLabel, bezirke, geo, datasets, partyColors, globalSimulationHint }: Props) {
-  const [datasetId, setDatasetId] = useState<string>(datasets[0]?.id ?? "");
+export function KartenModul({
+  title,
+  areaLabel,
+  bezirke,
+  geo,
+  datasets,
+  datasetId: controlledDatasetId,
+  onDatasetChange,
+  partyColors,
+  globalSimulationHint,
+}: Props) {
+  const [uncontrolledDatasetId, setUncontrolledDatasetId] = useState<string>(datasets[0]?.id ?? "");
   const [bezirkId, setBezirkId] = useState<string>("alle");
   const [metric, setMetric] = useState<MetricType>("winner");
   const [party, setParty] = useState<string>("Volksfront");
+  const datasetId = controlledDatasetId ?? uncontrolledDatasetId;
+
+  const setDatasetId = (nextValue: string) => {
+    onDatasetChange?.(nextValue);
+    if (!onDatasetChange) {
+      setUncontrolledDatasetId(nextValue);
+    }
+  };
 
   const currentDataset = useMemo(
     () => datasets.find((dataset) => dataset.id === datasetId) ?? datasets[0],
@@ -64,7 +84,7 @@ export function KartenModul({ title, areaLabel, bezirke, geo, datasets, partyCol
 
         const metricLabel =
           metric === "winner"
-            ? `Staerkste Partei: ${row.staerkstePartei} (${formatProzent(row.staerksteParteiProzent)})`
+            ? `Stärkste Partei: ${row.staerkstePartei} (${formatProzent(row.staerksteParteiProzent)})`
             : metric === "turnout"
               ? `Wahlbeteiligung: ${formatProzent(row.wahlbeteiligung)}`
               : `${party}: ${formatProzent(metricValue)}`;
@@ -76,8 +96,8 @@ export function KartenModul({ title, areaLabel, bezirke, geo, datasets, partyCol
             name: row.gebietName,
             fill,
             headline: metricLabel,
-            detail: `Bezirk ${row.bezirk}. Staerkste Partei ${row.staerkstePartei} mit ${formatProzent(row.staerksteParteiProzent)}.`,
-            ariaLabel: `${row.gebietName}, Bezirk ${row.bezirk}. ${metricLabel}. Staerkste Partei ${row.staerkstePartei} mit ${formatProzent(row.staerksteParteiProzent)}.`,
+            detail: `Bezirk ${row.bezirk}. Stärkste Partei ${row.staerkstePartei} mit ${formatProzent(row.staerksteParteiProzent)}.`,
+            ariaLabel: `${row.gebietName}, Bezirk ${row.bezirk}. ${metricLabel}. Stärkste Partei ${row.staerkstePartei} mit ${formatProzent(row.staerksteParteiProzent)}.`,
           },
         ];
       }),
@@ -112,7 +132,7 @@ export function KartenModul({ title, areaLabel, bezirke, geo, datasets, partyCol
 
   return (
     <div className="space-y-5">
-      <section className="rounded-[1.75rem] border border-[#c4d6d2] bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(235,246,242,0.96))] p-5 shadow-[0_24px_54px_rgba(0,38,46,0.08)]">
+      <section id="karte" className="rounded-[1.75rem] border border-[#c4d6d2] bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(235,246,242,0.96))] p-5 shadow-[0_24px_54px_rgba(0,38,46,0.08)]">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#25515c]">{title}</p>
@@ -123,7 +143,7 @@ export function KartenModul({ title, areaLabel, bezirke, geo, datasets, partyCol
           </div>
           <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[28rem]">
             <StatCard label="Wahlbeteiligung" value={formatProzent(currentDataset.wahlbeteiligung)} />
-            <StatCard label="Gebietsebene" value={currentDataset.gebietsebene === "landkreis" ? "Landkreise / kreisfreie Staedte" : "Bundestagswahlkreise"} />
+            <StatCard label="Gebietsebene" value={currentDataset.gebietsebene === "landkreis" ? "Landkreise / kreisfreie Städte" : "Bundestagswahlkreise"} />
             <StatCard label="Gebiete" value={String(filteredRows.length)} />
           </div>
         </div>
@@ -140,7 +160,7 @@ export function KartenModul({ title, areaLabel, bezirke, geo, datasets, partyCol
             value={metric}
             onChange={(nextValue) => setMetric(nextValue as MetricType)}
             options={[
-              { value: "winner", label: "Staerkste Partei" },
+              { value: "winner", label: "Stärkste Partei" },
               { value: "turnout", label: "Wahlbeteiligung" },
               { value: "party", label: "Parteiergebnis" },
             ]}
@@ -202,7 +222,7 @@ export function KartenModul({ title, areaLabel, bezirke, geo, datasets, partyCol
             <h3 className="text-xl font-semibold text-[#14333d]">Tabellenalternative</h3>
             <p className="mt-1 text-sm leading-6 text-slate-600">Barrierefreie Alternative zur Kartenansicht mit denselben Filtereinstellungen.</p>
           </div>
-          <p className="text-sm text-slate-500">Aktive Metrik: {metric === "winner" ? "Staerkste Partei" : metric === "turnout" ? "Wahlbeteiligung" : `Parteiergebnis ${party}`}</p>
+          <p className="text-sm text-slate-500">Aktive Metrik: {metric === "winner" ? "Stärkste Partei" : metric === "turnout" ? "Wahlbeteiligung" : `Parteiergebnis ${party}`}</p>
         </div>
 
         <div className="mt-4 overflow-x-auto">
@@ -212,7 +232,7 @@ export function KartenModul({ title, areaLabel, bezirke, geo, datasets, partyCol
               <tr>
                 <th scope="col">{areaLabel}</th>
                 <th scope="col">Bezirk</th>
-                <th scope="col">Staerkste Partei</th>
+                <th scope="col">Stärkste Partei</th>
                 <th scope="col">Wahlbeteiligung</th>
                 <th scope="col">{metric === "party" ? party : metric === "turnout" ? "Wahlbeteiligung" : "Spitzenwert"}</th>
               </tr>

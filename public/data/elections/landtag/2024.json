@@ -8,12 +8,12 @@
   "wahlbeteiligung": 74.6,
   "wahlberechtigte": 10180000,
   "gueltigeStimmen": 7512400,
-  "modellhinweis": "Vereinfachtes Portalmodell mit einer Listenstimme. Landkreise und kreisfreie Staedte bilden die regionale Ergebnisdarstellung; Hoyerswerda wird als dokumentierte Portal-Ausnahme separat gefuehrt.",
+  "modellhinweis": "Vereinfachtes Portalmodell mit einer Listenstimme. Landkreise und kreisfreie Städte bilden die regionale Ergebnisdarstellung; Hoyerswerda wird als dokumentierte Portal-Ausnahme separat geführt.",
   "datenstand": "2026-04-20",
   "metadaten": {
     "quelle": "Simulierte Wahldaten auf Basis der kanonischen Portalgebiete",
-    "geobasis": "BKG VG250 31.12. fuer Kreise und kreisfreie Staedte, ergaenzt um Hoyerswerda aus der BKG-Gemeindeebene",
-    "legendenTitel": "Staerkste Partei",
+    "geobasis": "BKG VG250 31.12. für Kreise und kreisfreie Städte, ergänzt um Hoyerswerda aus der BKG-Gemeindeebene",
+    "legendenTitel": "Stärkste Partei",
     "vergleichMit": "landtag-2020",
     "simulationshinweis": "Die Landtagskarte bildet das vereinfachte Portalmodell mit nur einer Listenstimme ab und rekonstruiert kein reales Landeswahlrecht."
   },

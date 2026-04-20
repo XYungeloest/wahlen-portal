@@ -21,11 +21,16 @@ const shortcuts: Shortcut[] = [
 export function Schnellzugriffe() {
   return (
     <section aria-label="Schnellzugriffe">
-      <h2 className="mb-4 text-2xl font-semibold text-[var(--color-primary)]">Schnellzugriffe</h2>
+      <div className="mb-4 flex items-end justify-between gap-3">
+        <div>
+          <h2 className="text-2xl font-semibold text-[var(--color-primary)]">Weitere Bereiche</h2>
+          <p className="mt-1 text-sm text-slate-600">Ergänzende Inhalte, Methodik und Werkzeuge des Portals.</p>
+        </div>
+      </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {shortcuts.map((item) => (
-          <Link key={item.href} href={item.href} className="card block p-4 no-underline hover:border-slate-400">
-            <p className="text-lg font-semibold text-[var(--color-primary)]">{item.title}</p>
+          <Link key={item.href} href={item.href} className="card block p-4 no-underline transition hover:border-slate-400 hover:shadow-[0_18px_36px_rgba(0,43,49,0.08)]">
+            <p className="text-base font-semibold text-[var(--color-primary)]">{item.title}</p>
             <p className="mt-2 text-sm text-slate-700">{item.desc}</p>
           </Link>
         ))}

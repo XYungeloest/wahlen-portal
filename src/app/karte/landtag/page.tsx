@@ -1,34 +1,24 @@
-import { KartenModul } from "@/components/maps/kartenmodul";
+import Link from "next/link";
 import { PageHeader } from "@/components/layout/page-header";
-import { parteiFarbenMap } from "@/lib/parteien";
-import { getBezirke, getLandkreiseGeo, getLandtagDatasets, getMetadaten, getParteien } from "@/lib/wahldaten";
 
-export default async function KarteLandtagPage() {
-  const [bezirke, geo, datasets, parteien, metadaten] = await Promise.all([
-    getBezirke(),
-    getLandkreiseGeo(),
-    getLandtagDatasets(),
-    getParteien(),
-    getMetadaten(),
-  ]);
-
-  const partyColors = parteiFarbenMap(parteien);
-
+export default function KarteLandtagPage() {
   return (
     <div className="space-y-6">
       <PageHeader
         title="Karte Landtagswahl"
-        description="Amtliche Kreis- und Stadtgeometrien fuer den Freistaat Ostdeutschland mit waehlbarer Datengrundlage, Bezirksfilter, Legende und tabellarischer Alternative."
+        description="Die Landtagskarte ist jetzt Teil der integrierten Ergebnisseite und nutzt dort dieselbe Datensatz-Auswahl wie Ergebnis, Sitzverteilung und Tabelle."
       />
-      <KartenModul
-        title="Landtagskarte"
-        areaLabel="Landkreis / kreisfreie Stadt"
-        bezirke={bezirke}
-        geo={geo}
-        datasets={datasets}
-        partyColors={partyColors}
-        globalSimulationHint={`${metadaten.portal.simulationshinweis} Die Landtagskarte nutzt Landkreise und kreisfreie Staedte als regionale Wahlkreisebene; Bezirke dienen nur der Orientierung und Filterung.`}
-      />
+      <section className="card p-5 text-slate-700">
+        <p className="leading-7">
+          Die regionale Kartenansicht wird nicht mehr als fachlich getrennte Hauptseite geführt. Dadurch bleiben Ergebnis, Karte und Gebietstabelle auf derselben Wahlebene konsistent.
+        </p>
+        <Link
+          href="/ergebnisse/landtag/#karte"
+          className="mt-4 inline-flex items-center rounded-full border border-[#0f5e68] bg-[#0f5e68] px-4 py-2 text-sm font-medium text-white no-underline transition hover:bg-[#124952]"
+        >
+          Zur integrierten Landtagsansicht
+        </Link>
+      </section>
     </div>
   );
 }
