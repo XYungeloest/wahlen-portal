@@ -21,9 +21,9 @@ export default async function HomePage() {
 
   const quickFacts = [
     { label: "Wahlberechtigte", value: formatZahl(metadaten.quickfacts.wahlberechtigte) },
-    { label: "Wahlbeteiligung (Referenz)", value: formatProzent(metadaten.quickfacts.aktuelleWahlbeteiligungReferenz) },
+    { label: "Wahlbeteiligung", value: formatProzent(metadaten.quickfacts.aktuelleWahlbeteiligungReferenz) },
     { label: "Letzter Wahltermin", value: formatDatum(metadaten.quickfacts.letzteWahl) },
-    { label: "Nächster fiktiver Wahltermin", value: formatDatum(metadaten.quickfacts.naechsteWahl) },
+    { label: "Nächster Wahltermin (vsl.)", value: formatDatum(metadaten.quickfacts.naechsteWahl) },
   ];
 
   return (

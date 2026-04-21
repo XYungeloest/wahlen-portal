@@ -7,10 +7,10 @@
     "simulationshinweis": "Alle Inhalte und Wahldaten sind Bestandteil einer Politiksimulation und bilden kein amtliches deutsches Wahlrecht ab."
   },
   "quickfacts": {
-    "wahlberechtigte": 10240000,
-    "letzteWahl": "2025-09-21",
-    "naechsteWahl": "2029-09-23",
-    "aktuelleWahlbeteiligungReferenz": 78.1
+    "wahlberechtigte": 12344271,
+    "letzteWahl": "2026-04-19",
+    "naechsteWahl": "2026-08-15",
+    "aktuelleWahlbeteiligungReferenz": 94.2
   },
   "design": {
     "landesfarben": [
