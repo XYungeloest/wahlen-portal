@@ -89,7 +89,7 @@ public/
 
 - Die fachlichen Hauptseiten liegen unter `/ergebnisse/landtag` und `/ergebnisse/bundestag`.
 - Dort werden Ergebnis, Visualisierung, Karte und Gebietstabelle gemeinsam aus derselben Datensatz-Auswahl gespeist.
-- Die früheren Kartenseiten unter `/karte/landtag` und `/karte/bundestag` bleiben nur als schlanke Deep-Link-Seiten erhalten und verweisen auf die integrierten Wahlebenen.
+- Die früheren Kartenseiten unter `/karte/landtag` und `/karte/bundestag` sind entfernt. Karten werden direkt auf den integrierten Wahlebenen angezeigt; `/karte` verweist nur noch auf die Kartenabschnitte.
 - Karteninteraktion:
   - Hover und Tastaturfokus zeigen Gebietsdaten an.
   - Klick setzt einen kontrollierten Fokus auf ein Gebiet.

@@ -100,7 +100,7 @@ Details zur Herkunft und Struktur stehen in [HISTORICAL_DATA_NOTES.md](/Users/pe
 - `/ergebnisse/landtag/` und `/ergebnisse/bundestag/` sind die fachlichen Hauptseiten je Wahlebene.
 - Dort sind Ergebnis, Visualisierung, Karte und Gebietstabelle zusammengeführt und nutzen dieselbe Datensatz-Auswahl.
 - Historische PDF-Datensätze enthalten ihre Gebietssieger direkt im Wahldatensatz; regionale Prozentwerte bleiben dabei transparent leer.
-- Die Seiten unter `/karte/landtag/` und `/karte/bundestag/` bleiben nur als schlanke Deep-Links auf die integrierten Ergebnisseiten bestehen.
+- Die frühere Unterseiten-Struktur `/karte/landtag/` und `/karte/bundestag/` ist entfernt. Karten werden direkt auf den integrierten Ergebnisseiten angezeigt; `/karte/` ist nur noch eine kompakte Übersicht mit Ankerlinks.
 - Karteninteraktion:
   - Hover und Tastaturfokus zeigen Gebietsinformationen.
   - Klick setzt einen kontrollierten Fokus auf ein Gebiet.

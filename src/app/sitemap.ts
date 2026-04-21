@@ -8,8 +8,6 @@ const routes = [
   "/ergebnisse/landtag",
   "/ergebnisse/bundestag",
   "/karte",
-  "/karte/landtag",
-  "/karte/bundestag",
   "/wahlrecht",
   "/direkte-demokratie",
   "/werkzeuge",
