@@ -8,11 +8,11 @@
   "wahlbeteiligung": 94.23,
   "wahlberechtigte": 52,
   "gueltigeStimmen": 49,
-  "modellhinweis": "Historischer PDF-Import auf Basis des Ost-Abschnitts des amtlichen Bundestags-Endergebnisses. Es wird nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung wird nicht erfunden.",
+  "modellhinweis": "Import auf Basis des Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“ des amtlichen Endergebnisses. Es wurde nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung ist nicht ausgewiesen.",
   "datenstand": "2026-04-20",
   "metadaten": {
-    "quelle": "Amtliches Endergebnis aus BTW8_Endergebnis.pdf, Abschnitt Wahlkreisergebnis Wahlkreis 02 – Ostdeutschland; Gebietssieger aus lokal übertragenem Referenzkarten-Datensatz",
-    "geobasis": "Lokales GeoJSON der ostdeutschen Bundestagswahlkreise; Gebietssieger direkt im Wahldatensatz gepflegt",
+    "quelle": "Amtliches Endergebnis der Wahl zum 8. Deutschen Bundestag, Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“",
+    "geobasis": "GeoJSON der ostdeutschen Bundestagswahlkreise",
     "legendenTitel": "Stärkste Partei",
     "simulationshinweis": "Historische Bundestags-PDFs werden nur mit dem ostdeutschen Abschnitt und ohne künstliche Wahlkreisunterteilung übernommen.",
     "ordnungscode": "btw-8",
@@ -32,7 +32,7 @@
         "id": "listenstimme",
         "label": "Zweitstimme",
         "stimmart": "zweitstimme",
-        "hinweis": "Übernommen aus dem Abschnitt „Wahlkreisergebnis Wahlkreis 02 – Ostdeutschland“ des amtlichen PDF-Endergebnisses.",
+        "hinweis": "Übernommen aus dem Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“ des amtlichen Endergebnisses.",
         "parteien": [
           {
             "name": "Christlich Demokratische Partei",
@@ -81,7 +81,7 @@
         "id": "wahlkreisstimme",
         "label": "Erststimme",
         "stimmart": "erststimme",
-        "hinweis": "Kandidierendenstimmen des Ost-Wahlkreises aus demselben PDF-Abschnitt.",
+        "hinweis": "Übernommen aus dem Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“ des amtlichen Endergebnisses.",
         "parteien": [
           {
             "name": "Christlich Demokratische Partei",
@@ -135,7 +135,7 @@
       "kandidat": "Tim Dieter",
       "partei": "Volksfront",
       "stimmenanteil": 53.06,
-      "hinweis": "Der gewählte Direktmandatsträger für Ostdeutschland wurde aus der Zusammenfassung der gewählten Direktmandatsabgeordneten im PDF übernommen."
+      "hinweis": "Der gewählte Direktmandatsträger ist der Kandidat mit den meisten Erstimmen aus dem Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“ des amtlichen Endergebnisses."
     }
   },
   "gebiete": [
@@ -190,7 +190,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -226,7 +226,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -262,7 +262,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -298,7 +298,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -334,7 +334,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -352,7 +352,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -370,7 +370,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -388,7 +388,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -406,7 +406,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "DIE PATRIOTEN",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -442,7 +442,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Freiheitliche Reformpartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -478,7 +478,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -514,7 +514,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -550,7 +550,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Freiheitliche Reformpartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -622,7 +622,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Christlich Demokratische Partei",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -640,7 +640,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Christlich Demokratische Partei",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -658,7 +658,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Christlich Demokratische Partei",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -676,7 +676,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Christlich Demokratische Partei",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -694,7 +694,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -712,7 +712,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Liberal-Demokratische Partei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -730,7 +730,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Liberal-Demokratische Partei",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -748,7 +748,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -802,7 +802,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -964,7 +964,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -982,7 +982,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "DIE PATRIOTEN",
       "staerksteParteiProzent": 0
     },
     {
@@ -1000,7 +1000,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1072,7 +1072,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1090,7 +1090,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1108,7 +1108,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1144,7 +1144,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1162,7 +1162,7 @@
         "Christlich Demokratische Partei": 0,
         "Liberal-Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
