@@ -11,8 +11,8 @@
   "modellhinweis": "Historischer PDF-Import auf Basis des Ost-Abschnitts des amtlichen Bundestags-Endergebnisses. Es wird nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung wird nicht erfunden.",
   "datenstand": "2026-04-20",
   "metadaten": {
-    "quelle": "Amtliches Endergebnis aus BTW7_Endergebnis.pdf, Abschnitt Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland",
-    "geobasis": "Keine ostinterne Untergliederung im PDF-Endergebnis; Karte für diesen Datensatz nicht verfügbar.",
+    "quelle": "Amtliches Endergebnis aus BTW7_Endergebnis.pdf, Abschnitt Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland; Gebietssieger aus lokal übertragenem Referenzkarten-Datensatz",
+    "geobasis": "Lokales GeoJSON der ostdeutschen Bundestagswahlkreise; Gebietssieger direkt im Wahldatensatz gepflegt",
     "legendenTitel": "Stärkste Partei",
     "simulationshinweis": "Historische Bundestags-PDFs werden nur mit dem ostdeutschen Abschnitt und ohne künstliche Wahlkreisunterteilung übernommen.",
     "ordnungscode": "btw-7",
@@ -137,5 +137,1086 @@
       "hinweis": "Der gewählte Direktmandatsträger für Ostdeutschland wurde aus der Zusammenfassung der gewählten Direktmandatsabgeordneten im PDF übernommen."
     }
   },
-  "gebiete": []
+  "gebiete": [
+    {
+      "gebietId": "wk-012",
+      "gebietName": "Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",
+      "officialName": "Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-013",
+      "gebietName": "Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",
+      "officialName": "Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-014",
+      "gebietName": "Rostock – Landkreis Rostock II",
+      "officialName": "Rostock – Landkreis Rostock II",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-015",
+      "gebietName": "Vorpommern-Rügen – Vorpommern-Greifswald I",
+      "officialName": "Vorpommern-Rügen – Vorpommern-Greifswald I",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-016",
+      "gebietName": "Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",
+      "officialName": "Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-017",
+      "gebietName": "Mecklenburgische Seenplatte II – Landkreis Rostock III",
+      "officialName": "Mecklenburgische Seenplatte II – Landkreis Rostock III",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-056",
+      "gebietName": "Prignitz – Ostprignitz-Ruppin – Havelland I",
+      "officialName": "Prignitz – Ostprignitz-Ruppin – Havelland I",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-057",
+      "gebietName": "Uckermark – Barnim I",
+      "officialName": "Uckermark – Barnim I",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-058",
+      "gebietName": "Oberhavel – Havelland II",
+      "officialName": "Oberhavel – Havelland II",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-059",
+      "gebietName": "Märkisch-Oderland – Barnim II",
+      "officialName": "Märkisch-Oderland – Barnim II",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-060",
+      "gebietName": "Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",
+      "officialName": "Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-061",
+      "gebietName": "Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",
+      "officialName": "Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-062",
+      "gebietName": "Dahme-Spreewald – Teltow-Fläming III",
+      "officialName": "Dahme-Spreewald – Teltow-Fläming III",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-063",
+      "gebietName": "Frankfurt (Oder) – Oder-Spree",
+      "officialName": "Frankfurt (Oder) – Oder-Spree",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-064",
+      "gebietName": "Cottbus – Spree-Neiße",
+      "officialName": "Cottbus – Spree-Neiße",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-065",
+      "gebietName": "Elbe-Elster – Oberspreewald-Lausitz",
+      "officialName": "Elbe-Elster – Oberspreewald-Lausitz",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-066",
+      "gebietName": "Altmark – Jerichower Land",
+      "officialName": "Altmark – Jerichower Land",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-067",
+      "gebietName": "Börde – Salzlandkreis",
+      "officialName": "Börde – Salzlandkreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-068",
+      "gebietName": "Harz",
+      "officialName": "Harz",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-069",
+      "gebietName": "Magdeburg",
+      "officialName": "Magdeburg",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-070",
+      "gebietName": "Anhalt – Dessau – Wittenberg",
+      "officialName": "Anhalt – Dessau – Wittenberg",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-071",
+      "gebietName": "Halle",
+      "officialName": "Halle",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-072",
+      "gebietName": "Burgenland – Saalekreis",
+      "officialName": "Burgenland – Saalekreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-073",
+      "gebietName": "Mansfeld",
+      "officialName": "Mansfeld",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-074",
+      "gebietName": "Berlin-Mitte",
+      "officialName": "Berlin-Mitte",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-075",
+      "gebietName": "Berlin-Pankow",
+      "officialName": "Berlin-Pankow",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-076",
+      "gebietName": "Berlin-Reinickendorf",
+      "officialName": "Berlin-Reinickendorf",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Christlich Demokratische Partei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-077",
+      "gebietName": "Berlin-Spandau – Charlottenburg Nord",
+      "officialName": "Berlin-Spandau – Charlottenburg Nord",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Christlich Demokratische Partei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-078",
+      "gebietName": "Berlin-Steglitz-Zehlendorf",
+      "officialName": "Berlin-Steglitz-Zehlendorf",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Christlich Demokratische Partei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-079",
+      "gebietName": "Berlin-Charlottenburg-Wilmersdorf",
+      "officialName": "Berlin-Charlottenburg-Wilmersdorf",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Christlich Demokratische Partei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-080",
+      "gebietName": "Berlin-Tempelhof-Schöneberg",
+      "officialName": "Berlin-Tempelhof-Schöneberg",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-081",
+      "gebietName": "Berlin-Neukölln",
+      "officialName": "Berlin-Neukölln",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Liberal-Demokratische Partei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-082",
+      "gebietName": "Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost",
+      "officialName": "Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Liberal-Demokratische Partei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-083",
+      "gebietName": "Berlin-Treptow-Köpenick",
+      "officialName": "Berlin-Treptow-Köpenick",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-084",
+      "gebietName": "Berlin-Marzahn-Hellersdorf",
+      "officialName": "Berlin-Marzahn-Hellersdorf",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-085",
+      "gebietName": "Berlin-Lichtenberg",
+      "officialName": "Berlin-Lichtenberg",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-150",
+      "gebietName": "Nordsachsen",
+      "officialName": "Nordsachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-151",
+      "gebietName": "Leipzig I",
+      "officialName": "Leipzig I",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-152",
+      "gebietName": "Leipzig II",
+      "officialName": "Leipzig II",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-153",
+      "gebietName": "Leipzig-Land",
+      "officialName": "Leipzig-Land",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-154",
+      "gebietName": "Meißen",
+      "officialName": "Meißen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-155",
+      "gebietName": "Bautzen I",
+      "officialName": "Bautzen I",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-156",
+      "gebietName": "Görlitz",
+      "officialName": "Görlitz",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-157",
+      "gebietName": "Sächsische Schweiz-Osterzgebirge",
+      "officialName": "Sächsische Schweiz-Osterzgebirge",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-158",
+      "gebietName": "Dresden I",
+      "officialName": "Dresden I",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-159",
+      "gebietName": "Dresden II – Bautzen II",
+      "officialName": "Dresden II – Bautzen II",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-160",
+      "gebietName": "Mittelsachsen",
+      "officialName": "Mittelsachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-161",
+      "gebietName": "Chemnitz",
+      "officialName": "Chemnitz",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-162",
+      "gebietName": "Chemnitzer Umland – Erzgebirgskreis II",
+      "officialName": "Chemnitzer Umland – Erzgebirgskreis II",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-163",
+      "gebietName": "Erzgebirgskreis I",
+      "officialName": "Erzgebirgskreis I",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-164",
+      "gebietName": "Zwickau",
+      "officialName": "Zwickau",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-165",
+      "gebietName": "Vogtlandkreis",
+      "officialName": "Vogtlandkreis",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-188",
+      "gebietName": "Eichsfeld – Nordhausen – Kyffhäuserkreis",
+      "officialName": "Eichsfeld – Nordhausen – Kyffhäuserkreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-189",
+      "gebietName": "Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",
+      "officialName": "Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-190",
+      "gebietName": "Jena – Sömmerda – Weimarer Land I",
+      "officialName": "Jena – Sömmerda – Weimarer Land I",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-191",
+      "gebietName": "Gotha – Ilm-Kreis",
+      "officialName": "Gotha – Ilm-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-192",
+      "gebietName": "Erfurt – Weimar – Weimarer Land II",
+      "officialName": "Erfurt – Weimar – Weimarer Land II",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-193",
+      "gebietName": "Gera – Greiz – Altenburger Land",
+      "officialName": "Gera – Greiz – Altenburger Land",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-194",
+      "gebietName": "Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",
+      "officialName": "Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Volksfront",
+      "staerksteParteiProzent": 0
+    },
+    {
+      "gebietId": "wk-195",
+      "gebietName": "Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",
+      "officialName": "Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 92.11,
+      "ergebnisse": {
+        "Volksfront": 0,
+        "Bündnis Demokratie Europa": 0,
+        "Freiheitliche Reformpartei": 0,
+        "Deutsche Heimatpartei": 0,
+        "Liberal-Demokratische Partei": 0,
+        "Christlich Demokratische Partei": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei",
+      "staerksteParteiProzent": 0
+    }
+  ]
 }

@@ -38,11 +38,13 @@ public/
       bundestagswahlkreise-bezirke.json
     elections/
       landtag/
-        2020.json
-        2024.json
+        2025-ltw5.json
+        2025-ltw6.json
+        2026-ltw7.json
       bundestag/
-        2021.json
-        2025.json
+        2025-btw6-ost.json
+        2026-btw7-ost.json
+        2026-btw8-ost.json
   geo/
     landkreise-ost.geojson
     btw-wahlkreise-ost.geojson

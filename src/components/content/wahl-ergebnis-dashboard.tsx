@@ -103,7 +103,6 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
 
       <KartenModul
         title={typ === "landtag" ? "Regionale Wahlkarte" : "Wahlkreiskarte"}
-        areaLabel={typ === "landtag" ? "Landkreis / kreisfreie Stadt" : "Bundestagswahlkreis"}
         bezirke={bezirke}
         geo={geo}
         datasets={datasets}
@@ -119,7 +118,7 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
             key={block.id}
             title={displayBlockTitle(block, typ)}
             subtitle={block.hinweis}
-            data={block.parteien
+            data={displayParties(block)
               .map((entry) => ({
                 name: displayEntryName(entry, block),
                 value: entry.prozent,
@@ -189,6 +188,11 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
           ))}
         </div>
       </section>
+
+      <GebietsTabelle
+        areaLabel={typ === "landtag" ? "Landkreis / kreisfreie Stadt" : "Bundestagswahlkreis"}
+        dataset={currentDataset}
+      />
     </div>
   );
 }
@@ -222,10 +226,17 @@ function isCandidateVote(block: ErgebnisBlock) {
   return block.stimmart === "erststimme" || block.stimmart === "wahlkreisstimme";
 }
 
+function displayParties(block: ErgebnisBlock) {
+  if (!isCandidateVote(block)) {
+    return block.parteien;
+  }
+  return block.parteien.filter((entry) => Boolean(entry.kandidat));
+}
+
 function displayEntryName(entry: ErgebnisBlock["parteien"][number], block: ErgebnisBlock) {
   const partyLabel = entry.kurz ?? entry.name;
   if (isCandidateVote(block)) {
-    return entry.kandidat ? `${entry.kandidat} (${partyLabel})` : `Keine Kandidatur (${partyLabel})`;
+    return `${entry.kandidat} (${partyLabel})`;
   }
   return entry.kurz ? `${entry.name} (${entry.kurz})` : entry.name;
 }
@@ -263,7 +274,7 @@ function ErgebnisTabelle({ block, typ }: { block: ErgebnisBlock; typ: WahlTyp })
             </tr>
           </thead>
           <tbody>
-            {block.parteien
+            {displayParties(block)
               .slice()
               .sort((left, right) => right.prozent - left.prozent)
               .map((entry) => (
@@ -278,6 +289,55 @@ function ErgebnisTabelle({ block, typ }: { block: ErgebnisBlock; typ: WahlTyp })
                   {hasSeats ? <td className="font-mono-data">{typeof entry.sitze === "number" ? formatZahl(entry.sitze) : "—"}</td> : null}
                 </tr>
               ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+function GebietsTabelle({ areaLabel, dataset }: { areaLabel: string; dataset: WahlDataset }) {
+  if (dataset.gebiete.length === 0) {
+    return null;
+  }
+
+  const rows = dataset.gebiete.slice().sort((left, right) => {
+    const districtCompare = left.bezirk.localeCompare(right.bezirk, "de");
+    return districtCompare === 0 ? left.gebietName.localeCompare(right.gebietName, "de") : districtCompare;
+  });
+
+  return (
+    <section className="rounded-[1.5rem] border border-[#cddcda] bg-white p-5 shadow-[0_18px_40px_rgba(0,38,46,0.06)]" aria-label="Tabellarische Kartenalternative">
+      <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h3 className="text-xl font-semibold text-[#14333d]">Tabellenalternative zur Karte</h3>
+          <p className="mt-1 text-sm leading-6 text-slate-600">Barrierefreie Gebietsliste aus derselben Datengrundlage wie die Kartenansicht.</p>
+        </div>
+        <p className="text-sm text-slate-500">Gebiete: {formatZahl(rows.length)}</p>
+      </div>
+
+      <div className="mt-4 overflow-x-auto">
+        <table className="table-basic">
+          <caption className="sr-only">Tabellarische Kartenalternative</caption>
+          <thead>
+            <tr>
+              <th scope="col">{areaLabel}</th>
+              <th scope="col">Bezirk</th>
+              <th scope="col">Stärkste Partei</th>
+              <th scope="col">Wahlbeteiligung</th>
+              <th scope="col">Spitzenwert</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row) => (
+              <tr key={row.gebietId}>
+                <th scope="row">{row.gebietName}</th>
+                <td>{row.bezirk}</td>
+                <td>{row.staerkstePartei}</td>
+                <td className="font-mono-data">{formatProzent(row.wahlbeteiligung)}</td>
+                <td className="font-mono-data">{row.staerksteParteiProzent > 0 ? formatProzent(row.staerksteParteiProzent) : "nicht ausgewiesen"}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

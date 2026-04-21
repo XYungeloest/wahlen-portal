@@ -102,8 +102,6 @@ export type WahlDataset = {
     ordnungscode?: string;
     pdfDatei?: string;
   };
-  regionaldatenTyp?: "vollergebnis" | "manuelles-sieger-mapping";
-  regionaldatenQuelle?: string;
   summary: {
     gesamtergebnis: ErgebnisDatensatz;
     detailergebnisse?: ErgebnisBlock[];

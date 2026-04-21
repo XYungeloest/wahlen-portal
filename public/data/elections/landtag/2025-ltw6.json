@@ -11,8 +11,8 @@
   "modellhinweis": "Historischer PDF-Import. Das amtliche Endergebnis enthält nur das landesweite Gesamtergebnis; eine regionale Landkreisverteilung wird im Portal bewusst nicht nachgetragen.",
   "datenstand": "2026-04-20",
   "metadaten": {
-    "quelle": "Amtliches Endergebnis aus LTWOst6_Endergebnis.pdf",
-    "geobasis": "Keine regionale Geo-Basis im PDF enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "quelle": "Amtliches Endergebnis aus LTWOst6_Endergebnis.pdf; Gebietssieger aus lokal übertragenem Referenzkarten-Datensatz",
+    "geobasis": "Lokales GeoJSON der Landkreise und kreisfreien Städte; Gebietssieger direkt im Wahldatensatz gepflegt",
     "legendenTitel": "Stärkste Partei",
     "simulationshinweis": "Historische PDF-Datensätze werden ohne nachträgliche Regionalschätzung in das Portal übernommen.",
     "ordnungscode": "ltw-od-6",
@@ -65,5 +65,1248 @@
     "sitzeGesamt": 15,
     "mehrheitsgrenze": 8
   },
-  "gebiete": []
+  "gebiete": [
+    {
+      "gebietId": "lk-16077",
+      "gebietName": "Altenburger Land",
+      "officialName": "Altenburger Land",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15081",
+      "gebietName": "Altmarkkreis Salzwedel",
+      "officialName": "Altmarkkreis Salzwedel",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15082",
+      "gebietName": "Anhalt-Bitterfeld",
+      "officialName": "Anhalt-Bitterfeld",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12060",
+      "gebietName": "Barnim",
+      "officialName": "Barnim",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14625",
+      "gebietName": "Bautzen",
+      "officialName": "Bautzen",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-11000",
+      "gebietName": "Berlin",
+      "officialName": "Berlin",
+      "bezirkId": "berlin",
+      "bezirk": "Berlin",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands / Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "staerksteParteien": [
+        "Freiheitliche Reformpartei Ostdeutschlands",
+        "Volksfront Ostdeutschland"
+      ],
+      "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-15083",
+      "gebietName": "Börde",
+      "officialName": "Börde",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12051",
+      "gebietName": "Brandenburg an der Havel",
+      "officialName": "Brandenburg an der Havel",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-15084",
+      "gebietName": "Burgenlandkreis",
+      "officialName": "Burgenlandkreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14511",
+      "gebietName": "Chemnitz",
+      "officialName": "Chemnitz",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-12052",
+      "gebietName": "Cottbus",
+      "officialName": "Cottbus",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-12061",
+      "gebietName": "Dahme-Spreewald",
+      "officialName": "Dahme-Spreewald",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15001",
+      "gebietName": "Dessau-Roßlau",
+      "officialName": "Dessau-Roßlau",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-14612",
+      "gebietName": "Dresden",
+      "officialName": "Dresden",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat / Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "staerksteParteien": [
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+        "Volksfront Ostdeutschland"
+      ],
+      "siegerHinweis": "Schraffur in der Referenzkarte im Raum Dresden: Gleichstand zweier stärkster Kräfte.",
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-16061",
+      "gebietName": "Eichsfeld",
+      "officialName": "Eichsfeld",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12062",
+      "gebietName": "Elbe-Elster",
+      "officialName": "Elbe-Elster",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16051",
+      "gebietName": "Erfurt",
+      "officialName": "Erfurt",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-14521",
+      "gebietName": "Erzgebirgskreis",
+      "officialName": "Erzgebirgskreis",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12053",
+      "gebietName": "Frankfurt (Oder)",
+      "officialName": "Frankfurt (Oder)",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-16052",
+      "gebietName": "Gera",
+      "officialName": "Gera",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-14626",
+      "gebietName": "Görlitz",
+      "officialName": "Görlitz",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16067",
+      "gebietName": "Gotha",
+      "officialName": "Gotha",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16076",
+      "gebietName": "Greiz",
+      "officialName": "Greiz",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15002",
+      "gebietName": "Halle (Saale)",
+      "officialName": "Halle (Saale)",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-15085",
+      "gebietName": "Harz",
+      "officialName": "Harz",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12063",
+      "gebietName": "Havelland",
+      "officialName": "Havelland",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16069",
+      "gebietName": "Hildburghausen",
+      "officialName": "Hildburghausen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14625240",
+      "gebietName": "Hoyerswerda",
+      "officialName": "Hoyerswerda",
+      "bezirkId": "oberlausitz",
+      "bezirk": "Oberlausitz",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-16070",
+      "gebietName": "Ilm-Kreis",
+      "officialName": "Ilm-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16053",
+      "gebietName": "Jena",
+      "officialName": "Jena",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-15086",
+      "gebietName": "Jerichower Land",
+      "officialName": "Jerichower Land",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16065",
+      "gebietName": "Kyffhäuserkreis",
+      "officialName": "Kyffhäuserkreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14713",
+      "gebietName": "Leipzig",
+      "officialName": "Leipzig",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-14729",
+      "gebietName": "Leipzig (Landkreis)",
+      "officialName": "Leipzig",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-13076",
+      "gebietName": "Ludwigslust-Parchim",
+      "officialName": "Ludwigslust-Parchim",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15003",
+      "gebietName": "Magdeburg",
+      "officialName": "Magdeburg",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-15087",
+      "gebietName": "Mansfeld-Südharz",
+      "officialName": "Mansfeld-Südharz",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12064",
+      "gebietName": "Märkisch-Oderland",
+      "officialName": "Märkisch-Oderland",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-13071",
+      "gebietName": "Mecklenburgische Seenplatte",
+      "officialName": "Mecklenburgische Seenplatte",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14627",
+      "gebietName": "Meißen",
+      "officialName": "Meißen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14522",
+      "gebietName": "Mittelsachsen",
+      "officialName": "Mittelsachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16062",
+      "gebietName": "Nordhausen",
+      "officialName": "Nordhausen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14730",
+      "gebietName": "Nordsachsen",
+      "officialName": "Nordsachsen",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-13074",
+      "gebietName": "Nordwestmecklenburg",
+      "officialName": "Nordwestmecklenburg",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12065",
+      "gebietName": "Oberhavel",
+      "officialName": "Oberhavel",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12066",
+      "gebietName": "Oberspreewald-Lausitz",
+      "officialName": "Oberspreewald-Lausitz",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12067",
+      "gebietName": "Oder-Spree",
+      "officialName": "Oder-Spree",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12068",
+      "gebietName": "Ostprignitz-Ruppin",
+      "officialName": "Ostprignitz-Ruppin",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12054",
+      "gebietName": "Potsdam",
+      "officialName": "Potsdam",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-12069",
+      "gebietName": "Potsdam-Mittelmark",
+      "officialName": "Potsdam-Mittelmark",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12070",
+      "gebietName": "Prignitz",
+      "officialName": "Prignitz",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-13072",
+      "gebietName": "Rostock",
+      "officialName": "Rostock",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-13003",
+      "gebietName": "Rostock (Stadt)",
+      "officialName": "Rostock",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-16074",
+      "gebietName": "Saale-Holzland-Kreis",
+      "officialName": "Saale-Holzland-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16075",
+      "gebietName": "Saale-Orla-Kreis",
+      "officialName": "Saale-Orla-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15088",
+      "gebietName": "Saalekreis",
+      "officialName": "Saalekreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16073",
+      "gebietName": "Saalfeld-Rudolstadt",
+      "officialName": "Saalfeld-Rudolstadt",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14628",
+      "gebietName": "Sächsische Schweiz-Osterzgebirge",
+      "officialName": "Sächsische Schweiz-Osterzgebirge",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15089",
+      "gebietName": "Salzlandkreis",
+      "officialName": "Salzlandkreis",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16066",
+      "gebietName": "Schmalkalden-Meiningen",
+      "officialName": "Schmalkalden-Meiningen",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-13004",
+      "gebietName": "Schwerin",
+      "officialName": "Schwerin",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-16068",
+      "gebietName": "Sömmerda",
+      "officialName": "Sömmerda",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16072",
+      "gebietName": "Sonneberg",
+      "officialName": "Sonneberg",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12071",
+      "gebietName": "Spree-Neiße",
+      "officialName": "Spree-Neiße",
+      "bezirkId": "niederlausitz",
+      "bezirk": "Niederlausitz",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15090",
+      "gebietName": "Stendal",
+      "officialName": "Stendal",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16054",
+      "gebietName": "Suhl",
+      "officialName": "Suhl",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-12072",
+      "gebietName": "Teltow-Fläming",
+      "officialName": "Teltow-Fläming",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-12073",
+      "gebietName": "Uckermark",
+      "officialName": "Uckermark",
+      "bezirkId": "brandenburg",
+      "bezirk": "Brandenburg",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16064",
+      "gebietName": "Unstrut-Hainich-Kreis",
+      "officialName": "Unstrut-Hainich-Kreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14523",
+      "gebietName": "Vogtlandkreis",
+      "officialName": "Vogtlandkreis",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-13075",
+      "gebietName": "Vorpommern-Greifswald",
+      "officialName": "Vorpommern-Greifswald",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-13073",
+      "gebietName": "Vorpommern-Rügen",
+      "officialName": "Vorpommern-Rügen",
+      "bezirkId": "mecklenburg-vorpommern",
+      "bezirk": "Mecklenburg-Vorpommern",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16063",
+      "gebietName": "Wartburgkreis",
+      "officialName": "Wartburgkreis",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-16055",
+      "gebietName": "Weimar",
+      "officialName": "Weimar",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "kreisfreie_stadt"
+    },
+    {
+      "gebietId": "lk-16071",
+      "gebietName": "Weimarer Land",
+      "officialName": "Weimarer Land",
+      "bezirkId": "thueringen",
+      "bezirk": "Thüringen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-15091",
+      "gebietName": "Wittenberg",
+      "officialName": "Wittenberg",
+      "bezirkId": "sachsen-anhalt",
+      "bezirk": "Sachsen-Anhalt",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    },
+    {
+      "gebietId": "lk-14524",
+      "gebietName": "Zwickau",
+      "officialName": "Zwickau",
+      "bezirkId": "sachsen",
+      "bezirk": "Sachsen",
+      "wahlbeteiligung": 77.08,
+      "ergebnisse": {
+        "Freiheitliche Reformpartei Ostdeutschlands": 0,
+        "Volksfront Ostdeutschland": 0,
+        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+      },
+      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerksteParteiProzent": 0,
+      "typ": "landkreis"
+    }
+  ]
 }

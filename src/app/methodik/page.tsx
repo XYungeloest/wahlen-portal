@@ -56,8 +56,8 @@ export default async function MethodikPage() {
           Landtag und Bundestag.
         </p>
         <p className="mt-3">
-          Historische Referenzkarten werden als lokale Gebietssieger-Mappings gepflegt. Daraus werden keine regionalen Prozentwerte
-          konstruiert; die interaktiven Karten bleiben D3-SVG-Karten auf Basis der lokalen GeoJSON-Dateien.
+          Historische Referenzkarten werden als Gebietssieger direkt in den lokalen Wahldatensätzen gepflegt. Daraus werden keine
+          regionalen Prozentwerte konstruiert; die interaktiven Karten bleiben D3-SVG-Karten auf Basis der lokalen GeoJSON-Dateien.
         </p>
       </section>
 

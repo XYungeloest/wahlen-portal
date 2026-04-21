@@ -9,7 +9,6 @@ import type { Bezirk, GeoFeatureCollection, WahlDataset } from "@/lib/types";
 
 type Props = {
   title: string;
-  areaLabel: string;
   bezirke: Bezirk[];
   geo: GeoFeatureCollection;
   datasets: WahlDataset[];
@@ -23,7 +22,6 @@ type MetricType = "winner" | "turnout" | "party";
 
 export function KartenModul({
   title,
-  areaLabel,
   bezirke,
   geo,
   datasets,
@@ -52,13 +50,6 @@ export function KartenModul({
   );
 
   const hasRegionalData = (currentDataset?.gebiete.length ?? 0) > 0;
-  const isWinnerOnlyDataset = currentDataset?.regionaldatenTyp === "manuelles-sieger-mapping";
-
-  useEffect(() => {
-    if (isWinnerOnlyDataset && metric !== "winner") {
-      setMetric("winner");
-    }
-  }, [isWinnerOnlyDataset, metric]);
 
   const filteredRows = useMemo(
     () =>
@@ -112,7 +103,7 @@ export function KartenModul({
         const percentageDetail =
           row.staerksteParteiProzent > 0
             ? ` mit ${formatProzent(row.staerksteParteiProzent)}`
-            : "; kein regionaler Prozentwert im Referenzbild ausgewiesen";
+            : "; kein regionaler Prozentwert ausgewiesen";
         const sourceDetail = row.siegerHinweis ? ` ${row.siegerHinweis}` : "";
 
         return [
@@ -143,6 +134,15 @@ export function KartenModul({
     }
     return Array.from(keys).sort((left, right) => left.localeCompare(right, "de"));
   }, [currentDataset]);
+
+  useEffect(() => {
+    if (metric === "party" && partiesInDataset.length === 0) {
+      setMetric("winner");
+    }
+    if (partiesInDataset.length > 0 && !partiesInDataset.includes(party)) {
+      setParty(partiesInDataset[0]);
+    }
+  }, [metric, partiesInDataset, party]);
 
   const legendItems = useMemo(() => {
     if (metric !== "winner") {
@@ -200,12 +200,8 @@ export function KartenModul({
             onChange={(nextValue) => setMetric(nextValue as MetricType)}
             options={[
               { value: "winner", label: "Stärkste Partei" },
-              ...(isWinnerOnlyDataset
-                ? []
-                : [
-                    { value: "turnout", label: "Wahlbeteiligung" },
-                    { value: "party", label: "Parteiergebnis" },
-                  ]),
+              { value: "turnout", label: "Wahlbeteiligung" },
+              ...(partiesInDataset.length > 0 ? [{ value: "party", label: "Parteiergebnis" }] : []),
             ]}
           />
           <SelectField
@@ -221,20 +217,11 @@ export function KartenModul({
           <SelectField
             label="Partei"
             value={party}
-            disabled={!hasRegionalData || metric !== "party" || isWinnerOnlyDataset}
+            disabled={!hasRegionalData || metric !== "party" || partiesInDataset.length === 0}
             onChange={setParty}
-            options={
-              isWinnerOnlyDataset
-                ? [{ value: party, label: "Nicht verfügbar" }]
-                : partiesInDataset.map((entry) => ({ value: entry, label: entry }))
-            }
+            options={partiesInDataset.map((entry) => ({ value: entry, label: entry }))}
           />
         </div>
-        {isWinnerOnlyDataset ? (
-          <p className="mt-3 rounded-2xl border border-[#d8e4e0] bg-white px-4 py-3 text-sm leading-6 text-slate-700">
-            Dieser Datensatz nutzt eine manuelle Gebietssieger-Zuordnung aus der Referenzkarte. Regionale Prozentwerte und Parteiergebnis-Metriken werden daraus nicht abgeleitet.
-          </p>
-        ) : null}
 
         {hasRegionalData ? (
           <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem]">
@@ -302,47 +289,6 @@ export function KartenModul({
           </div>
         )}
       </section>
-
-      {hasRegionalData ? (
-        <section className="rounded-[1.5rem] border border-[#cddcda] bg-white p-5 shadow-[0_18px_40px_rgba(0,38,46,0.06)]" aria-label="Tabellarische Kartenalternative">
-          <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h3 className="text-xl font-semibold text-[#14333d]">Tabellenalternative</h3>
-              <p className="mt-1 text-sm leading-6 text-slate-600">Barrierefreie Alternative zur Kartenansicht mit denselben Filtereinstellungen.</p>
-            </div>
-            <p className="text-sm text-slate-500">Aktive Metrik: {metric === "winner" ? "Stärkste Partei" : metric === "turnout" ? "Wahlbeteiligung" : `Parteiergebnis ${party}`}</p>
-          </div>
-
-          <div className="mt-4 overflow-x-auto">
-            <table className="table-basic">
-              <caption className="sr-only">Tabellarische Kartenalternative</caption>
-              <thead>
-                <tr>
-                  <th scope="col">{areaLabel}</th>
-                  <th scope="col">Bezirk</th>
-                  <th scope="col">Stärkste Partei</th>
-                  <th scope="col">Wahlbeteiligung</th>
-                  <th scope="col">{metric === "party" ? party : metric === "turnout" ? "Wahlbeteiligung" : "Spitzenwert"}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredRows.map((row) => {
-                  const metricValue = metric === "turnout" ? row.wahlbeteiligung : metric === "party" ? row.ergebnisse[party] ?? 0 : row.staerksteParteiProzent;
-                  return (
-                    <tr key={row.gebietId}>
-                      <th scope="row">{row.gebietName}</th>
-                      <td>{row.bezirk}</td>
-                      <td>{row.staerkstePartei}</td>
-                      <td className="font-mono-data">{formatProzent(row.wahlbeteiligung)}</td>
-                      <td className="font-mono-data">{metricValue > 0 ? formatProzent(metricValue) : "Referenzkarte"}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      ) : null}
     </div>
   );
 }
@@ -458,7 +404,6 @@ function InfoCard({ currentDataset, globalSimulationHint }: { currentDataset: Wa
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Simulationshinweis</p>
       <p className="mt-2 text-sm leading-6 text-slate-700">{globalSimulationHint}</p>
       <p className="mt-2 text-sm leading-6 text-slate-700">{currentDataset.metadaten.simulationshinweis}</p>
-      {currentDataset.regionaldatenQuelle ? <p className="mt-2 text-sm leading-6 text-slate-700">{currentDataset.regionaldatenQuelle}</p> : null}
     </section>
   );
 }
