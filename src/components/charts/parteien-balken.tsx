@@ -22,7 +22,7 @@ export function ParteienBalken({ title, data, compact = false, maxItems, subtitl
   const xScale = scaleLinear().domain([0, max]).range([0, 100]);
 
   return (
-    <section aria-label={title} className={`card ${compact ? "p-0 shadow-none" : "p-4"}`}>
+    <section aria-label={title} className={compact ? "" : "card p-4"}>
       <h3 className={`${compact ? "mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#25515c]" : "mb-1 text-lg font-semibold text-[var(--color-primary)]"}`}>{title}</h3>
       {subtitle ? <p className={`${compact ? "mb-3 text-xs text-slate-600" : "mb-4 text-sm leading-6 text-slate-600"}`}>{subtitle}</p> : compact ? null : <div className="mb-4" />}
       <div className={compact ? "space-y-2.5" : "space-y-3"}>
@@ -32,9 +32,9 @@ export function ParteienBalken({ title, data, compact = false, maxItems, subtitl
               <span className="min-w-0 break-words font-medium text-slate-800">{item.name}</span>
               <span className="shrink-0 whitespace-nowrap font-mono-data text-slate-700">{item.value.toFixed(1).replace(".", ",")} %</span>
             </div>
-            <div className={`${compact ? "h-3.5" : "h-5"} rounded-full bg-slate-100`}>
+            <div className={`${compact ? "h-3.5" : "h-5"} rounded-sm bg-slate-100`}>
               <div
-                className={`${compact ? "h-3.5" : "h-5"} rounded-full`}
+                className={`${compact ? "h-3.5" : "h-5"} rounded-sm`}
                 style={{ width: `${xScale(item.value)}%`, background: item.color }}
                 role="img"
                 aria-label={`${item.name} erreicht ${item.value.toFixed(1).replace(".", ",")} Prozent`}

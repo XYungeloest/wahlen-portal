@@ -8,14 +8,11 @@
   "wahlbeteiligung": 77.08,
   "wahlberechtigte": 48,
   "gueltigeStimmen": 37,
-  "modellhinweis": "Import auf Basis des amtlichen Endergebnisses. Eine weitere regionale Untergliederung ist nicht ausgewiesen.",
   "datenstand": "2026-04-20",
   "metadaten": {
     "quelle": "Amtliches Endergebnis der Wahl zum 6. Ostdeutschen Landtag",
     "geobasis": "GeoJSON der Landkreise und kreisfreien Städte",
     "legendenTitel": "Stärkste Partei",
-    "simulationshinweis": "Historische PDF-Datensätze werden ohne nachträgliche Regionalschätzung in das Portal übernommen.",
-    "ordnungscode": "ltw-od-6",
     "pdfDatei": "LTWOst6_Endergebnis.pdf"
   },
   "summary": {
@@ -73,18 +70,12 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands / Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "staerksteParteien": [
         "Volksfront Ostdeutschland",
         "Freiheitliche Reformpartei Ostdeutschlands"
       ],
-      "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "landkreis"
     },
     {
@@ -94,11 +85,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -110,11 +96,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -126,11 +107,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -142,11 +118,6 @@
       "bezirkId": "oberlausitz",
       "bezirk": "Oberlausitz",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -158,18 +129,12 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost / Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "staerksteParteien": [
         "Volksfront Ostdeutschland",
         "Bündnis Demokratie Europa Ost"
       ],
-      "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "kreisfreie_stadt"
     },
     {
@@ -179,11 +144,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -195,11 +155,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -211,11 +166,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -227,11 +177,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -243,11 +188,6 @@
       "bezirkId": "niederlausitz",
       "bezirk": "Niederlausitz",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -259,11 +199,6 @@
       "bezirkId": "niederlausitz",
       "bezirk": "Niederlausitz",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -275,11 +210,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -291,11 +221,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -307,11 +232,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -323,11 +243,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -339,11 +254,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -355,11 +265,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -371,11 +276,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -387,11 +287,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -403,11 +298,6 @@
       "bezirkId": "oberlausitz",
       "bezirk": "Oberlausitz",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -419,11 +309,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -435,11 +320,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -451,11 +331,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -467,11 +342,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -483,11 +353,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -499,11 +364,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -515,11 +375,6 @@
       "bezirkId": "oberlausitz",
       "bezirk": "Oberlausitz",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -531,11 +386,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -547,11 +397,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -563,11 +408,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -579,11 +419,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -595,11 +430,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -611,11 +441,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -627,11 +452,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -643,11 +463,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -659,11 +474,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -675,11 +485,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -691,11 +496,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -707,11 +507,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -723,11 +518,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -739,11 +529,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -755,11 +540,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -771,11 +551,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -787,11 +562,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -803,11 +573,6 @@
       "bezirkId": "niederlausitz",
       "bezirk": "Niederlausitz",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -819,11 +584,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -835,11 +595,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -851,11 +606,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -867,11 +617,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -883,11 +628,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -899,18 +639,12 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands / Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "staerksteParteien": [
         "Volksfront Ostdeutschland",
         "Freiheitliche Reformpartei Ostdeutschlands"
       ],
-      "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "landkreis"
     },
     {
@@ -920,11 +654,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -936,11 +665,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -952,11 +676,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -968,11 +687,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -984,11 +698,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1000,11 +709,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1016,11 +720,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1032,11 +731,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1048,18 +742,12 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands / Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "staerksteParteien": [
         "Freiheitliche Reformpartei Ostdeutschlands",
         "Bündnis Demokratie Europa Ost"
       ],
-      "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "kreisfreie_stadt"
     },
     {
@@ -1069,11 +757,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1085,11 +768,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1101,11 +779,6 @@
       "bezirkId": "niederlausitz",
       "bezirk": "Niederlausitz",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1117,11 +790,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1133,11 +801,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -1149,11 +812,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1165,11 +823,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1181,11 +834,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1197,11 +845,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1213,11 +856,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1229,11 +867,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1245,11 +878,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1261,11 +889,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
@@ -1277,11 +900,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1293,11 +911,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
@@ -1309,11 +922,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 77.08,
-      "ergebnisse": {
-        "Freiheitliche Reformpartei Ostdeutschlands": 0,
-        "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa Ost": 0
-      },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"

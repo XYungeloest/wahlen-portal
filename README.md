@@ -76,7 +76,7 @@ public/
 
 1. JSON-Datei im passenden Ordner unter `public/data/elections/` ergänzen.
 2. Konsistente `gebietId`-Werte zu `public/geo/landkreise-ost.geojson` oder `public/geo/btw-wahlkreise-ost.geojson` verwenden.
-3. Gebietssieger direkt im jeweiligen Wahldatensatz unter `gebiete` pflegen.
+3. Gebietssieger direkt im jeweiligen Wahldatensatz unter `gebiete` pflegen. Regionale Parteieinzelergebnisse pro Gebiet werden nicht gespeichert.
 4. Falls sich die Geo-Basis ändert, die lokalen GeoJSON-Dateien ersetzen und Gebietsschlüssel gegen die Wahldaten prüfen.
 5. Karten- und Ergebnisseiten prüfen.
 6. Build prüfen mit `npm run build`.
@@ -86,9 +86,9 @@ Hinweis: Die Kartenbasis besteht aus lokal abgelegten GeoJSON-Dateien. Details s
 Für historische PDF-Importe gilt zusätzlich:
 
 1. Nur Werte übernehmen, die im PDF-Endergebnis eindeutig ausgewiesen sind.
-2. Kein `gebiete`-Raster mit künstlichen Regionalprozenten erfinden, wenn die Quelle nur aggregierte Gesamtwerte enthält.
+2. Kein `gebiete`-Raster mit künstlichen Parteieinzelergebnissen erfinden, wenn die Quelle nur aggregierte Gesamtwerte enthält.
 3. Bei Bundestagswahlen den ostdeutschen Abschnitt als Primärquelle verwenden.
-4. Optionale Metadaten wie `ordnungscode`, `pdfDatei` und `summary.detailergebnisse` mitführen.
+4. Optionale Metadaten wie `pdfDatei` und `summary.detailergebnisse` mitführen.
 5. Referenzkarten werden in normale `gebiete`-Einträge des jeweiligen Wahldatensatzes übertragen; die Website rendert weiterhin GeoJSON/D3 und zeigt keine Kartenbilder an.
 
 Details zur Herkunft und Struktur stehen in [HISTORICAL_DATA_NOTES.md](/Users/petzke/wahlen-portal/HISTORICAL_DATA_NOTES.md).
@@ -97,7 +97,7 @@ Details zur Herkunft und Struktur stehen in [HISTORICAL_DATA_NOTES.md](/Users/pe
 
 - `/ergebnisse/landtag/` und `/ergebnisse/bundestag/` sind die fachlichen Hauptseiten je Wahlebene.
 - Dort sind Ergebnis, Visualisierung, Karte und Gebietstabelle zusammengeführt und nutzen dieselbe Datensatz-Auswahl.
-- Historische PDF-Datensätze enthalten ihre Gebietssieger direkt im Wahldatensatz; regionale Prozentwerte bleiben dabei transparent leer.
+- Historische PDF-Datensätze enthalten ihre Gebietssieger direkt im Wahldatensatz; regionale Parteieinzelergebnisse werden nicht künstlich ergänzt.
 - Die frühere Unterseiten-Struktur `/karte/landtag/` und `/karte/bundestag/` ist entfernt. Karten werden direkt auf den integrierten Ergebnisseiten angezeigt; `/karte/` ist nur noch eine kompakte Übersicht mit Ankerlinks.
 - Karteninteraktion:
   - Hover und Tastaturfokus zeigen Gebietsinformationen.

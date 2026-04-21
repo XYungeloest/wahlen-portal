@@ -1,15 +1,14 @@
 import { WahlErgebnisDashboard } from "@/components/content/wahl-ergebnis-dashboard";
 import { PageHeader } from "@/components/layout/page-header";
 import { parteiFarbenMap } from "@/lib/parteien";
-import { getBezirke, getLandkreiseGeo, getLandtagDatasets, getMetadaten, getParteien } from "@/lib/wahldaten";
+import { getBezirke, getLandkreiseGeo, getLandtagDatasets, getParteien } from "@/lib/wahldaten";
 
 export default async function LandtagErgebnissePage() {
-  const [datasets, parteien, bezirke, geo, metadaten] = await Promise.all([
+  const [datasets, parteien, bezirke, geo] = await Promise.all([
     getLandtagDatasets(),
     getParteien(),
     getBezirke(),
     getLandkreiseGeo(),
-    getMetadaten(),
   ]);
 
   return (
@@ -24,7 +23,6 @@ export default async function LandtagErgebnissePage() {
         bezirke={bezirke}
         geo={geo}
         partyColors={parteiFarbenMap(parteien)}
-        globalSimulationHint={`${metadaten.portal.simulationshinweis} Die Landtagskarte nutzt Landkreise und kreisfreie Städte als regionale Wahlkreisebene; Bezirke dienen der Orientierung und Filterung.`}
       />
     </div>
   );

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Wahlportal Freistaat Ostdeutschland",
   },
   description:
-    "Offizielles Simulationsportal des Landeswahlleiters des Freistaates Ostdeutschland: Ergebnisse, Karten, Wahlrecht, direkte Demokratie und Wahlwerkzeuge.",
+    "Offizielles Simulationsportal des Landeswahlleiters des Freistaates Ostdeutschland: Ergebnisse, Karten, Wahlrecht, direkte Demokratie und Methodik.",
   metadataBase: new URL("https://wahlen.freistaat-ostdeutschland.de"),
   openGraph: {
     title: "Wahlen im Freistaat Ostdeutschland",

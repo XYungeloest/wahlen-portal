@@ -72,5 +72,9 @@ a:hover {
 
 .table-basic th {
   font-weight: 700;
-  background: #eef4f1;
+  background: #f1f5f9;
+}
+
+.table-basic tbody tr:hover {
+  background: #f8fafc;
 }

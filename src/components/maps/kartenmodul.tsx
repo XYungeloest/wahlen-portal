@@ -1,7 +1,7 @@
 "use client";
 
 import { interpolateRgb } from "d3-interpolate";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Wahlkarte } from "@/components/maps/wahlkarte";
 import { formatDatum, formatProzent } from "@/lib/formatierung";
 import { filterGeoByBezirk } from "@/lib/geografie";
@@ -15,10 +15,9 @@ type Props = {
   datasetId?: string;
   onDatasetChange?: (nextValue: string) => void;
   partyColors: Record<string, string>;
-  globalSimulationHint: string;
 };
 
-type MetricType = "winner" | "turnout" | "party";
+type MetricType = "winner" | "turnout";
 
 export function KartenModul({
   title,
@@ -28,13 +27,11 @@ export function KartenModul({
   datasetId: controlledDatasetId,
   onDatasetChange,
   partyColors,
-  globalSimulationHint,
 }: Props) {
   const defaultDatasetId = datasets.find((dataset) => dataset.gebiete.length > 0)?.id ?? datasets[0]?.id ?? "";
   const [uncontrolledDatasetId, setUncontrolledDatasetId] = useState<string>(defaultDatasetId);
   const [bezirkId, setBezirkId] = useState<string>("alle");
   const [metric, setMetric] = useState<MetricType>("winner");
-  const [party, setParty] = useState<string>("Volksfront");
   const datasetId = controlledDatasetId ?? uncontrolledDatasetId;
 
   const setDatasetId = (nextValue: string) => {
@@ -65,14 +62,13 @@ export function KartenModul({
     () => (hasRegionalData ? filterGeoByBezirk(geo, bezirkId) : { ...geo, features: [] }),
     [bezirkId, geo, hasRegionalData],
   );
-  const currentPartyColor = partyColors[party] ?? "#0f766e";
 
   const metricValues = useMemo(() => {
     if (metric === "winner") {
       return [];
     }
-    return filteredRows.map((row) => (metric === "turnout" ? row.wahlbeteiligung : row.ergebnisse[party] ?? 0));
-  }, [filteredRows, metric, party]);
+    return filteredRows.map((row) => row.wahlbeteiligung);
+  }, [filteredRows, metric]);
 
   const minMetricValue = metricValues.length > 0 ? Math.min(...metricValues) : 0;
   const maxMetricValue = metricValues.length > 0 ? Math.max(...metricValues) : 100;
@@ -80,7 +76,7 @@ export function KartenModul({
   const areasById = useMemo(() => {
     return Object.fromEntries(
       filteredRows.map((row) => {
-        const metricValue = metric === "turnout" ? row.wahlbeteiligung : row.ergebnisse[party] ?? 0;
+        const metricValue = row.wahlbeteiligung;
         const winners = row.staerksteParteien?.length ? row.staerksteParteien : [row.staerkstePartei];
         const winnerLabel = winners.join(" / ");
         const winnerPercentLabel = row.staerksteParteiProzent > 0 ? ` (${formatProzent(row.staerksteParteiProzent)})` : "";
@@ -92,19 +88,18 @@ export function KartenModul({
         const fill =
           metric === "winner"
             ? partyColors[winners[0]] ?? "#94a3b8"
-            : scaleColor(metricValue, minMetricValue, maxMetricValue, metric === "turnout" ? "#d7f0ea" : "#f3ede6", metric === "turnout" ? "#0f766e" : currentPartyColor);
+            : scaleColor(metricValue, minMetricValue, maxMetricValue, "#d7f0ea", "#0f766e");
 
         const metricLabel =
           metric === "winner"
             ? `${winners.length > 1 ? "Gleichstand stärkste Kräfte" : "Stärkste Partei"}: ${winnerLabel}${winnerPercentLabel}`
-            : metric === "turnout"
-              ? `Wahlbeteiligung: ${formatProzent(row.wahlbeteiligung)}`
-              : `${party}: ${formatProzent(metricValue)}`;
+            : `Wahlbeteiligung: ${formatProzent(row.wahlbeteiligung)}`;
         const percentageDetail =
           row.staerksteParteiProzent > 0
             ? ` mit ${formatProzent(row.staerksteParteiProzent)}`
             : "; kein regionaler Prozentwert ausgewiesen";
-        const sourceDetail = row.siegerHinweis ? ` ${row.siegerHinweis}` : "";
+        const tieDetail =
+          winners.length > 1 ? " Die Schraffur nutzt gleich breite, alternierende Streifen der beteiligten Parteien." : "";
 
         return [
           row.gebietId,
@@ -115,34 +110,13 @@ export function KartenModul({
             patternId,
             patternColors,
             headline: metricLabel,
-            detail: `Bezirk ${row.bezirk}. ${winners.length > 1 ? "Gleichstand der stärksten Kräfte" : "Stärkste Partei"} ${winnerLabel}${percentageDetail}.${sourceDetail}`,
-            ariaLabel: `${row.gebietName}, Bezirk ${row.bezirk}. ${metricLabel}. ${sourceDetail}`,
+            detail: `Bezirk ${row.bezirk}. ${winners.length > 1 ? "Gleichstand der stärksten Kräfte" : "Stärkste Partei"} ${winnerLabel}${percentageDetail}.${tieDetail}`,
+            ariaLabel: `${row.gebietName}, Bezirk ${row.bezirk}. ${metricLabel}.${tieDetail}`,
           },
         ];
       }),
     );
-  }, [currentPartyColor, filteredRows, maxMetricValue, metric, minMetricValue, party, partyColors]);
-
-  const partiesInDataset = useMemo(() => {
-    const keys = new Set<string>();
-    for (const row of currentDataset?.gebiete ?? []) {
-      for (const key of Object.keys(row.ergebnisse)) {
-        if (key !== "Sonstige") {
-          keys.add(key);
-        }
-      }
-    }
-    return Array.from(keys).sort((left, right) => left.localeCompare(right, "de"));
-  }, [currentDataset]);
-
-  useEffect(() => {
-    if (metric === "party" && partiesInDataset.length === 0) {
-      setMetric("winner");
-    }
-    if (partiesInDataset.length > 0 && !partiesInDataset.includes(party)) {
-      setParty(partiesInDataset[0]);
-    }
-  }, [metric, partiesInDataset, party]);
+  }, [filteredRows, maxMetricValue, metric, minMetricValue, partyColors]);
 
   const legendItems = useMemo(() => {
     if (metric !== "winner") {
@@ -170,7 +144,7 @@ export function KartenModul({
 
   return (
     <div className="space-y-5">
-      <section id="karte" className="rounded-[1.75rem] border border-[#c4d6d2] bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(235,246,242,0.96))] p-5 shadow-[0_24px_54px_rgba(0,38,46,0.08)]">
+      <section id="karte" className="card p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#25515c]">{title}</p>
@@ -224,12 +198,10 @@ export function KartenModul({
                 legendItems={legendItems}
                 minValue={minMetricValue}
                 maxValue={maxMetricValue}
-                partyColor={currentPartyColor}
-                party={party}
               />
 
               {currentDataset.summary.direktmandat ? (
-                <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
+                <section className="rounded-xl border border-[#d0ddd9] bg-white p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
                   <h3 className="mt-2 break-words text-lg font-semibold text-[#16343d]">{currentDataset.summary.direktmandat.kandidat}</h3>
                   <p className="mt-1 text-sm text-slate-700">
@@ -242,28 +214,23 @@ export function KartenModul({
           </div>
         ) : (
           <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem]">
-            <section className="rounded-[1.5rem] border border-[#c8d8d5] bg-[linear-gradient(180deg,rgba(241,248,246,0.95),rgba(251,253,252,1))] p-5 shadow-[0_20px_45px_rgba(0,51,61,0.08)]">
+            <section className="rounded-xl border border-[#c8d8d5] bg-white p-5 shadow-[0_10px_24px_rgba(0,43,49,0.045)]">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Datensatz ohne regionale Karte</p>
               <h3 className="mt-2 text-xl font-semibold text-[#14333d]">Keine Kartenansicht für diesen Datensatz</h3>
               <p className="mt-3 text-sm leading-7 text-slate-700">
                 Für diesen Datensatz liegen keine belastbaren Gebietssieger oder regionalen Ergebniswerte vor. Eine künstliche Verteilung auf Landkreise oder Bundestagswahlkreise wird bewusst nicht ergänzt.
               </p>
-              <div className="mt-4 rounded-[1.1rem] border border-[#d5e3df] bg-white p-4 text-sm leading-6 text-slate-700">
+              <div className="mt-4 rounded-lg border border-[#d5e3df] bg-white p-4 text-sm leading-6 text-slate-700">
                 <p>
                   Quelle: <strong>{currentDataset.metadaten.pdfDatei ?? currentDataset.metadaten.quelle}</strong>
                 </p>
-                {currentDataset.metadaten.ordnungscode ? (
-                  <p className="mt-2">
-                    Ordnungscode: <strong>{currentDataset.metadaten.ordnungscode}</strong>
-                  </p>
-                ) : null}
                 <p className="mt-2">Für eine interaktive Karte bitte einen Datensatz mit regionaler Gebietsebene auswählen.</p>
               </div>
             </section>
 
             <div className="space-y-4">
               {currentDataset.summary.direktmandat ? (
-                <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
+                <section className="rounded-xl border border-[#d0ddd9] bg-white p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
                   <h3 className="mt-2 break-words text-lg font-semibold text-[#16343d]">{currentDataset.summary.direktmandat.kandidat}</h3>
                   <p className="mt-1 text-sm text-slate-700">
@@ -314,7 +281,7 @@ function SelectField({
     <label className="block min-w-0 text-sm font-medium text-slate-700">
       {label}
       <select
-        className="mt-1 w-full rounded-2xl border border-[#c5d7d3] bg-white px-3 py-2.5 text-sm text-slate-900 shadow-sm outline-none transition disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-500 focus:border-[#0f766e]"
+            className="mt-1 w-full rounded-lg border border-[#c5d7d3] bg-white px-3 py-2.5 text-sm text-slate-900 shadow-sm outline-none transition disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-500 focus:border-[#0f766e]"
         value={value}
         disabled={disabled}
         onChange={(event) => onChange(event.target.value)}
@@ -331,7 +298,7 @@ function SelectField({
 
 function StatCard({ label, value }: { label: string; value: string }) {
   return (
-    <div className="min-w-0 rounded-[1.15rem] border border-[#d6e3df] bg-white px-4 py-3">
+    <div className="min-w-0 rounded-lg border border-[#d6e3df] bg-white px-4 py-3">
       <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#25515c]">{label}</p>
       <p className="mt-2 break-words text-base font-semibold leading-6 text-[#14333d]">{value}</p>
     </div>
@@ -343,54 +310,43 @@ function LegendCard({
   legendItems,
   minValue,
   maxValue,
-  partyColor,
-  party,
 }: {
   metric: MetricType;
   legendItems: Array<{ name: string; color: string; colors?: [string, string] }>;
   minValue: number;
   maxValue: number;
-  partyColor: string;
-  party: string;
 }) {
   return (
-    <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
+    <section className="rounded-xl border border-[#d0ddd9] bg-white p-4">
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Legende</p>
       {metric === "winner" ? (
         <div className="mt-3 space-y-2">
           {legendItems.map((item) => (
             <div key={item.name} className="flex items-start gap-3 text-sm text-slate-700">
                 <span
-                  className="mt-0.5 h-3 w-3 rounded-full"
+                  className="mt-0.5 h-3.5 w-5 rounded-sm border border-slate-300 flex-shrink-0"
                   style={{
-                    background: item.colors ? `repeating-linear-gradient(45deg, ${item.colors[0]} 0 5px, ${item.colors[1]} 5px 10px)` : item.color,
+                    background: item.colors ? `repeating-linear-gradient(45deg, ${item.colors[0]} 0 6px, ${item.colors[1]} 6px 12px)` : item.color,
                   }}
                   aria-hidden="true"
                 />
-              <span className="break-words">{item.name}</span>
+              <span className="break-words">
+                {item.name}
+                {item.colors ? <span className="block text-xs leading-5 text-slate-500">Gleichstand, gleich breite Streifen</span> : null}
+              </span>
             </div>
           ))}
         </div>
       ) : (
         <div className="mt-3 space-y-3">
-          <div className="h-3 rounded-full" style={{ background: `linear-gradient(90deg, ${metric === "turnout" ? "#d7f0ea" : "#f3ede6"}, ${partyColor})` }} />
+          <div className="h-3 rounded-full" style={{ background: "linear-gradient(90deg, #d7f0ea, #0f766e)" }} />
           <div className="flex items-center justify-between gap-3 text-sm text-slate-700">
             <span>{formatProzent(minValue)}</span>
-            <span className="min-w-0 break-words text-center">{metric === "turnout" ? "Wahlbeteiligung" : party}</span>
+            <span className="min-w-0 break-words text-center">Wahlbeteiligung</span>
             <span>{formatProzent(maxValue)}</span>
           </div>
         </div>
       )}
-    </section>
-  );
-}
-
-function InfoCard({ currentDataset, globalSimulationHint }: { currentDataset: WahlDataset; globalSimulationHint: string }) {
-  return (
-    <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
-      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Simulationshinweis</p>
-      <p className="mt-2 text-sm leading-6 text-slate-700">{globalSimulationHint}</p>
-      <p className="mt-2 text-sm leading-6 text-slate-700">{currentDataset.metadaten.simulationshinweis}</p>
     </section>
   );
 }

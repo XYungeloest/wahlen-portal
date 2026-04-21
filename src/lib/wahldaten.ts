@@ -92,7 +92,6 @@ export async function getLandtagswahl2024(): Promise<Landtagswahl> {
     gueltigeStimmen: dataset.gueltigeStimmen,
     sitzeGesamt: dataset.summary.sitzeGesamt ?? 0,
     mehrheitsgrenze: dataset.summary.mehrheitsgrenze ?? 0,
-    modellhinweis: dataset.modellhinweis,
     landesergebnis: dataset.summary.gesamtergebnis,
     sitzverteilung: dataset.summary.sitzverteilung ?? {},
     regierungsoption: dataset.summary.regierungsoption ?? {
@@ -105,7 +104,6 @@ export async function getLandtagswahl2024(): Promise<Landtagswahl> {
       landkreis: gebiet.gebietName,
       bezirkId: gebiet.bezirkId,
       bezirk: gebiet.bezirk,
-      parteien: gebiet.ergebnisse,
       staerkstePartei: gebiet.staerkstePartei,
       staerksteParteiProzent: gebiet.staerksteParteiProzent,
     })),
@@ -121,7 +119,6 @@ export async function getBundestagswahl2025(): Promise<Bundestagswahl> {
     wahlbeteiligung: dataset.wahlbeteiligung,
     wahlberechtigte: dataset.wahlberechtigte,
     gueltigeStimmen: dataset.gueltigeStimmen,
-    modellhinweis: dataset.modellhinweis,
     gesamtergebnisOst: dataset.summary.gesamtergebnis,
     direktmandatOstdeutschland: dataset.summary.direktmandat ?? {
       mandatName: "Direktmandat Ostdeutschland",
@@ -135,7 +132,6 @@ export async function getBundestagswahl2025(): Promise<Bundestagswahl> {
       wahlkreis: gebiet.gebietName,
       bezirkId: gebiet.bezirkId,
       bezirk: gebiet.bezirk,
-      parteien: gebiet.ergebnisse,
       staerkstePartei: gebiet.staerkstePartei,
       staerksteParteiProzent: gebiet.staerksteParteiProzent,
     })),

@@ -5,7 +5,6 @@ const navItems = [
   { href: "/ergebnisse/", label: "Ergebnisse" },
   { href: "/wahlrecht/", label: "Wahlrecht" },
   { href: "/direkte-demokratie/", label: "Direkte Demokratie" },
-  { href: "/werkzeuge/", label: "Werkzeuge" },
   { href: "/methodik/", label: "Methodik" },
 ];
 
@@ -23,7 +22,7 @@ export function SiteHeader() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="inline-block rounded-full border border-transparent px-3 py-2 text-sm font-medium text-slate-700 no-underline transition hover:border-[#cbdcd7] hover:bg-[#f4faf8] hover:text-[#003366] focus-visible:border-[#003366] focus-visible:bg-white"
+                  className="inline-block rounded-lg border border-transparent px-3 py-2 text-sm font-medium text-slate-700 no-underline transition hover:border-[#cbdcd7] hover:bg-[#f4faf8] hover:text-[#003366] focus-visible:border-[#003366] focus-visible:bg-white"
                 >
                   {item.label}
                 </Link>

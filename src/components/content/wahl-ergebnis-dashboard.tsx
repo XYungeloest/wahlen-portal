@@ -13,10 +13,9 @@ type Props = {
   bezirke: Bezirk[];
   geo: GeoFeatureCollection;
   partyColors: Record<string, string>;
-  globalSimulationHint: string;
 };
 
-export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors, globalSimulationHint }: Props) {
+export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors }: Props) {
   const defaultDatasetId = datasets.find((dataset) => dataset.gebiete.length > 0)?.id ?? datasets[0]?.id ?? "";
   const [datasetId, setDatasetId] = useState(defaultDatasetId);
   const currentDataset = useMemo(
@@ -57,7 +56,7 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
 
   return (
     <div className="space-y-6">
-      <section className="rounded-[1.6rem] border border-[#cbdcd7] bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(240,248,244,0.96))] p-5 shadow-[0_22px_50px_rgba(0,38,46,0.08)]">
+      <section className="card p-5">
         <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#25515c]">
@@ -72,7 +71,7 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
           <label className="block min-w-[18rem] text-sm font-medium text-slate-700">
             Datensatz auswählen
             <select
-              className="mt-1 w-full rounded-2xl border border-[#c5d7d3] bg-white px-3 py-2.5 text-sm text-slate-900 shadow-sm outline-none transition focus:border-[#0f766e]"
+              className="mt-1 w-full rounded-lg border border-[#c5d7d3] bg-white px-3 py-2.5 text-sm text-slate-900 shadow-sm outline-none transition focus:border-[#0f766e]"
               value={datasetId}
               onChange={(event) => setDatasetId(event.target.value)}
             >
@@ -104,7 +103,6 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
         datasetId={datasetId}
         onDatasetChange={setDatasetId}
         partyColors={partyColors}
-        globalSimulationHint={globalSimulationHint}
       />
 
       <section className={`grid gap-6 ${chartBlocks.length > 1 ? "xl:grid-cols-2" : "xl:grid-cols-1"}`}>
@@ -133,7 +131,7 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
       ) : null}
 
       {typ === "bundestag" && currentDataset.summary.direktmandat ? (
-        <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
+        <section className="card p-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
                   <h3 className="mt-2 break-words text-lg font-semibold text-[#16343d]">{currentDataset.summary.direktmandat.kandidat}</h3>
                   <p className="mt-1 text-sm text-slate-700">
@@ -143,7 +141,7 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
                 </section>
       ) : null}
 
-      <section className="rounded-[1.5rem] border border-[#cddcda] bg-white p-5 shadow-[0_18px_40px_rgba(0,38,46,0.06)]">
+      <section className="card p-5">
         <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>
             <h3 className="text-xl font-semibold text-[#14333d]">Tabellarische Ergebnisansicht</h3>
@@ -215,7 +213,7 @@ function displayEntryName(entry: ErgebnisBlock["parteien"][number], block: Ergeb
 
 function StatTile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-[1.1rem] border border-[#d4e2de] bg-white px-4 py-3">
+    <div className="rounded-lg border border-[#d4e2de] bg-white px-4 py-3">
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">{label}</p>
       <p className="mt-2 break-words text-lg font-semibold text-[#15343d]">{value}</p>
     </div>
@@ -223,9 +221,9 @@ function StatTile({ label, value }: { label: string; value: string }) {
 }
 
 function ErgebnisTabelle({ block, typ }: { block: ErgebnisBlock; typ: WahlTyp }) {
-  const hasSeats = block.parteien.some((entry) => typeof entry.sitze === "number");
   const hasVotes = block.parteien.some((entry) => entry.stimmen > 0);
   const candidateVote = isCandidateVote(block);
+  const showPartyColumn = candidateVote;
 
   return (
     <section>
@@ -238,11 +236,9 @@ function ErgebnisTabelle({ block, typ }: { block: ErgebnisBlock; typ: WahlTyp })
           <thead>
             <tr>
               <th scope="col">{candidateVote ? "Kandidatur" : "Partei"}</th>
+              {showPartyColumn ? <th scope="col">Partei</th> : null}
               {hasVotes ? <th scope="col">Stimmen</th> : null}
               <th scope="col">Prozent</th>
-              <th scope="col">Partei</th>
-              {!candidateVote ? <th scope="col">Kandidatur</th> : null}
-              {hasSeats ? <th scope="col">Sitze</th> : null}
             </tr>
           </thead>
           <tbody>
@@ -254,9 +250,9 @@ function ErgebnisTabelle({ block, typ }: { block: ErgebnisBlock; typ: WahlTyp })
                   <th scope="row" className="min-w-[14rem] break-words">
                     {displayEntryName(entry, block)}
                   </th>
+                  {showPartyColumn ? <td>{entry.kurz ?? entry.name}</td> : null}
                   {hasVotes ? <td className="font-mono-data">{entry.stimmen > 0 ? formatZahl(entry.stimmen) : "0"}</td> : null}
                   <td className="font-mono-data">{formatProzent(entry.prozent)}</td>
-                  <td>{entry.kurz ?? entry.name}</td>
                 </tr>
               ))}
           </tbody>
@@ -277,7 +273,7 @@ function GebietsTabelle({ areaLabel, dataset }: { areaLabel: string; dataset: Wa
   });
 
   return (
-    <section className="rounded-[1.5rem] border border-[#cddcda] bg-white p-5 shadow-[0_18px_40px_rgba(0,38,46,0.06)]" aria-label="Tabellarische Kartenalternative">
+    <section className="card p-5" aria-label="Tabellarische Kartenalternative">
       <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
         <div>
           <h3 className="text-xl font-semibold text-[#14333d]">Tabellenalternative zur Karte</h3>

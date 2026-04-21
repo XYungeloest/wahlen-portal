@@ -8,14 +8,11 @@
   "wahlbeteiligung": 94.23,
   "wahlberechtigte": 52,
   "gueltigeStimmen": 49,
-  "modellhinweis": "Import auf Basis des Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“ des amtlichen Endergebnisses. Es wurde nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung ist nicht ausgewiesen.",
   "datenstand": "2026-04-20",
   "metadaten": {
     "quelle": "Amtliches Endergebnis der Wahl zum 8. Deutschen Bundestag, Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“",
     "geobasis": "GeoJSON der ostdeutschen Bundestagswahlkreise",
     "legendenTitel": "Stärkste Partei",
-    "simulationshinweis": "Historische Bundestags-PDFs werden nur mit dem ostdeutschen Abschnitt und ohne künstliche Wahlkreisunterteilung übernommen.",
-    "ordnungscode": "btw-8",
     "pdfDatei": "BTW8_Endergebnis.pdf"
   },
   "summary": {
@@ -146,14 +143,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -164,14 +153,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -182,14 +163,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -200,14 +173,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -218,14 +183,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -236,14 +193,6 @@
       "bezirkId": "mecklenburg-vorpommern",
       "bezirk": "Mecklenburg-Vorpommern",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -254,14 +203,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -272,14 +213,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -290,14 +223,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -308,14 +233,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -326,14 +243,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -344,14 +253,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -362,14 +263,6 @@
       "bezirkId": "niederlausitz",
       "bezirk": "Niederlausitz",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -380,14 +273,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -398,14 +283,6 @@
       "bezirkId": "niederlausitz",
       "bezirk": "Niederlausitz",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -416,14 +293,6 @@
       "bezirkId": "brandenburg",
       "bezirk": "Brandenburg",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -434,14 +303,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei",
       "staerksteParteiProzent": 0
     },
@@ -452,14 +313,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei",
       "staerksteParteiProzent": 0
     },
@@ -470,14 +323,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -488,14 +333,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -506,14 +343,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -524,14 +353,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -542,14 +363,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei",
       "staerksteParteiProzent": 0
     },
@@ -560,14 +373,6 @@
       "bezirkId": "sachsen-anhalt",
       "bezirk": "Sachsen-Anhalt",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei",
       "staerksteParteiProzent": 0
     },
@@ -578,14 +383,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -596,14 +393,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -614,14 +403,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -632,14 +413,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -650,14 +423,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -668,14 +433,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -686,14 +443,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -704,14 +453,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -722,14 +463,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -740,14 +473,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -758,14 +483,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -776,14 +493,6 @@
       "bezirkId": "berlin",
       "bezirk": "Berlin",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -794,14 +503,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -812,14 +513,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -830,14 +523,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -848,14 +533,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -866,14 +543,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -884,14 +553,6 @@
       "bezirkId": "oberlausitz",
       "bezirk": "Oberlausitz",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -902,14 +563,6 @@
       "bezirkId": "oberlausitz",
       "bezirk": "Oberlausitz",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "DIE PATRIOTEN",
       "staerksteParteiProzent": 0
     },
@@ -920,14 +573,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -938,14 +583,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -956,14 +593,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -974,14 +603,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "DIE PATRIOTEN",
       "staerksteParteiProzent": 0
     },
@@ -992,14 +613,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1010,14 +623,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1028,14 +633,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1046,14 +643,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1064,14 +653,6 @@
       "bezirkId": "sachsen",
       "bezirk": "Sachsen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1082,14 +663,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1100,14 +673,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1118,14 +683,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
@@ -1136,14 +693,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1154,14 +703,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1172,14 +713,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1190,14 +723,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
@@ -1208,14 +733,6 @@
       "bezirkId": "thueringen",
       "bezirk": "Thüringen",
       "wahlbeteiligung": 94.23,
-      "ergebnisse": {
-        "Volksfront": 0,
-        "Bündnis Demokratie Europa": 0,
-        "Freiheitliche Reformpartei": 0,
-        "DIE PATRIOTEN": 0,
-        "Christlich Demokratische Partei": 0,
-        "Liberal-Demokratische Partei": 0
-      },
       "staerkstePartei": "Freiheitliche Reformpartei",
       "staerksteParteiProzent": 0
     }

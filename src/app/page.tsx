@@ -1,4 +1,3 @@
-import { Auszaehlungsstand } from "@/components/charts/auszaehlungsstand";
 import { Schnellzugriffe } from "@/components/content/schnellzugriffe";
 import { WahlTeaser } from "@/components/content/wahl-teaser";
 import { PageHeader } from "@/components/layout/page-header";
@@ -31,16 +30,10 @@ export default async function HomePage() {
     <div className="space-y-8">
       <PageHeader
         title="Wahlen im Freistaat Ostdeutschland"
-        description="Das offizielle Wahlportal des Landeswahlleiters bündelt Ergebnisse, Karten, Methodik und Werkzeuge für die Politiksimulation des Freistaates Ostdeutschland in datengetriebener Form."
+        description="Das offizielle Wahlportal des Landeswahlleiters bündelt Ergebnisse, Karten und Methodik für die Politiksimulation des Freistaates Ostdeutschland in datengetriebener Form."
       />
 
-      <section className="grid gap-5 xl:grid-cols">
-      
-
-        <div className="space-y-4">
-          <FaktenGrid facts={quickFacts} />
-        </div>
-      </section>
+      <FaktenGrid facts={quickFacts} />
 
       <section className="grid gap-5 xl:grid-cols-2">
         <WahlTeaser

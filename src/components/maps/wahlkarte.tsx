@@ -74,7 +74,7 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
 
   return (
     <section
-      className="overflow-hidden rounded-[1.5rem] border border-[#c8d8d5] bg-[linear-gradient(180deg,rgba(241,248,246,0.95),rgba(251,253,252,1))] p-4 shadow-[0_20px_45px_rgba(0,51,61,0.08)]"
+      className="overflow-hidden rounded-xl border border-[#c8d8d5] bg-white p-4 shadow-[0_10px_24px_rgba(0,43,49,0.045)]"
       aria-label={title}
     >
       <div className="mb-3 flex items-center justify-between gap-3">
@@ -82,7 +82,7 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
         <div className="flex items-center gap-2">
           <button
             type="button"
-            className="rounded-full border border-[#c6d7d3] bg-white px-3 py-1.5 text-sm text-slate-700 transition hover:border-[#0f766e]"
+            className="rounded-lg border border-[#c6d7d3] bg-white px-3 py-1.5 text-sm text-slate-700 transition hover:border-[#0f766e] disabled:cursor-not-allowed disabled:opacity-50"
             onClick={() => setFocusedId(null)}
             disabled={!focusedId}
           >
@@ -92,13 +92,20 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
       </div>
 
       <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_17rem]">
-        <div className="overflow-hidden rounded-[1.25rem] border border-white/70 bg-[#edf5f2]">
+        <div className="overflow-hidden rounded-lg border border-[#d8e4df] bg-[#edf5f2]">
           <svg viewBox={`0 0 ${width} ${height}`} className="w-full" role="img" aria-label={title}>
             <defs>
               {patterns.map((pattern) => (
-                <pattern key={pattern.id} id={pattern.id} width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                  <rect width="12" height="12" fill={pattern.colors[0]} />
-                  <path d="M 0 0 L 0 12" stroke={pattern.colors[1]} strokeWidth="5" />
+                <pattern
+                  key={pattern.id}
+                  id={pattern.id}
+                  width="16"
+                  height="16"
+                  patternUnits="userSpaceOnUse"
+                  patternTransform="rotate(45)"
+                >
+                  <rect x="0" y="0" width="8" height="16" fill={pattern.colors[0]} />
+                  <rect x="8" y="0" width="8" height="16" fill={pattern.colors[1]} />
                 </pattern>
               ))}
             </defs>
@@ -146,14 +153,14 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
           </svg>
         </div>
 
-        <aside className="flex min-h-[10rem] flex-col justify-between rounded-[1.25rem] border border-[#d2dfdb] bg-white/95 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]">
+        <aside className="flex min-h-[10rem] flex-col justify-between rounded-lg border border-[#d2dfdb] bg-white p-4">
           {activeArea ? (
             <div className="space-y-3">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Fokusgebiet</p>
                 <h3 className="mt-1 text-lg font-semibold text-[#16343d]">{activeArea.name}</h3>
               </div>
-              <div className="rounded-2xl border border-[#dce9e6] bg-[#f6fbfa] p-3">
+              <div className="rounded-lg border border-[#dce9e6] bg-[#f6fbfa] p-3">
                 <p className="text-sm font-semibold text-[#14333d]">{activeArea.headline}</p>
                 <p className="mt-2 text-sm leading-6 text-slate-700">{activeArea.detail}</p>
               </div>

@@ -72,11 +72,9 @@ export type KartenGebietErgebnis = {
   bezirkId: string;
   bezirk: string;
   wahlbeteiligung: number;
-  ergebnisse: ErgebnisDatensatz;
   staerkstePartei: string;
   staerksteParteien?: string[];
   staerksteParteiProzent: number;
-  siegerHinweis?: string;
   vergleichswerte?: Vergleichswerte;
   typ?: Landkreis["type"];
 };
@@ -91,15 +89,12 @@ export type WahlDataset = {
   wahlbeteiligung: number;
   wahlberechtigte: number;
   gueltigeStimmen: number;
-  modellhinweis: string;
   datenstand: string;
   metadaten: {
     quelle: string;
     geobasis: string;
     legendenTitel: string;
     vergleichMit?: string;
-    simulationshinweis: string;
-    ordnungscode?: string;
     pdfDatei?: string;
   };
   summary: {
@@ -129,7 +124,6 @@ export type LandkreisErgebnis = {
   landkreis: string;
   bezirkId: string;
   bezirk: string;
-  parteien: ErgebnisDatensatz;
   staerkstePartei: string;
   staerksteParteiProzent: number;
 };
@@ -139,7 +133,6 @@ export type WahlkreisErgebnis = {
   wahlkreis: string;
   bezirkId: string;
   bezirk: string;
-  parteien: ErgebnisDatensatz;
   staerkstePartei: string;
   staerksteParteiProzent: number;
 };
@@ -153,7 +146,6 @@ export type Landtagswahl = {
   gueltigeStimmen: number;
   sitzeGesamt: number;
   mehrheitsgrenze: number;
-  modellhinweis: string;
   landesergebnis: ErgebnisDatensatz;
   sitzverteilung: Record<string, number>;
   regierungsoption: {
@@ -171,7 +163,6 @@ export type Bundestagswahl = {
   wahlbeteiligung: number;
   wahlberechtigte: number;
   gueltigeStimmen: number;
-  modellhinweis: string;
   gesamtergebnisOst: ErgebnisDatensatz;
   direktmandatOstdeutschland: {
     mandatName: string;

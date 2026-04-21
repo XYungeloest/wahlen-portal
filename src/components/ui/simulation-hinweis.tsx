@@ -4,9 +4,9 @@ type Props = {
 
 export function SimulationHinweis({ text }: Props) {
   return (
-    <aside className="rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900" aria-label="Simulationshinweis">
-      <p className="font-semibold">Hinweis zur Politiksimulation</p>
-      <p className="mt-1">{text}</p>
+    <aside className="rounded-xl border border-[#cbdcd7] bg-white p-4 text-sm text-slate-700" aria-label="Simulationshinweis">
+      <p className="font-semibold text-[var(--color-primary)]">Hinweis zur Politiksimulation</p>
+      <p className="mt-1 leading-6">{text}</p>
     </aside>
   );
 }
