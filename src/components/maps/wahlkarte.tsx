@@ -14,6 +14,15 @@ type KartenFlaeche = {
   headline: string;
   detail: string;
   ariaLabel: string;
+  history?: Array<{
+    id: string;
+    label: string;
+    datum: string;
+    winner: string;
+    percentLabel: string;
+    color: string;
+    colors?: [string, string];
+  }>;
 };
 
 type Props = {
@@ -164,6 +173,34 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
                 <p className="text-sm font-semibold text-[#14333d]">{activeArea.headline}</p>
                 <p className="mt-2 text-sm leading-6 text-slate-700">{activeArea.detail}</p>
               </div>
+              {activeArea.history && activeArea.history.length > 0 ? (
+                <div className="rounded-lg border border-[#dce9e6] bg-white p-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#25515c]">Historie</p>
+                  <ul className="mt-2 space-y-2 text-sm text-slate-700">
+                    {activeArea.history.map((entry) => (
+                      <li key={entry.id} className="flex items-start gap-2">
+                        <span
+                          className="mt-1 h-3.5 w-5 flex-shrink-0 rounded-sm border border-slate-300"
+                          style={{
+                            background: entry.colors
+                              ? `repeating-linear-gradient(45deg, ${entry.colors[0]} 0 6px, ${entry.colors[1]} 6px 12px)`
+                              : entry.color,
+                          }}
+                          aria-hidden
+                        />
+                        <span>
+                          <span className="block font-medium leading-5 text-[#14333d]">{entry.label}</span>
+                          <span className="block text-xs leading-5 text-slate-500">{entry.datum}</span>
+                          <span className="block leading-5">
+                            {entry.winner}
+                            {entry.percentLabel}
+                          </span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </div>
           ) : (
             <p className="text-sm leading-6 text-slate-600">Gebiet per Maus, Touch-Fokus oder Tastatur auswählen, um Details anzuzeigen.</p>

@@ -49,8 +49,13 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
   const seatItems = useMemo(
     () =>
       Object.entries(currentDataset.summary.sitzverteilung ?? {})
-        .map(([name, seats]) => ({ name, seats, color: partyColors[name] ?? "#64748b" }))
-        .sort((a, b) => b.seats - a.seats),
+        .map(([name, seats]) => ({
+          name,
+          seats,
+          voteShare: currentDataset.summary.gesamtergebnis[name] ?? 0,
+          color: partyColors[name] ?? "#64748b",
+        }))
+        .sort((a, b) => b.voteShare - a.voteShare || b.seats - a.seats),
     [currentDataset, partyColors],
   );
 

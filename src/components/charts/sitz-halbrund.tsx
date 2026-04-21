@@ -7,6 +7,7 @@ type SeatInput = {
   name: string;
   seats: number;
   color: string;
+  voteShare: number;
 };
 
 type Slice = SeatInput & {
@@ -38,7 +39,7 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
       data
         .filter((item) => item.seats > 0)
         .slice()
-        .sort((left, right) => right.seats - left.seats || left.name.localeCompare(right.name, "de")),
+        .sort((left, right) => right.voteShare - left.voteShare || right.seats - left.seats || left.name.localeCompare(right.name, "de")),
     [data],
   );
 
@@ -49,8 +50,8 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
 
     const selected = new Set(selectedNames);
     return [
-      ...sortedData.filter((item) => !selected.has(item.name)),
       ...sortedData.filter((item) => selected.has(item.name)),
+      ...sortedData.filter((item) => !selected.has(item.name)),
     ];
   }, [selectedNames, sortedData]);
 
@@ -74,8 +75,7 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
   const selectedSeats = selectedSlices.reduce((sum, slice) => sum + slice.seats, 0);
   const selectedHasMajority = selectedSeats >= majority;
   const hasSelection = selectedSlices.length > 0;
-  const majorityPositionFromRight = Math.max(0, actualTotal - majority + 0.5);
-  const majorityAngle = -Math.PI / 2 + (majorityPositionFromRight / Math.max(actualTotal, 1)) * Math.PI;
+  const majorityAngle = -Math.PI / 2 + ((Math.max(majority, 1) - 0.5) / Math.max(actualTotal, 1)) * Math.PI;
   const markerInner = polarPoint(centerX, centerY, innerRadius - 12, majorityAngle);
   const markerOuter = polarPoint(centerX, centerY, outerRadius + 18, majorityAngle);
   const markerLabel = polarPoint(centerX, centerY, outerRadius + 38, majorityAngle);
@@ -214,7 +214,7 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
           </div>
 
           <p className="mt-3 text-sm leading-6 text-slate-600">
-            Fraktionen per Klick auswählen. Ausgewählte Fraktionen werden rechts gebündelt; Hover oder Tastaturfokus zeigt Einzelsitze.
+            Fraktionen per Klick auswählen. Ausgewählte Fraktionen werden links gebündelt; Hover oder Tastaturfokus zeigt Einzelsitze.
           </p>
 
           {hasSelection ? (

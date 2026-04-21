@@ -94,12 +94,35 @@ export function KartenModul({
           metric === "winner"
             ? `${winners.length > 1 ? "Gleichstand stärkste Kräfte" : "Stärkste Partei"}: ${winnerLabel}${winnerPercentLabel}`
             : `Wahlbeteiligung: ${formatProzent(row.wahlbeteiligung)}`;
-        const percentageDetail =
-          row.staerksteParteiProzent > 0
-            ? ` mit ${formatProzent(row.staerksteParteiProzent)}`
-            : "; kein regionaler Prozentwert ausgewiesen";
-        const tieDetail =
-          winners.length > 1 ? " Die Schraffur nutzt gleich breite, alternierende Streifen der beteiligten Parteien." : "";
+        const history = datasets
+          .filter((dataset) => dataset.id !== currentDataset.id && dataset.datum < currentDataset.datum && dataset.gebietsebene === currentDataset.gebietsebene)
+          .sort((left, right) => right.datum.localeCompare(left.datum))
+          .flatMap((dataset) => {
+            const historicalRow = dataset.gebiete.find((gebiet) => gebiet.gebietId === row.gebietId);
+            if (!historicalRow) {
+              return [];
+            }
+
+            const historicalWinners = historicalRow.staerksteParteien?.length
+              ? historicalRow.staerksteParteien
+              : [historicalRow.staerkstePartei];
+            const historicalWinnerLabel = historicalWinners.join(" / ");
+            const historicalPercentLabel =
+              historicalRow.staerksteParteiProzent > 0 ? ` (${formatProzent(historicalRow.staerksteParteiProzent)})` : "";
+
+            return [{
+              id: dataset.id,
+              label: dataset.label,
+              datum: formatDatum(dataset.datum),
+              winner: historicalWinnerLabel,
+              percentLabel: historicalPercentLabel,
+              color: partyColors[historicalWinners[0]] ?? "#94a3b8",
+              colors:
+                historicalWinners.length > 1
+                  ? ([partyColors[historicalWinners[0]] ?? "#94a3b8", partyColors[historicalWinners[1]] ?? "#334155"] as [string, string])
+                  : undefined,
+            }];
+          });
 
         return [
           row.gebietId,
@@ -110,13 +133,14 @@ export function KartenModul({
             patternId,
             patternColors,
             headline: metricLabel,
-            detail: `Bezirk ${row.bezirk}. ${winners.length > 1 ? "Gleichstand der stärksten Kräfte" : "Stärkste Partei"} ${winnerLabel}${percentageDetail}.${tieDetail}`,
-            ariaLabel: `${row.gebietName}, Bezirk ${row.bezirk}. ${metricLabel}.${tieDetail}`,
+            detail: `Bezirk ${row.bezirk}. ${winners.length > 1 ? "Gleichstand der stärksten Kräfte" : ""}`,
+            ariaLabel: `${row.gebietName}, Bezirk ${row.bezirk}.`,
+            history,
           },
         ];
       }),
     );
-  }, [filteredRows, maxMetricValue, metric, minMetricValue, partyColors]);
+  }, [currentDataset, datasets, filteredRows, maxMetricValue, metric, minMetricValue, partyColors]);
 
   const legendItems = useMemo(() => {
     if (metric !== "winner") {
