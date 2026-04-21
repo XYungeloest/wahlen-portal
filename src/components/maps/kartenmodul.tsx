@@ -103,6 +103,16 @@ export function KartenModul({
               return [];
             }
 
+            if (metric === "turnout") {
+              return [{
+                id: dataset.id,
+                label: dataset.label,
+                datum: formatDatum(dataset.datum),
+                value: `Wahlbeteiligung: ${formatProzent(historicalRow.wahlbeteiligung)}`,
+                color: scaleColor(historicalRow.wahlbeteiligung, minMetricValue, maxMetricValue, "#d7f0ea", "#0f766e"),
+              }];
+            }
+
             const historicalWinners = historicalRow.staerksteParteien?.length
               ? historicalRow.staerksteParteien
               : [historicalRow.staerkstePartei];
@@ -114,8 +124,7 @@ export function KartenModul({
               id: dataset.id,
               label: dataset.label,
               datum: formatDatum(dataset.datum),
-              winner: historicalWinnerLabel,
-              percentLabel: historicalPercentLabel,
+              value: `${historicalWinnerLabel}${historicalPercentLabel}`,
               color: partyColors[historicalWinners[0]] ?? "#94a3b8",
               colors:
                 historicalWinners.length > 1

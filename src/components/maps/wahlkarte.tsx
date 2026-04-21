@@ -18,8 +18,7 @@ type KartenFlaeche = {
     id: string;
     label: string;
     datum: string;
-    winner: string;
-    percentLabel: string;
+    value: string;
     color: string;
     colors?: [string, string];
   }>;
@@ -69,8 +68,7 @@ export function Wahlkarte({ title, geo, areasById, preserveFullExtent = false }:
     return `translate(${tx} ${ty}) scale(${scale})`;
   }, [featureById, focusedId, height, pathBuilder, width]);
 
-  const fallbackId = geo.features[0] ? String(geo.features[0].properties.id ?? "") : null;
-  const displayedId = activeId ?? focusedId ?? fallbackId;
+  const displayedId = activeId ?? focusedId;
   const activeArea = displayedId ? areasById[displayedId] ?? null : null;
   const patterns = useMemo(() => {
     const uniquePatterns = new Map<string, [string, string]>();
@@ -213,10 +211,7 @@ function AreaDetails({ area }: { area: KartenFlaeche }) {
                 <span>
                   <span className="block font-medium leading-5 text-[#14333d]">{entry.label}</span>
                   <span className="block text-xs leading-5 text-slate-500">{entry.datum}</span>
-                  <span className="block leading-5">
-                    {entry.winner}
-                    {entry.percentLabel}
-                  </span>
+                  <span className="block leading-5">{entry.value}</span>
                 </span>
               </li>
             ))}
