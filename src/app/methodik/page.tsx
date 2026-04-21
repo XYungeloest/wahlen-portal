@@ -55,6 +55,10 @@ export default async function MethodikPage() {
           Karten dienen als regionale Orientierungsebene. Bezirke sind Filter- und Aggregationsraum; zentrale Ergebnisebenen bleiben
           Landtag und Bundestag.
         </p>
+        <p className="mt-3">
+          Historische Referenzkarten werden als lokale Gebietssieger-Mappings gepflegt. Daraus werden keine regionalen Prozentwerte
+          konstruiert; die interaktiven Karten bleiben D3-SVG-Karten auf Basis der lokalen GeoJSON-Dateien.
+        </p>
       </section>
 
       <section className="card p-5 text-slate-700">

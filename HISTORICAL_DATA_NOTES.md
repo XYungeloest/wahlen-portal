@@ -54,7 +54,25 @@ Wichtige Felder:
 - `summary.detailergebnisse`: getrennte, tabellarisch belastbare Ergebnisblöcke
 - `summary.sitzverteilung`: nur dort gesetzt, wo das PDF Sitze ausweist
 - `summary.direktmandat`: nur bei Bundestagsdatensätzen gesetzt
-- `gebiete: []`: bewusst leer, wenn das PDF keine belastbare Regionalauflösung enthält
+- `gebiete: []`: die historischen JSON-Dateien bleiben frei von künstlichen Regionalprozenten
+- manuelle Gebietssieger-Mappings: `public/data/mappings/landtag-gebietssieger.json` und `public/data/mappings/bundestag-gebietssieger.json`
+
+## Manuelle Kartenbefüllung aus Referenzbildern
+
+Die bereitgestellten Kartenbilder werden nur als visuelle Referenz genutzt. Sie werden nicht gerendert, nicht als Hintergrundbild eingebunden und nicht zur Laufzeit geladen.
+
+Stattdessen enthält das Repository getrennte Mapping-Dateien:
+
+- `public/data/mappings/landtag-gebietssieger.json`: Landkreis bzw. kreisfreie Stadt -> stärkste Partei für LTW 5, LTW 6 und LTW 7
+- `public/data/mappings/bundestag-gebietssieger.json`: Bundestagswahlkreis -> stärkste Partei für BTW 6, BTW 7 und BTW 8
+
+Beim Laden der Wahldatensätze ergänzt `src/lib/wahldaten.ts` diese Mapping-Layer um die Stammdaten aus `landkreise.json` bzw. `bundestagswahlkreise.json`. Die D3-Karten verwenden danach weiterhin die lokalen GeoJSON-Dateien.
+
+Wichtig:
+
+- Die Mappings enthalten keine regionalen Prozentwerte.
+- Schraffuren aus den Referenzkarten werden als Gleichstand mehrerer stärkster Kräfte modelliert.
+- Die Kartenansicht deaktiviert für diese Datensätze regionale Parteiergebnis-Metriken und weist transparent auf die Mapping-Quelle hin.
 
 ## Partei-Normierung
 
@@ -72,18 +90,18 @@ Dokumentierte Sonderfälle:
 - Das PDF `BTW6_Endergebnis.pdf` schreibt `Voksfront`; im Portal wird dies als `Volksfront` ausgegeben.
 - Historische Namen wie `Bündnis Demokratie Europa an der Elbe` oder `Ostdeutschland in Bewegung` bleiben als eigene sichtbare Bezeichnungen erhalten.
 
-## Keine nachträgliche Kartenlogik
+## Keine nachträglichen Regionalprozente
 
-Die historischen PDFs enthalten keine belastbare ostinterne Kartenauflösung für das Portalmodell. Deshalb gilt:
+Die historischen PDFs enthalten keine belastbare ostinterne Prozentauflösung für das Portalmodell. Deshalb gilt:
 
-- keine erfundene Landkreisverteilung für historische Landtage
-- keine erfundene Aufteilung auf Bundestagswahlkreise für historische Ost-Datensätze
-- die Ergebnisseiten zeigen an der Kartenstelle stattdessen einen transparenten Hinweis
+- keine erfundene Landkreisverteilung mit Prozentwerten für historische Landtage
+- keine erfundene Aufteilung von Prozentwerten auf Bundestagswahlkreise für historische Ost-Datensätze
+- Kartenfarben entstehen nur aus den manuell übertragenen Gebietssiegern
 
 ## Manuelle Kurzprüfung empfohlen
 
 1. Datum und Ordnungscode je Datensatz gegen das jeweilige PDF gegenlesen.
 2. Bei `BTW6_Endergebnis.pdf` die im PDF sichtbare Schreibweise `Voksfront` vs. Portalnormalisierung `Volksfront` kurz bewusst prüfen.
 3. Prüfen, ob die historischen Datensätze in der Datensatz-Auswahl in der gewünschten Reihenfolge erscheinen.
-4. Auf den Bundestagsseiten beide Balkendiagramme pro historischem Datensatz gegen den PDF-Abschnitt querlesen.
-5. Prüfen, ob die „keine Kartenansicht“-Hinweise für historische Datensätze inhaltlich passend formuliert sind.
+4. Auf den Bundestagsseiten beide Balkendiagramme pro historischem Datensatz gegen den PDF-Abschnitt querlesen; Erststimme muss links, Zweitstimme rechts stehen.
+5. Referenzbild-Mappings besonders in kleinen Stadtgebieten und bei Schraffuren visuell gegenprüfen.

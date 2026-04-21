@@ -30,7 +30,7 @@
     "detailergebnisse": [
       {
         "id": "listenstimme",
-        "label": "Listenstimme / Zweitstimme",
+        "label": "Zweitstimme",
         "stimmart": "zweitstimme",
         "hinweis": "Übernommen aus dem Abschnitt „Wahlkreisergebnis Wahlkreis 02 - Ostdeutschland“ des amtlichen PDF-Endergebnisses.",
         "parteien": [
@@ -79,7 +79,7 @@
       },
       {
         "id": "erststimme",
-        "label": "Wahlkreisstimme / Erststimme",
+        "label": "Erststimme",
         "stimmart": "erststimme",
         "hinweis": "Im PDF sind im Ost-Wahlkreis nur FRP und Volksfront mit Kandidaturen ausgewiesen; übrige Parteien werden mit 0 dargestellt.",
         "parteien": [

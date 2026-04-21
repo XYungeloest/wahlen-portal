@@ -9,11 +9,11 @@ type Props = {
 
 export function FaktenGrid({ facts }: Props) {
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-4 sm:grid-cols-2">
       {facts.map((fact) => (
-        <article key={fact.label} className="card p-4">
+        <article key={fact.label} className="card min-w-0 p-4">
           <p className="text-sm text-slate-600">{fact.label}</p>
-          <p className="mt-2 text-xl font-bold text-[var(--color-primary)]">{fact.value}</p>
+          <p className="mt-2 break-words text-xl font-bold leading-7 text-[var(--color-primary)]">{fact.value}</p>
         </article>
       ))}
     </div>

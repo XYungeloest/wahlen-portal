@@ -27,7 +27,7 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
   const chartBlocks = useMemo<ErgebnisBlock[]>(() => {
     const detailBlocks = currentDataset.summary.detailergebnisse?.filter((block) => block.parteien.length > 0) ?? [];
     if (detailBlocks.length > 0) {
-      return detailBlocks;
+      return detailBlocks.slice().sort((left, right) => blockOrder(left, typ) - blockOrder(right, typ));
     }
 
     return [
@@ -117,11 +117,11 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
         {chartBlocks.map((block) => (
           <ParteienBalken
             key={block.id}
-            title={block.label}
+            title={displayBlockTitle(block, typ)}
             subtitle={block.hinweis}
             data={block.parteien
               .map((entry) => ({
-                name: entry.kurz ? `${entry.name} (${entry.kurz})` : entry.name,
+                name: displayEntryName(entry, block),
                 value: entry.prozent,
                 color: partyColors[entry.name] ?? partyColors[entry.normiertAuf ?? ""] ?? "#64748b",
               }))
@@ -185,12 +185,49 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
 
         <div className="mt-5 space-y-6">
           {chartBlocks.map((block) => (
-            <ErgebnisTabelle key={block.id} block={block} />
+            <ErgebnisTabelle key={block.id} block={block} typ={typ} />
           ))}
         </div>
       </section>
     </div>
   );
+}
+
+function blockOrder(block: ErgebnisBlock, typ: WahlTyp) {
+  if (typ !== "bundestag") {
+    return 0;
+  }
+  if (block.stimmart === "erststimme" || block.stimmart === "wahlkreisstimme") {
+    return 0;
+  }
+  if (block.stimmart === "zweitstimme" || block.stimmart === "listenstimme") {
+    return 1;
+  }
+  return 2;
+}
+
+function displayBlockTitle(block: ErgebnisBlock, typ: WahlTyp) {
+  if (typ === "bundestag") {
+    if (block.stimmart === "erststimme" || block.stimmart === "wahlkreisstimme") {
+      return "Erststimme";
+    }
+    if (block.stimmart === "zweitstimme" || block.stimmart === "listenstimme") {
+      return "Zweitstimme";
+    }
+  }
+  return block.label;
+}
+
+function isCandidateVote(block: ErgebnisBlock) {
+  return block.stimmart === "erststimme" || block.stimmart === "wahlkreisstimme";
+}
+
+function displayEntryName(entry: ErgebnisBlock["parteien"][number], block: ErgebnisBlock) {
+  const partyLabel = entry.kurz ?? entry.name;
+  if (isCandidateVote(block)) {
+    return entry.kandidat ? `${entry.kandidat} (${partyLabel})` : `Keine Kandidatur (${partyLabel})`;
+  }
+  return entry.kurz ? `${entry.name} (${entry.kurz})` : entry.name;
 }
 
 function StatTile({ label, value }: { label: string; value: string }) {
@@ -202,25 +239,26 @@ function StatTile({ label, value }: { label: string; value: string }) {
   );
 }
 
-function ErgebnisTabelle({ block }: { block: ErgebnisBlock }) {
+function ErgebnisTabelle({ block, typ }: { block: ErgebnisBlock; typ: WahlTyp }) {
   const hasSeats = block.parteien.some((entry) => typeof entry.sitze === "number");
   const hasVotes = block.parteien.some((entry) => entry.stimmen > 0);
+  const candidateVote = isCandidateVote(block);
 
   return (
     <section>
       <div className="mb-3">
-        <h4 className="text-lg font-semibold text-[#15343d]">{block.label}</h4>
+        <h4 className="text-lg font-semibold text-[#15343d]">{displayBlockTitle(block, typ)}</h4>
         {block.hinweis ? <p className="mt-1 text-sm leading-6 text-slate-600">{block.hinweis}</p> : null}
       </div>
       <div className="overflow-x-auto">
         <table className="table-basic">
           <thead>
             <tr>
-              <th scope="col">Partei</th>
+              <th scope="col">{candidateVote ? "Kandidatur" : "Partei"}</th>
               {hasVotes ? <th scope="col">Stimmen</th> : null}
               <th scope="col">Prozent</th>
-              <th scope="col">Kürzel</th>
-              <th scope="col">Kandidatur</th>
+              <th scope="col">Partei</th>
+              {!candidateVote ? <th scope="col">Kandidatur</th> : null}
               {hasSeats ? <th scope="col">Sitze</th> : null}
             </tr>
           </thead>
@@ -231,12 +269,12 @@ function ErgebnisTabelle({ block }: { block: ErgebnisBlock }) {
               .map((entry) => (
                 <tr key={`${block.id}-${entry.name}`}>
                   <th scope="row" className="min-w-[14rem] break-words">
-                    {entry.name}
+                    {displayEntryName(entry, block)}
                   </th>
                   {hasVotes ? <td className="font-mono-data">{entry.stimmen > 0 ? formatZahl(entry.stimmen) : "0"}</td> : null}
                   <td className="font-mono-data">{formatProzent(entry.prozent)}</td>
-                  <td>{entry.kurz ?? "—"}</td>
-                  <td className="break-words">{entry.kandidat ?? "—"}</td>
+                  <td>{entry.kurz ?? entry.name}</td>
+                  {!candidateVote ? <td className="break-words">{entry.kandidat ?? "—"}</td> : null}
                   {hasSeats ? <td className="font-mono-data">{typeof entry.sitze === "number" ? formatZahl(entry.sitze) : "—"}</td> : null}
                 </tr>
               ))}

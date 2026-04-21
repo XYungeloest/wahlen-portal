@@ -31,7 +31,8 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
     return { ...item, startAngle, endAngle };
   });
 
-  const majorityAngle = -Math.PI / 2 + (majority / Math.max(totalSeats, 1)) * Math.PI;
+  const majorityPosition = Math.max(0, majority - 0.5);
+  const majorityAngle = -Math.PI / 2 + (majorityPosition / Math.max(totalSeats, 1)) * Math.PI;
   const majorityInnerX = centerX + (innerRadius - 8) * Math.sin(majorityAngle);
   const majorityInnerY = centerY - (innerRadius - 8) * Math.cos(majorityAngle);
   const majorityOuterX = centerX + (outerRadius + 14) * Math.sin(majorityAngle);

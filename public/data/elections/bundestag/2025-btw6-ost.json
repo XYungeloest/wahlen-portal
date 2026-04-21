@@ -29,7 +29,7 @@
     "detailergebnisse": [
       {
         "id": "listenstimme",
-        "label": "Listenstimme / Zweitstimme",
+        "label": "Zweitstimme",
         "stimmart": "zweitstimme",
         "hinweis": "Übernommen aus dem Abschnitt „Landesergebnis Wahlkreis Ost“ des amtlichen PDF-Endergebnisses.",
         "parteien": [
@@ -71,7 +71,7 @@
       },
       {
         "id": "erststimme",
-        "label": "Wahlkreisstimme / Erststimme",
+        "label": "Erststimme",
         "stimmart": "erststimme",
         "hinweis": "Übernommen aus demselben Ost-Abschnitt; nur tatsächlich ausgewiesene Kandidaturen wurden übernommen.",
         "parteien": [

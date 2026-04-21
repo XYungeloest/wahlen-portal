@@ -16,6 +16,23 @@ const dataBase = join(process.cwd(), "public", "data");
 const geoBase = join(process.cwd(), "public", "geo");
 const electionsBase = join(dataBase, "elections");
 
+type ManualWinnerMapping = {
+  schema: string;
+  gebietsebene: "landkreis" | "bundestagswahlkreis";
+  quelle: string;
+  hinweis: string;
+  gebiete: ManualWinnerArea[];
+};
+
+type ManualWinnerArea = {
+  gebietId: string;
+  gebietName: string;
+  gewinner: Record<string, string[]>;
+  hinweise?: Record<string, string>;
+};
+
+type RegionalArea = Landkreis | Bundestagswahlkreis;
+
 async function readJson<T>(filePath: string): Promise<T> {
   const content = await readFile(filePath, "utf8");
   return JSON.parse(content) as T;
@@ -33,7 +50,8 @@ async function readElectionGroup(group: "landtag" | "bundestag") {
   const groupDir = join(electionsBase, group);
   const files = (await readdir(groupDir)).filter((fileName) => fileName.endsWith(".json")).sort();
   const datasets = await Promise.all(files.map((fileName) => readJson<WahlDataset>(join(groupDir, fileName))));
-  return datasets.sort((left, right) => right.datum.localeCompare(left.datum));
+  const enrichedDatasets = await applyManualWinnerMappings(group, datasets);
+  return enrichedDatasets.sort((left, right) => right.datum.localeCompare(left.datum));
 }
 
 function findDataset(datasets: WahlDataset[], id: string) {
@@ -78,6 +96,69 @@ export async function getLandkreiseGeo() {
 
 export async function getBundestagswahlkreiseGeo() {
   return readGeoJson("btw-wahlkreise-ost.geojson");
+}
+
+async function applyManualWinnerMappings(group: "landtag" | "bundestag", datasets: WahlDataset[]) {
+  const mappingFile = group === "landtag" ? "mappings/landtag-gebietssieger.json" : "mappings/bundestag-gebietssieger.json";
+  const areasFile = group === "landtag" ? "landkreise.json" : "bundestagswahlkreise.json";
+  const [mapping, areas] = await Promise.all([
+    readDataJson<ManualWinnerMapping>(mappingFile).catch(() => null),
+    readDataJson<RegionalArea[]>(areasFile),
+  ]);
+
+  if (!mapping) {
+    return datasets;
+  }
+
+  const areasById = new Map(areas.map((area) => [area.id, area]));
+
+  return datasets.map((dataset) => {
+    const mappedAreas = mapping.gebiete
+      .map((entry) => {
+        const winners = entry.gewinner[dataset.id];
+        const area = areasById.get(entry.gebietId);
+        if (!winners?.length || !area) {
+          return null;
+        }
+        const officialName = "officialName" in area && typeof area.officialName === "string" ? area.officialName : area.name;
+        const typ = "type" in area ? area.type : undefined;
+
+        return {
+          gebietId: area.id,
+          gebietName: area.name,
+          officialName,
+          bezirkId: area.bezirkId,
+          bezirk: area.bezirk,
+          wahlbeteiligung: dataset.wahlbeteiligung,
+          ergebnisse: {},
+          staerkstePartei: winners.join(" / "),
+          staerksteParteien: winners,
+          staerksteParteiProzent: 0,
+          siegerHinweis: entry.hinweise?.[dataset.id],
+          typ,
+        };
+      })
+      .filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
+
+    if (mappedAreas.length === 0) {
+      return dataset;
+    }
+
+    return {
+      ...dataset,
+      gebiete: mappedAreas,
+      regionaldatenTyp: "manuelles-sieger-mapping" as const,
+      regionaldatenQuelle: `${mapping.quelle} ${mapping.hinweis}`,
+      metadaten: {
+        ...dataset.metadaten,
+        quelle: `${dataset.metadaten.quelle}; regionale Siegerkarte: manuelles Referenzbild-Mapping`,
+        geobasis:
+          group === "landtag"
+            ? "Lokales GeoJSON der Landkreise und kreisfreien Städte mit manuellem Gebietssieger-Mapping aus Referenzbildern"
+            : "Lokales GeoJSON der ostdeutschen Bundestagswahlkreise mit manuellem Gebietssieger-Mapping aus Referenzbildern",
+      },
+    };
+  });
 }
 
 export async function getLandtagswahl2024(): Promise<Landtagswahl> {

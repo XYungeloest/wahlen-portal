@@ -8,6 +8,8 @@ type KartenFlaeche = {
   id: string;
   name: string;
   fill: string;
+  patternId?: string;
+  patternColors?: [string, string];
   stroke?: string;
   headline: string;
   detail: string;
@@ -60,6 +62,15 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
   const fallbackId = geo.features[0] ? String(geo.features[0].properties.id ?? "") : null;
   const displayedId = activeId ?? focusedId ?? fallbackId;
   const activeArea = displayedId ? areasById[displayedId] ?? null : null;
+  const patterns = useMemo(() => {
+    const uniquePatterns = new Map<string, [string, string]>();
+    for (const area of Object.values(areasById)) {
+      if (area.patternId && area.patternColors) {
+        uniquePatterns.set(area.patternId, area.patternColors);
+      }
+    }
+    return Array.from(uniquePatterns.entries()).map(([id, colors]) => ({ id, colors }));
+  }, [areasById]);
 
   return (
     <section
@@ -83,6 +94,14 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
       <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_17rem]">
         <div className="overflow-hidden rounded-[1.25rem] border border-white/70 bg-[#edf5f2]">
           <svg viewBox={`0 0 ${width} ${height}`} className="w-full" role="img" aria-label={title}>
+            <defs>
+              {patterns.map((pattern) => (
+                <pattern key={pattern.id} id={pattern.id} width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <rect width="12" height="12" fill={pattern.colors[0]} />
+                  <path d="M 0 0 L 0 12" stroke={pattern.colors[1]} strokeWidth="5" />
+                </pattern>
+              ))}
+            </defs>
             <g transform={transform} style={{ transition: "transform 240ms ease" }}>
               {geo.features.map((feature) => {
                 const id = String(feature.properties.id ?? "");
@@ -98,7 +117,7 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
                   <path
                     key={id}
                     d={d}
-                    fill={area.fill}
+                    fill={area.patternId ? `url(#${area.patternId})` : area.fill}
                     stroke={area.stroke ?? (isFocused ? "#0f766e" : isActive ? "#0f172a" : "#f8fafc")}
                     strokeWidth={isFocused ? 3.4 : isActive ? 2.5 : 1.2}
                     vectorEffect="non-scaling-stroke"

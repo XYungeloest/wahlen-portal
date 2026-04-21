@@ -30,8 +30,8 @@
     "detailergebnisse": [
       {
         "id": "listenstimme",
-        "label": "Listenstimme",
-        "stimmart": "listenstimme",
+        "label": "Zweitstimme",
+        "stimmart": "zweitstimme",
         "hinweis": "Übernommen aus dem Abschnitt „Wahlkreisergebnis Wahlkreis 02 – Ostdeutschland“ des amtlichen PDF-Endergebnisses.",
         "parteien": [
           {
@@ -79,8 +79,8 @@
       },
       {
         "id": "wahlkreisstimme",
-        "label": "Wahlkreisstimme",
-        "stimmart": "wahlkreisstimme",
+        "label": "Erststimme",
+        "stimmart": "erststimme",
         "hinweis": "Kandidierendenstimmen des Ost-Wahlkreises aus demselben PDF-Abschnitt.",
         "parteien": [
           {

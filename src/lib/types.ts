@@ -74,7 +74,9 @@ export type KartenGebietErgebnis = {
   wahlbeteiligung: number;
   ergebnisse: ErgebnisDatensatz;
   staerkstePartei: string;
+  staerksteParteien?: string[];
   staerksteParteiProzent: number;
+  siegerHinweis?: string;
   vergleichswerte?: Vergleichswerte;
   typ?: Landkreis["type"];
 };
@@ -100,6 +102,8 @@ export type WahlDataset = {
     ordnungscode?: string;
     pdfDatei?: string;
   };
+  regionaldatenTyp?: "vollergebnis" | "manuelles-sieger-mapping";
+  regionaldatenQuelle?: string;
   summary: {
     gesamtergebnis: ErgebnisDatensatz;
     detailergebnisse?: ErgebnisBlock[];

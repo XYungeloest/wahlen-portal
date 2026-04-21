@@ -57,6 +57,8 @@ public/
     mappings/
       landkreise-bezirke.json
       bundestagswahlkreise-bezirke.json
+      landtag-gebietssieger.json
+      bundestag-gebietssieger.json
     elections/
       landtag/
         2020.json
@@ -81,9 +83,10 @@ public/
 
 1. JSON-Datei im passenden Ordner unter `public/data/elections/` ergänzen.
 2. Konsistente `gebietId`-Werte zu `public/geo/landkreise-ost.geojson` oder `public/geo/btw-wahlkreise-ost.geojson` verwenden.
-3. Falls sich die Geo-Basis ändert, `node scripts/prepare-map-data.mjs` ausführen.
-4. Karten- und Ergebnisseiten prüfen.
-5. Build prüfen mit `npm run build`.
+3. Für reine Referenzbild-Karten keine Prozentwerte erfinden, sondern Gebietssieger in `public/data/mappings/landtag-gebietssieger.json` oder `public/data/mappings/bundestag-gebietssieger.json` pflegen.
+4. Falls sich die Geo-Basis ändert, `node scripts/prepare-map-data.mjs` ausführen.
+5. Karten- und Ergebnisseiten prüfen.
+6. Build prüfen mit `npm run build`.
 
 Hinweis: Die Kartenbasis wird jetzt über `scripts/prepare-map-data.mjs` aus amtlichen Geodaten und lokalen Simulationsdatensätzen aufbereitet. Details stehen in [MAP_DATA_NOTES.md](/Users/petzke/wahlen-portal/MAP_DATA_NOTES.md).
 Das frühere Script `scripts/generate-sim-data.mjs` ist für die neue Kartenbasis nicht mehr die fachliche Referenz.
@@ -91,9 +94,10 @@ Das frühere Script `scripts/generate-sim-data.mjs` ist für die neue Kartenbasi
 Für historische PDF-Importe gilt zusätzlich:
 
 1. Nur Werte übernehmen, die im PDF-Endergebnis eindeutig ausgewiesen sind.
-2. Kein `gebiete`-Raster erfinden, wenn die Quelle nur aggregierte Gesamtwerte enthält.
+2. Kein `gebiete`-Raster mit künstlichen Regionalprozenten erfinden, wenn die Quelle nur aggregierte Gesamtwerte enthält.
 3. Bei Bundestagswahlen den ostdeutschen Abschnitt als Primärquelle verwenden.
 4. Optionale Metadaten wie `ordnungscode`, `pdfDatei` und `summary.detailergebnisse` mitführen.
+5. Referenzkarten werden als manuelle Gebietssieger-Mappings geführt; die Website rendert weiterhin GeoJSON/D3 und zeigt keine Kartenbilder an.
 
 Details zur Herkunft und Struktur stehen in [HISTORICAL_DATA_NOTES.md](/Users/petzke/wahlen-portal/HISTORICAL_DATA_NOTES.md).
 
@@ -101,13 +105,13 @@ Details zur Herkunft und Struktur stehen in [HISTORICAL_DATA_NOTES.md](/Users/pe
 
 - `/ergebnisse/landtag/` und `/ergebnisse/bundestag/` sind die fachlichen Hauptseiten je Wahlebene.
 - Dort sind Ergebnis, Visualisierung, Karte und Gebietstabelle zusammengeführt und nutzen dieselbe Datensatz-Auswahl.
-- Historische PDF-Datensätze ohne regionale Untergliederung bleiben auf denselben Seiten auswählbar; an der Kartenstelle wird dann transparent erklärt, warum keine Karte gezeigt wird.
+- Historische PDF-Datensätze können über manuelle Gebietssieger-Mappings eine Karte anzeigen; regionale Prozentwerte bleiben dabei transparent leer.
 - Die Seiten unter `/karte/landtag/` und `/karte/bundestag/` bleiben nur als schlanke Deep-Links auf die integrierten Ergebnisseiten bestehen.
 - Karteninteraktion:
   - Hover und Tastaturfokus zeigen Gebietsinformationen.
   - Klick setzt einen kontrollierten Fokus auf ein Gebiet.
   - Ein Reset-Button hebt den Kartenfokus wieder auf.
-- Bundestagsseiten können pro Datensatz getrennte Ergebnisblöcke für Listenstimme und Wahlkreisstimme anzeigen, wenn diese in `summary.detailergebnisse` vorhanden sind.
+- Bundestagsseiten sortieren Ergebnisblöcke als Erststimme links und Zweitstimme rechts. Erststimmen werden als Kandidatenname mit Partei in Klammern angezeigt.
 
 ## Modellhinweis
 
