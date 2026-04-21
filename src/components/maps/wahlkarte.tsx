@@ -78,7 +78,7 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
       aria-label={title}
     >
       <div className="mb-3 flex items-center justify-between gap-3">
-        <p className="text-xs uppercase tracking-[0.18em] text-slate-500">Interaktive SVG-Karte</p>
+        <p className="text-xs uppercase tracking-[0.18em] text-slate-500">Interaktive Karte</p>
         <div className="flex items-center gap-2">
           <button
             type="button"
@@ -163,7 +163,7 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
           )}
 
           <p className="mt-4 text-xs leading-5 text-slate-500">
-            Klick auf ein Gebiet setzt einen kontrollierten Fokus. Die Darstellung bleibt statisch exportierbar und benötigt keine externen Karten- oder Tile-Dienste.
+            Klick auf ein Gebiet setzt einen kontrollierten Fokus.
           </p>
         </aside>
       </div>

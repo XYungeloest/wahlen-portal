@@ -65,13 +65,8 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
             </p>
             <h2 className="mt-2 break-words text-3xl font-semibold text-[#15343d]">{currentDataset.label}</h2>
             <p className="mt-3 text-sm leading-6 text-slate-700">
-              Wahltag {formatDatum(currentDataset.datum)}. Karte, Ergebnisblöcke und Tabellen sind fachlich zusammengeführt und greifen auf denselben Datensatz zu.
+              Wahltag: {formatDatum(currentDataset.datum)}.
             </p>
-            {currentDataset.metadaten.ordnungscode ? (
-              <p className="mt-3 inline-flex rounded-full border border-[#cfe0db] bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#25515c]">
-                Ordnungscode {currentDataset.metadaten.ordnungscode}
-              </p>
-            ) : null}
           </div>
 
           <label className="block min-w-[18rem] text-sm font-medium text-slate-700">
@@ -128,47 +123,24 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
           />
         ))}
       </section>
-
       {typ === "landtag" && seatItems.length > 0 ? (
-        <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(18rem,0.8fr)]">
           <SitzHalbrund
             title="Sitzverteilung im Landtag"
             totalSeats={currentDataset.summary.sitzeGesamt ?? 0}
             majority={currentDataset.summary.mehrheitsgrenze ?? 0}
             data={seatItems}
           />
-
-          <div className="space-y-6">
-            {currentDataset.summary.regierungsoption ? (
-              <section className="card p-5">
-                <h3 className="text-lg font-semibold text-[var(--color-primary)]">Regierungsoption (Simulation)</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-700">
-                  {currentDataset.summary.regierungsoption.koalition.join(" + ")} erreichen zusammen{" "}
-                  <strong>{currentDataset.summary.regierungsoption.sitze}</strong> Sitze und damit{" "}
-                  {currentDataset.summary.regierungsoption.mehrheitsfaehig ? "eine" : "keine"} Mehrheit.
-                </p>
-              </section>
-            ) : (
-              <section className="card p-5">
-                <h3 className="text-lg font-semibold text-[var(--color-primary)]">Sitzlogik</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-700">
-                  Für diesen historischen Datensatz wurde ausschließlich die im PDF ausgewiesene Sitzverteilung übernommen. Weitere Koalitions- oder Modellannahmen werden nicht nachträglich ergänzt.
-                </p>
-              </section>
-            )}
-          </div>
-        </div>
       ) : null}
 
       {typ === "bundestag" && currentDataset.summary.direktmandat ? (
-        <section className="card p-5">
-          <h3 className="text-lg font-semibold text-[var(--color-primary)]">Direktmandat Ostdeutschland</h3>
-          <p className="mt-3 text-sm leading-7 text-slate-700">
-            <strong>{currentDataset.summary.direktmandat.kandidat}</strong> ({currentDataset.summary.direktmandat.partei}) mit{" "}
-            <strong>{formatProzent(currentDataset.summary.direktmandat.stimmenanteil)}</strong>
-          </p>
-          <p className="mt-3 text-sm leading-7 text-slate-700">{currentDataset.summary.direktmandat.hinweis}</p>
-        </section>
+        <section className="rounded-[1.25rem] border border-[#d0ddd9] bg-white p-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
+                  <h3 className="mt-2 break-words text-lg font-semibold text-[#16343d]">{currentDataset.summary.direktmandat.kandidat}</h3>
+                  <p className="mt-1 text-sm text-slate-700">
+                    {currentDataset.summary.direktmandat.partei} mit {formatProzent(currentDataset.summary.direktmandat.stimmenanteil)}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">{currentDataset.summary.direktmandat.hinweis}</p>
+                </section>
       ) : null}
 
       <section className="rounded-[1.5rem] border border-[#cddcda] bg-white p-5 shadow-[0_18px_40px_rgba(0,38,46,0.06)]">
@@ -285,8 +257,6 @@ function ErgebnisTabelle({ block, typ }: { block: ErgebnisBlock; typ: WahlTyp })
                   {hasVotes ? <td className="font-mono-data">{entry.stimmen > 0 ? formatZahl(entry.stimmen) : "0"}</td> : null}
                   <td className="font-mono-data">{formatProzent(entry.prozent)}</td>
                   <td>{entry.kurz ?? entry.name}</td>
-                  {!candidateVote ? <td className="break-words">{entry.kandidat ?? "—"}</td> : null}
-                  {hasSeats ? <td className="font-mono-data">{typeof entry.sitze === "number" ? formatZahl(entry.sitze) : "—"}</td> : null}
                 </tr>
               ))}
           </tbody>
@@ -325,7 +295,6 @@ function GebietsTabelle({ areaLabel, dataset }: { areaLabel: string; dataset: Wa
               <th scope="col">Bezirk</th>
               <th scope="col">Stärkste Partei</th>
               <th scope="col">Wahlbeteiligung</th>
-              <th scope="col">Spitzenwert</th>
             </tr>
           </thead>
           <tbody>
@@ -335,7 +304,6 @@ function GebietsTabelle({ areaLabel, dataset }: { areaLabel: string; dataset: Wa
                 <td>{row.bezirk}</td>
                 <td>{row.staerkstePartei}</td>
                 <td className="font-mono-data">{formatProzent(row.wahlbeteiligung)}</td>
-                <td className="font-mono-data">{row.staerksteParteiProzent > 0 ? formatProzent(row.staerksteParteiProzent) : "nicht ausgewiesen"}</td>
               </tr>
             ))}
           </tbody>

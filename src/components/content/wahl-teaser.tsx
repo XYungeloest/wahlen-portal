@@ -25,7 +25,7 @@ export function WahlTeaser({ eyebrow, title, date, turnout, description, href, c
       <h2 className="mt-2 break-words text-2xl font-semibold text-[#16343d]">{title}</h2>
       <div className="mt-3 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
         <p>Wahltag: {formatDatum(date)}</p>
-        <p>Wahlbeteiligung: {formatProzent(turnout)}</p>
+        <p className="text-right">Wahlbeteiligung: {formatProzent(turnout)}</p>
       </div>
       <p className="mt-3 text-sm leading-6 text-slate-700">{description}</p>
 

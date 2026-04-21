@@ -8,11 +8,11 @@
   "wahlbeteiligung": 77.08,
   "wahlberechtigte": 48,
   "gueltigeStimmen": 37,
-  "modellhinweis": "Historischer PDF-Import. Das amtliche Endergebnis enthält nur das landesweite Gesamtergebnis; eine regionale Landkreisverteilung wird im Portal bewusst nicht nachgetragen.",
+  "modellhinweis": "Import auf Basis des amtlichen Endergebnisses. Eine weitere regionale Untergliederung ist nicht ausgewiesen.",
   "datenstand": "2026-04-20",
   "metadaten": {
-    "quelle": "Amtliches Endergebnis aus LTWOst6_Endergebnis.pdf; Gebietssieger aus lokal übertragenem Referenzkarten-Datensatz",
-    "geobasis": "Lokales GeoJSON der Landkreise und kreisfreien Städte; Gebietssieger direkt im Wahldatensatz gepflegt",
+    "quelle": "Amtliches Endergebnis der Wahl zum 6. Ostdeutschen Landtag",
+    "geobasis": "GeoJSON der Landkreise und kreisfreien Städte",
     "legendenTitel": "Stärkste Partei",
     "simulationshinweis": "Historische PDF-Datensätze werden ohne nachträgliche Regionalschätzung in das Portal übernommen.",
     "ordnungscode": "ltw-od-6",
@@ -22,7 +22,7 @@
     "gesamtergebnis": {
       "Freiheitliche Reformpartei Ostdeutschlands": 37.84,
       "Volksfront Ostdeutschland": 32.43,
-      "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 29.73
+      "Bündnis Demokratie Europa Ost": 29.73
     },
     "detailergebnisse": [
       {
@@ -39,7 +39,7 @@
             "normiertAuf": "Volksfront"
           },
           {
-            "name": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+            "name": "Bündnis Demokratie Europa Ost",
             "kurz": "DEMOS Ost",
             "stimmen": 11,
             "prozent": 29.73,
@@ -60,7 +60,7 @@
     "sitzverteilung": {
       "Freiheitliche Reformpartei Ostdeutschlands": 6,
       "Volksfront Ostdeutschland": 5,
-      "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 4
+      "Bündnis Demokratie Europa Ost": 4
     },
     "sitzeGesamt": 15,
     "mehrheitsgrenze": 8
@@ -76,10 +76,15 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands / Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
+      "staerksteParteien": [
+        "Volksfront Ostdeutschland",
+        "Freiheitliche Reformpartei Ostdeutschlands"
+      ],
+      "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "landkreis"
     },
     {
@@ -92,7 +97,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -108,9 +113,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -124,9 +129,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -140,7 +145,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
@@ -156,13 +161,13 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands / Volksfront Ostdeutschland",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost / Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "staerksteParteien": [
-        "Freiheitliche Reformpartei Ostdeutschlands",
-        "Volksfront Ostdeutschland"
+        "Volksfront Ostdeutschland",
+        "Bündnis Demokratie Europa Ost"
       ],
       "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "kreisfreie_stadt"
@@ -177,7 +182,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -193,7 +198,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -209,9 +214,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -225,7 +230,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
@@ -241,9 +246,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -257,9 +262,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -273,9 +278,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -289,15 +294,10 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat / Volksfront Ostdeutschland",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
-      "staerksteParteien": [
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
-        "Volksfront Ostdeutschland"
-      ],
-      "siegerHinweis": "Schraffur in der Referenzkarte im Raum Dresden: Gleichstand zweier stärkster Kräfte.",
       "typ": "kreisfreie_stadt"
     },
     {
@@ -310,9 +310,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -326,9 +326,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -342,9 +342,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -358,7 +358,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
@@ -374,9 +374,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -390,9 +390,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -406,7 +406,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
@@ -422,9 +422,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -438,7 +438,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
@@ -454,9 +454,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -470,7 +470,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -486,9 +486,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -502,7 +502,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -518,7 +518,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
@@ -534,7 +534,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -550,9 +550,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -566,7 +566,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -582,9 +582,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -598,9 +598,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -614,9 +614,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -630,7 +630,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -646,9 +646,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -662,7 +662,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -678,9 +678,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -694,7 +694,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -710,9 +710,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -726,9 +726,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -742,9 +742,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -758,9 +758,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -774,9 +774,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -790,9 +790,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -806,9 +806,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -822,9 +822,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -838,9 +838,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -854,7 +854,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -870,9 +870,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -886,7 +886,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -902,10 +902,15 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands / Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
+      "staerksteParteien": [
+        "Volksfront Ostdeutschland",
+        "Freiheitliche Reformpartei Ostdeutschlands"
+      ],
+      "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "landkreis"
     },
     {
@@ -918,9 +923,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -934,9 +939,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -950,7 +955,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
@@ -966,9 +971,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -982,9 +987,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -998,7 +1003,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
@@ -1014,7 +1019,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -1030,7 +1035,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -1046,10 +1051,15 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands / Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
+      "staerksteParteien": [
+        "Freiheitliche Reformpartei Ostdeutschlands",
+        "Bündnis Demokratie Europa Ost"
+      ],
+      "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "kreisfreie_stadt"
     },
     {
@@ -1062,9 +1072,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1078,9 +1088,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1094,9 +1104,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1110,7 +1120,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -1126,9 +1136,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -1142,9 +1152,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1158,9 +1168,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1174,9 +1184,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1190,9 +1200,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1206,9 +1216,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1222,9 +1232,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Volksfront Ostdeutschland",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1238,7 +1248,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
       "staerksteParteiProzent": 0,
@@ -1254,9 +1264,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -1270,9 +1280,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschlands",
+      "staerkstePartei": "Bündnis Demokratie Europa Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1286,9 +1296,9 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat",
+      "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1302,7 +1312,7 @@
       "ergebnisse": {
         "Freiheitliche Reformpartei Ostdeutschlands": 0,
         "Volksfront Ostdeutschland": 0,
-        "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": 0
+        "Bündnis Demokratie Europa Ost": 0
       },
       "staerkstePartei": "Volksfront Ostdeutschland",
       "staerksteParteiProzent": 0,

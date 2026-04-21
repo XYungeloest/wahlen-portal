@@ -3,35 +3,35 @@
     "id": "volksfront",
     "name": "Volksfront",
     "short": "VF",
-    "color": "#C41E3A",
+    "color": "#800000",
     "position": "sozial-patriotisch"
   },
   {
     "id": "demos-ost",
     "name": "DEMOS Ost",
     "short": "DEM",
-    "color": "#E8851A",
+    "color": "#e3000f",
     "position": "liberal-sozial"
   },
   {
     "id": "cpd-ost",
     "name": "CPD Ost",
     "short": "CPD",
-    "color": "#111111",
+    "color": "#070707",
     "position": "christdemokratisch"
   },
   {
     "id": "frp",
     "name": "FRP",
     "short": "FRP",
-    "color": "#6B21A8",
+    "color": "#800080",
     "position": "freiheitlich"
   },
   {
     "id": "patrioten",
     "name": "Patrioten",
     "short": "PAT",
-    "color": "#0B3A82",
+    "color": "#004080",
     "position": "konservativ"
   },
   {
@@ -45,28 +45,28 @@
     "id": "ostdeutschland-in-bewegung",
     "name": "Ostdeutschland in Bewegung",
     "short": "OiB",
-    "color": "#1F8A70",
+    "color": "#ff9000",
     "position": "regional"
   },
   {
     "id": "nfp",
     "name": "NFP",
     "short": "NFP",
-    "color": "#284B7A",
+    "color": "#004080",
     "position": "nationalkonservativ"
   },
   {
     "id": "ldp",
     "name": "LDP",
     "short": "LDP",
-    "color": "#C89D1C",
+    "color": "#ffd700",
     "position": "liberal"
   },
   {
     "id": "dhp",
     "name": "DHP",
     "short": "DHP",
-    "color": "#556270",
+    "color": "#004080",
     "position": "konservativ"
   },
   {

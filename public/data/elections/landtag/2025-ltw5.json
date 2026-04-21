@@ -8,11 +8,11 @@
   "wahlbeteiligung": 71.67,
   "wahlberechtigte": 60,
   "gueltigeStimmen": 43,
-  "modellhinweis": "Historischer PDF-Import. Das amtliche Endergebnis enthält nur das landesweite Gesamtergebnis; eine regionale Landkreisverteilung wird im Portal bewusst nicht nachgetragen.",
+  "modellhinweis": "Import auf Basis des amtlichen Endergebnisses. Eine weitere regionale Untergliederung ist nicht ausgewiesen.",
   "datenstand": "2026-04-20",
   "metadaten": {
-    "quelle": "Amtliches Endergebnis aus LTWOst5_Endergebnis.pdf; Gebietssieger aus lokal übertragenem Referenzkarten-Datensatz",
-    "geobasis": "Lokales GeoJSON der Landkreise und kreisfreien Städte; Gebietssieger direkt im Wahldatensatz gepflegt",
+    "quelle": "Amtliches Endergebnis der Wahl zum 5. Ostdeutschen Landtag",
+    "geobasis": "GeoJSON der Landkreise und kreisfreien Städte",
     "legendenTitel": "Stärkste Partei",
     "simulationshinweis": "Historische PDF-Datensätze werden ohne nachträgliche Regionalschätzung in das Portal übernommen.",
     "ordnungscode": "ltw-od-5",
@@ -153,7 +153,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei Ost",
+      "staerkstePartei": "Christlich Demokratische Partei im Ostdeutschen Freistaat",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -225,7 +225,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Nationale Freiheitspartei Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -243,7 +243,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Nationale Freiheitspartei Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -279,7 +279,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Nationale Freiheitspartei Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -333,7 +333,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Christlich Demokratische Partei im Ostdeutschen Freistaat",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -423,7 +423,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Nationale Freiheitspartei Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -441,7 +441,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Nationale Freiheitspartei Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -513,7 +513,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Christlich Demokratische Partei im Ostdeutschen Freistaat",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -693,7 +693,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei Ost",
+      "staerkstePartei": "Christlich Demokratische Partei im Ostdeutschen Freistaat",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -963,7 +963,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Christlich Demokratische Partei im Ostdeutschen Freistaat",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -1089,7 +1089,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Nationale Freiheitspartei Ost",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1179,7 +1179,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Nationale Freiheitspartei Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -1305,7 +1305,7 @@
         "Christlich Demokratische Partei im Ostdeutschen Freistaat": 0,
         "Liberal-Demokratische Partei Ostdeutschland": 0
       },
-      "staerkstePartei": "DEMOS Ostdeutschland",
+      "staerkstePartei": "Christlich Demokratische Partei im Ostdeutschen Freistaat",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },

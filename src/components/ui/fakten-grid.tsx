@@ -9,7 +9,7 @@ type Props = {
 
 export function FaktenGrid({ facts }: Props) {
   return (
-    <div className="grid gap-4 sm:grid-cols-2">
+    <div className="grid gap-4 sm:grid-cols-4">
       {facts.map((fact) => (
         <article key={fact.label} className="card min-w-0 p-4">
           <p className="text-sm text-slate-600">{fact.label}</p>

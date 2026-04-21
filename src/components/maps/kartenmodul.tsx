@@ -174,24 +174,23 @@ export function KartenModul({
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#25515c]">{title}</p>
-            <h2 className="mt-2 break-words text-2xl font-semibold text-[#14333d]">{currentDataset.label}</h2>
+            <h2 className="mt-2 break-words text-2xl font-semibold text-[#14333d]">Interaktive Karte der stärksten Kraft</h2>
             <p className="mt-2 text-sm leading-6 text-slate-700">
-              Datensatz vom {formatDatum(currentDataset.datum)}. Geo-Basis: {currentDataset.metadaten.geobasis}. Quelle: {currentDataset.metadaten.quelle}.
+              Datensatz vom {formatDatum(currentDataset.datum)}. <br></br>Geo-Basis: {currentDataset.metadaten.geobasis}.<br></br>Quelle: {currentDataset.metadaten.quelle}.
             </p>
           </div>
           <div className="grid min-w-0 gap-3 sm:grid-cols-2 lg:min-w-[24rem] xl:min-w-[30rem]">
-            <StatCard label="Wahlbeteiligung" value={formatProzent(currentDataset.wahlbeteiligung)} />
             <StatCard label="Gebietsebene" value={currentDataset.gebietsebene === "landkreis" ? "Landkreise / kreisfreie Städte" : "Bundestagswahlkreise"} />
             <StatCard label="Gebiete" value={hasRegionalData ? String(filteredRows.length) : "keine Regionaldaten"} />
           </div>
         </div>
 
-        <div className="mt-5 grid gap-4 lg:grid-cols-4">
+        <div className="mt-5 grid gap-4 lg:grid-cols-3">
           <SelectField
             label="Datensatz"
             value={datasetId}
             onChange={setDatasetId}
-            options={datasets.map((dataset) => ({ value: dataset.id, label: `${dataset.label} (${formatDatum(dataset.datum)})` }))}
+            options={datasets.map((dataset) => ({ value: dataset.id, label: `${dataset.label}` }))}
           />
           <SelectField
             label="Metrik"
@@ -201,7 +200,6 @@ export function KartenModul({
             options={[
               { value: "winner", label: "Stärkste Partei" },
               { value: "turnout", label: "Wahlbeteiligung" },
-              ...(partiesInDataset.length > 0 ? [{ value: "party", label: "Parteiergebnis" }] : []),
             ]}
           />
           <SelectField
@@ -213,13 +211,6 @@ export function KartenModul({
               { value: "alle", label: "Alle Bezirke" },
               ...bezirke.map((bezirk) => ({ value: bezirk.id, label: bezirk.name })),
             ]}
-          />
-          <SelectField
-            label="Partei"
-            value={party}
-            disabled={!hasRegionalData || metric !== "party" || partiesInDataset.length === 0}
-            onChange={setParty}
-            options={partiesInDataset.map((entry) => ({ value: entry, label: entry }))}
           />
         </div>
 
@@ -247,8 +238,6 @@ export function KartenModul({
                   <p className="mt-3 text-sm leading-6 text-slate-600">{currentDataset.summary.direktmandat.hinweis}</p>
                 </section>
               ) : null}
-
-              <InfoCard currentDataset={currentDataset} globalSimulationHint={globalSimulationHint} />
             </div>
           </div>
         ) : (
@@ -283,8 +272,6 @@ export function KartenModul({
                   <p className="mt-3 text-sm leading-6 text-slate-600">{currentDataset.summary.direktmandat.hinweis}</p>
                 </section>
               ) : null}
-
-              <InfoCard currentDataset={currentDataset} globalSimulationHint={globalSimulationHint} />
             </div>
           </div>
         )}

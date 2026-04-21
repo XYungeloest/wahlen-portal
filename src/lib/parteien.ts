@@ -8,7 +8,7 @@ const partyAliases: Record<string, string> = {
   "DEMOS an der Elbe": "DEMOS Ost",
   "Bündnis Demokratie Europa": "DEMOS Ost",
   "Bündnis Demokratie Europa an der Elbe": "DEMOS Ost",
-  "Bündnis Demokratie Europa für Mitbestimmung, Ökologie und Solidarität im Ostdeutschen Freistaat": "DEMOS Ost",
+  "Bündnis Demokratie Europa Ost": "DEMOS Ost",
   "Christlich Demokratische Partei": "CPD Ost",
   "Christlich Demokratische Partei Landesverband Ost": "CPD Ost",
   "Christlich Demokratische Partei im Ostdeutschen Freistaat": "CPD Ost",

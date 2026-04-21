@@ -8,11 +8,11 @@
   "wahlbeteiligung": 94.23,
   "wahlberechtigte": 52,
   "gueltigeStimmen": 49,
-  "modellhinweis": "Historischer PDF-Import. Das amtliche Endergebnis enthält nur das landesweite Gesamtergebnis; eine regionale Landkreisverteilung wird im Portal bewusst nicht nachgetragen.",
+  "modellhinweis": "Import auf Basis des amtlichen Endergebnisses. Eine weitere regionale Untergliederung ist nicht ausgewiesen.",
   "datenstand": "2026-04-20",
   "metadaten": {
-    "quelle": "Amtliches Endergebnis aus LTWOst7_Endergebnis.pdf; Gebietssieger aus lokal übertragenem Referenzkarten-Datensatz",
-    "geobasis": "Lokales GeoJSON der Landkreise und kreisfreien Städte; Gebietssieger direkt im Wahldatensatz gepflegt",
+    "quelle": "Amtliches Endergebnis der Wahl zum 7. Ostdeutschen Landtag",
+    "geobasis": "GeoJSON der Landkreise und kreisfreien Städte",
     "legendenTitel": "Stärkste Partei",
     "simulationshinweis": "Historische PDF-Datensätze werden ohne nachträgliche Regionalschätzung in das Portal übernommen.",
     "ordnungscode": "ltw-od-7",
@@ -135,7 +135,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -192,8 +192,8 @@
       "staerkstePartei": "Bündnis Demokratie Europa an der Elbe / Volksfront",
       "staerksteParteiProzent": 0,
       "staerksteParteien": [
-        "Bündnis Demokratie Europa an der Elbe",
-        "Volksfront"
+        "Volksfront",
+        "Bündnis Demokratie Europa an der Elbe"
       ],
       "siegerHinweis": "Schraffur in der Referenzkarte: Gleichstand zweier stärkster Kräfte.",
       "typ": "kreisfreie_stadt"
@@ -212,7 +212,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Die ostdeutschen Patrioten",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -230,7 +230,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -266,7 +266,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Die ostdeutschen Patrioten",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -284,7 +284,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Die ostdeutschen Patrioten",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -302,7 +302,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -338,7 +338,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Die ostdeutschen Patrioten",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -356,7 +356,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -428,7 +428,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -446,7 +446,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -482,7 +482,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -536,7 +536,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -554,7 +554,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -572,7 +572,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -608,7 +608,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -644,7 +644,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -662,7 +662,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -716,7 +716,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -752,7 +752,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -806,7 +806,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -824,7 +824,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Die ostdeutschen Patrioten",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -842,7 +842,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -914,7 +914,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Die ostdeutschen Patrioten",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -950,7 +950,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -968,7 +968,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Christlich Demokratische Partei Landesverband Ost",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -986,7 +986,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1004,7 +1004,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1022,7 +1022,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1040,7 +1040,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -1094,7 +1094,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1202,7 +1202,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1220,7 +1220,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1238,7 +1238,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Die ostdeutschen Patrioten",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1256,7 +1256,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1274,7 +1274,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -1292,7 +1292,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1310,7 +1310,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1328,7 +1328,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1400,7 +1400,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Freiheitliche Reformpartei Ostdeutschland",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1418,7 +1418,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "kreisfreie_stadt"
     },
@@ -1436,7 +1436,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
@@ -1454,7 +1454,7 @@
         "Die ostdeutschen Patrioten": 0,
         "Christlich Demokratische Partei Landesverband Ost": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa an der Elbe",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0,
       "typ": "landkreis"
     },
