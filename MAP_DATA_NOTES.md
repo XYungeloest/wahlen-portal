@@ -19,7 +19,7 @@ Diese V1 ersetzt die früheren schematischen Kartenflächen durch lokal abgelegt
 
 ## Aufbereitung
 
-- Das Script [prepare-map-data.mjs](/Users/petzke/wahlen-portal/scripts/prepare-map-data.mjs) liest die amtlichen Shapefiles aus `scripts/_cache`.
+- Die finalen, für die App verwendeten Geometrien liegen direkt als GeoJSON im Repository.
 - Für die Landtagskarte wird `VG250_KRS` auf die ostdeutschen Länder Berlin, Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen gefiltert.
 - Für Hoyerswerda wird zusätzlich die Gemeindegrenze aus `VG250_GEM` eingebunden, weil die kanonische Portalgliederung Hoyerswerda separat führt.
 - Für die Bundestagskarte werden die offiziellen Wahlkreise 2025 der Bundeswahlleiterin auf dasselbe Gebiet gefiltert.
@@ -97,7 +97,7 @@ public/
 
 ## Geo-Basis aktualisieren
 
-1. Amtliche Quelldateien nach `scripts/_cache/downloads/` laden und nach `scripts/_cache/extracted/` entpacken.
-2. `node scripts/prepare-map-data.mjs` ausführen.
+1. Neue öffentliche Geo-/Wahldaten aus den oben dokumentierten Quellen beziehen.
+2. Auf `landkreise-ost.geojson` bzw. `btw-wahlkreise-ost.geojson` reduzieren und die bestehenden `properties.id` stabil halten.
 3. Geänderte GeoJSON-, Mapping- und Election-Dateien prüfen.
 4. Build mit `npm run build` validieren.

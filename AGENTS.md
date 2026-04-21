@@ -197,11 +197,13 @@ public/
     bundestagswahlkreise.json
     elections/
       landtag/
-        2024.json
-        2028.json
+        2025-ltw5.json
+        2025-ltw6.json
+        2026-ltw7.json
       bundestag/
-        2025.json
-        2029.json
+        2025-btw6-ost.json
+        2026-btw7-ost.json
+        2026-btw8-ost.json
     metadaten.json
   geo/
     landkreise-ost.geojson
@@ -287,12 +289,14 @@ wahlen-portal/
 │   │   ├── metadaten.json
 │   │   ├── elections/
 │   │       ├── landtag/
-│   │       │   ├── 2024.json
-│   │       │   └── 2025.json
+│   │       │   ├── 2025-ltw5.json
+│   │       │   ├── 2025-ltw6.json
+│   │       │   └── 2026-ltw7.json
 │   │       ├── bundestag/
-│   │           ├── 2024.json
-│   │           └── 2025.json
-│   ├── og-image.png
+│   │           ├── 2025-btw6-ost.json
+│   │           ├── 2026-btw7-ost.json
+│   │           └── 2026-btw8-ost.json
+│   ├── og-image.jpg
 │   └── favicon.ico
 ├── src/
 │   ├── app/

@@ -68,7 +68,6 @@ public/
         2026-btw8-ost.json
     metadaten.json
   geo/
-    bezirke.geojson
     landkreise-ost.geojson
     btw-wahlkreise-ost.geojson
 ```
@@ -78,12 +77,11 @@ public/
 1. JSON-Datei im passenden Ordner unter `public/data/elections/` ergänzen.
 2. Konsistente `gebietId`-Werte zu `public/geo/landkreise-ost.geojson` oder `public/geo/btw-wahlkreise-ost.geojson` verwenden.
 3. Gebietssieger direkt im jeweiligen Wahldatensatz unter `gebiete` pflegen.
-4. Falls sich die Geo-Basis ändert, `node scripts/prepare-map-data.mjs` ausführen.
+4. Falls sich die Geo-Basis ändert, die lokalen GeoJSON-Dateien ersetzen und Gebietsschlüssel gegen die Wahldaten prüfen.
 5. Karten- und Ergebnisseiten prüfen.
 6. Build prüfen mit `npm run build`.
 
-Hinweis: Die Kartenbasis wird jetzt über `scripts/prepare-map-data.mjs` aus amtlichen Geodaten und lokalen Simulationsdatensätzen aufbereitet. Details stehen in [MAP_DATA_NOTES.md](/Users/petzke/wahlen-portal/MAP_DATA_NOTES.md).
-Das frühere Script `scripts/generate-sim-data.mjs` ist für die neue Kartenbasis nicht mehr die fachliche Referenz.
+Hinweis: Die Kartenbasis besteht aus lokal abgelegten GeoJSON-Dateien. Details stehen in [MAP_DATA_NOTES.md](/Users/petzke/wahlen-portal/MAP_DATA_NOTES.md).
 
 Für historische PDF-Importe gilt zusätzlich:
 
