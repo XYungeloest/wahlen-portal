@@ -101,8 +101,14 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
       </div>
 
       <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_17rem]">
-        <div className="overflow-hidden rounded-lg border border-[#d8e4df] bg-[#edf5f2]">
-          <svg viewBox={`0 0 ${width} ${height}`} className="w-full" role="img" aria-label={title}>
+        <div className="relative h-full min-h-[30rem] overflow-hidden rounded-lg border border-[#d8e4df] bg-[#edf5f2]">
+          <svg
+            viewBox={`0 0 ${width} ${height}`}
+            preserveAspectRatio="xMidYMid slice"
+            className="absolute inset-0 block h-full w-full"
+            role="img"
+            aria-label={title}
+          >
             <defs>
               {patterns.map((pattern) => (
                 <pattern
@@ -162,55 +168,64 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
           </svg>
         </div>
 
-        <aside className="flex min-h-[10rem] flex-col justify-between rounded-lg border border-[#d2dfdb] bg-white p-4">
-          {activeArea ? (
-            <div className="space-y-3">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Fokusgebiet</p>
-                <h3 className="mt-1 text-lg font-semibold text-[#16343d]">{activeArea.name}</h3>
-              </div>
-              <div className="rounded-lg border border-[#dce9e6] bg-[#f6fbfa] p-3">
-                <p className="text-sm font-semibold text-[#14333d]">{activeArea.headline}</p>
-                <p className="mt-2 text-sm leading-6 text-slate-700">{activeArea.detail}</p>
-              </div>
-              {activeArea.history && activeArea.history.length > 0 ? (
-                <div className="rounded-lg border border-[#dce9e6] bg-white p-3">
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#25515c]">Historie</p>
-                  <ul className="mt-2 space-y-2 text-sm text-slate-700">
-                    {activeArea.history.map((entry) => (
-                      <li key={entry.id} className="flex items-start gap-2">
-                        <span
-                          className="mt-1 h-3.5 w-5 flex-shrink-0 rounded-sm border border-slate-300"
-                          style={{
-                            background: entry.colors
-                              ? `repeating-linear-gradient(45deg, ${entry.colors[0]} 0 6px, ${entry.colors[1]} 6px 12px)`
-                              : entry.color,
-                          }}
-                          aria-hidden
-                        />
-                        <span>
-                          <span className="block font-medium leading-5 text-[#14333d]">{entry.label}</span>
-                          <span className="block text-xs leading-5 text-slate-500">{entry.datum}</span>
-                          <span className="block leading-5">
-                            {entry.winner}
-                            {entry.percentLabel}
-                          </span>
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-            </div>
-          ) : (
-            <p className="text-sm leading-6 text-slate-600">Gebiet per Maus, Touch-Fokus oder Tastatur auswählen, um Details anzuzeigen.</p>
-          )}
-
-          <p className="mt-4 text-xs leading-5 text-slate-500">
-            Klick auf ein Gebiet setzt einen kontrollierten Fokus.
-          </p>
+        <aside className="relative min-h-[36rem] rounded-lg border border-[#d2dfdb] bg-white p-4">
+          <div className="absolute inset-4 flex flex-col justify-between">
+            {activeArea ? (
+              <AreaDetails area={activeArea} />
+            ) : (
+              <p className="text-sm leading-6 text-slate-600">Gebiet per Maus, Touch-Fokus oder Tastatur auswählen, um Details anzuzeigen.</p>
+            )}
+            <FocusFootnote />
+          </div>
         </aside>
       </div>
     </section>
   );
+}
+
+function AreaDetails({ area }: { area: KartenFlaeche }) {
+  return (
+    <div className="space-y-3">
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Fokusgebiet</p>
+        <h3 className="mt-1 text-lg font-semibold text-[#16343d]">{area.name}</h3>
+      </div>
+      <div className="rounded-lg border border-[#dce9e6] bg-[#f6fbfa] p-3">
+        <p className="text-sm font-semibold text-[#14333d]">{area.headline}</p>
+        <p className="mt-2 text-sm leading-6 text-slate-700">{area.detail}</p>
+      </div>
+      {area.history && area.history.length > 0 ? (
+        <div className="rounded-lg border border-[#dce9e6] bg-white p-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#25515c]">Historie</p>
+          <ul className="mt-2 space-y-2 text-sm text-slate-700">
+            {area.history.map((entry) => (
+              <li key={entry.id} className="flex items-start gap-2">
+                <span
+                  className="mt-1 h-3.5 w-5 flex-shrink-0 rounded-sm border border-slate-300"
+                  style={{
+                    background: entry.colors
+                      ? `repeating-linear-gradient(45deg, ${entry.colors[0]} 0 6px, ${entry.colors[1]} 6px 12px)`
+                      : entry.color,
+                  }}
+                  aria-hidden
+                />
+                <span>
+                  <span className="block font-medium leading-5 text-[#14333d]">{entry.label}</span>
+                  <span className="block text-xs leading-5 text-slate-500">{entry.datum}</span>
+                  <span className="block leading-5">
+                    {entry.winner}
+                    {entry.percentLabel}
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function FocusFootnote() {
+  return <p className="mt-4 text-xs leading-5 text-slate-500">Klick auf ein Gebiet setzt einen kontrollierten Fokus.</p>;
 }

@@ -133,7 +133,7 @@ export function KartenModul({
             patternId,
             patternColors,
             headline: metricLabel,
-            detail: `Bezirk ${row.bezirk}. ${winners.length > 1 ? "Gleichstand der stärksten Kräfte" : ""}`,
+            detail: `Bezirk ${row.bezirk}.`,
             ariaLabel: `${row.gebietName}, Bezirk ${row.bezirk}.`,
             history,
           },
