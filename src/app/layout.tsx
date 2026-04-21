@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     url: "https://wahlen.freistaat-ostdeutschland.de",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "/og-image.jpg",
+        width: 594,
+        height: 332,
         alt: "Wahlportal Freistaat Ostdeutschland",
       },
     ],
