@@ -33,29 +33,49 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
   const [activeName, setActiveName] = useState<string | null>(null);
   const [selectedNames, setSelectedNames] = useState<string[]>([]);
 
+  const sortedData = useMemo(
+    () =>
+      data
+        .filter((item) => item.seats > 0)
+        .slice()
+        .sort((left, right) => right.seats - left.seats || left.name.localeCompare(right.name, "de")),
+    [data],
+  );
+
+  const orderedData = useMemo(() => {
+    if (selectedNames.length === 0) {
+      return sortedData;
+    }
+
+    const selected = new Set(selectedNames);
+    return [
+      ...sortedData.filter((item) => !selected.has(item.name)),
+      ...sortedData.filter((item) => selected.has(item.name)),
+    ];
+  }, [selectedNames, sortedData]);
+
   const slices = useMemo(() => {
     let running = 0;
-    return data
-      .filter((item) => item.seats > 0)
-      .map((item) => {
-        const startAngle = -Math.PI / 2 + (running / Math.max(actualTotal, 1)) * Math.PI;
-        running += item.seats;
-        const endAngle = -Math.PI / 2 + (running / Math.max(actualTotal, 1)) * Math.PI;
-        return {
-          ...item,
-          startAngle,
-          endAngle,
-          percent: actualTotal > 0 ? (item.seats / actualTotal) * 100 : 0,
-        };
-      });
-  }, [actualTotal, data]);
+    return orderedData.map((item) => {
+      const startAngle = -Math.PI / 2 + (running / Math.max(actualTotal, 1)) * Math.PI;
+      running += item.seats;
+      const endAngle = -Math.PI / 2 + (running / Math.max(actualTotal, 1)) * Math.PI;
+      return {
+        ...item,
+        startAngle,
+        endAngle,
+        percent: actualTotal > 0 ? (item.seats / actualTotal) * 100 : 0,
+      };
+    });
+  }, [actualTotal, orderedData]);
 
   const activeSlice = slices.find((slice) => slice.name === activeName) ?? null;
-  const selectedSlices = slices.filter((slice) => selectedNames.includes(slice.name));
+  const selectedSlices = sortedData.filter((slice) => selectedNames.includes(slice.name));
   const selectedSeats = selectedSlices.reduce((sum, slice) => sum + slice.seats, 0);
   const selectedHasMajority = selectedSeats >= majority;
   const hasSelection = selectedSlices.length > 0;
-  const majorityAngle = -Math.PI / 2 + ((Math.max(majority, 1) - 0.5) / Math.max(actualTotal, 1)) * Math.PI;
+  const majorityPositionFromRight = Math.max(0, actualTotal - majority + 0.5);
+  const majorityAngle = -Math.PI / 2 + (majorityPositionFromRight / Math.max(actualTotal, 1)) * Math.PI;
   const markerInner = polarPoint(centerX, centerY, innerRadius - 12, majorityAngle);
   const markerOuter = polarPoint(centerX, centerY, outerRadius + 18, majorityAngle);
   const markerLabel = polarPoint(centerX, centerY, outerRadius + 38, majorityAngle);
@@ -194,7 +214,7 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
           </div>
 
           <p className="mt-3 text-sm leading-6 text-slate-600">
-            Fraktionen per Klick auswählen. Hover oder Tastaturfokus zeigt die Sitze einer einzelnen Fraktion.
+            Fraktionen per Klick auswählen. Ausgewählte Fraktionen werden rechts gebündelt; Hover oder Tastaturfokus zeigt Einzelsitze.
           </p>
 
           {hasSelection ? (
