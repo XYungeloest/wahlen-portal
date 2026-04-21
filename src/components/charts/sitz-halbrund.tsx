@@ -31,6 +31,7 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
   const innerRadius = 166;
   const actualTotal = totalSeats || data.reduce((sum, item) => sum + item.seats, 0);
   const [activeName, setActiveName] = useState<string | null>(null);
+  const [selectedNames, setSelectedNames] = useState<string[]>([]);
 
   const slices = useMemo(() => {
     let running = 0;
@@ -50,13 +51,17 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
   }, [actualTotal, data]);
 
   const activeSlice = slices.find((slice) => slice.name === activeName) ?? null;
-  const activeForTooltip = activeSlice ?? slices[0] ?? null;
+  const selectedSlices = slices.filter((slice) => selectedNames.includes(slice.name));
+  const selectedSeats = selectedSlices.reduce((sum, slice) => sum + slice.seats, 0);
+  const selectedHasMajority = selectedSeats >= majority;
+  const hasSelection = selectedSlices.length > 0;
   const majorityAngle = -Math.PI / 2 + ((Math.max(majority, 1) - 0.5) / Math.max(actualTotal, 1)) * Math.PI;
   const markerInner = polarPoint(centerX, centerY, innerRadius - 12, majorityAngle);
   const markerOuter = polarPoint(centerX, centerY, outerRadius + 18, majorityAngle);
   const markerLabel = polarPoint(centerX, centerY, outerRadius + 38, majorityAngle);
-  const activeSeats = activeSlice?.seats ?? 0;
-  const activeHasMajority = activeSeats >= majority;
+  const toggleSelection = (name: string) => {
+    setSelectedNames((current) => (current.includes(name) ? current.filter((entry) => entry !== name) : [...current, name]));
+  };
 
   return (
     <section aria-label={title} className="card p-5">
@@ -109,7 +114,8 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
                 .padAngle(0.006)
                 .cornerRadius(3)(undefined);
               const isActive = activeName === slice.name;
-              const isDimmed = Boolean(activeName) && !isActive;
+              const isSelected = selectedNames.includes(slice.name);
+              const isDimmed = hasSelection && !isSelected && !isActive;
 
               if (!path) {
                 return null;
@@ -122,16 +128,24 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
                   transform={`translate(${centerX}, ${centerY})`}
                   fill={slice.color}
                   stroke="#ffffff"
-                  strokeWidth={isActive ? 3 : 1.4}
+                  strokeWidth={isActive || isSelected ? 3 : 1.4}
                   opacity={isDimmed ? 0.45 : 1}
                   tabIndex={0}
                   role="button"
-                  aria-label={`${slice.name}: ${slice.seats} Sitze`}
+                  aria-pressed={isSelected}
+                  aria-label={`${slice.name}: ${slice.seats} Sitze. ${isSelected ? "Aus Auswahl entfernen" : "Zur Auswahl hinzufügen"}.`}
                   className="cursor-pointer transition-[opacity,stroke-width] duration-150"
+                  onClick={() => toggleSelection(slice.name)}
                   onMouseEnter={() => setActiveName(slice.name)}
                   onMouseLeave={() => setActiveName(null)}
                   onFocus={() => setActiveName(slice.name)}
                   onBlur={() => setActiveName(null)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      toggleSelection(slice.name);
+                    }
+                  }}
                 />
               );
             })}
@@ -147,15 +161,15 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
               Mehrheit ab {majority}
             </text>
 
-            {activeForTooltip ? (
+            {activeSlice ? (
               <g transform={`translate(${centerX - 136}, ${centerY - 154})`} pointerEvents="none">
                 <rect width="272" height="80" rx="10" fill="#ffffff" stroke="#cbdcd7" filter="drop-shadow(0 10px 18px rgba(0, 43, 49, 0.14))" />
-                <circle cx="23" cy="28" r="6" fill={activeForTooltip.color} />
+                <circle cx="23" cy="28" r="6" fill={activeSlice.color} />
                 <text x="40" y="31" className="fill-slate-900 text-sm font-semibold">
-                  {shortLabel(activeForTooltip.name)}
+                  {shortLabel(activeSlice.name)}
                 </text>
                 <text x="20" y="60" className="fill-slate-700 text-sm">
-                  {activeForTooltip.seats} Sitze
+                  {activeSlice.seats} Sitze
                 </text>
               </g>
             ) : null}
@@ -163,28 +177,51 @@ export function SitzHalbrund({ title, totalSeats, data, majority }: Props) {
         </div>
 
         <aside className="rounded-xl border border-[#d8e4df] bg-white p-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Fraktion im Fokus</p>
-          {activeForTooltip ? (
-            <div className="mt-3">
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-3 w-3 rounded-sm flex-shrink-0" style={{ background: activeForTooltip.color }} aria-hidden />
-                <div className="min-w-0">
-                  <h4 className="break-words text-lg font-semibold text-[#15343d]">{activeForTooltip.name}</h4>
-                  <p className="mt-1 text-sm text-slate-700">
-                    <span className="font-mono-data font-semibold">{activeForTooltip.seats}</span> Sitze,{" "}
-                    <span className="font-mono-data font-semibold">{activeForTooltip.percent.toFixed(1).replace(".", ",")}%</span>  des Parlaments.
-                  </p>
-                </div>
-              </div>
-              {activeName ? (
-                <p className="mt-4 rounded-lg border border-[#d8e4df] bg-[#f7fbfa] p-3 text-sm leading-6 text-slate-700">
-                  Diese Fraktion erreicht allein {activeHasMajority ? "die" : "nicht die"} Mehrheitsgrenze.
-                </p>
-              ) : (
-                <p className="mt-4 text-sm leading-6 text-slate-600">Fraktion per Maus oder Tastatur fokussieren, um Sitze einzublenden.</p>
-              )}
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Auswahl</p>
+              <h4 className="mt-1 text-lg font-semibold text-[#15343d]">Mehrheitsprüfung</h4>
             </div>
-          ) : null}
+            {hasSelection ? (
+              <button
+                type="button"
+                className="rounded-lg border border-[#c6d7d3] px-2.5 py-1 text-xs font-medium text-slate-700 transition hover:border-[#0f766e] hover:bg-[#f7fbfa]"
+                onClick={() => setSelectedNames([])}
+              >
+                Leeren
+              </button>
+            ) : null}
+          </div>
+
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            Fraktionen per Klick auswählen. Hover oder Tastaturfokus zeigt die Sitze einer einzelnen Fraktion.
+          </p>
+
+          {hasSelection ? (
+            <div className="mt-4 space-y-3">
+              <ul className="space-y-2 text-sm text-slate-700">
+                {selectedSlices.map((slice) => (
+                  <li key={slice.name} className="flex items-start justify-between gap-3 rounded-lg border border-[#d8e4df] px-3 py-2">
+                    <span className="flex min-w-0 items-start gap-2">
+                      <span className="mt-1 h-3 w-3 flex-shrink-0 rounded-sm" style={{ background: slice.color }} aria-hidden />
+                      <span className="break-words">{slice.name}</span>
+                    </span>
+                    <span className="shrink-0 font-mono-data font-semibold">{slice.seats}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="rounded-lg border border-[#d8e4df] bg-[#f7fbfa] p-3 text-sm leading-6 text-slate-700">
+                Die ausgewählten Fraktionen erreichen zusammen{" "}
+                <span className="font-mono-data font-semibold">{selectedSeats}</span> Sitze und damit{" "}
+                {selectedHasMajority ? "die" : "nicht die"} Mehrheitsgrenze.
+              </p>
+            </div>
+          ) : (
+            <p className="mt-4 rounded-lg border border-[#d8e4df] bg-[#f7fbfa] p-3 text-sm leading-6 text-slate-700">
+              Noch keine Fraktion ausgewählt. Für eine Mehrheitsprüfung eine oder mehrere Fraktionen anklicken.
+            </p>
+          )}
         </aside>
       </div>
 
