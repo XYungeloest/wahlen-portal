@@ -80,9 +80,9 @@ export function KartenModul({
         const winners = row.staerksteParteien?.length ? row.staerksteParteien : [row.staerkstePartei];
         const winnerLabel = winners.join(" / ");
         const winnerPercentLabel = row.staerksteParteiProzent > 0 ? ` (${formatProzent(row.staerksteParteiProzent)})` : "";
-        const patternId = winners.length > 1 ? `tie-${winners.map(slugify).join("-")}` : undefined;
+        const patternId = metric === "winner" && winners.length > 1 ? `tie-${winners.map(slugify).join("-")}` : undefined;
         const patternColors =
-          winners.length > 1
+          metric === "winner" && winners.length > 1
             ? ([partyColors[winners[0]] ?? "#94a3b8", partyColors[winners[1]] ?? "#334155"] as [string, string])
             : undefined;
         const fill =
@@ -191,16 +191,6 @@ export function KartenModul({
             options={datasets.map((dataset) => ({ value: dataset.id, label: `${dataset.label}` }))}
           />
           <SelectField
-            label="Metrik"
-            value={metric}
-            disabled={!hasRegionalData}
-            onChange={(nextValue) => setMetric(nextValue as MetricType)}
-            options={[
-              { value: "winner", label: "Stärkste Partei" },
-              { value: "turnout", label: "Wahlbeteiligung" },
-            ]}
-          />
-          <SelectField
             label="Bezirk"
             value={bezirkId}
             disabled={!hasRegionalData}
@@ -210,11 +200,22 @@ export function KartenModul({
               ...bezirke.map((bezirk) => ({ value: bezirk.id, label: bezirk.name })),
             ]}
           />
+          <SelectField
+            label="Metrik"
+            value={metric}
+            disabled={!hasRegionalData}
+            onChange={(nextValue) => setMetric(nextValue as MetricType)}
+            options={[
+              { value: "winner", label: "Stärkste Partei" },
+              { value: "turnout", label: "Wahlbeteiligung" },
+            ]}
+          />
+          
         </div>
 
         {hasRegionalData ? (
           <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem]">
-            <Wahlkarte title={title} geo={filteredGeo} areasById={areasById} />
+            <Wahlkarte title={title} geo={filteredGeo} areasById={areasById} preserveFullExtent={bezirkId !== "alle"} />
 
             <div className="space-y-4">
               <LegendCard

@@ -29,9 +29,10 @@ type Props = {
   title: string;
   geo: GeoFeatureCollection;
   areasById: Record<string, KartenFlaeche>;
+  preserveFullExtent?: boolean;
 };
 
-export function Wahlkarte({ title, geo, areasById }: Props) {
+export function Wahlkarte({ title, geo, areasById, preserveFullExtent = false }: Props) {
   const width = 980;
   const height = 720;
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -104,7 +105,7 @@ export function Wahlkarte({ title, geo, areasById }: Props) {
         <div className="relative h-full min-h-[30rem] overflow-hidden rounded-lg border border-[#d8e4df] bg-[#edf5f2]">
           <svg
             viewBox={`0 0 ${width} ${height}`}
-            preserveAspectRatio="xMidYMid slice"
+            preserveAspectRatio={preserveFullExtent ? "xMidYMid meet" : "xMidYMid slice"}
             className="absolute inset-0 block h-full w-full"
             role="img"
             aria-label={title}
