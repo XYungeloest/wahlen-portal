@@ -8,11 +8,11 @@
   "wahlbeteiligung": 94.87,
   "wahlberechtigte": 39,
   "gueltigeStimmen": 37,
-  "modellhinweis": "Historischer PDF-Import auf Basis des Ost-Abschnitts des amtlichen Bundestags-Endergebnisses. Es wird nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung wird nicht erfunden.",
+  "modellhinweis": "Import auf Basis des Ost-Abschnitts des amtlichen Bundestags-Endergebnisses. Es wurde nur der ostdeutsche Ergebnisblock übernommen; eine weitere regionale Untergliederung ist nicht ausgewiesen.",
   "datenstand": "2026-04-20",
   "metadaten": {
-    "quelle": "Amtliches Endergebnis aus BTW6_Endergebnis.pdf, Abschnitt Landesergebnis Wahlkreis Ost; Gebietssieger aus lokal übertragenem Referenzkarten-Datensatz",
-    "geobasis": "Lokales GeoJSON der ostdeutschen Bundestagswahlkreise; Gebietssieger direkt im Wahldatensatz gepflegt",
+    "quelle": "Amtliches Endergebnis der Wahl zum 6. Deutschen Bundestag, Abschnitt Landesergebnis Wahlkreis Ost",
+    "geobasis": "GeoJSON der ostdeutschen Bundestagswahlkreise",
     "legendenTitel": "Stärkste Partei",
     "simulationshinweis": "Historische Bundestags-PDFs werden nur mit dem ostdeutschen Abschnitt und ohne künstliche Wahlkreisunterteilung übernommen.",
     "ordnungscode": "btw-6",
@@ -23,7 +23,7 @@
       "Volksfront": 35.14,
       "Nationale Freiheitspartei": 27.03,
       "Liberal-Demokratische Partei": 13.51,
-      "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 13.51,
+      "Bündnis Demokratie Europa": 13.51,
       "Christlich Demokratische Partei": 10.81
     },
     "detailergebnisse": [
@@ -31,7 +31,7 @@
         "id": "listenstimme",
         "label": "Zweitstimme",
         "stimmart": "zweitstimme",
-        "hinweis": "Übernommen aus dem Abschnitt „Landesergebnis Wahlkreis Ost“ des amtlichen PDF-Endergebnisses.",
+        "hinweis": "Übernommen aus dem Abschnitt „Landesergebnis Wahlkreis Ost“ des amtlichen Endergebnisses.",
         "parteien": [
           {
             "name": "Liberal-Demokratische Partei",
@@ -41,7 +41,7 @@
             "normiertAuf": "LDP"
           },
           {
-            "name": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+            "name": "Bündnis Demokratie Europa",
             "kurz": "DEMOS",
             "stimmen": 5,
             "prozent": 13.51,
@@ -73,7 +73,7 @@
         "id": "erststimme",
         "label": "Erststimme",
         "stimmart": "erststimme",
-        "hinweis": "Übernommen aus demselben Ost-Abschnitt; nur tatsächlich ausgewiesene Kandidaturen wurden übernommen.",
+        "hinweis": "Übernommen aus dem Abschnitt „Landesergebnis Wahlkreis Ost“ des amtlichen Endergebnisses.",
         "parteien": [
           {
             "name": "Liberal-Demokratische Partei",
@@ -83,7 +83,7 @@
             "normiertAuf": "LDP"
           },
           {
-            "name": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+            "name": "Bündnis Demokratie Europa",
             "kurz": "DEMOS",
             "stimmen": 7,
             "prozent": 18.92,
@@ -121,7 +121,7 @@
       "kandidat": "Tim Dieter",
       "partei": "Volksfront",
       "stimmenanteil": 35.14,
-      "hinweis": "Der gewählte Direktmandatsträger für den Ost-Abschnitt wurde aus der Zusammenfassung der gewählten Direktmandatsabgeordneten im PDF übernommen."
+      "hinweis": "Der gewählte Direktmandatsträger ist der Kandidat mit den meisten Erstimmen aus dem Abschnitt „Landesergebnis Wahlkreis Ost“ des amtlichen Endergebnisses."
     }
   },
   "gebiete": [
@@ -136,10 +136,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -153,7 +153,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Volksfront",
@@ -170,10 +170,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -187,7 +187,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Volksfront",
@@ -204,7 +204,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Nationale Freiheitspartei",
@@ -221,10 +221,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -238,10 +238,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -255,7 +255,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Nationale Freiheitspartei",
@@ -272,7 +272,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Volksfront",
@@ -289,10 +289,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -306,7 +306,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Volksfront",
@@ -323,7 +323,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Volksfront",
@@ -340,10 +340,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -357,10 +357,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -374,10 +374,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -391,10 +391,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -408,10 +408,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -425,10 +425,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Volksfront",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -442,10 +442,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -459,10 +459,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -476,10 +476,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -493,10 +493,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -510,10 +510,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -527,10 +527,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -544,10 +544,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -561,10 +561,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -578,7 +578,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Christlich Demokratische Partei",
@@ -595,7 +595,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Christlich Demokratische Partei",
@@ -612,7 +612,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Christlich Demokratische Partei",
@@ -629,7 +629,7 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
       "staerkstePartei": "Christlich Demokratische Partei",
@@ -646,10 +646,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -663,10 +663,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -680,10 +680,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -697,10 +697,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -714,10 +714,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -731,10 +731,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -748,10 +748,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -765,10 +765,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -782,10 +782,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -799,10 +799,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -816,10 +816,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -833,10 +833,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -850,10 +850,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -867,10 +867,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -884,10 +884,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -901,10 +901,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -918,10 +918,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Nationale Freiheitspartei",
       "staerksteParteiProzent": 0
     },
     {
@@ -935,10 +935,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -952,10 +952,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -969,10 +969,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -986,10 +986,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Nationale Freiheitspartei",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1003,10 +1003,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1020,10 +1020,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1037,10 +1037,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1054,10 +1054,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Bündnis Demokratie Europa",
       "staerksteParteiProzent": 0
     },
     {
@@ -1071,10 +1071,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1088,10 +1088,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1105,10 +1105,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1122,10 +1122,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     },
     {
@@ -1139,10 +1139,10 @@
         "Volksfront": 0,
         "Nationale Freiheitspartei": 0,
         "Liberal-Demokratische Partei": 0,
-        "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität": 0,
+        "Bündnis Demokratie Europa": 0,
         "Christlich Demokratische Partei": 0
       },
-      "staerkstePartei": "Bündnis Demokratie Europa - für Mitbestimmung, Ökologie und Solidarität",
+      "staerkstePartei": "Volksfront",
       "staerksteParteiProzent": 0
     }
   ]
