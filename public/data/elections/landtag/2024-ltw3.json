@@ -1,0 +1,57 @@
+{
+  "id": "landtag-3",
+  "electionId": "ltw-od-3",
+  "label": "Wahl zum 3. Ostdeutschen Landtag",
+  "datum": "2024-10-27",
+  "typ": "landtag",
+  "gebietsebene": "landkreis",
+  "wahlbeteiligung": 65.38,
+  "wahlberechtigte": 26,
+  "gueltigeStimmen": 17,
+  "datenstand": "2026-04-22",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus Endergebnis_LTWOst3.pdf",
+    "geobasis": "Keine regionale Geo-Basis in der Quelle enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "pdfDatei": "wahlen ohne karte/Endergebnis_LTWOst3.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Einheitlich Sozialistische Partei im Ostdeutschen Freistaat": 70.59,
+      "Christlich Demokratische Partei": 29.41
+    },
+    "detailergebnisse": [
+      {
+        "id": "gesamt",
+        "label": "Gesamtergebnis",
+        "stimmart": "gesamt",
+        "hinweis": "Historischer Import ohne belastbare regionale Kartenauflösung.",
+        "parteien": [
+          {
+            "name": "Einheitlich Sozialistische Partei im Ostdeutschen Freistaat",
+            "kurz": "ESP Ost",
+            "stimmen": 12,
+            "prozent": 70.59,
+            "sitze": 9,
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP Ost",
+            "stimmen": 5,
+            "prozent": 29.41,
+            "sitze": 4,
+            "normiertAuf": "CPD Ost"
+          }
+        ]
+      }
+    ],
+    "sitzverteilung": {
+      "Einheitlich Sozialistische Partei im Ostdeutschen Freistaat": 9,
+      "Christlich Demokratische Partei": 4
+    },
+    "sitzeGesamt": 13,
+    "mehrheitsgrenze": 7
+  },
+  "gebiete": []
+}

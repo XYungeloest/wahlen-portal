@@ -1,0 +1,104 @@
+{
+  "id": "bundestag-4-ost",
+  "electionId": "btw-4",
+  "label": "4. Deutscher Bundestag – Ostdeutschland",
+  "datum": "2025-01-19",
+  "typ": "bundestag",
+  "gebietsebene": "bundestagswahlkreis",
+  "wahlbeteiligung": 0,
+  "wahlberechtigte": 0,
+  "gueltigeStimmen": 22,
+  "datenstand": "2026-04-22",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus Endergebnis_BTW4.pdf, Abschnitt Landesergebnis Wahlkreis Ost",
+    "geobasis": "Keine ostinterne Kartenauflösung in der Quelle enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "pdfDatei": "wahlen ohne karte/Endergebnis_BTW4.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Einheitlich Sozialistische Partei": 77.27,
+      "Christlich Demokratische Partei": 9.09,
+      "Republikanische Partei": 4.55,
+      "Liberal-Demokratische Partei": 4.55,
+      "Bündnis Demokratie Europa": 4.55
+    },
+    "detailergebnisse": [
+      {
+        "id": "erststimme",
+        "label": "Wahlkreisstimme / Erststimme",
+        "stimmart": "erststimme",
+        "hinweis": "Übernommen aus dem Ostdeutschland-Abschnitt der Quelle; nur ausgewiesene Kandidaturen werden im Diagramm dargestellt.",
+        "parteien": [
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 20,
+            "prozent": 86.96,
+            "kandidat": "Wolfgang Schmidt",
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 3,
+            "prozent": 13.04,
+            "kandidat": "Alessia di Paolo",
+            "normiertAuf": "CPD Ost"
+          }
+        ]
+      },
+      {
+        "id": "zweitstimme",
+        "label": "Listenstimme / Zweitstimme",
+        "stimmart": "zweitstimme",
+        "hinweis": "Übernommen aus dem Ostdeutschland-Abschnitt der Quelle.",
+        "parteien": [
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 17,
+            "prozent": 77.27,
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 2,
+            "prozent": 9.09,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Republikanische Partei",
+            "kurz": "R",
+            "stimmen": 1,
+            "prozent": 4.55,
+            "normiertAuf": "RP"
+          },
+          {
+            "name": "Liberal-Demokratische Partei",
+            "kurz": "LDP",
+            "stimmen": 1,
+            "prozent": 4.55,
+            "normiertAuf": "LDP"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 1,
+            "prozent": 4.55,
+            "normiertAuf": "DEMOS Ost"
+          }
+        ]
+      }
+    ],
+    "direktmandat": {
+      "mandatName": "Direktmandat Ostdeutschland",
+      "kandidat": "Wolfgang Schmidt",
+      "partei": "Einheitlich Sozialistische Partei",
+      "stimmenanteil": 86.96,
+      "hinweis": "Direktmandat aus der PDF-Zusammenfassung der gewählten Direktmandatsabgeordneten übernommen."
+    }
+  },
+  "gebiete": []
+}

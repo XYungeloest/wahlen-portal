@@ -1,0 +1,87 @@
+{
+  "id": "landtag-1",
+  "electionId": "ltw-od-1",
+  "label": "Wahl zum 1. Ostdeutschen Landtag",
+  "datum": "2024-01-14",
+  "typ": "landtag",
+  "gebietsebene": "landkreis",
+  "wahlbeteiligung": 0,
+  "wahlberechtigte": 0,
+  "gueltigeStimmen": 0,
+  "datenstand": "2026-04-22",
+  "metadaten": {
+    "quelle": "Wiki-Quelle Endergebnis_LTWOst1.wiki, Abschnitt Amtliches Gesamtergebnis",
+    "geobasis": "Keine regionale Geo-Basis in der Quelle enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "pdfDatei": "wahlen ohne karte/Endergebnis_LTWOst1.wiki"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Bewegung der 5 Sterne": 35.48,
+      "Einheitlich Sozialistische Partei": 25.81,
+      "Christlich Demokratische Partei": 16.13,
+      "Freikonservative Partei": 12.9,
+      "Nationale Allianz": 9.68
+    },
+    "detailergebnisse": [
+      {
+        "id": "gesamt",
+        "label": "Gesamtergebnis",
+        "stimmart": "gesamt",
+        "hinweis": "Historischer Import ohne belastbare regionale Kartenauflösung.",
+        "parteien": [
+          {
+            "name": "Bewegung der 5 Sterne",
+            "kurz": "M5S",
+            "stimmen": 0,
+            "prozent": 35.48,
+            "sitze": 5,
+            "normiertAuf": "M5S"
+          },
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 0,
+            "prozent": 25.81,
+            "sitze": 4,
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 0,
+            "prozent": 16.13,
+            "sitze": 2,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Freikonservative Partei",
+            "kurz": "FKP",
+            "stimmen": 0,
+            "prozent": 12.9,
+            "sitze": 2,
+            "normiertAuf": "FKP"
+          },
+          {
+            "name": "Nationale Allianz",
+            "kurz": "NA",
+            "stimmen": 0,
+            "prozent": 9.68,
+            "sitze": 2,
+            "normiertAuf": "NA"
+          }
+        ]
+      }
+    ],
+    "sitzverteilung": {
+      "Bewegung der 5 Sterne": 5,
+      "Einheitlich Sozialistische Partei": 4,
+      "Christlich Demokratische Partei": 2,
+      "Freikonservative Partei": 2,
+      "Nationale Allianz": 2
+    },
+    "sitzeGesamt": 15,
+    "mehrheitsgrenze": 8
+  },
+  "gebiete": []
+}

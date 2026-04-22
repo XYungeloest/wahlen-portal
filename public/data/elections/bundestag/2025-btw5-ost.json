@@ -1,0 +1,128 @@
+{
+  "id": "bundestag-5-ost",
+  "electionId": "btw-5",
+  "label": "5. Deutscher Bundestag – Ostdeutschland",
+  "datum": "2025-05-25",
+  "typ": "bundestag",
+  "gebietsebene": "bundestagswahlkreis",
+  "wahlbeteiligung": 0,
+  "wahlberechtigte": 0,
+  "gueltigeStimmen": 37,
+  "datenstand": "2026-04-22",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus Endergebnis_BTW5.pdf, Abschnitt Landesergebnis Wahlkreis Ost",
+    "geobasis": "Keine ostinterne Kartenauflösung in der Quelle enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "pdfDatei": "wahlen ohne karte/Endergebnis_BTW5.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Nationale Freiheitspartei": 37.84,
+      "Einheitlich Sozialistische Partei": 21.62,
+      "Christlich Demokratische Partei": 18.92,
+      "Die Republik in Bewegung": 16.22,
+      "Sozialdemokratisch-Grüne Bewegung": 5.41,
+      "Liberal-Demokratische Partei": 0
+    },
+    "detailergebnisse": [
+      {
+        "id": "erststimme",
+        "label": "Wahlkreisstimme / Erststimme",
+        "stimmart": "erststimme",
+        "hinweis": "Übernommen aus dem Ostdeutschland-Abschnitt der Quelle; nur ausgewiesene Kandidaturen werden im Diagramm dargestellt.",
+        "parteien": [
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 7,
+            "prozent": 19.44,
+            "kandidat": "Tom Kurzschluss",
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Die Republik in Bewegung",
+            "kurz": "DRiB",
+            "stimmen": 7,
+            "prozent": 19.44,
+            "kandidat": "Tim Dieter",
+            "normiertAuf": "DRiB"
+          },
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 10,
+            "prozent": 27.78,
+            "kandidat": "Hans Acker",
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Nationale Freiheitspartei",
+            "kurz": "NFP",
+            "stimmen": 12,
+            "prozent": 33.33,
+            "kandidat": "Philipp Ludwig",
+            "normiertAuf": "Patrioten"
+          }
+        ]
+      },
+      {
+        "id": "zweitstimme",
+        "label": "Listenstimme / Zweitstimme",
+        "stimmart": "zweitstimme",
+        "hinweis": "Übernommen aus dem Ostdeutschland-Abschnitt der Quelle.",
+        "parteien": [
+          {
+            "name": "Nationale Freiheitspartei",
+            "kurz": "NFP",
+            "stimmen": 14,
+            "prozent": 37.84,
+            "normiertAuf": "Patrioten"
+          },
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 8,
+            "prozent": 21.62,
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 7,
+            "prozent": 18.92,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Die Republik in Bewegung",
+            "kurz": "DRiB",
+            "stimmen": 6,
+            "prozent": 16.22,
+            "normiertAuf": "DRiB"
+          },
+          {
+            "name": "Sozialdemokratisch-Grüne Bewegung",
+            "kurz": "SGB",
+            "stimmen": 2,
+            "prozent": 5.41,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Liberal-Demokratische Partei",
+            "kurz": "LDP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "LDP"
+          }
+        ]
+      }
+    ],
+    "direktmandat": {
+      "mandatName": "Direktmandat Ostdeutschland",
+      "kandidat": "Philipp Ludwig",
+      "partei": "Nationale Freiheitspartei",
+      "stimmenanteil": 33.33,
+      "hinweis": "Direktmandat aus der PDF-Zusammenfassung der gewählten Direktmandatsabgeordneten übernommen."
+    }
+  },
+  "gebiete": []
+}

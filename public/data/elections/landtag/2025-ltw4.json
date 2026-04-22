@@ -1,0 +1,67 @@
+{
+  "id": "landtag-4",
+  "electionId": "ltw-od-4",
+  "label": "Wahl zum 4. Ostdeutschen Landtag",
+  "datum": "2025-03-23",
+  "typ": "landtag",
+  "gebietsebene": "landkreis",
+  "wahlbeteiligung": 67.44,
+  "wahlberechtigte": 43,
+  "gueltigeStimmen": 29,
+  "datenstand": "2026-04-22",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus Endergebnis_LTWOst4.pdf",
+    "geobasis": "Keine regionale Geo-Basis in der Quelle enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "pdfDatei": "wahlen ohne karte/Endergebnis_LTWOst4.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Einheitlich Sozialistische Partei im Ostdeutschen Freistaat": 44.83,
+      "Christlich Demokratische Partei": 34.48,
+      "Nationale Freiheitspartei Ost": 20.69
+    },
+    "detailergebnisse": [
+      {
+        "id": "gesamt",
+        "label": "Gesamtergebnis",
+        "stimmart": "gesamt",
+        "hinweis": "Historischer Import ohne belastbare regionale Kartenauflösung.",
+        "parteien": [
+          {
+            "name": "Einheitlich Sozialistische Partei im Ostdeutschen Freistaat",
+            "kurz": "ESP",
+            "stimmen": 13,
+            "prozent": 44.83,
+            "sitze": 6,
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP Ost",
+            "stimmen": 10,
+            "prozent": 34.48,
+            "sitze": 4,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Nationale Freiheitspartei Ost",
+            "kurz": "NFP Ost",
+            "stimmen": 6,
+            "prozent": 20.69,
+            "sitze": 3,
+            "normiertAuf": "Patrioten"
+          }
+        ]
+      }
+    ],
+    "sitzverteilung": {
+      "Einheitlich Sozialistische Partei im Ostdeutschen Freistaat": 6,
+      "Christlich Demokratische Partei": 4,
+      "Nationale Freiheitspartei Ost": 3
+    },
+    "sitzeGesamt": 13,
+    "mehrheitsgrenze": 7
+  },
+  "gebiete": []
+}

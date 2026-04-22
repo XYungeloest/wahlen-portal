@@ -75,5 +75,47 @@
     "short": "UNABH",
     "color": "#7C8794",
     "position": "unabhängig"
+  },
+  {
+    "id": "drib",
+    "name": "DRiB",
+    "short": "DRiB",
+    "color": "#ff9000",
+    "position": "regional-liberal"
+  },
+  {
+    "id": "esp",
+    "name": "ESP",
+    "short": "ESP",
+    "color": "#b91c1c",
+    "position": "sozialistisch"
+  },
+  {
+    "id": "m5s",
+    "name": "M5S",
+    "short": "M5S",
+    "color": "#16a34a",
+    "position": "buergerbewegung"
+  },
+  {
+    "id": "rp",
+    "name": "RP",
+    "short": "RP",
+    "color": "#2563eb",
+    "position": "republikanisch"
+  },
+  {
+    "id": "fkp",
+    "name": "FKP",
+    "short": "FKP",
+    "color": "#7c2d12",
+    "position": "konservativ"
+  },
+  {
+    "id": "na",
+    "name": "NA",
+    "short": "NA",
+    "color": "#4b5563",
+    "position": "nationalkonservativ"
   }
 ]

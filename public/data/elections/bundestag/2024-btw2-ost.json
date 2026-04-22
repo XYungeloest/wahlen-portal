@@ -1,0 +1,152 @@
+{
+  "id": "bundestag-2-ost",
+  "electionId": "btw-2",
+  "label": "2. Deutscher Bundestag – Ostdeutschland",
+  "datum": "2024-04-07",
+  "typ": "bundestag",
+  "gebietsebene": "bundestagswahlkreis",
+  "wahlbeteiligung": 0,
+  "wahlberechtigte": 0,
+  "gueltigeStimmen": 43,
+  "datenstand": "2026-04-22",
+  "metadaten": {
+    "quelle": "Wiki-Quelle Endergebnis_BTW2.wiki, Abschnitt Ostdeutschland",
+    "geobasis": "Keine ostinterne Kartenauflösung in der Quelle enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "pdfDatei": "wahlen ohne karte/Endergebnis_BTW2.wiki"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Bewegung der 5 Sterne": 23.26,
+      "Christlich Demokratische Partei": 20.93,
+      "Bündnis Demokratie Europa": 18.6,
+      "Nationale Allianz": 18.6,
+      "Einheitlich Sozialistische Partei": 13.95,
+      "Liberal-Konservative Partei": 4.65,
+      "Republikanische Partei": 0,
+      "Progressiv-Liberale Allianz": 0
+    },
+    "detailergebnisse": [
+      {
+        "id": "erststimme",
+        "label": "Wahlkreisstimme / Erststimme",
+        "stimmart": "erststimme",
+        "hinweis": "Übernommen aus dem Ostdeutschland-Abschnitt der Quelle; nur ausgewiesene Kandidaturen werden im Diagramm dargestellt.",
+        "parteien": [
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 7,
+            "prozent": 16.28,
+            "kandidat": "Eric d'Arnim-Charnas",
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 9,
+            "prozent": 20.93,
+            "kandidat": "Senate Giffey",
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Nationale Allianz",
+            "kurz": "NA",
+            "stimmen": 9,
+            "prozent": 20.93,
+            "kandidat": "Endo Meyer-Raucht",
+            "normiertAuf": "NA"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 8,
+            "prozent": 18.6,
+            "kandidat": "Korvin Spellerberg",
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Bewegung der 5 Sterne",
+            "kurz": "M5S",
+            "stimmen": 10,
+            "prozent": 23.26,
+            "kandidat": "Elida Blake",
+            "normiertAuf": "M5S"
+          }
+        ]
+      },
+      {
+        "id": "zweitstimme",
+        "label": "Listenstimme / Zweitstimme",
+        "stimmart": "zweitstimme",
+        "hinweis": "Übernommen aus dem Ostdeutschland-Abschnitt der Quelle.",
+        "parteien": [
+          {
+            "name": "Bewegung der 5 Sterne",
+            "kurz": "M5S",
+            "stimmen": 10,
+            "prozent": 23.26,
+            "normiertAuf": "M5S"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 9,
+            "prozent": 20.93,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 8,
+            "prozent": 18.6,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Nationale Allianz",
+            "kurz": "NA",
+            "stimmen": 8,
+            "prozent": 18.6,
+            "normiertAuf": "NA"
+          },
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 6,
+            "prozent": 13.95,
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Liberal-Konservative Partei",
+            "kurz": "LKP",
+            "stimmen": 2,
+            "prozent": 4.65,
+            "normiertAuf": "FKP"
+          },
+          {
+            "name": "Republikanische Partei",
+            "kurz": "R",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "RP"
+          },
+          {
+            "name": "Progressiv-Liberale Allianz",
+            "kurz": "PLA",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "LDP"
+          }
+        ]
+      }
+    ],
+    "direktmandat": {
+      "mandatName": "Direktmandat Ostdeutschland",
+      "kandidat": "Elida Blake",
+      "partei": "Bewegung der 5 Sterne",
+      "stimmenanteil": 23.26,
+      "hinweis": "Direktmandat aus der im Ostdeutschland-Abschnitt markierten Gewinnerin übernommen."
+    }
+  },
+  "gebiete": []
+}

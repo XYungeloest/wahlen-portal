@@ -22,6 +22,7 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
     () => datasets.find((dataset) => dataset.id === datasetId) ?? datasets[0],
     [datasetId, datasets],
   );
+  const hasMapData = currentDataset.gebiete.length > 0;
 
   const chartBlocks = useMemo<ErgebnisBlock[]>(() => {
     const detailBlocks = currentDataset.summary.detailergebnisse?.filter((block) => block.parteien.length > 0) ?? [];
@@ -90,25 +91,27 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
         </div>
 
         <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-          <StatTile label="Wahlbeteiligung" value={formatProzent(currentDataset.wahlbeteiligung)} />
-          <StatTile label="Wahlberechtigte" value={formatZahl(currentDataset.wahlberechtigte)} />
-          <StatTile label="Gültige Stimmen" value={formatZahl(currentDataset.gueltigeStimmen)} />
+          <StatTile label="Wahlbeteiligung" value={formatMaybeProzent(currentDataset.wahlbeteiligung)} />
+          <StatTile label="Wahlberechtigte" value={formatMaybeZahl(currentDataset.wahlberechtigte)} />
+          <StatTile label="Gültige Stimmen" value={formatMaybeZahl(currentDataset.gueltigeStimmen)} />
           <StatTile
-            label="Gebietsebene"
-            value={typ === "landtag" ? "Landkreise und kreisfreie Städte" : "Bundestagswahlkreise"}
+            label="Kartenstatus"
+            value={hasMapData ? (typ === "landtag" ? "Landkreise und kreisfreie Städte" : "Bundestagswahlkreise") : "keine Karte"}
           />
         </div>
       </section>
 
-      <KartenModul
-        title={typ === "landtag" ? "Regionale Wahlkarte" : "Wahlkreiskarte"}
-        bezirke={bezirke}
-        geo={geo}
-        datasets={datasets}
-        datasetId={datasetId}
-        onDatasetChange={setDatasetId}
-        partyColors={partyColors}
-      />
+      {hasMapData ? (
+        <KartenModul
+          title={typ === "landtag" ? "Regionale Wahlkarte" : "Wahlkreiskarte"}
+          bezirke={bezirke}
+          geo={geo}
+          datasets={datasets}
+          datasetId={datasetId}
+          onDatasetChange={setDatasetId}
+          partyColors={partyColors}
+        />
+      ) : null}
 
       <section className={`grid gap-6 ${chartBlocks.length > 1 ? "xl:grid-cols-2" : "xl:grid-cols-1"}`}>
         {chartBlocks.map((block) => (
@@ -214,6 +217,14 @@ function displayEntryName(entry: ErgebnisBlock["parteien"][number], block: Ergeb
     return `${entry.kandidat} (${partyLabel})`;
   }
   return entry.kurz ? `${entry.name} (${entry.kurz})` : entry.name;
+}
+
+function formatMaybeProzent(value: number) {
+  return value > 0 ? formatProzent(value) : "nicht ausgewiesen";
+}
+
+function formatMaybeZahl(value: number) {
+  return value > 0 ? formatZahl(value) : "nicht ausgewiesen";
 }
 
 function StatTile({ label, value }: { label: string; value: string }) {

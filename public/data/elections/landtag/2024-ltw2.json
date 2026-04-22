@@ -1,0 +1,77 @@
+{
+  "id": "landtag-2",
+  "electionId": "ltw-od-2",
+  "label": "Wahl zum 2. Ostdeutschen Landtag",
+  "datum": "2024-06-09",
+  "typ": "landtag",
+  "gebietsebene": "landkreis",
+  "wahlbeteiligung": 65.38,
+  "wahlberechtigte": 52,
+  "gueltigeStimmen": 34,
+  "datenstand": "2026-04-22",
+  "metadaten": {
+    "quelle": "Wiki-Quelle Endergebnis_LTWOst2.wiki, Abschnitt Endergebnis",
+    "geobasis": "Keine regionale Geo-Basis in der Quelle enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "pdfDatei": "wahlen ohne karte/Endergebnis_LTWOst2.wiki"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Christlich Demokratische Partei": 35.29,
+      "Einheitlich Sozialistische Partei": 29.41,
+      "Nationale Allianz": 23.52,
+      "Bündnis Demokratie Europa": 11.76
+    },
+    "detailergebnisse": [
+      {
+        "id": "gesamt",
+        "label": "Gesamtergebnis",
+        "stimmart": "gesamt",
+        "hinweis": "Historischer Import ohne belastbare regionale Kartenauflösung.",
+        "parteien": [
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 12,
+            "prozent": 35.29,
+            "sitze": 5,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 10,
+            "prozent": 29.41,
+            "sitze": 4,
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Nationale Allianz",
+            "kurz": "NA",
+            "stimmen": 8,
+            "prozent": 23.52,
+            "sitze": 4,
+            "normiertAuf": "NA"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 4,
+            "prozent": 11.76,
+            "sitze": 2,
+            "normiertAuf": "DEMOS Ost"
+          }
+        ]
+      }
+    ],
+    "sitzverteilung": {
+      "Christlich Demokratische Partei": 5,
+      "Einheitlich Sozialistische Partei": 4,
+      "Nationale Allianz": 4,
+      "Bündnis Demokratie Europa": 2
+    },
+    "sitzeGesamt": 15,
+    "mehrheitsgrenze": 8
+  },
+  "gebiete": []
+}

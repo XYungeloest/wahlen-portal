@@ -1,0 +1,104 @@
+{
+  "id": "bundestag-3-ost",
+  "electionId": "btw-3",
+  "label": "3. Deutscher Bundestag – Ostdeutschland",
+  "datum": "2024-08-11",
+  "typ": "bundestag",
+  "gebietsebene": "bundestagswahlkreis",
+  "wahlbeteiligung": 0,
+  "wahlberechtigte": 0,
+  "gueltigeStimmen": 22,
+  "datenstand": "2026-04-22",
+  "metadaten": {
+    "quelle": "Amtliches Endergebnis aus Endergebnis_BTW3.pdf, Abschnitt Landesergebnis Wahlkreis Ost",
+    "geobasis": "Keine ostinterne Kartenauflösung in der Quelle enthalten; Karte für diesen Datensatz nicht verfügbar.",
+    "legendenTitel": "Stärkste Partei",
+    "pdfDatei": "wahlen ohne karte/Endergebnis_BTW3.pdf"
+  },
+  "summary": {
+    "gesamtergebnis": {
+      "Einheitlich Sozialistische Partei": 72.73,
+      "Bündnis Demokratie Europa": 18.18,
+      "Progressiv-Liberale Allianz": 4.55,
+      "Christlich Demokratische Partei": 4.55,
+      "Republikanische Partei": 0
+    },
+    "detailergebnisse": [
+      {
+        "id": "erststimme",
+        "label": "Wahlkreisstimme / Erststimme",
+        "stimmart": "erststimme",
+        "hinweis": "Übernommen aus dem Ostdeutschland-Abschnitt der Quelle; nur ausgewiesene Kandidaturen werden im Diagramm dargestellt.",
+        "parteien": [
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 17,
+            "prozent": 77.27,
+            "kandidat": "Barbara Schmielke",
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 5,
+            "prozent": 22.73,
+            "kandidat": "Tobias Hoffmann",
+            "normiertAuf": "DEMOS Ost"
+          }
+        ]
+      },
+      {
+        "id": "zweitstimme",
+        "label": "Listenstimme / Zweitstimme",
+        "stimmart": "zweitstimme",
+        "hinweis": "Übernommen aus dem Ostdeutschland-Abschnitt der Quelle.",
+        "parteien": [
+          {
+            "name": "Einheitlich Sozialistische Partei",
+            "kurz": "ESP",
+            "stimmen": 16,
+            "prozent": 72.73,
+            "normiertAuf": "ESP"
+          },
+          {
+            "name": "Bündnis Demokratie Europa",
+            "kurz": "DEMOS",
+            "stimmen": 4,
+            "prozent": 18.18,
+            "normiertAuf": "DEMOS Ost"
+          },
+          {
+            "name": "Progressiv-Liberale Allianz",
+            "kurz": "PLA",
+            "stimmen": 1,
+            "prozent": 4.55,
+            "normiertAuf": "LDP"
+          },
+          {
+            "name": "Christlich Demokratische Partei",
+            "kurz": "CDP",
+            "stimmen": 1,
+            "prozent": 4.55,
+            "normiertAuf": "CPD Ost"
+          },
+          {
+            "name": "Republikanische Partei",
+            "kurz": "RP",
+            "stimmen": 0,
+            "prozent": 0,
+            "normiertAuf": "RP"
+          }
+        ]
+      }
+    ],
+    "direktmandat": {
+      "mandatName": "Direktmandat Ostdeutschland",
+      "kandidat": "Barbara Schmielke",
+      "partei": "Einheitlich Sozialistische Partei",
+      "stimmenanteil": 77.27,
+      "hinweis": "Direktmandat aus der PDF-Zusammenfassung der gewählten Direktmandatsabgeordneten übernommen."
+    }
+  },
+  "gebiete": []
+}
