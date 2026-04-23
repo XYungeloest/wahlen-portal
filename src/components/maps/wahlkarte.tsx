@@ -4,13 +4,14 @@ import { geoIdentity, geoPath } from "d3-geo";
 import { useMemo, useState } from "react";
 import type { GeoFeatureCollection } from "@/lib/types";
 
-type KartenFlaeche = {
+export type KartenFlaeche = {
   id: string;
   name: string;
   fill: string;
   patternId?: string;
   patternColors?: [string, string];
   stroke?: string;
+  opacity?: number;
   headline: string;
   detail: string;
   ariaLabel: string;
@@ -29,13 +30,14 @@ type Props = {
   geo: GeoFeatureCollection;
   areasById: Record<string, KartenFlaeche>;
   preserveFullExtent?: boolean;
+  focusedId: string | null;
+  onFocusedIdChange: (nextId: string | null) => void;
 };
 
-export function Wahlkarte({ title, geo, areasById, preserveFullExtent = false }: Props) {
+export function Wahlkarte({ title, geo, areasById, preserveFullExtent = false, focusedId, onFocusedIdChange }: Props) {
   const width = 980;
   const height = 720;
   const [activeId, setActiveId] = useState<string | null>(null);
-  const [focusedId, setFocusedId] = useState<string | null>(null);
 
   const projection = useMemo(
     () => geoIdentity().reflectY(true).fitExtent([[20, 20], [width - 20, height - 20]], geo as never),
@@ -91,7 +93,7 @@ export function Wahlkarte({ title, geo, areasById, preserveFullExtent = false }:
           <button
             type="button"
             className="rounded-lg border border-[#c6d7d3] bg-white px-3 py-1.5 text-sm text-slate-700 transition hover:border-[#0f766e] disabled:cursor-not-allowed disabled:opacity-50"
-            onClick={() => setFocusedId(null)}
+            onClick={() => onFocusedIdChange(null)}
             disabled={!focusedId}
           >
             Fokus zurücksetzen
@@ -134,6 +136,7 @@ export function Wahlkarte({ title, geo, areasById, preserveFullExtent = false }:
 
                 const isActive = activeId === id;
                 const isFocused = focusedId === id;
+                const opacity = isFocused || isActive ? 1 : area.opacity ?? 1;
                 return (
                   <path
                     key={id}
@@ -143,12 +146,12 @@ export function Wahlkarte({ title, geo, areasById, preserveFullExtent = false }:
                     strokeWidth={isFocused ? 3.4 : isActive ? 2.5 : 1.2}
                     vectorEffect="non-scaling-stroke"
                     className="cursor-pointer transition-[opacity,stroke-width] duration-150 ease-out"
-                    opacity={activeId && !isActive ? 0.82 : 1}
+                    opacity={activeId && !isActive && opacity > 0.82 ? 0.82 : opacity}
                     tabIndex={0}
                     role="button"
                     aria-pressed={isFocused}
                     aria-label={area.ariaLabel}
-                    onClick={() => setFocusedId((current) => (current === id ? null : id))}
+                    onClick={() => onFocusedIdChange(focusedId === id ? null : id)}
                     onMouseEnter={() => setActiveId(id)}
                     onMouseLeave={() => setActiveId(null)}
                     onFocus={() => setActiveId(id)}
@@ -157,7 +160,7 @@ export function Wahlkarte({ title, geo, areasById, preserveFullExtent = false }:
                       if (event.key === "Enter" || event.key === " ") {
                         event.preventDefault();
                         setActiveId(id);
-                        setFocusedId((current) => (current === id ? null : id));
+                        onFocusedIdChange(focusedId === id ? null : id);
                       }
                     }}
                   />
