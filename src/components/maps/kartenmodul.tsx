@@ -202,15 +202,7 @@ export function KartenModul({
               ? partyColors[winners[0]] ?? "#94a3b8"
               : "#d6dde3"
             : scaleColor(metricValue, minMetricValue, maxMetricValue, "#d7f0ea", "#0f766e");
-        const detailParts = [`Bezirk ${row.bezirk}.`, `Wahlbeteiligung: ${formatProzent(row.wahlbeteiligung)}.`];
-
-        if (metric === "winner" && row.staerksteParteiProzent <= 0) {
-          detailParts.push("Regionaler Prozentwert der stärksten Partei: nicht ausgewiesen.");
-        }
-
-        if (metric === "winner" && partyFilter !== "alle" && !matchesPartyFilter) {
-          detailParts.push(`Im aktiven Parteienfilter wird dieses Gebiet visuell zurückgenommen.`);
-        }
+        const detailParts = [`Bezirk ${row.bezirk}.`];
 
         const metricLabel =
           metric === "winner"

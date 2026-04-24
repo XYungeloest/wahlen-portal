@@ -162,7 +162,7 @@ export function WahlErgebnisDashboard({ typ, datasets, bezirke, geo, partyColors
         ))}
       </section>
 
-      <DatasetComparison currentDataset={currentDataset} datasets={datasets} partyColors={partyColors} />
+      {/* <DatasetComparison currentDataset={currentDataset} datasets={datasets} partyColors={partyColors} /> */}
 
       {typ === "landtag" && seatItems.length > 0 ? (
         <SitzHalbrund
