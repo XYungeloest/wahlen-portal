@@ -15,7 +15,7 @@ body {
     radial-gradient(circle at top left, rgba(188, 222, 214, 0.42), transparent 28rem),
     linear-gradient(180deg, #eef5f2 0%, var(--color-bg) 32%, #f8fbfa 100%);
   color: var(--color-text);
-  font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+  font-family: "Inter", "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
 }
 
 .font-mono-data {

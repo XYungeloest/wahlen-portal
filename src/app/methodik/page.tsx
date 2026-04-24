@@ -25,6 +25,10 @@ export default async function MethodikPage() {
           Sämtliche Wahl- und Geodaten sind fiktive Simulationsdaten. Die Datenhaltung erfolgt ausschließlich statisch in JSON- und
           GeoJSON-Dateien im Repository.
         </p>
+        <p className="mt-3">
+          Das Portal lädt zur Laufzeit keine externen APIs, keine Datenbank und keinen externen Kartendienst. Neue Wahldaten werden als
+          versionierte JSON-Datensätze ergänzt und beim statischen Build eingebunden.
+        </p>
       </section>
 
       <section className="card p-5 text-slate-700">
@@ -58,6 +62,32 @@ export default async function MethodikPage() {
         <p className="mt-3">
           Historische Referenzkarten werden als Gebietssieger direkt in den lokalen Wahldatensätzen gepflegt. Daraus werden keine
           regionalen Prozentwerte konstruiert; die interaktiven Karten bleiben D3-SVG-Karten auf Basis der lokalen GeoJSON-Dateien.
+        </p>
+        <p className="mt-3">
+          Die GeoJSON-Geometrien werden vorsichtig behandelt: Eine künftige Performance-Optimierung darf die fachliche Formtreue nicht
+          substanziell reduzieren. Bevor Geometrien vereinfacht werden, sind Dateigröße, Renderzeit und sichtbare Grenzqualität gegeneinander
+          zu prüfen.
+        </p>
+      </section>
+
+      <section className="card p-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-[var(--color-primary)]">Datenqualität und fehlende Regionalwerte</h2>
+        <p className="mt-3">
+          Datensätze können unterschiedliche Detailgrade haben. Wenn keine belastbare regionale Kartenauflösung vorliegt, zeigt das Portal
+          keine künstliche Karte an. Wenn nur Gebietssieger, aber keine regionalen Prozentwerte vorliegen, wird dies in Karte, Tabelle und
+          Datenhinweisen kenntlich gemacht.
+        </p>
+        <p className="mt-3">
+          Tabellen und Diagramme verwenden denselben Datensatz wie die Karte. Filter nach Bezirk oder Partei sind deshalb als
+          Darstellungsfilter zu verstehen, nicht als Veränderung der zugrunde liegenden Wahlberechnung.
+        </p>
+      </section>
+
+      <section className="card p-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-[var(--color-primary)]">Archiv und Nachvollziehbarkeit</h2>
+        <p className="mt-3">
+          Mehrere Wahlstände können parallel im Portal auswählbar bleiben. Für Nutzerinnen und Nutzer ist dabei entscheidend, dass Datum,
+          Datenstand, Quelle, Kartierungsgrad und Modellannahmen direkt beim Datensatz erkennbar sind.
         </p>
       </section>
 

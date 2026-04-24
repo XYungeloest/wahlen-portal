@@ -14,15 +14,58 @@ export default async function DirekteDemokratiePage() {
 
       <section className="card p-5">
         <h2 className="text-xl font-semibold text-[var(--color-primary)]">Prozessfluss</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
-          <li>Volksantrag: Einreichung mit erforderlicher Unterstützerzahl.</li>
-          <li>Volksbegehren: Formelle Prüfung und Unterschriftensammlung.</li>
-          <li>Volksentscheid: Abstimmung durch die Wahlberechtigten.</li>
-        </ol>
+        <div className="mt-4 grid gap-4 lg:grid-cols-3">
+          {[
+            {
+              title: "1. Volksantrag",
+              text: "Bürgerinnen und Bürger reichen ein Anliegen mit der erforderlichen Unterstützerzahl ein. Inhalt und formale Zulässigkeit werden geprüft.",
+            },
+            {
+              title: "2. Volksbegehren",
+              text: "Nach Zulassung folgt eine geregelte Sammlung weiterer Unterstützungen. Das Verfahren macht sichtbar, ob das Anliegen landesweit tragfähig ist.",
+            },
+            {
+              title: "3. Volksentscheid",
+              text: "Erreicht das Begehren die festgelegten Anforderungen, entscheiden die Wahlberechtigten in einer Abstimmung über die Vorlage.",
+            },
+          ].map((step) => (
+            <article key={step.title} className="rounded-xl border border-[#d5e3df] bg-white p-4">
+              <h3 className="font-semibold text-[#14333d]">{step.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-700">{step.text}</p>
+            </article>
+          ))}
+        </div>
         <div className="mt-4 rounded border border-slate-300 bg-slate-50 p-4 text-sm text-slate-700">
           <p className="font-semibold">Ausschlussbereiche</p>
           <p className="mt-1">Abgaben-, Besoldungs- und Haushaltsgesetze sind von direktdemokratischen Verfahren ausgeschlossen.</p>
         </div>
+      </section>
+
+      <section className="card p-5">
+        <h2 className="text-xl font-semibold text-[var(--color-primary)]">Rollen im Verfahren</h2>
+        <div className="mt-3 grid gap-4 md:grid-cols-2">
+          <div className="rounded-lg border border-slate-200 bg-white p-4">
+            <h3 className="font-semibold text-slate-900">Initiative</h3>
+            <p className="mt-2 text-slate-700">
+              Die Initiative formuliert den Gegenstand, sammelt Unterstützung und trägt die politische Verantwortung für die Vorlage.
+            </p>
+          </div>
+          <div className="rounded-lg border border-slate-200 bg-white p-4">
+            <h3 className="font-semibold text-slate-900">Landeswahlleitung</h3>
+            <p className="mt-2 text-slate-700">
+              Die Landeswahlleitung veröffentlicht Fristen, koordiniert Prüfungen und stellt Zwischenergebnisse sowie amtliche
+              Bekanntmachungen bereit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="card p-5">
+        <h2 className="text-xl font-semibold text-[var(--color-primary)]">Verfahrensstand transparent machen</h2>
+        <p className="mt-3 text-slate-700">
+          Für spätere Ausbaustufen eignet sich eine Statusanzeige mit Phase, Fristen, zuständiger Stelle und nächstem Schritt. Das
+          Portal sollte dabei klar zwischen Simulation, Modellannahme und veröffentlichtem Verfahrensstand unterscheiden.
+        </p>
       </section>
 
       <section className="card p-5">
@@ -36,6 +79,14 @@ export default async function DirekteDemokratiePage() {
           </p>
           <p>
             <strong>Wann ist ein Volksentscheid erfolgreich?</strong> Wenn die im Modell definierte Mehrheit und das erforderliche Quorum erreicht sind.
+          </p>
+          <p>
+            <strong>Werden echte Unterschriften verarbeitet?</strong> Nein. Das Portal arbeitet ohne Datenbank und ohne personenbezogene
+            Verfahrensdaten.
+          </p>
+          <p>
+            <strong>Warum stehen keine konkreten Quoren auf dieser Seite?</strong> Nicht festgelegte juristische Details werden nicht
+            nachträglich realrechtlich erfunden, sondern nur als transparente Modellannahme ergänzt, wenn sie für eine Darstellung nötig sind.
           </p>
         </div>
       </section>

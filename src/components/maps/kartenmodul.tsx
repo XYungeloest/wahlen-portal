@@ -14,10 +14,16 @@ type Props = {
   datasets: WahlDataset[];
   datasetId?: string;
   onDatasetChange?: (nextValue: string) => void;
+  bezirkId: string;
+  onBezirkChange: (nextValue: string) => void;
+  metric: MetricType;
+  onMetricChange: (nextValue: MetricType) => void;
+  partyFilter: string;
+  onPartyFilterChange: (nextValue: string) => void;
   partyColors: Record<string, string>;
 };
 
-type MetricType = "winner" | "turnout";
+export type MetricType = "winner" | "turnout";
 
 type SearchOption = {
   id: string;
@@ -36,28 +42,23 @@ export function KartenModul({
   bezirke,
   geo,
   datasets,
-  datasetId: controlledDatasetId,
+  datasetId,
   onDatasetChange,
+  bezirkId,
+  onBezirkChange,
+  metric,
+  onMetricChange,
+  partyFilter,
+  onPartyFilterChange,
   partyColors,
 }: Props) {
   const defaultDatasetId = datasets.find((dataset) => dataset.gebiete.length > 0)?.id ?? datasets[0]?.id ?? "";
-  const [uncontrolledDatasetId, setUncontrolledDatasetId] = useState<string>(defaultDatasetId);
-  const [bezirkId, setBezirkId] = useState<string>("alle");
-  const [metric, setMetric] = useState<MetricType>("winner");
-  const [partyFilter, setPartyFilter] = useState<string>("alle");
   const [focusedId, setFocusedId] = useState<string | null>(null);
-  const datasetId = controlledDatasetId ?? uncontrolledDatasetId;
-
-  const setDatasetId = (nextValue: string) => {
-    onDatasetChange?.(nextValue);
-    if (!onDatasetChange) {
-      setUncontrolledDatasetId(nextValue);
-    }
-  };
+  const currentDatasetId = datasetId ?? defaultDatasetId;
 
   const currentDataset = useMemo(
-    () => datasets.find((dataset) => dataset.id === datasetId) ?? datasets[0],
-    [datasetId, datasets],
+    () => datasets.find((dataset) => dataset.id === currentDatasetId) ?? datasets[0],
+    [currentDatasetId, datasets],
   );
 
   const hasRegionalData = (currentDataset?.gebiete.length ?? 0) > 0;
@@ -137,15 +138,15 @@ export function KartenModul({
 
   useEffect(() => {
     if (metric !== "winner" && partyFilter !== "alle") {
-      setPartyFilter("alle");
+      onPartyFilterChange("alle");
     }
-  }, [metric, partyFilter]);
+  }, [metric, onPartyFilterChange, partyFilter]);
 
   useEffect(() => {
     if (partyFilter !== "alle" && !winnerPartyOptions.includes(partyFilter)) {
-      setPartyFilter("alle");
+      onPartyFilterChange("alle");
     }
-  }, [partyFilter, winnerPartyOptions]);
+  }, [onPartyFilterChange, partyFilter, winnerPartyOptions]);
 
   useEffect(() => {
     if (focusedId && !currentDataset?.gebiete.some((row) => row.gebietId === focusedId)) {
@@ -201,7 +202,11 @@ export function KartenModul({
               ? partyColors[winners[0]] ?? "#94a3b8"
               : "#d6dde3"
             : scaleColor(metricValue, minMetricValue, maxMetricValue, "#d7f0ea", "#0f766e");
-        const detailParts = [`Bezirk ${row.bezirk}.`];
+        const detailParts = [`Bezirk ${row.bezirk}.`, `Wahlbeteiligung: ${formatProzent(row.wahlbeteiligung)}.`];
+
+        if (metric === "winner" && row.staerksteParteiProzent <= 0) {
+          detailParts.push("Regionaler Prozentwert der stärksten Partei: nicht ausgewiesen.");
+        }
 
         if (metric === "winner" && partyFilter !== "alle" && !matchesPartyFilter) {
           detailParts.push(`Im aktiven Parteienfilter wird dieses Gebiet visuell zurückgenommen.`);
@@ -303,15 +308,15 @@ export function KartenModul({
 
   const handleMetricChange = (nextValue: string) => {
     const nextMetric = nextValue as MetricType;
-    setMetric(nextMetric);
+    onMetricChange(nextMetric);
     if (nextMetric !== "winner") {
-      setPartyFilter("alle");
+      onPartyFilterChange("alle");
     }
   };
 
   const handleSearchSelect = (option: SearchOption) => {
     if (bezirkId !== "alle" && option.bezirkId !== bezirkId) {
-      setBezirkId("alle");
+      onBezirkChange("alle");
     }
     setFocusedId(option.id);
   };
@@ -344,15 +349,16 @@ export function KartenModul({
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           <SelectField
             label="Datensatz"
-            value={datasetId}
-            onChange={setDatasetId}
+            value={currentDatasetId}
+            disabled={!onDatasetChange}
+            onChange={(nextValue) => onDatasetChange?.(nextValue)}
             options={datasets.map((dataset) => ({ value: dataset.id, label: `${dataset.label}` }))}
           />
           <SelectField
             label="Bezirk"
             value={bezirkId}
             disabled={!hasRegionalData}
-            onChange={setBezirkId}
+            onChange={onBezirkChange}
             options={[
               { value: "alle", label: "Alle Bezirke" },
               ...bezirke.map((bezirk) => ({ value: bezirk.id, label: bezirk.name })),
@@ -372,7 +378,7 @@ export function KartenModul({
             label="Parteifilter"
             value={partyFilter}
             disabled={!hasRegionalData || metric !== "winner"}
-            onChange={setPartyFilter}
+            onChange={onPartyFilterChange}
             options={[
               { value: "alle", label: "Alle Parteien" },
               ...winnerPartyOptions.map((party) => ({ value: party, label: party })),
@@ -391,7 +397,7 @@ export function KartenModul({
                     : "Wahlkreisname oder Nummer eingeben"
                 }
                 options={searchOptions}
-                resetKey={`${datasetId}-${currentDataset.gebietsebene}`}
+                resetKey={`${currentDatasetId}-${currentDataset.gebietsebene}`}
                 onSelect={handleSearchSelect}
               />
 
@@ -421,19 +427,7 @@ export function KartenModul({
               <div className="space-y-4">
                 <LegendCard metric={metric} legendItems={legendItems} minValue={minMetricValue} maxValue={maxMetricValue} />
 
-                {currentDataset.summary.direktmandat ? (
-                  <section className="rounded-xl border border-[#d0ddd9] bg-white p-4">
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
-                    <h3 className="mt-2 break-words text-lg font-semibold text-[#16343d]">
-                      {currentDataset.summary.direktmandat.kandidat}
-                    </h3>
-                    <p className="mt-1 text-sm text-slate-700">
-                      {currentDataset.summary.direktmandat.partei} mit{" "}
-                      {formatProzent(currentDataset.summary.direktmandat.stimmenanteil)}
-                    </p>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">{currentDataset.summary.direktmandat.hinweis}</p>
-                  </section>
-                ) : null}
+                {currentDataset.summary.direktmandat ? <DirektmandatKartenHinweis /> : null}
               </div>
             </div>
           </>
@@ -447,25 +441,12 @@ export function KartenModul({
                 Verteilung auf Landkreise oder Bundestagswahlkreise wird bewusst nicht ergänzt.
               </p>
               <div className="mt-4 rounded-lg border border-[#d5e3df] bg-white p-4 text-sm leading-6 text-slate-700">
-                <p>
-                  Quelle: <strong>{currentDataset.metadaten.pdfDatei ?? currentDataset.metadaten.quelle}</strong>
-                </p>
-                <p className="mt-2">Für eine interaktive Karte bitte einen Datensatz mit regionaler Gebietsebene auswählen.</p>
+                Für eine interaktive Karte bitte einen Datensatz mit regionaler Gebietsebene auswählen. Die aggregierten Ergebnisse
+                bleiben in Diagrammen und Tabellen verfügbar.
               </div>
             </section>
 
-            <div className="space-y-4">
-              {currentDataset.summary.direktmandat ? (
-                <section className="rounded-xl border border-[#d0ddd9] bg-white p-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Direktmandat Ostdeutschland</p>
-                  <h3 className="mt-2 break-words text-lg font-semibold text-[#16343d]">{currentDataset.summary.direktmandat.kandidat}</h3>
-                  <p className="mt-1 text-sm text-slate-700">
-                    {currentDataset.summary.direktmandat.partei} mit {formatProzent(currentDataset.summary.direktmandat.stimmenanteil)}
-                  </p>
-                  <p className="mt-3 text-sm leading-6 text-slate-600">{currentDataset.summary.direktmandat.hinweis}</p>
-                </section>
-              ) : null}
-            </div>
+            <div className="space-y-4">{currentDataset.summary.direktmandat ? <DirektmandatKartenHinweis /> : null}</div>
           </div>
         )}
       </section>
@@ -564,6 +545,17 @@ function SelectField({
         ))}
       </select>
     </label>
+  );
+}
+
+function DirektmandatKartenHinweis() {
+  return (
+    <section className="rounded-xl border border-[#d0ddd9] bg-white p-4">
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#25515c]">Hinweis zur Bundestagskarte</p>
+      <p className="mt-2 text-sm leading-6 text-slate-700">
+        Das Direktmandat Ostdeutschland wird als gesondertes Ergebnis im Hauptbereich ausgewiesen und nicht als Kartenfläche modelliert.
+      </p>
+    </section>
   );
 }
 

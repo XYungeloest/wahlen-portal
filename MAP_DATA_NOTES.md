@@ -89,7 +89,7 @@ public/
 
 - Die fachlichen Hauptseiten liegen unter `/ergebnisse/landtag` und `/ergebnisse/bundestag`.
 - Dort werden Ergebnis, Visualisierung, Karte und Gebietstabelle gemeinsam aus derselben Datensatz-Auswahl gespeist.
-- Die früheren Kartenseiten unter `/karte/landtag` und `/karte/bundestag` sind entfernt. Karten werden direkt auf den integrierten Wahlebenen angezeigt; `/karte` verweist nur noch auf die Kartenabschnitte.
+- Die früheren Kartenseiten sind entfernt. Karten werden direkt auf den integrierten Wahlebenen angezeigt; eine separate `/karte`-Route wird nicht mehr erzeugt.
 - Karteninteraktion:
   - Hover und Tastaturfokus zeigen Gebietsdaten an.
   - Klick setzt einen kontrollierten Fokus auf ein Gebiet.
@@ -101,3 +101,9 @@ public/
 2. Auf `landkreise-ost.geojson` bzw. `btw-wahlkreise-ost.geojson` reduzieren und die bestehenden `properties.id` stabil halten.
 3. Geänderte GeoJSON-, Mapping- und Election-Dateien prüfen.
 4. Build mit `npm run build` validieren.
+
+## Performance-Grundsatz
+
+- Die aktuellen GeoJSON-Dateien bleiben in ihrer fachlichen Grenzqualität erhalten.
+- Eine spätere Optimierung soll zuerst Lade- und Renderzeiten messen, bevor Geometrien verändert werden.
+- Falls Vereinfachung nötig wird, darf sie nur behutsam erfolgen und muss sichtbare Grenzverläufe, Gebietszuschnitte und stabile IDs bewahren.

@@ -119,7 +119,7 @@ Für Farben und Wiedererkennung nutzt das Portal vorsichtige Aliase, zum Beispie
 - `SGB` -> Farbwelt von `DEMOS Ost`
 - `NFP`, `DHP` und `PATRIOTEN` -> Farbwelt von `Patrioten`
 - `OiB` -> Ostpartei/Farbwelt von `DRiB`
-- `CDP Ost` oder historische CDP-Varianten -> Farbwelt von `CPD Ost`
+- `CDP Ost` oder historische CDP-Varianten -> Farbwelt der `CDP Ost`
 - DEMOS-Varianten -> Farbwelt von `DEMOS Ost`
 - FRP-Varianten -> Farbwelt von `FRP`
 - `DIE PATRIOTEN` / `Die ostdeutschen Patrioten` -> Farbwelt von `Patrioten`

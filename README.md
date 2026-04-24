@@ -107,8 +107,8 @@ Details zur Herkunft und Struktur stehen in [HISTORICAL_DATA_NOTES.md](/Users/pe
 - `/ergebnisse/landtag/` und `/ergebnisse/bundestag/` sind die fachlichen Hauptseiten je Wahlebene.
 - Dort sind Ergebnis, Visualisierung, Karte und Gebietstabelle zusammengeführt und nutzen dieselbe Datensatz-Auswahl.
 - Historische PDF-Datensätze mit Kartenbezug enthalten ihre Gebietssieger direkt im Wahldatensatz; regionale Parteieinzelergebnisse werden nicht künstlich ergänzt.
-- Historische Datensätze aus `wahlen ohne karte` sind als reine Ergebnisdatensätze auswählbar und blenden den Kartenbereich aus.
-- Die frühere Unterseiten-Struktur `/karte/landtag/` und `/karte/bundestag/` ist entfernt. Karten werden direkt auf den integrierten Ergebnisseiten angezeigt; `/karte/` ist nur noch eine kompakte Übersicht mit Ankerlinks.
+- Historische Datensätze ohne regionale Kartenauflösung sind als reine Ergebnisdatensätze auswählbar und blenden den Kartenbereich aus.
+- Die frühere Karten-Routenstruktur ist entfernt. Karten werden direkt auf den integrierten Ergebnisseiten angezeigt; eine separate `/karte/`-Seite wird nicht mehr erzeugt.
 - Karteninteraktion:
   - Hover und Tastaturfokus zeigen Gebietsinformationen.
   - Klick setzt einen kontrollierten Fokus auf ein Gebiet.

@@ -8,7 +8,6 @@ type Shortcut = {
 
 const shortcuts: Shortcut[] = [
   { href: "/ergebnisse/", title: "Ergebnisse", desc: "Landtags- und Bundestagsergebnisse auf einen Blick." },
-  { href: "/karte/", title: "Karte", desc: "Interaktive Karten zu Landkreisen und Wahlkreisen." },
   { href: "/wahlrecht/", title: "Wahlrecht", desc: "Erläuterung des vereinfachten Simulationsmodells." },
   {
     href: "/direkte-demokratie/",
